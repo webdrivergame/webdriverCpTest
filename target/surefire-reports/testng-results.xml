@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="11" started-at="2018-10-25T12:44:46Z" finished-at="2018-10-25T12:44:46Z">
+    <groups>
+    </groups>
+    <test name="C:/Users/jtc/IdeaProjects/game" duration-ms="11" started-at="2018-10-25T12:44:46Z" finished-at="2018-10-25T12:44:46Z">
+    </test> <!-- C:/Users/jtc/IdeaProjects/game -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
