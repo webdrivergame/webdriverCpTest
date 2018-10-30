@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/jtc/IdeaProjects/game"><classes/></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/jtc/IdeaProjects/game">
+        <classes>
+            <class name="gameWebTest.Playerlist"></class>
+            <class name="Test.playeraccountmanagement"></class>
+            <class name="Test.playergamerecord"></class>
+            <class name="Test.businession"></class>
+            <class name="Test.businessionOp"></class>
+            <class name="Test.rechargecashrecord"></class>
+
+        </classes>
+    </test>
+</suite>

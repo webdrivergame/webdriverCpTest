@@ -1,4 +1,108 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.683 s - in TestSuite
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 85.364 s <<< FAILURE! - in TestSuite
+test(gameWebTest.Playerlist)  Time elapsed: 15.637 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"id","selector":".//*[@id='root']/section/section/main/div[2]/div[2]/div/form/div[1]/div/span/span"}
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.2, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 45f580dd-d542-4f78-90a5-e43fe46c20c9
+	at gameWebTest.Playerlist.test(Playerlist.java:28)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"id","selector":".//*[@id='root']/section/section/main/div[2]/div[2]/div/form/div[1]/div/span/span"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+
+test(Test.playeraccountmanagement)  Time elapsed: 7.901 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"xpath","selector":".//*[@id='root']/section/section/main/div[2]/div[2]/div/form/div[2]/div/div/input"}
+Command duration or timeout: 595 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.2, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c3099b2e-e5b2-4ef2-9136-3f2ba79703db
+	at Test.playeraccountmanagement.test(playeraccountmanagement.java:24)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"xpath","selector":".//*[@id='root']/section/section/main/div[2]/div[2]/div/form/div[2]/div/div/input"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+
+test(Test.playergamerecord)  Time elapsed: 7.435 s  <<< FAILURE!
+org.openqa.selenium.ElementNotVisibleException: 
+Element is not currently visible and so may not be interacted with
+Command duration or timeout: 61 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.2, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dd201645-4b32-434c-8b97-a39be19722df
+	at Test.playergamerecord.test(playergamerecord.java:24)
+Caused by: org.openqa.selenium.ElementNotVisibleException: 
+Element is not currently visible and so may not be interacted with
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+
+test(Test.businession)  Time elapsed: 10.088 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"xpath","selector":".//*[@id='el-collapse-content-4399']/div/form/div[1]/div/div/input"}
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.2, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 722d484c-f31d-4cfc-912e-acb83ce82164
+	at Test.businession.test(businession.java:26)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"xpath","selector":".//*[@id='el-collapse-content-4399']/div/form/div[1]/div/div/input"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+
+test(Test.businessionOp)  Time elapsed: 7.518 s  <<< FAILURE!
+org.openqa.selenium.ElementNotVisibleException: 
+Element is not currently visible and so may not be interacted with
+Command duration or timeout: 49 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.2, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9becf064-9315-405c-a544-fe3d899507fa
+	at Test.businessionOp.test(businessionOp.java:24)
+Caused by: org.openqa.selenium.ElementNotVisibleException: 
+Element is not currently visible and so may not be interacted with
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+
+test(Test.rechargecashrecord)  Time elapsed: 9.748 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"xpath","selector":".//*[@id='el-collapse-content-3192']/div/form/div[6]/div/div/input"}
+Command duration or timeout: 18 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.2, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: e07ab49a-524e-4c89-8e02-a0dbc40ab1c7
+	at Test.rechargecashrecord.test(rechargecashrecord.java:26)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"xpath","selector":".//*[@id='el-collapse-content-3192']/div/form/div[6]/div/div/input"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+
