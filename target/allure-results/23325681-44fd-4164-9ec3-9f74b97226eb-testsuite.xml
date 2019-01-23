@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1544105214180" stop="1544105263298" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : game</name>
+    <title>Default Suite : game</title>
+    <test-cases>
+        <test-case start="1544105263123" stop="1544105263127" status="broken">
+            <name>BEFORE</name>
+            <description>@BeforeClass</description>
+            <failure>
+                <message>WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ogram Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1544105218054	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1544105218055	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1544105218056	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1544105218057	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1544105218057	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1544105218057	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1544105218058	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 33.0.0
+1544105218059	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1544105218059	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1544105218060	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1544105218060	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1544105218060	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1544105218061	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0.1
+1544105218062	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1544105218062	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1544105218062	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1544105218062	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1544105218062	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1544105218063	addons.manager	DEBUG	Starting provider: GMPProvider
+1544105218064	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1544105218064	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1544105218064	addons.manager	DEBUG	Starting provider: PluginProvider
+1544105218064	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1544105218064	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1544105218067	addons.manager	DEBUG	Completed startup sequence
+1544105218835	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\jtc\AppData\Local\Temp\anonymous8509520702233326793webdriver-profile\extensions.json
+1544105218860	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\jtc\AppData\Local\Temp\anonymous8509520702233326793webdriver-profile\extensions\webdriver-staging
+1544105218862	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1544105218863	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1544105218863	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1544105218863	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1544105218864	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1544105218864	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1544105218864	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1544105218864	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+1544105218928	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+*** Blocklist::_loadFileInternal: blocklist is disabled
+1544105219072	addons.xpi-utils	DEBUG	Successfully read XPI database
+1544105219117	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: FirefoxDriver</message>
+                <stack-trace>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+ogram Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1544105218054	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1544105218055	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1544105218056	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1544105218057	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1544105218057	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1544105218057	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1544105218058	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 33.0.0
+1544105218059	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1544105218059	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1544105218060	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1544105218060	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1544105218060	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1544105218061	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0.1
+1544105218062	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1544105218062	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1544105218062	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1544105218062	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1544105218062	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1544105218063	addons.manager	DEBUG	Starting provider: GMPProvider
+1544105218064	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1544105218064	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1544105218064	addons.manager	DEBUG	Starting provider: PluginProvider
+1544105218064	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1544105218064	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1544105218067	addons.manager	DEBUG	Completed startup sequence
+1544105218835	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\jtc\AppData\Local\Temp\anonymous8509520702233326793webdriver-profile\extensions.json
+1544105218860	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\jtc\AppData\Local\Temp\anonymous8509520702233326793webdriver-profile\extensions\webdriver-staging
+1544105218862	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1544105218863	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1544105218863	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1544105218863	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1544105218864	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1544105218864	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1544105218864	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1544105218864	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+1544105218928	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+*** Blocklist::_loadFileInternal: blocklist is disabled
+1544105219072	addons.xpi-utils	DEBUG	Successfully read XPI database
+1544105219117	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at com.selenium.pack.MyWebdriver.&lt;init&gt;(MyWebdriver.java:12)
+	at Test.businession.BEFORE(businession.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ogram Files (x86)\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1544105218054	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1544105218055	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1544105218056	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1544105218057	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1544105218057	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1544105218057	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1544105218058	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 33.0.0
+1544105218059	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1544105218059	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1544105218060	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1544105218060	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1544105218060	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1544105218061	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0.1
+1544105218062	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1544105218062	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1544105218062	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1544105218062	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1544105218062	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1544105218063	addons.manager	DEBUG	Starting provider: GMPProvider
+1544105218064	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1544105218064	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1544105218064	addons.manager	DEBUG	Starting provider: PluginProvider
+1544105218064	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1544105218064	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1544105218067	addons.manager	DEBUG	Completed startup sequence
+1544105218835	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\jtc\AppData\Local\Temp\anonymous8509520702233326793webdriver-profile\extensions.json
+1544105218860	addons.xpi	DEBUG	Ignoring file: name is not a valid add-on ID: C:\Users\jtc\AppData\Local\Temp\anonymous8509520702233326793webdriver-profile\extensions\webdriver-staging
+1544105218862	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1544105218863	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1544105218863	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1544105218863	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1544105218864	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1544105218864	addons.xpi	DEBUG	Existing add-on webcompat-reporter@mozilla.org in app-system-defaults
+1544105218864	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1544105218864	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+1544105218928	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+*** Blocklist::_loadFileInternal: blocklist is disabled
+1544105219072	addons.xpi-utils	DEBUG	Successfully read XPI database
+1544105219117	addons.manager	DEBUG	Registering upgrade listener for formautofill@mozilla.org
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 31 more
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="13996@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1544105263189" stop="1544105263279" status="canceled">
+            <name>TEST</name>
+            <failure>
+                <message>: Skipped due to dependency on other skipped or failed test methods</message>
+                <stack-trace>ru.yandex.qatools.allure.testng.AllureTestListener$1: Skipped due to dependency on other skipped or failed test methods
+	at ru.yandex.qatools.allure.testng.AllureTestListener.fireTestCaseCancel(AllureTestListener.java:424)
+	at ru.yandex.qatools.allure.testng.AllureTestListener.onTestSkipped(AllureTestListener.java:185)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1678)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1670)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="Test.businession"/>
+                <label name="testMethod" value="TEST"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="13996@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1544105263279" stop="1544105263279" status="canceled">
+            <name>AFTER</name>
+            <description>@AfterClass</description>
+            <failure>
+                <message>: Skipped due to dependency on other skipped or failed test methods</message>
+                <stack-trace>ru.yandex.qatools.allure.testng.AllureTestListener$1: Skipped due to dependency on other skipped or failed test methods
+	at ru.yandex.qatools.allure.testng.AllureTestListener.fireTestCaseCancel(AllureTestListener.java:424)
+	at ru.yandex.qatools.allure.testng.AllureTestListener.onConfigurationSkip(AllureTestListener.java:119)
+	at org.testng.internal.Invoker.runConfigurationListeners(Invoker.java:1656)
+	at org.testng.internal.Invoker.handleConfigurationSkip(Invoker.java:253)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:191)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:220)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="13996@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

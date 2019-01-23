@@ -5,7 +5,6 @@
     <classes>
       <class name="Test.playergamerecord">
         <methods>
-          <include name="test"/>
           <include name="before"/>
           <include name="after"/>
         </methods>
@@ -14,7 +13,6 @@
         <methods>
           <include name="before"/>
           <include name="after"/>
-          <include name="test"/>
         </methods>
       </class> <!-- Test.businessionOp -->
       <class name="Test.rechargecashrecord">
@@ -35,7 +33,6 @@
         <methods>
           <include name="before"/>
           <include name="after"/>
-          <include name="test"/>
         </methods>
       </class> <!-- Test.playeraccountmanagement -->
       <class name="Test.businession">

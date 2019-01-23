@@ -1,2 +1,8 @@
+Test\playeraccountmanagement.class
 publicModel\pobliclogin.class
+Test\businession.class
 Test\Stopserve.class
+gameWebTest\Playerlist.class
+Test\playergamerecord.class
+Test\businessionOp.class
+Test\rechargecashrecord.class

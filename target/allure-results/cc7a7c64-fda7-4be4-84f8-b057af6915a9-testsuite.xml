@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite start="1540471486560" stop="1540471486629" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
-    <name>All Test Suite : C:/Users/jtc/IdeaProjects/game</name>
-    <title>All Test Suite : C:/Users/jtc/IdeaProjects/game</title>
-    <labels>
-        <label name="framework" value="TestNG"/>
-        <label name="language" value="JAVA"/>
-    </labels>
-</ns2:test-suite>

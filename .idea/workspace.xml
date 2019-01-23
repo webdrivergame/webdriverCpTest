@@ -2,32 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96204fec-b768-4500-a32d-bdf317ef3d35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test/Stopserve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test/businession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test/businessionOp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test/playeraccountmanagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test/playergamerecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test/rechargecashrecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gameWebTest/Playerlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestScoket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageMelement/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProFileUtil/ProFileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumTest/base/Driverbase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumTest/base/SelectDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/logintest/base/LoginCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test/firestclass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test/firstdemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test/loginclass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/Stopserve.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/businession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/businessionOp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/playeraccountmanagement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/playergamerecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/rechargecashrecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gameWebTest/Playerlist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/publicModel/pobliclogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/01858904-1576-4ee6-ab01-99b41f3d5545-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/06d57468-369d-4ad1-9ae0-b5e39c04c357-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0f6253d4-a6f8-4f7a-b5c1-fe81964f2fb8-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1ab28047-1237-4eed-ae94-673cff493f6f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1c429619-754c-40c9-9c1b-ea5900c430c7-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/24654c91-b19e-42a6-bdfe-6eba3d715ba8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/26e0d14d-1abe-465c-b9e0-93e531ba2b46-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/273d1802-b77c-4c97-ba78-f78c8932df62-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2847cc9d-bfa1-493c-b177-1d63b4b93fd5-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2a871a49-4d18-4f88-80c7-8304936a15ed-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2b96d262-fccc-4cb9-b296-d54b95b65af8-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/307d5d41-3f0d-411c-91c6-1e05584a0c31-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/30b3c5b6-e53f-4934-bca9-af93a19a2272-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/30cf38b8-70c9-4102-b542-94c0be238d78-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3a216675-f10b-445e-8e6d-f037d5426503-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3d5f0e87-e272-4cfc-bd0d-a6c9af4713d9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3d69ce92-2a39-49d0-b5e3-989ddf67a562-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3dbfd907-b0be-4861-84d3-54d0d4c4e17a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/401a4528-0719-4b92-a4cb-e19f94a562ce-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/42d570e9-aa9f-4189-ab2e-5ec068fed397-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/48534c68-4366-49fe-b6ba-656985670d9f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4e27ae04-4f3b-44be-984f-275c73c73adc-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5e4d7663-b604-4c84-96eb-f8c4c5e78a89-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/704b34ff-16e3-4a87-9f3d-5058d4d64edd-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/74d342f9-7b49-4e9e-a7b0-2cd05a04758a-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7927866b-dc64-4bc1-839e-d06516fd1573-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/82f85264-396a-4c8b-9434-4a1b1cbf5fe2-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/8411af83-2396-408d-aa87-301f75da8979-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/87619f18-8b43-4ea9-a9c3-6824a1daeced-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/8f513538-c4bf-411a-98c4-36b49ecdef3f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a5140f4f-f480-4f74-99c3-5a0c91c0bb01-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a8d0be35-4a8e-4c34-8e36-c3650127702f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/b79d7eb2-b855-432b-bd4d-fa458a9e57db-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/c7a867fb-3479-4a5b-bf2c-e7ab194e642b-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/cc7a7c64-fda7-4be4-84f8-b057af6915a9-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/cf56f5b6-8b5f-4950-a9e2-badde1241ce9-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/de38cc32-2e94-4116-9f99-0568b4e39623-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/fea8d8fa-759a-4568-9462-b1d798307c66-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_jtc_IdeaProjects_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_jtc_IdeaProjects_game.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_jtc_IdeaProjects_game.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_jtc_IdeaProjects_game.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Test.Stopserve.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Test.businession.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Test.businession.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Test.businessionOp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Test.businessionOp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Test.playeraccountmanagement.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Test.playeraccountmanagement.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Test.playergamerecord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Test.playergamerecord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Test.rechargecashrecord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Test.rechargecashrecord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-gameWebTest.Playerlist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-gameWebTest.Playerlist.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/testng.xml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/toc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,52 +88,67 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/game$rechargecashrecord.ic" NAME="rechargecashrecord Coverage Results" MODIFIED="1548061475418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Test.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-997552775">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="44" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.21" value="3" />
-          <entry key="project.open.time.22" value="3" />
-          <entry key="project.open.time.23" value="3" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.20" value="3" />
+          <entry key="project.open.time.21" value="4" />
+          <entry key="project.open.time.22" value="6" />
+          <entry key="project.open.time.23" value="6" />
+          <entry key="project.open.time.24" value="5" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="7" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.open.time.6" value="8" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.opened" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1578" />
-          <entry key="xml" value="372" />
+          <entry key="dummy" value="1" />
+          <entry key="java" value="4936" />
+          <entry key="xml" value="389" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1578" />
-          <entry key="XML" value="372" />
+          <entry key="JAVA" value="4936" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="389" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="25" />
+          <entry key="java" value="88" />
+          <entry key="md" value="1" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="25" />
+          <entry key="JAVA" value="88" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
     </session>
@@ -90,107 +156,154 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Test/Stopserve.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="21" column="94" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
+            <state relative-caret-position="-8">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/logintest/base/LoginCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2611#2612#0" expanded="true" />
+                <element signature="e#2640#2641#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/publicModel/pobliclogin.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/seleniumTest/base/Driverbase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="420">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testng.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Test/playergamerecord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="20072">
+              <caret line="1143" column="13" selection-start-line="1143" selection-start-column="13" selection-end-line="1143" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2284#2285#0" expanded="true" />
+                <element signature="e#2364#2365#0" expanded="true" />
+                <element signature="e#10642#10643#0" expanded="true" />
+                <element signature="e#10718#10719#0" expanded="true" />
+                <element signature="e#10772#10773#0" expanded="true" />
+                <element signature="e#10848#10849#0" expanded="true" />
+                <element signature="e#10901#10902#0" expanded="true" />
+                <element signature="e#10971#10972#0" expanded="true" />
+                <element signature="e#11033#11034#0" expanded="true" />
+                <element signature="e#11112#11113#0" expanded="true" />
+                <element signature="e#11169#11170#0" expanded="true" />
+                <element signature="e#11247#11248#0" expanded="true" />
+                <element signature="e#11311#11312#0" expanded="true" />
+                <element signature="e#11396#11397#0" expanded="true" />
+                <element signature="e#11453#11454#0" expanded="true" />
+                <element signature="e#11527#11528#0" expanded="true" />
+                <element signature="e#11808#11809#0" expanded="true" />
+                <element signature="e#11887#11888#0" expanded="true" />
+                <element signature="e#12104#12105#0" expanded="true" />
+                <element signature="e#12175#12176#0" expanded="true" />
+                <element signature="e#12237#12238#0" expanded="true" />
+                <element signature="e#12314#12315#0" expanded="true" />
+                <element signature="e#14822#14823#0" expanded="true" />
+                <element signature="e#14893#14894#0" expanded="true" />
+                <element signature="e#14952#14953#0" expanded="true" />
+                <element signature="e#15027#15028#0" expanded="true" />
+                <element signature="e#15086#15087#0" expanded="true" />
+                <element signature="e#15165#15166#0" expanded="true" />
+                <element signature="e#15377#15378#0" expanded="true" />
+                <element signature="e#15454#15455#0" expanded="true" />
+                <element signature="e#24642#24643#0" expanded="true" />
+                <element signature="e#24718#24719#0" expanded="true" />
+                <element signature="e#24772#24773#0" expanded="true" />
+                <element signature="e#24851#24852#0" expanded="true" />
+                <element signature="e#24895#24896#0" expanded="true" />
+                <element signature="e#24965#24966#0" expanded="true" />
+                <element signature="e#25014#25015#0" expanded="true" />
+                <element signature="e#25088#25089#0" expanded="true" />
+                <element signature="e#26840#26841#0" expanded="true" />
+                <element signature="e#26915#26916#0" expanded="true" />
+                <element signature="e#31285#31286#0" expanded="true" />
+                <element signature="e#31373#31374#0" expanded="true" />
+                <element signature="e#31776#31777#0" expanded="true" />
+                <element signature="e#31858#31859#0" expanded="true" />
+                <element signature="e#32253#32254#0" expanded="true" />
+                <element signature="e#32336#32337#0" expanded="true" />
+                <element signature="e#40781#40782#0" expanded="true" />
+                <element signature="e#40846#40847#0" expanded="true" />
+                <element signature="e#41079#41080#0" expanded="true" />
+                <element signature="e#41147#41148#0" expanded="true" />
+                <element signature="e#41265#41266#0" expanded="true" />
+                <element signature="e#41331#41332#0" expanded="true" />
+                <element signature="e#41383#41384#0" expanded="true" />
+                <element signature="e#41447#41448#0" expanded="true" />
+                <element signature="e#41502#41503#0" expanded="true" />
+                <element signature="e#41588#41589#0" expanded="true" />
+                <element signature="e#41751#41752#0" expanded="true" />
+                <element signature="e#41821#41822#0" expanded="true" />
+                <element signature="e#42427#42428#0" expanded="true" />
+                <element signature="e#42507#42508#0" expanded="true" />
+                <element signature="e#42556#42557#0" expanded="true" />
+                <element signature="e#42624#42625#0" expanded="true" />
+                <element signature="e#42669#42670#0" expanded="true" />
+                <element signature="e#42733#42734#0" expanded="true" />
+                <element signature="e#42787#42788#0" expanded="true" />
+                <element signature="e#42860#42861#0" expanded="true" />
+                <element signature="e#42909#42910#0" expanded="true" />
+                <element signature="e#42977#42978#0" expanded="true" />
+                <element signature="e#43047#43048#0" expanded="true" />
+                <element signature="e#43149#43150#0" expanded="true" />
+                <element signature="e#44344#44345#0" expanded="true" />
+                <element signature="e#44392#44393#0" expanded="true" />
+                <element signature="e#44501#44502#0" expanded="true" />
+                <element signature="e#44548#44549#0" expanded="true" />
+                <element signature="e#44634#44635#0" expanded="true" />
+                <element signature="e#44703#44704#0" expanded="true" />
+                <element signature="e#45016#45017#0" expanded="true" />
+                <element signature="e#45074#45075#0" expanded="true" />
+                <element signature="e#45171#45172#0" expanded="true" />
+                <element signature="e#45234#45235#0" expanded="true" />
+                <element signature="e#45346#45347#0" expanded="true" />
+                <element signature="e#45404#45405#0" expanded="true" />
+                <element signature="e#45525#45526#0" expanded="true" />
+                <element signature="e#45586#45587#0" expanded="true" />
+                <element signature="e#45680#45681#0" expanded="true" />
+                <element signature="e#45741#45742#0" expanded="true" />
+                <element signature="e#48540#48541#0" expanded="true" />
+                <element signature="e#48621#48622#0" expanded="true" />
+                <element signature="e#48687#48688#0" expanded="true" />
+                <element signature="e#48766#48767#0" expanded="true" />
+                <element signature="e#51906#51907#0" expanded="true" />
+                <element signature="e#51975#51976#0" expanded="true" />
+                <element signature="e#53453#53454#0" expanded="true" />
+                <element signature="e#53526#53527#0" expanded="true" />
+                <element signature="e#53697#53698#0" expanded="true" />
+                <element signature="e#53765#53766#0" expanded="true" />
+                <element signature="e#58787#58803#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/gameWebTest/Playerlist.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Test/playeraccountmanagement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Test/rechargecashrecord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Test/businession.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1149#1150#0" expanded="true" />
-                <element signature="e#1178#1179#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Test/businessionOp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1650#1651#0" expanded="true" />
-                <element signature="e#1679#1680#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="84">
+              <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -201,8 +314,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="TestNG Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>C:\Users\jtc\IdeaProjects\game</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -211,19 +330,43 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Test/firestclass.java" />
-        <option value="$PROJECT_DIR$/src/test/java/publicModel/pobliclogin.java" />
         <option value="$PROJECT_DIR$/src/test/java/Test/loginclass.java" />
         <option value="$PROJECT_DIR$/src/test/java/Test/firstdemo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Test/Stopserve.java" />
-        <option value="$PROJECT_DIR$/src/test/java/gameWebTest/Playerlist.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Test/playergamerecord.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Test/playeraccountmanagement.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Test/rechargecashrecord.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Test/businession.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Test/businessionOp.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Test/Stopserve.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Test/testclass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Test/classat.java" />
+        <option value="$PROJECT_DIR$/src/test/java/learnTest/classdy.java" />
+        <option value="$PROJECT_DIR$/src/test/java/learnTest/Statictest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/learnTest/classlogin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/learnTest/publicModel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/publicModel/pobliclogin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/selenium/pack/MyWebDriver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Test/businession.java" />
+        <option value="$PROJECT_DIR$/src/test/java/learnTest/gemetest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/learnTest/DateTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/learnTest/method.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Test/playergamerecord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TestScoket.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Test/playeraccountmanagement.java" />
+        <option value="$PROJECT_DIR$/src/test/java/gameWebTest/Playerlist.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Test/businessionOp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/gametest/trydriverrun.java" />
+        <option value="$PROJECT_DIR$/src/test/java/gametest/playlisttest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/selenium/pack/MyWebdriver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Test/rechargecashrecord.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/selenium/wushuaiTest/base.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/seleniumTest/base/SelectDriver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/logintest/base/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/logintest/base/LoginCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ProFileUtil/ProFileUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageMelement/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/seleniumTest/base/Driverbase.java" />
       </list>
     </option>
   </component>
@@ -233,11 +376,42 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="game" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="1690" />
+    <option name="y" value="26" />
+    <option name="width" value="1550" />
+    <option name="height" value="831" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>JavadocJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>JavadocReference</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -245,6 +419,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,7 +430,18 @@
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
@@ -276,23 +462,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gameWebTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="publicModel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="PublicMethod" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
@@ -303,19 +473,32 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540906092559" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/testng.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548228791713" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="PublicMethod" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="logintest.base" />
+      <recent name="com.seleniumTest.base" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -329,30 +512,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/jtc/IdeaProjects/game/testng.xml">
-    <configuration name="C:/Users/jtc/IdeaProjects/game/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.rechargecashrecord">
     <configuration name="Playerlist" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
@@ -361,15 +521,25 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="gameWebTest" />
       <option name="MAIN_CLASS_NAME" value="gameWebTest.Playerlist" />
+      <option name="GROUP_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Stopserve" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="playeraccountmanagement" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
         <pattern>
@@ -378,14 +548,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.Stopserve" />
+      <option name="MAIN_CLASS_NAME" value="Test.playeraccountmanagement" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="firstdemo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="playergamerecord" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
         <pattern>
@@ -394,7 +564,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.firstdemo" />
+      <option name="MAIN_CLASS_NAME" value="Test.playergamerecord" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rechargecashrecord" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.rechargecashrecord" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rechargecashrecord.test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.rechargecashrecord" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -402,22 +606,24 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.C:/Users/jtc/IdeaProjects/game/testng.xml" />
-      <item itemvalue="TestNG.firstdemo" />
-      <item itemvalue="TestNG.Stopserve" />
       <item itemvalue="TestNG.Playerlist" />
+      <item itemvalue="TestNG.rechargecashrecord" />
+      <item itemvalue="TestNG.playergamerecord" />
+      <item itemvalue="TestNG.rechargecashrecord.test" />
+      <item itemvalue="TestNG.playeraccountmanagement" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/jtc/IdeaProjects/game/testng.xml" />
+        <item itemvalue="TestNG.rechargecashrecord" />
+        <item itemvalue="TestNG.rechargecashrecord.test" />
+        <item itemvalue="TestNG.playeraccountmanagement" />
+        <item itemvalue="TestNG.playergamerecord" />
         <item itemvalue="TestNG.Playerlist" />
-        <item itemvalue="TestNG.firstdemo" />
-        <item itemvalue="TestNG.Stopserve" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\jtc\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -450,44 +656,66 @@
       <workItem from="1540808315972" duration="4431000" />
       <workItem from="1540891055866" duration="309000" />
       <workItem from="1540895767565" duration="1600000" />
-      <workItem from="1540900999001" duration="4284000" />
+      <workItem from="1540900999001" duration="6054000" />
+      <workItem from="1540971213231" duration="283000" />
+      <workItem from="1540972077403" duration="4842000" />
+      <workItem from="1541132852426" duration="392000" />
+      <workItem from="1541328304841" duration="11000" />
+      <workItem from="1541509380630" duration="838000" />
+      <workItem from="1541820625073" duration="5000" />
+      <workItem from="1542198074594" duration="43000" />
+      <workItem from="1542268278392" duration="8479000" />
+      <workItem from="1542444709798" duration="10751000" />
+      <workItem from="1542510592565" duration="1390000" />
+      <workItem from="1542525597300" duration="1589000" />
+      <workItem from="1544104817993" duration="2228000" />
+      <workItem from="1544172171519" duration="4495000" />
+      <workItem from="1544647083130" duration="238000" />
+      <workItem from="1545367693066" duration="4297000" />
+      <workItem from="1545919844150" duration="11091000" />
+      <workItem from="1546854576527" duration="1198000" />
+      <workItem from="1546993672659" duration="14531000" />
+      <workItem from="1547992550641" duration="2158000" />
+      <workItem from="1548058167340" duration="3917000" />
+      <workItem from="1548128846386" duration="4111000" />
+      <workItem from="1548162648838" duration="11672000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Playerlist - 2018.10.29 at 17h 47m 28s.xml">
-      <configuration name="Playerlist" configurationId="TestNG" />
+    <history-entry file="rechargecashrecord - 2019.01.22 at 20h 19m 20s.xml">
+      <configuration name="rechargecashrecord" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Playerlist - 2018.10.29 at 17h 48m 40s.xml">
-      <configuration name="Playerlist" configurationId="TestNG" />
+    <history-entry file="rechargecashrecord - 2019.01.22 at 20h 20m 36s.xml">
+      <configuration name="rechargecashrecord" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Playerlist - 2018.10.29 at 17h 51m 50s.xml">
-      <configuration name="Playerlist" configurationId="TestNG" />
+    <history-entry file="rechargecashrecord - 2019.01.22 at 20h 23m 02s.xml">
+      <configuration name="rechargecashrecord" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Playerlist - 2018.10.29 at 17h 52m 44s.xml">
-      <configuration name="Playerlist" configurationId="TestNG" />
+    <history-entry file="rechargecashrecord - 2019.01.22 at 20h 26m 16s.xml">
+      <configuration name="rechargecashrecord" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Playerlist - 2018.10.29 at 17h 54m 37s.xml">
-      <configuration name="Playerlist" configurationId="TestNG" />
+    <history-entry file="rechargecashrecord - 2019.01.22 at 20h 28m 11s.xml">
+      <configuration name="rechargecashrecord" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Playerlist - 2018.10.29 at 19h 14m 51s.xml">
-      <configuration name="Playerlist" configurationId="TestNG" />
+    <history-entry file="rechargecashrecord - 2019.01.22 at 20h 29m 00s.xml">
+      <configuration name="rechargecashrecord" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Playerlist - 2018.10.29 at 19h 16m 18s.xml">
-      <configuration name="Playerlist" configurationId="TestNG" />
+    <history-entry file="rechargecashrecord - 2019.01.22 at 20h 32m 28s.xml">
+      <configuration name="rechargecashrecord" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Playerlist - 2018.10.29 at 19h 19m 19s.xml">
-      <configuration name="Playerlist" configurationId="TestNG" />
+    <history-entry file="rechargecashrecord - 2019.01.22 at 20h 34m 47s.xml">
+      <configuration name="rechargecashrecord" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Playerlist - 2018.10.30 at 19h 49m 48s.xml">
-      <configuration name="Playerlist" configurationId="TestNG" />
+    <history-entry file="rechargecashrecord - 2019.01.22 at 20h 35m 12s.xml">
+      <configuration name="rechargecashrecord" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Playerlist - 2018.10.30 at 19h 50m 54s.xml">
-      <configuration name="Playerlist" configurationId="TestNG" />
+    <history-entry file="rechargecashrecord - 2019.01.22 at 20h 36m 49s.xml">
+      <configuration name="rechargecashrecord" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55118000" />
+    <option name="totallyTimeSpent" value="145447000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,10 +727,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24463807" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17803837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -510,17 +737,17 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23262411" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18566775" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.53745925" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32681867" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32765958" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32765958" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3257329" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -529,7 +756,8 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,88 +775,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Test/firestclass.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/gameTest.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2484">
-          <caret line="108" column="47" selection-start-line="108" selection-start-column="47" selection-end-line="108" selection-end-column="47" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test/firstdemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test/loginclass.java" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/publicModel/pobliclogin.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/learnTest/classdy.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test/classat.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test/testclass.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/learnTest/classlogin.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/learnTest/publicModel.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="-1272">
+          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/publicModel/loginmodel.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestScoket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/gametest/trydriverrun.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test/Stopserve.java" />
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/learnTest/DateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/gametest/playlisttest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/learnTest/Statictest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/learnTest/method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/learnTest/gemetest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Test/playergamerecord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Test/rechargecashrecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Test/businession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Test/businessionOp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#1679#1680#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/gameWebTest/Playerlist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Test/firstdemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Test/loginclass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="115">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -637,28 +857,282 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Test/playeraccountmanagement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="483">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Test/Stopserve.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test/businessionOp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="21" column="94" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
+        <state relative-caret-position="115">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test/businession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        <state relative-caret-position="368">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/pack/MyWebdriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test/rechargecashrecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/gameWebTest/Playerlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/wushuaiTest/base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4439">
+          <caret line="193" column="5" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1318#1319#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1664#1665#0" expanded="true" />
+            <element signature="e#1704#1705#0" expanded="true" />
+            <element signature="e#1883#1884#0" expanded="true" />
+            <element signature="e#1934#1935#0" expanded="true" />
+            <element signature="e#2252#2253#0" expanded="true" />
+            <element signature="e#2293#2294#0" expanded="true" />
+            <element signature="e#2365#2366#0" expanded="true" />
+            <element signature="e#2414#2415#0" expanded="true" />
+            <element signature="e#2845#2846#0" expanded="true" />
+            <element signature="e#2895#2896#0" expanded="true" />
+            <element signature="e#2971#2972#0" expanded="true" />
+            <element signature="e#3020#3021#0" expanded="true" />
+            <element signature="e#3209#3217#0" expanded="true" />
+            <element signature="e#3329#3330#0" expanded="true" />
+            <element signature="e#3376#3377#0" expanded="true" />
+            <element signature="e#3458#3459#0" expanded="true" />
+            <element signature="e#3504#3505#0" expanded="true" />
+            <element signature="e#3565#3566#0" expanded="true" />
+            <element signature="e#3610#3611#0" expanded="true" />
+            <element signature="e#3674#3675#0" expanded="true" />
+            <element signature="e#3714#3715#0" expanded="true" />
+            <element signature="e#4295#4296#0" expanded="true" />
+            <element signature="e#4341#4342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/seleniumTest/base/SelectDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageMelement/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ProFileUtil/ProFileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/logintest/base/LoginCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2611#2612#0" expanded="true" />
+            <element signature="e#2640#2641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/seleniumTest/base/Driverbase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20072">
+          <caret line="1143" column="13" selection-start-line="1143" selection-start-column="13" selection-end-line="1143" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2284#2285#0" expanded="true" />
+            <element signature="e#2364#2365#0" expanded="true" />
+            <element signature="e#10642#10643#0" expanded="true" />
+            <element signature="e#10718#10719#0" expanded="true" />
+            <element signature="e#10772#10773#0" expanded="true" />
+            <element signature="e#10848#10849#0" expanded="true" />
+            <element signature="e#10901#10902#0" expanded="true" />
+            <element signature="e#10971#10972#0" expanded="true" />
+            <element signature="e#11033#11034#0" expanded="true" />
+            <element signature="e#11112#11113#0" expanded="true" />
+            <element signature="e#11169#11170#0" expanded="true" />
+            <element signature="e#11247#11248#0" expanded="true" />
+            <element signature="e#11311#11312#0" expanded="true" />
+            <element signature="e#11396#11397#0" expanded="true" />
+            <element signature="e#11453#11454#0" expanded="true" />
+            <element signature="e#11527#11528#0" expanded="true" />
+            <element signature="e#11808#11809#0" expanded="true" />
+            <element signature="e#11887#11888#0" expanded="true" />
+            <element signature="e#12104#12105#0" expanded="true" />
+            <element signature="e#12175#12176#0" expanded="true" />
+            <element signature="e#12237#12238#0" expanded="true" />
+            <element signature="e#12314#12315#0" expanded="true" />
+            <element signature="e#14822#14823#0" expanded="true" />
+            <element signature="e#14893#14894#0" expanded="true" />
+            <element signature="e#14952#14953#0" expanded="true" />
+            <element signature="e#15027#15028#0" expanded="true" />
+            <element signature="e#15086#15087#0" expanded="true" />
+            <element signature="e#15165#15166#0" expanded="true" />
+            <element signature="e#15377#15378#0" expanded="true" />
+            <element signature="e#15454#15455#0" expanded="true" />
+            <element signature="e#24642#24643#0" expanded="true" />
+            <element signature="e#24718#24719#0" expanded="true" />
+            <element signature="e#24772#24773#0" expanded="true" />
+            <element signature="e#24851#24852#0" expanded="true" />
+            <element signature="e#24895#24896#0" expanded="true" />
+            <element signature="e#24965#24966#0" expanded="true" />
+            <element signature="e#25014#25015#0" expanded="true" />
+            <element signature="e#25088#25089#0" expanded="true" />
+            <element signature="e#26840#26841#0" expanded="true" />
+            <element signature="e#26915#26916#0" expanded="true" />
+            <element signature="e#31285#31286#0" expanded="true" />
+            <element signature="e#31373#31374#0" expanded="true" />
+            <element signature="e#31776#31777#0" expanded="true" />
+            <element signature="e#31858#31859#0" expanded="true" />
+            <element signature="e#32253#32254#0" expanded="true" />
+            <element signature="e#32336#32337#0" expanded="true" />
+            <element signature="e#40781#40782#0" expanded="true" />
+            <element signature="e#40846#40847#0" expanded="true" />
+            <element signature="e#41079#41080#0" expanded="true" />
+            <element signature="e#41147#41148#0" expanded="true" />
+            <element signature="e#41265#41266#0" expanded="true" />
+            <element signature="e#41331#41332#0" expanded="true" />
+            <element signature="e#41383#41384#0" expanded="true" />
+            <element signature="e#41447#41448#0" expanded="true" />
+            <element signature="e#41502#41503#0" expanded="true" />
+            <element signature="e#41588#41589#0" expanded="true" />
+            <element signature="e#41751#41752#0" expanded="true" />
+            <element signature="e#41821#41822#0" expanded="true" />
+            <element signature="e#42427#42428#0" expanded="true" />
+            <element signature="e#42507#42508#0" expanded="true" />
+            <element signature="e#42556#42557#0" expanded="true" />
+            <element signature="e#42624#42625#0" expanded="true" />
+            <element signature="e#42669#42670#0" expanded="true" />
+            <element signature="e#42733#42734#0" expanded="true" />
+            <element signature="e#42787#42788#0" expanded="true" />
+            <element signature="e#42860#42861#0" expanded="true" />
+            <element signature="e#42909#42910#0" expanded="true" />
+            <element signature="e#42977#42978#0" expanded="true" />
+            <element signature="e#43047#43048#0" expanded="true" />
+            <element signature="e#43149#43150#0" expanded="true" />
+            <element signature="e#44344#44345#0" expanded="true" />
+            <element signature="e#44392#44393#0" expanded="true" />
+            <element signature="e#44501#44502#0" expanded="true" />
+            <element signature="e#44548#44549#0" expanded="true" />
+            <element signature="e#44634#44635#0" expanded="true" />
+            <element signature="e#44703#44704#0" expanded="true" />
+            <element signature="e#45016#45017#0" expanded="true" />
+            <element signature="e#45074#45075#0" expanded="true" />
+            <element signature="e#45171#45172#0" expanded="true" />
+            <element signature="e#45234#45235#0" expanded="true" />
+            <element signature="e#45346#45347#0" expanded="true" />
+            <element signature="e#45404#45405#0" expanded="true" />
+            <element signature="e#45525#45526#0" expanded="true" />
+            <element signature="e#45586#45587#0" expanded="true" />
+            <element signature="e#45680#45681#0" expanded="true" />
+            <element signature="e#45741#45742#0" expanded="true" />
+            <element signature="e#48540#48541#0" expanded="true" />
+            <element signature="e#48621#48622#0" expanded="true" />
+            <element signature="e#48687#48688#0" expanded="true" />
+            <element signature="e#48766#48767#0" expanded="true" />
+            <element signature="e#51906#51907#0" expanded="true" />
+            <element signature="e#51975#51976#0" expanded="true" />
+            <element signature="e#53453#53454#0" expanded="true" />
+            <element signature="e#53526#53527#0" expanded="true" />
+            <element signature="e#53697#53698#0" expanded="true" />
+            <element signature="e#53765#53766#0" expanded="true" />
+            <element signature="e#58787#58803#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -726,7 +1200,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: cglib:cglib-nodep:2.1_3</last-edited>
+          <last-edited>Maven: cglib:cglib-nodep:3.2.4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
