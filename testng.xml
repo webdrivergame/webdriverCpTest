@@ -3,12 +3,8 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/jtc/IdeaProjects/game">
         <classes>
-            <class name="gameWebTest.Playerlist"></class>
-            <class name="Test.playeraccountmanagement"></class>
-            <class name="Test.playergamerecord"></class>
-            <class name="Test.businession"></class>
-            <class name="Test.businessionOp"></class>
-            <class name="Test.rechargecashrecord"></class>
+            <class name=""></class>
+
 
         </classes>
     </test>

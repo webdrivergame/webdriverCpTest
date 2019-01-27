@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
  *
  */
 public class LoginPage {
+
     private WebElement element = null;
 
     // 指定页面元素定位表达式配置文件的绝对文件路径

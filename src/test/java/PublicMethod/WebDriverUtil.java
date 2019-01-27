@@ -8,11 +8,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
@@ -29,9 +25,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.HasInputDevices;
 import org.openqa.selenium.interactions.Keyboard;
@@ -46,40 +42,64 @@ import org.openqa.selenium.support.ui.WebDriverWait;
    46  */
            public class WebDriverUtil {
                private static WebDriver driver = null;
+
                private static Select select = null;
                private static Alert alert = null;
                private static WebElement element = null;
                private static List<WebElement> elementList = null;
                private static long timeOutInSeconds = 10;
-  //--------------------自定义常量------------------------
-             public final String LINE = "\r\n";
-             public final String smile = "^_^";
-             public final String sad = "*o*";
+               //--------------------自定义常量------------------------
+               public final String LINE = "\r\n";
+               public final String smile = "^_^";
+               public final String sad = "*o*";
 
-            public WebDriverUtil(long timeOutInSeconds) {
-               WebDriverUtil.timeOutInSeconds = timeOutInSeconds;
-            }
+               public WebDriverUtil(WebDriver driver) {
+                   WebDriverUtil.driver = driver;
+                   WebDriverUtil.timeOutInSeconds = timeOutInSeconds;
+               }
 
-            public WebDriverUtil() {}
+
 
               /**
-       *     指定浏览器打开URL
+       *     Chrome浏览器打开URL
          */
-              public static void openBrowser(String url, String browser) {
-               driver = initBrowser(browser);
-               driver.manage().timeouts().implicitlyWait(timeOutInSeconds, TimeUnit.SECONDS);
-               driver.get(url);
-            }
-      /**
-        *     指定浏览器打开URL
-       */
-              public static void openBrowser(String url) {
-                driver = initBrowser();
-                driver.get(url);
-            }
+              public void beforelogin(String Url){
 
-              /**
-       *    初始化浏览器，方式1
+                  System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+                  // 去掉浏览器中的“--ignore-certificate-errors”
+                  DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+                  capabilities.setCapability("chrome.switches",
+                          Arrays.asList("--incognito"));
+                  ChromeOptions options = new ChromeOptions();
+                  options.addArguments("--test-type");
+                  capabilities.setCapability("chrom.binary",
+                          "src/ucBrowserDrivers/chromedriver.exe");
+                  capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+                  driver = new ChromeDriver(capabilities);
+                  driver.get(Url);
+                  driver.manage().window().maximize();
+                  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+              }
+               /**
+                *    登录方法
+                *    *        adminlogin
+                */
+
+               public void adminlogin(String username,String password){
+                   WebElement user = driver.findElement(By.xpath("//*[@id=\"login_username\"]"));
+                   user.clear();
+                   user.click();
+                   user.sendKeys(username);
+                   WebElement pass = driver.findElement(By.xpath("//*[@id=\"login_password\"]"));
+                   pass.clear();
+                   pass.click();
+                   pass.sendKeys(password);
+               }
+
+
+               /**
+       *    初始化浏览器
          *        Firefox
         */
              public static WebDriver initBrowser() {
@@ -95,47 +115,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                  profile.setPreference("browser.download.folderList", 0);// 设置下载地址0是桌面；1是“我的下载”；2是自定义
                  profile.setPreference("browser.helperApps.neverAsk.saveToDisk",
                                  "application/octet-stream, application/vnd.ms-excel, text/csv, application/zip, application/msword");
-                profile.setPreference("dom.webnotifications.enabled", false);// 允许通知
+                 profile.setPreference("dom.webnotifications.enabled", false);// 允许通知
                  WebDriver driver = new FirefoxDriver(profile);// 启动火狐浏览器
                  driver.manage().window().maximize();// 设置窗口大小
-                driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);// 设置页面加载超时
+                 driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);// 设置页面加载超时
                  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);// 设置查询组件等待时间
                 return driver;
              }
 
-             /**
-       *     初始化浏览器，方式2
-      *         (ie, ff, chrome)
-        */
-              private static WebDriver initBrowser(String browser) {
-                  if ("ie".equals(browser)) {
-                      System.setProperty("webdriver.ie.driver", ".\\Tools\\IEDriverServer.exe");
-                      driver = new InternetExplorerDriver();
 
-                  } else if ("ff".equals(browser) || "firefox".equals(browser) || "Firefox".equals(browser) || "FireFox".equals(browser)) {/**
-                   *     FireFox安装方式为默认安装：
-                   *     FireFox版本小于48
-                   *         System.setProperty("webdriver.firefox.marionette", ".\\Tools\\geckodriver.exe");
-                   *     FireFox版本大于48，默认安装时可以试试，应该可以
-                   *         System.setProperty("webdriver.gecko.driver", ".\\Tools\\geckodriver.exe");
-                   */
-                      // FireFox安装方式为自定义安装
-                      System.setProperty("webdriver.firefox.bin", "D:\\ProgramFiles\\Mozilla Firefox\\firefox.exe");
-                      driver = new FirefoxDriver();
-
-                  } else if ("chrome".equals(browser) || "Chrome".equals(browser)) {
-                      System.setProperty("webdriver.chrome.driver", ".\\Tools\\chromedriver.exe");
-                      driver = new ChromeDriver();
-
-                  } else {
-                      try {
-                          throw new Exception("浏览器错误!");
-                      } catch (Exception e) {
-                          e.printStackTrace();
-                      }
-                  }
-                 return driver;
-             }
 
               //----------------------------------------------------元素相关-----------------------------------------------------------------------------
               /**
@@ -231,22 +219,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
               public WebElement findElementByXpath(String xpath) {
                  return driver.findElement(By.xpath(xpath));
              }
-      public WebElement findElementByTag(String tag) {
+              public WebElement findElementByTag(String tag) {
                  return driver.findElement(By.tagName(tag));
              }
-      public WebElement findElementById(String id) {
+              public WebElement findElementById(String id) {
                  return driver.findElement(By.id(id));
              }
-      public WebElement findElementByClassName(String name) {
+              public WebElement findElementByClassName(String name) {
                  return driver.findElement(By.className(name));
              }
-      public WebElement findElementByText(String text) {
+              public WebElement findElementByText(String text) {
                  return driver.findElement(By.linkText(text));
              }
-      public WebElement findElementByPartialText(String text) {
+              public WebElement findElementByPartialText(String text) {
                  return driver.findElement(By.partialLinkText(text));
              }
-      public WebElement findElementByName(String name) {
+              public WebElement findElementByName(String name) {
                  return driver.findElement(By.name(name));
              }
 
@@ -256,16 +244,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
               public List<WebElement> findElementsByClassName(String className) {
                  return driver.findElements(By.className(className));
              }
-      public List<WebElement> findElementsByText(String text) {
+              public List<WebElement> findElementsByText(String text) {
                  return driver.findElements(By.linkText(text));
              }
-      public List<WebElement> findElementsByPartialText(String text) {
+              public List<WebElement> findElementsByPartialText(String text) {
                  return driver.findElements(By.partialLinkText(text));
              }
-      public List<WebElement> findElementsById(String id) {
+              public List<WebElement> findElementsById(String id) {
                  return driver.findElements(By.id(id));
              }
-      public List<WebElement> findElementsByTag(String tag) {
+              public List<WebElement> findElementsByTag(String tag) {
                  return driver.findElements(By.tagName(tag));
              }
 
@@ -428,57 +416,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                          return false;
                      }
              }
-      /**
-        *     查找元素并输入值
-        * @param by      传入一个类型        例如：name
-        * @param byValue 传入一个类型值       例如：username
-        * @param key     填写要输入的值        例如：zhangsan
-        */
-              public boolean findElementClearAndSendKeys(String by, String byValue, String key) {
-                 try {
-                     if ("id".equals(by)) {
-                         findElementClear(by, byValue);
-                         driver.findElement(By.id(byValue)).sendKeys(key);
-                         return true;
-                     } else if ("name".equals(by)) {
-                         findElementClear(by, byValue);
-                         driver.findElement(By.name(byValue)).sendKeys(key);
-                         return true;
-                     } else if ("class".equals(by)) {
-                         findElementClear(by, byValue);
-                         driver.findElement(By.className(byValue)).sendKeys(key);
-                         return true;
-                     } else if ("tag".equals(by)) {
-                         findElementClear(by, byValue);
-                         driver.findElement(By.tagName(byValue)).sendKeys(key);
-                         return true;
-                     } else if ("link".equals(by)) {
-                         findElementClear(by, byValue);
-                         driver.findElement(By.linkText(byValue)).sendKeys(key);
-                         return true;
-                     } else if ("partiallinktext".equals(by)) {
-                         findElementClear(by, byValue);
-                         driver.findElement(By.partialLinkText(byValue)).sendKeys(key);
-
-                         findElementClear(by, byValue);
-                         driver.findElement(By.cssSelector(byValue)).sendKeys(key);
-                         return true;
-                     } else if ("css".equals(by)) {
-                         findElementClear(by, byValue);
-                         driver.findElement(By.cssSelector(byValue)).sendKeys(key);
-                         return true;
-                     } else if ("xpath".equals(by)) {
-                         findElementClear(by, byValue);
-                         driver.findElement(By.xpath(byValue)).sendKeys(key);
-                         return true;
-                     } else {
-                         throw new RuntimeException("输入的定位类型未在程序中定义，类型为：" + byValue);
-                     }
-                     } catch (Exception e) {
-                         System.out.println("*****没有找到元素,类型为：:" + by + "属性值为：" + byValue + "    的元素或者该元素无法输入****");
-                         return false;
-                    }
-             }
 
               /**
         *    定位元素并清空文本内容，输入相应的值
@@ -499,17 +436,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                  driver.findElement(By.name(name)).clear();
                  driver.findElement(By.name(name)).sendKeys(num + "");
              }
-              public void findElementByXpathAndClearSendkeys(String xpath, String text) {
-                 findElementByXpath(xpath).clear();
-                 findElementByXpath(xpath).sendKeys(text);
-             }
+
+
               public void findElementByXpathAndClearSendkeys(String xpath, int num) {
                  findElementByXpath(xpath).clear();
                  findElementByXpath(xpath).sendKeys(num + "");
              }
-              public void findElementByClassnameAndClearSendkeys(String classname, String text) {
-                 driver.findElement(By.className(classname)).clear();
-                 driver.findElement(By.className(classname)).sendKeys(text);
+              public void findElementByXpathAndClearSendkeys(String xpath, String text) {
+                 driver.findElement(By.xpath(xpath)).clear();
+                 driver.findElement(By.xpath(xpath)).sendKeys(text);
              }
               public void findElementByClassnameAndClearSendkeys(String classname, int num) {
                  driver.findElement(By.className(classname)).clear();
@@ -605,38 +540,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         *     1、指定时间内等待直到页面包含文本字符串
         * @param text        期望出现的文本
         * @param seconds     超时时间
-        * @return Boolean     检查给定文本是否存在于指定元素中, 超时则捕获抛出异常TimeoutException并返回false
-        * @see org.openqa.selenium.support.ui.ExpectedConditions.textToBePresentInElement(WebElement
+        * @return Boolean    检查给定文本是否存在于指定元素中, 超时则捕获抛出异常TimeoutException并返回false
+        * @see ExpectedConditions.textToBePresentInElement(WebElement
         *      element, String text)
         */
-              public static Boolean waitUntilPageContainText(String text, long seconds) {
+              public static Boolean waitUntilPageContain(String text,String xpath, long seconds) {
                  try {
                          return new WebDriverWait(driver, seconds)
-                                 .until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.tagName("body")), text));
+                                 .until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.xpath("xpath")), text));
                      } catch (Exception e) {
                          e.printStackTrace();
                          return false;
                      }
              }
 
-              /**
-        *     2、默认时间等待直到页面包含文本字符串
-        * @param text 期望出现的文本
-        * @return Boolean 检查给定文本是否存在于指定元素中, 超时则捕获抛出异常TimeoutException并返回false
-        * @see org.openqa.selenium.support.ui.ExpectedConditions.textToBePresentInElement(WebElement
-        *      element, String text)
-        */
-              public static Boolean waitUntilPageContainText(String text) {
-                 try {
-                         return new WebDriverWait(driver, timeOutInSeconds)
-                                 .until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.tagName("body")), text));
-                     } catch (Exception e) {
-                         e.printStackTrace();
-                         return false;
-                     }
-             }
-
-          //---------------------------------------元素判断---------------------------------------------------------
+               //---------------------------------------元素判断---------------------------------------------------------
               /**
         *     1、指定时间内等待直到元素存在于页面的DOM上并可见, 可见性意味着该元素不仅被显示, 而且具有大于0的高度和宽度
         * @param locator 元素定位器
@@ -655,22 +573,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                      }
              }
 
-              /**
-        *     2、默认时间内等待直到元素存在于页面的DOM上并可见, 可见性意味着该元素不仅被显示, 而且具有大于0的高度和宽度
-        * @param locator 元素定位器
-        * @return Boolean 检查给定元素的定位器是否出现, 超时则捕获抛出异常TimeoutException并返回false
-        * @see org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(By
-        *      locator)
-        */
-              public static Boolean waitUntilElementVisible(By locator) {
-                 try {
-                         new WebDriverWait(driver, timeOutInSeconds).until(ExpectedConditions.visibilityOfElementLocated(locator));
-                         return true;
-                     } catch (Exception e) {
-                         e.printStackTrace();
-                         return false;
-                     }
-             }
 
               /**
         *    判断元素是否显示
@@ -738,33 +640,34 @@ import org.openqa.selenium.support.ui.WebDriverWait;
              }
       // 自定义等待时间
               public static void sleep(int key) throws InterruptedException {
-                 switch (key) {
-                     case 0:
-                             Thread.sleep(500);
-                             break;
-                     case 1:
-                             Thread.sleep(2000);
-                             break;
-                     case 2:
-                             Thread.sleep(5000);
-                             break;
-                     default:
-                             System.out.println("错误");
-                             break;
-                     }
+                  if (key == 0) {
+                      Thread.sleep(500);
+
+                  } else if (key == 1) {
+                      Thread.sleep(2000);
+
+                  } else if (key == 2) {
+                      Thread.sleep(5000);
+
+                  } else {
+                      System.out.println("错误");
+
+                  }
              }
 
-          //---------------------------------------下拉列表操作---------------------------------------------------------// 根据id获取下拉框，根据index选择选项
+          //---------------------------------------下拉列表操作---------------------------------------------------------
+
+               // 根据id获取下拉框，根据index选择选项
               public void findSelectByIdAndSelectByIndex(String id, int index) {
                  Select select = new Select(findElementById(id));
                  select.selectByIndex(index);
              }
-      // 根据id获取下拉框，根据value选择选项
+              // 根据id获取下拉框，根据value选择选项
               public void findSelectByIdAndSelectByValue(String id, String value) {
                  Select select = new Select(findElementById(id));
                  select.selectByValue(value);
              }
-      // 根据id获取下拉框，根据text选择选项
+              // 根据id获取下拉框，根据text选择选项
               public void findSelectByIdAndSelectByText(String id, String text) {
                  Select select = new Select(findElementById(id));
                  select.selectByVisibleText(text);
@@ -775,12 +678,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                  Select select = new Select(findElementByClassName(name));
                  select.selectByVisibleText(text);
              }
-      // 根据classname获取下拉框，根据Value选择选项
+              // 根据classname获取下拉框，根据Value选择选项
               public void findSelectByClassNameAndSelectByValue(String name, String value) {
                  Select select = new Select(findElementByClassName(name));
                  select.selectByValue(value);
              }
-      // 根据classname获取下拉框，根据index选择选项
+              // 根据classname获取下拉框，根据index选择选项
               public void findSelectByClassNameAndSelectByIndex(String name, int index) {
                  Select select = new Select(findElementByClassName(name));
                  select.selectByIndex(index);
@@ -791,16 +694,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                  Select select = new Select(findElementByName(name));
                  select.selectByVisibleText(text);
              }
-      // 根据name获取下拉框，根据Value选择选项
+              // 根据name获取下拉框，根据Value选择选项
               public void findSelectByNameAndSelectByValue(String name, String value) {
                  Select select = new Select(findElementByName(name));
                  select.selectByValue(value);
              }
-      // 根据name获取下拉框，根据index选择选项
+              // 根据name获取下拉框，根据index选择选项
               public void findSelectByNameAndSelectByIndex(String name, int index) {
                  Select select = new Select(findElementByName(name));
                  select.selectByIndex(index);
              }
+              //根据xpath获取下拉框，根据name选择选项
+               public void findSelectByXpathAndSelectByValue(String xpath,String value){
+                  Select select = new Select(findElementByXpath(xpath));
+                  select.selectByValue(value);
+               }
+
 
               /**
         *     定位select并选中对应text的option
@@ -976,21 +885,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
               public void scrollToTop() {
                  ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,0);");
              }
-      // 滚动到页面底部
+              // 滚动到页面底部
               public void scrollToBottom(String id) {
                  ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,10000);");
              }
-      // 滚动到某个元素
+              // 滚动到某个元素
               public void scrollToElement(WebElement element) {
                  JavascriptExecutor js = (JavascriptExecutor) driver;
                  js.executeScript("arguments[0].scrollIntoView(true);", element);
              }
-      // js给指定元素value赋值
+              // js给指定元素value赋值
               public void inputTextByJs(String text, WebElement element) {
                  JavascriptExecutor js = (JavascriptExecutor) driver;
                  js.executeScript("arguments[0].value=" + text + "\"", element);
              }
-      // js使元素隐藏元素显示
+              // js使元素隐藏元素显示
               public void makeElementDisplay(WebElement element) {
                  JavascriptExecutor js = (JavascriptExecutor) driver;
                  js.executeScript("arguments[0].style=arguments[1]", element, "display: block;");
@@ -1200,6 +1109,31 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                      }
                  actions.release(driver.findElement(by)).perform();
              }
+
+             /**
+              * 浏览器返回
+              * */
+             public void back(){
+
+                 driver.navigate().back();
+             }
+
+             /**
+              * 浏览器刷新
+              * */
+             public void refreshpage(){
+
+                 driver.navigate().refresh();
+             }
+
+             /**
+              *  浏览器前进
+              * */
+             public void forward(){
+
+                 driver.navigate().forward();
+             }
+
 
          //---------------------------------------Cookie操作---------------------------------------------------------
              /**
