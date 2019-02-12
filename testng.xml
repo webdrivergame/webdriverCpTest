@@ -4,7 +4,7 @@
     <test verbose="2" preserve-order="true" name="C:/Users/jtc/IdeaProjects/game">
         <classes>
             <class name="GameTestCase.HomeCashPromotionTest"></class>
-
+            <class name="GameTestCase.HomeUnlimitedGoldTest"></class>
 
         </classes>
     </test>
