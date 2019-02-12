@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.955 s <<< FAILURE! - in TestSuite
-GoldNumber(GameTestCase.HomePlatformGoldNumberTest)  Time elapsed: 4.511 s  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 44.015 s <<< FAILURE! - in TestSuite
+ServiceFeeIncome(GameTestCase.HomeUnlimitedGoldTest)  Time elapsed: 8.212 s  <<< FAILURE!
 java.lang.AssertionError: expected [绠＄悊鍛樺皬瓒?] but found [管理员小超]
-	at GameTestCase.HomePlatformGoldNumberTest.GoldNumber(HomePlatformGoldNumberTest.java:34)
+	at GameTestCase.HomeUnlimitedGoldTest.ServiceFeeIncome(HomeUnlimitedGoldTest.java:27)
 

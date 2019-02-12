@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="10950" started-at="2019-02-12T04:47:07Z" finished-at="2019-02-12T04:47:18Z">
+  <suite name="All Test Suite" duration-ms="43291" started-at="2019-02-12T10:02:10Z" finished-at="2019-02-12T10:02:54Z">
     <groups>
     </groups>
-    <test name="C:/Users/jtc/IdeaProjects/game" duration-ms="10950" started-at="2019-02-12T04:47:07Z" finished-at="2019-02-12T04:47:18Z">
-      <class name="GameTestCase.HomePlatformGoldNumberTest">
-        <test-method status="PASS" signature="beforelogin()[pri:0, instance:GameTestCase.HomePlatformGoldNumberTest@4c40b76e]" name="beforelogin" is-config="true" duration-ms="6320" started-at="2019-02-12T11:47:07Z" finished-at="2019-02-12T11:47:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforelogin -->
-        <test-method status="FAIL" signature="GoldNumber()[pri:0, instance:GameTestCase.HomePlatformGoldNumberTest@4c40b76e]" name="GoldNumber" duration-ms="4505" started-at="2019-02-12T11:47:14Z" finished-at="2019-02-12T11:47:18Z">
+    <test name="C:/Users/jtc/IdeaProjects/game" duration-ms="43291" started-at="2019-02-12T10:02:10Z" finished-at="2019-02-12T10:02:54Z">
+      <class name="GameTestCase.HomeUnlimitedGoldTest">
+        <test-method status="FAIL" signature="ServiceFeeIncome()[pri:0, instance:GameTestCase.HomeUnlimitedGoldTest@1a052a00]" name="ServiceFeeIncome" duration-ms="8206" started-at="2019-02-12T17:02:31Z" finished-at="2019-02-12T17:02:39Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [绠＄悊鍛樺皬瓒�] but found [管理员小超]]]>
@@ -23,7 +19,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:178)
 	at org.testng.Assert.assertEquals(Assert.java:188)
-	at GameTestCase.HomePlatformGoldNumberTest.GoldNumber(HomePlatformGoldNumberTest.java:34)
+	at GameTestCase.HomeUnlimitedGoldTest.ServiceFeeIncome(HomeUnlimitedGoldTest.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,12 +53,22 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GoldNumber -->
-        <test-method status="PASS" signature="afterlogin()[pri:0, instance:GameTestCase.HomePlatformGoldNumberTest@4c40b76e]" name="afterlogin" is-config="true" duration-ms="1" started-at="2019-02-12T11:47:18Z" finished-at="2019-02-12T11:47:18Z">
+        </test-method> <!-- ServiceFeeIncome -->
+        <test-method status="PASS" signature="SinceBusinessOperationsTotalArrears()[pri:0, instance:GameTestCase.HomeUnlimitedGoldTest@1a052a00]" name="SinceBusinessOperationsTotalArrears" duration-ms="14375" started-at="2019-02-12T17:02:39Z" finished-at="2019-02-12T17:02:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterlogin -->
-      </class> <!-- GameTestCase.HomePlatformGoldNumberTest -->
+        </test-method> <!-- SinceBusinessOperationsTotalArrears -->
+      </class> <!-- GameTestCase.HomeUnlimitedGoldTest -->
+      <class name="GameTestCase.HomeCashPromotionTest">
+        <test-method status="PASS" signature="TodayGenerateCommission()[pri:0, instance:GameTestCase.HomeCashPromotionTest@7bb58ca3]" name="TodayGenerateCommission" duration-ms="9449" started-at="2019-02-12T17:02:10Z" finished-at="2019-02-12T17:02:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TodayGenerateCommission -->
+        <test-method status="PASS" signature="TodaySystemWinOrLose()[pri:0, instance:GameTestCase.HomeCashPromotionTest@7bb58ca3]" name="TodaySystemWinOrLose" duration-ms="11120" started-at="2019-02-12T17:02:20Z" finished-at="2019-02-12T17:02:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TodaySystemWinOrLose -->
+      </class> <!-- GameTestCase.HomeCashPromotionTest -->
     </test> <!-- C:/Users/jtc/IdeaProjects/game -->
   </suite> <!-- All Test Suite -->
 </testng-results>

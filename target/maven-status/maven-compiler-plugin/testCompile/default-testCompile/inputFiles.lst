@@ -1,8 +1,3 @@
-C:\Users\jtc\IdeaProjects\game\src\test\java\Test\businessionOp.java
-C:\Users\jtc\IdeaProjects\game\src\test\java\gameWebTest\Playerlist.java
-C:\Users\jtc\IdeaProjects\game\src\test\java\Test\playeraccountmanagement.java
-C:\Users\jtc\IdeaProjects\game\src\test\java\Test\businession.java
-C:\Users\jtc\IdeaProjects\game\src\test\java\publicModel\pobliclogin.java
-C:\Users\jtc\IdeaProjects\game\src\test\java\Test\rechargecashrecord.java
-C:\Users\jtc\IdeaProjects\game\src\test\java\Test\playergamerecord.java
-C:\Users\jtc\IdeaProjects\game\src\test\java\Test\Stopserve.java
+C:\Users\jtc\IdeaProjects\game\src\test\java\GameTestCase\HomeCashPromotionTest.java
+C:\Users\jtc\IdeaProjects\game\src\test\java\PublicMethod\WebDriverUtil.java
+C:\Users\jtc\IdeaProjects\game\src\test\java\GameTestCase\HomeUnlimitedGoldTest.java
