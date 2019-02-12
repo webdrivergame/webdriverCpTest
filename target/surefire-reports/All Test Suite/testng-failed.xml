@@ -3,45 +3,13 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
   <test name="C:/Users/jtc/IdeaProjects/game(failed)">
     <classes>
-      <class name="Test.playergamerecord">
+      <class name="GameTestCase.HomePlatformGoldNumberTest">
         <methods>
-          <include name="before"/>
-          <include name="after"/>
+          <include name="beforelogin"/>
+          <include name="afterlogin"/>
+          <include name="GoldNumber"/>
         </methods>
-      </class> <!-- Test.playergamerecord -->
-      <class name="Test.businessionOp">
-        <methods>
-          <include name="before"/>
-          <include name="after"/>
-        </methods>
-      </class> <!-- Test.businessionOp -->
-      <class name="Test.rechargecashrecord">
-        <methods>
-          <include name="after"/>
-          <include name="test"/>
-          <include name="before"/>
-        </methods>
-      </class> <!-- Test.rechargecashrecord -->
-      <class name="gameWebTest.Playerlist">
-        <methods>
-          <include name="before"/>
-          <include name="test"/>
-          <include name="after"/>
-        </methods>
-      </class> <!-- gameWebTest.Playerlist -->
-      <class name="Test.playeraccountmanagement">
-        <methods>
-          <include name="before"/>
-          <include name="after"/>
-        </methods>
-      </class> <!-- Test.playeraccountmanagement -->
-      <class name="Test.businession">
-        <methods>
-          <include name="after"/>
-          <include name="test"/>
-          <include name="before"/>
-        </methods>
-      </class> <!-- Test.businession -->
+      </class> <!-- GameTestCase.HomePlatformGoldNumberTest -->
     </classes>
   </test> <!-- C:/Users/jtc/IdeaProjects/game(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

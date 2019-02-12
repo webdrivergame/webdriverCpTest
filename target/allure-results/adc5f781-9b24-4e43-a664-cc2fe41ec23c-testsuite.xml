@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1549962258943" stop="1549962279433" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : game</name>
+    <title>Default Suite : game</title>
+    <test-cases>
+        <test-case start="1549962259028" stop="1549962268527" status="passed">
+            <name>TodayGenerateCommission</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="GameTestCase.HomeTodaySystemWinOrLose"/>
+                <label name="testMethod" value="TodayGenerateCommission"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="13628@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1549962268530" stop="1549962279417" status="passed">
+            <name>TodaySystemWinOrLose</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="GameTestCase.HomeTodaySystemWinOrLose"/>
+                <label name="testMethod" value="TodaySystemWinOrLose"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="13628@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

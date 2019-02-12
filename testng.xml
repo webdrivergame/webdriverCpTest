@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/jtc/IdeaProjects/game">
         <classes>
-            <class name=""></class>
+            <class name="GameTestCase.HomeCashPromotionTest"></class>
 
 
         </classes>

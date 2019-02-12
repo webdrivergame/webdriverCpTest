@@ -60,27 +60,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
-              /**
-       *     Chrome浏览器打开URL
-         */
-              public void beforelogin(String Url){
 
-                  System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
-                  // 去掉浏览器中的“--ignore-certificate-errors”
-                  DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-                  capabilities.setCapability("chrome.switches",
-                          Arrays.asList("--incognito"));
-                  ChromeOptions options = new ChromeOptions();
-                  options.addArguments("--test-type");
-                  capabilities.setCapability("chrom.binary",
-                          "src/ucBrowserDrivers/chromedriver.exe");
-                  capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-                  driver = new ChromeDriver(capabilities);
-                  driver.get(Url);
-                  driver.manage().window().maximize();
-                  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-              }
                /**
                 *    登录方法
                 *    *        adminlogin
@@ -95,6 +75,32 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                    pass.clear();
                    pass.click();
                    pass.sendKeys(password);
+               }
+
+               //浏览器打开Url
+
+               public void LoginBefore(){
+                   System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+                   // 去掉浏览器中的“--ignore-certificate-errors”
+                   DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+                   capabilities.setCapability("chrome.switches",
+                           Arrays.asList("--incognito"));
+                   ChromeOptions options = new ChromeOptions();
+                   options.addArguments("--test-type");
+                   capabilities.setCapability("chrom.binary",
+                           "src/ucBrowserDrivers/chromedriver.exe");
+                   capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+                   driver = new ChromeDriver(capabilities);
+                   String Url = "http://192.168.1.9:9091";
+                   driver.get(Url);
+                   driver.manage().window().maximize();
+                   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+               }
+
+               //登陆之后
+
+               public void LoginAfter(){
+                   driver.close();
                }
 
 
