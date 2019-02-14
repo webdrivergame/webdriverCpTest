@@ -1,20 +1,25 @@
 package GameTestCase;
 
+import ListenerPackage.Assertion;
 import PublicMethod.WebDriverUtil;
 
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-
+import org.testng.asserts.SoftAssert;
+import ru.yandex.qatools.allure.annotations.Title;
 
 
 public class HomeUnlimitedGoldTest {
 
     private WebDriver driver;
-
-
-    @Test
+    private SoftAssert softAssert = new SoftAssert();
+    @Feature("平台首页")
+    @Story("无限金币")
+    @Title("今日服务费收入")
+    @Test(priority = 1)
     private void ServiceFeeIncome() throws InterruptedException {
         WebDriverUtil driverUtil2 = new WebDriverUtil(driver);
         driverUtil2.LoginBefore();
@@ -28,16 +33,14 @@ public class HomeUnlimitedGoldTest {
         String ServiceFeeIncomeToday = driverUtil2.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[2]/div[1]/div/div/div/div[1]/div[2]/div[2]/span/span[3]");
         driverUtil2.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[2]/div[1]/div/div/div/div[1]/div[2]/div[2]/span/span[3]");
         String ServiceFeeIncomeTodayJump = driverUtil2.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div[3]/span[2]");
-
-        try {
-            Assert.assertEquals(ServiceFeeIncomeToday,ServiceFeeIncomeTodayJump);
-        }catch (AssertionError error){
-            System.out.println("今日服务费收入与跳转金额不相同");
-        }
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(ServiceFeeIncomeToday,ServiceFeeIncomeTodayJump);
+            Assert.assertTrue(Assertion.currentFlag());
         driverUtil2.LoginAfter();
     }
 
-    @Test
+    @Title("自运营商户欠款总计")
+    @Test(priority = 2)
     public void SinceBusinessOperationsTotalArrears() throws InterruptedException {
         WebDriverUtil driverUtil4 = new WebDriverUtil(driver);
         driverUtil4.LoginBefore();
@@ -52,11 +55,9 @@ public class HomeUnlimitedGoldTest {
         Thread.sleep(3000);
         driverUtil4.refreshpage();
         String SinceBusinessOperationsTotalArrearsJump = driverUtil4.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div/li/span[2]");
-        try {
-            Assert.assertEquals(SinceBusinessOperationsTotalArrears,SinceBusinessOperationsTotalArrearsJump);
-        }catch (AssertionError error){
-            System.out.println("自运营商户欠款金额与跳转金额不一致");
-        }
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(SinceBusinessOperationsTotalArrears,SinceBusinessOperationsTotalArrearsJump);
+            Assert.assertTrue(Assertion.currentFlag());
         driverUtil4.LoginAfter();
     }
 }

@@ -1,3 +1,9 @@
+GameTestCase\PlayersManagementTest.class
+GameTestCase\EltaStigList.class
+GameTestCase\PlayerLoginLog.class
+GameTestCase\GoldModeRechangeRecord.class
 GameTestCase\HomeCashPromotionTest.class
 GameTestCase\HomeUnlimitedGoldTest.class
+ListenerPackage\AssertionListener.class
 PublicMethod\WebDriverUtil.class
+ListenerPackage\Assertion.class

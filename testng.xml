@@ -5,6 +5,7 @@
         <classes>
             <class name="GameTestCase.HomeCashPromotionTest"></class>
             <class name="GameTestCase.HomeUnlimitedGoldTest"></class>
+            <class name="GameTestCase.PlayersManagementTest"></class>
 
         </classes>
     </test>

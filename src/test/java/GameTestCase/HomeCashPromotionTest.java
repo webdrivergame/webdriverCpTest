@@ -1,18 +1,28 @@
 package GameTestCase;
 
+import ListenerPackage.Assertion;
 import PublicMethod.WebDriverUtil;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import ru.yandex.qatools.allure.annotations.Title;
 
 
 public class HomeCashPromotionTest {
 
-   private WebDriver driver;
+    private WebDriver driver;
 
 
-    @Test
+
+
+    @Feature("平台首页")
+    @Story("现金推广")
+    @Title("今日系统盈亏")
+    @Test(priority = 1)
     public void TodaySystemWinOrLose() throws InterruptedException {
         WebDriverUtil driverUtil1 = new WebDriverUtil(driver);
         driverUtil1.LoginBefore();
@@ -24,17 +34,15 @@ public class HomeCashPromotionTest {
         String TodaySystemWinOrLose = driverUtil1.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[2]/div[2]/div[1]/div/div/div/div[1]/div[2]/div[2]/span/span[3]");
         driverUtil1.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[2]/div[2]/div[1]/div/div/div/div[1]/div[2]/div[2]/span/span[3]");
         String TodaySystemWinOrLoseJump = driverUtil1.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div/div/div[2]/div[1]/div[4]/li/span[2]");
-
-        try {
-            Assert.assertEquals(TodaySystemWinOrLose,TodaySystemWinOrLoseJump);
-        }catch (AssertionError error){
-            System.out.println("今日系统盈亏金额与跳转页面金额不相同");
-
-        }
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(TodaySystemWinOrLose,TodaySystemWinOrLoseJump);
+            Assert.assertTrue(Assertion.currentFlag());
         driverUtil1.LoginAfter();
     }
 
-    @Test
+
+    @Title("今日产生佣金")
+    @Test(priority = 2)
     public void TodayGenerateCommission() throws InterruptedException {
         WebDriverUtil driverUtil3 = new WebDriverUtil(driver);
         driverUtil3.LoginBefore();
@@ -46,13 +54,9 @@ public class HomeCashPromotionTest {
         String TodayGenerateCommission = driverUtil3.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[2]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[2]/span/span[3]");
         driverUtil3.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[2]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[2]/span/span[3]");
         String TodayGenerateCommissionjump = driverUtil3.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div[3]/span[2]");
-
-        try {
-            Assert.assertEquals(TodayGenerateCommission,TodayGenerateCommissionjump);
-        }catch (AssertionError error){
-            System.out.println("今日佣金总计金额不一致");
-        }
-
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(TodayGenerateCommission,TodayGenerateCommissionjump);
+            Assert.assertTrue(Assertion.currentFlag());
         driverUtil3.LoginAfter();
     }
 

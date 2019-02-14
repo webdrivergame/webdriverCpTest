@@ -10,6 +10,9 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
+
+import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
+import com.thoughtworks.selenium.SeleneseTestBase;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -37,21 +40,27 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-           /**
-   45  *    基于selenium的二次封装
-   46  */
-           public class WebDriverUtil {
-               private static WebDriver driver = null;
 
+    /**
+     *    基于selenium的二次封装
+     */
+           public class WebDriverUtil {
+
+
+               public static List<Error> errors = new ArrayList<Error>();
+               private static WebDriver driver = null;
                private static Select select = null;
                private static Alert alert = null;
                private static WebElement element = null;
                private static List<WebElement> elementList = null;
                private static long timeOutInSeconds = 10;
+
+
                //--------------------自定义常量------------------------
                public final String LINE = "\r\n";
                public final String smile = "^_^";
                public final String sad = "*o*";
+
 
                public WebDriverUtil(WebDriver driver) {
                    WebDriverUtil.driver = driver;
@@ -97,7 +106,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                }
 
-               //登陆之后
+               //结束测试
 
                public void LoginAfter(){
                    driver.close();
@@ -132,49 +141,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
               //----------------------------------------------------元素相关-----------------------------------------------------------------------------
-              /**
-       *     查找元素
-        * @param by      传入一个类型        例如：name
-        * @param byValue 传入一个类型值       例如：username
-        */
-              public WebElement findElement(String by, String byValue) {
-                 try {
-                     if ("id".equals(by)) {
-                         element = driver.findElement(By.id(byValue));
 
-                     } else if ("name".equals(by)) {
-                         element = driver.findElement(By.name(byValue));
-
-                     } else if ("class".equals(by)) {
-                         element = driver.findElement(By.className(byValue));
-
-                     } else if ("tag".equals(by)) {
-                         element = driver.findElement(By.tagName(byValue));
-
-                         element = driver.findElement(By.linkText(byValue));
-
-                     } else if ("link".equals(by)) {
-                         element = driver.findElement(By.linkText(byValue));
-
-                     } else if ("partiallinktext".equals(by)) {
-                         element = driver.findElement(By.partialLinkText(byValue));
-
-                         element = driver.findElement(By.cssSelector(byValue));
-
-                     } else if ("css".equals(by)) {
-                         element = driver.findElement(By.cssSelector(byValue));
-
-                     } else if ("xpath".equals(by)) {
-                         element = driver.findElement(By.xpath(byValue));
-
-                     } else {
-                         throw new RuntimeException("输入的定位类型未在程序中定义，类型为：" + byValue);
-                     }
-                     } catch (Exception e) {
-                         System.out.println("没有找到元素：" + byValue);
-                     }
-                 return element;
-             }
       /**
         *     查找一组元素
         * @param by      传入一个类型        例如：name
@@ -339,7 +306,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
               public void findElementByClassNameAndClick(String name) {
                  driver.findElement(By.className(name)).click();
              }
-
+              public void findElementByLinktestAndClick(String linktest){
+                  driver.findElement(By.linkText(linktest)).click();
+              }
              /**
         *     查找元素并清除文本内容
         * @param by      传入一个类型        例如：name
@@ -457,6 +426,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                  driver.findElement(By.className(classname)).sendKeys(num + "");
              }
 
+             //定位元素并清空
+
+               public void findElementByXpathAndClear(String xpath){
+                  driver.findElement(By.xpath(xpath)).click();
+                  driver.findElement(By.xpath(xpath)).clear();
+               }
+              //定位元素点击并输入
+
+              public void findElementByXpathAndClickSendkeys(String xpath,String text){
+                  driver.findElement(By.xpath(xpath)).click();
+                  driver.findElement(By.xpath(xpath)).sendKeys(text);
+              }
+
+
+
               /**
         *    定位元素，并获取其文本内容
         */
@@ -547,8 +531,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         * @param text        期望出现的文本
         * @param seconds     超时时间
         * @return Boolean    检查给定文本是否存在于指定元素中, 超时则捕获抛出异常TimeoutException并返回false
-        * @see ExpectedConditions.textToBePresentInElement(WebElement
-        *      element, String text)
+        *
         */
               public static Boolean waitUntilPageContain(String text,String xpath, long seconds) {
                  try {
@@ -566,8 +549,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         * @param locator 元素定位器
         * @param seconds 超时时间
         * @return Boolean 检查给定元素的定位器是否出现, 超时则捕获抛出异常TimeoutException并返回false
-        * @see org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(By
-        *      locator)
+        * @see
         */
               public static Boolean waitUntilElementVisible(By locator, int seconds) {
                  try {
@@ -721,7 +703,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         *     定位select并选中对应text的option
         * @param locator
         * @param text
-        * @see org.openqa.selenium.support.ui.Select.selectByVisibleText(String text)
+        * @see
         */
               public static void selectByText(By locator, String text) {
                  select = new Select(driver.findElement(locator));
@@ -732,7 +714,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         *     定位select并选中对应index的option
         * @param locator
         * @param index
-        * @see org.openqa.selenium.support.ui.Select.selectByIndex(int index)
+        * @see
         */
               public static void selectByIndex(By locator, int index) {
                  select = new Select(driver.findElement(locator));
@@ -743,7 +725,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         *    定位select并选中对应value值的option
         * @param locator  定位select的选择器
         * @param value       option 中的value值
-        * @see org.openqa.selenium.support.ui.Select.selectByValue(String value)
+        * @see
        */
             public static void selectByValue(By locator, String value) {
                 select = new Select(driver.findElement(locator));
@@ -821,7 +803,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
               /**
         *     切换至父级frame
-        * @see org.openqa.selenium.WebDriver.TargetLocator.parentFrame()
+        * @see
         */
               public static void switchToParentFrame() {
                  driver.switchTo().parentFrame();
@@ -830,7 +812,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
               /**
         *     切换默认最外层frame或者窗口
         * @return 这个驱动程序聚焦在顶部窗口/第一个frame上
-        * @see org.openqa.selenium.WebDriver.TargetLocator.defaultContent()
+        * @see
         */
               public static void switchToDefault() {
                  driver.switchTo().defaultContent();
@@ -851,7 +833,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
               /**
                *
-               *  @see org.openqa.selenium.WebElement.submit()
+               *
                */
               public static void submitForm(By locator) {
                  driver.findElement(locator).submit();
@@ -891,12 +873,24 @@ import org.openqa.selenium.support.ui.WebDriverWait;
               public void scrollToTop() {
                  ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,0);");
              }
-              // 滚动到页面底部
-              public void scrollToBottom(String id) {
+
+             // 滚动到页面底部
+              public void scrollToBottom() {
                  ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,10000);");
              }
+
+              //设置窗口比例
+               public void scrollToWindow(){
+                   ((JavascriptExecutor) driver).executeScript("document.body.style.zoom='90%';");
+               }
+              //滚动到最右边
+               public void scrollToRight(){
+                   ((JavascriptExecutor) driver).executeScript("window.scrollTo(10000,0);");
+               }
+
+
               // 滚动到某个元素
-              public void scrollToElement(WebElement element) {
+              public void scrollToElement(String element) {
                  JavascriptExecutor js = (JavascriptExecutor) driver;
                  js.executeScript("arguments[0].scrollIntoView(true);", element);
              }
@@ -910,6 +904,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                  JavascriptExecutor js = (JavascriptExecutor) driver;
                  js.executeScript("arguments[0].style=arguments[1]", element, "display: block;");
              }
+
+
 
 
           //---------------------------------------浏览器操作---------------------------------------------------------
@@ -1145,7 +1141,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
              /**
        *     获取当前域所有的cookies
        * @return Set&lt;Cookie> 当前的cookies集合
-       * @see org.openqa.selenium.WebDriver.Options.getCookies()
+       *
        */
              public static Set<Cookie> getAllCookies() {
                  return driver.manage().getCookies();
@@ -1166,8 +1162,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
        *     用给定的name和value创建默认路径的Cookie并添加, 永久有效
        * @param name
        * @param value
-       * @see org.openqa.selenium.WebDriver.Options.addCookie(Cookie cookie)
-       * @see org.openqa.selenium.Cookie.Cookie(String name, String value)
+       *
        */
              public static void addCookie(String name, String value) {
                  driver.manage().addCookie(new Cookie(name, value));
@@ -1185,14 +1180,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
      /**
        *     根据cookie名称删除cookie
        * @param name cookie的name值
-       * @see org.openqa.selenium.WebDriver.Options.deleteCookieNamed(String name)
+       *
        */
              public static void deleteCookie(String name) {
                  driver.manage().deleteCookieNamed(name);
              }
      /**
        *     删除当前域的所有Cookie
-       * @see org.openqa.selenium.WebDriver.Options.deleteAllCookies()
+       *
        */
              public static void deleteAllCookies() {
                  driver.manage().deleteAllCookies();
@@ -1209,7 +1204,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
        *         <li><tt>domain</tt> <tt>cookie域</tt>
        *         <li><tt>expiry</tt> <tt>cookie有效期</tt>
        *         </ul>
-       * @see org.openqa.selenium.WebDriver.Options.getCookieNamed(String name)
+       *
        */
              public static Map<String, String> getCookieByName(String name) {
                  Cookie cookie = driver.manage().getCookieNamed(name);
@@ -1248,36 +1243,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                      }
              }
 
-             /**
-       *     进入测试，打开浏览器，输入网址，打开网页
-       * @param explore   调用的浏览器，需要启动不同的server
-       *                     如：firefox，需要运行selenium-server-standalone-2.33.0.jar。
-       *                        IE，则需运行IEDriverServer.exe
-       * @param remoteUrl 远程服务器地址
-       * @param pageUrl   测试页面地址
-       */
-             public boolean startTest(String explore, String remoteUrl, String pageUrl) {
-                 try {
-                         try {
-                                 if ("f".equals(explore)) {
-                                         System.out.println("firefox");
-                                         driver = new RemoteWebDriver(new URL(remoteUrl), DesiredCapabilities.firefox());
-                                     } else if ("ie".equals(explore)) {
-                                         System.out.println("internet explorer");
-                                         DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
-                                         driver = new RemoteWebDriver(new URL(remoteUrl), cap);
-                                     } else {
-                                         System.out.println("firefox");
-                                         driver = new RemoteWebDriver(new URL(remoteUrl), DesiredCapabilities.firefox());
-                                     }
-                             } catch (Exception e) {
-                                 e.printStackTrace();
-                             }
-                         driver.get(pageUrl);
-                         return true;
-                     } catch (Exception e) {
-                         System.out.println(e.getMessage());
-                         return false;
-                     }
-             }
+
+
 }

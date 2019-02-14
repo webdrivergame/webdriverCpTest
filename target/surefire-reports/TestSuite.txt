@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 44.015 s <<< FAILURE! - in TestSuite
-ServiceFeeIncome(GameTestCase.HomeUnlimitedGoldTest)  Time elapsed: 8.212 s  <<< FAILURE!
-java.lang.AssertionError: expected [绠＄悊鍛樺皬瓒?] but found [管理员小超]
-	at GameTestCase.HomeUnlimitedGoldTest.ServiceFeeIncome(HomeUnlimitedGoldTest.java:27)
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 112.722 s <<< FAILURE! - in TestSuite
+CompiledPlayer(GameTestCase.PlayersManagementTest)  Time elapsed: 30.161 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at GameTestCase.PlayersManagementTest.CompiledPlayer(PlayersManagementTest.java:162)
 
