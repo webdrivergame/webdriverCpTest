@@ -3,11 +3,18 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
   <test name="C:/Users/jtc/IdeaProjects/game(failed)">
     <classes>
-      <class name="GameTestCase.PlayersManagementTest">
+      <class name="InbetAdminTestCase.AdminHomeTest">
         <methods>
-          <include name="CompiledPlayer"/>
+          <include name="totalCommission"/>
+          <include name="totalsystermWinOrLose"/>
+          <include name="busniessMoneyTotal"/>
+          <include name="systermWinOrLose"/>
+          <include name="sinceBusinessOperationsTotalArrears"/>
+          <include name="todayCommission"/>
+          <include name="serviceFeeIncome"/>
+          <include name="playerNumber"/>
         </methods>
-      </class> <!-- GameTestCase.PlayersManagementTest -->
+      </class> <!-- InbetAdminTestCase.AdminHomeTest -->
     </classes>
   </test> <!-- C:/Users/jtc/IdeaProjects/game(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

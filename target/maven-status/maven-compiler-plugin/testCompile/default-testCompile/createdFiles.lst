@@ -1,9 +1,11 @@
-GameTestCase\PlayersManagementTest.class
-GameTestCase\EltaStigList.class
-GameTestCase\PlayerLoginLog.class
-GameTestCase\GoldModeRechangeRecord.class
-GameTestCase\HomeCashPromotionTest.class
-GameTestCase\HomeUnlimitedGoldTest.class
+InbetAdminTestCase\PlayersManagementTest.class
+InbetCashBusinessTestCase\BusinessHomeTestCase.class
+InbetGoldAgentTestCase\GoldAgentHomeTestCase.class
+InbetCashAgentTestCase\AgentPlayerAccountNumberTestCase.class
+InbetAdminTestCase\RedenvelopeTestCase.class
+InbetCashAgentTestCase\CashAgentreChangeRecord.class
 ListenerPackage\AssertionListener.class
 PublicMethod\WebDriverUtil.class
+InbetAdminTestCase\AdminHomeTest.class
+InbetCashAgentTestCase\AgentHomeTestCase.class
 ListenerPackage\Assertion.class

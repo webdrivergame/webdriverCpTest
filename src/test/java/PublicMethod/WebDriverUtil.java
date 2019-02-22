@@ -10,9 +10,8 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
-import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
-import com.thoughtworks.selenium.SeleneseTestBase;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -36,16 +35,15 @@ import org.openqa.selenium.interactions.HasInputDevices;
 import org.openqa.selenium.interactions.Keyboard;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 
     /**
      *    基于selenium的二次封装
      */
            public class WebDriverUtil {
-
 
                public static List<Error> errors = new ArrayList<Error>();
                private static WebDriver driver = null;
@@ -54,7 +52,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                private static WebElement element = null;
                private static List<WebElement> elementList = null;
                private static long timeOutInSeconds = 10;
-
+               private Object senior;
 
                //--------------------自定义常量------------------------
                public final String LINE = "\r\n";
@@ -62,11 +60,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                public final String sad = "*o*";
 
 
-               public WebDriverUtil(WebDriver driver) {
+
+        public WebDriverUtil(WebDriver driver) {
                    WebDriverUtil.driver = driver;
                    WebDriverUtil.timeOutInSeconds = timeOutInSeconds;
                }
-
 
 
 
@@ -86,9 +84,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                    pass.sendKeys(password);
                }
 
+
+
                //浏览器打开Url
 
-               public void LoginBefore(){
+               public void LoginBefore(String Url){
                    System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
                    // 去掉浏览器中的“--ignore-certificate-errors”
                    DesiredCapabilities capabilities = DesiredCapabilities.chrome();
@@ -100,7 +100,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                            "src/ucBrowserDrivers/chromedriver.exe");
                    capabilities.setCapability(ChromeOptions.CAPABILITY, options);
                    driver = new ChromeDriver(capabilities);
-                   String Url = "http://192.168.1.9:9091";
                    driver.get(Url);
                    driver.manage().window().maximize();
                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -289,10 +288,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         *    定位元素并点击
        */
               public void findElementByIdAndClick(String id) {
-                 driver.findElement(By.id(id)).click();
+
+                  driver.findElement(By.id(id)).click();
              }
               public void findElementByNameAndClick(String name) {
-                 driver.findElement(By.name(name)).click();
+
+                  driver.findElement(By.name(name)).click();
              }
               public void findElementByTextAndClick(String text) {
                  driver.findElement(By.linkText(text)).click();
@@ -306,8 +307,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
               public void findElementByClassNameAndClick(String name) {
                  driver.findElement(By.className(name)).click();
              }
-              public void findElementByLinktestAndClick(String linktest){
-                  driver.findElement(By.linkText(linktest)).click();
+              public void findElementByLinktextAndClick(String text){
+                  driver.findElement(By.linkText(text)).click();
               }
              /**
         *     查找元素并清除文本内容
@@ -457,8 +458,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                  return findElementByName(name).getText();
              }
 
+
               /**
-        *     定位元素，并指定点击次数(连续点击)
+        *     定位元素，并指定点击次数(连续点击) 0s
         */
               public boolean clickById(String id, int clickCount) {
                  try {
@@ -560,6 +562,23 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                          return false;
                      }
              }
+
+
+            public void waitElementLocated(String xpath,String text){
+
+                  WebDriverWait wait = new WebDriverWait(driver,10);
+
+                wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpath),text));
+
+            }
+
+
+            public void waitElementValue(String xpath,String text){
+
+                  WebDriverWait wait = new WebDriverWait(driver,10);
+                wait.until(ExpectedConditions.textToBePresentInElementValue(By.xpath(xpath),text));
+            }
+
 
 
               /**
@@ -677,17 +696,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                  select.selectByIndex(index);
              }
 
-              // 根据name获取下拉框，根据text选择选项
-              public void findSelectByNameAndSelectByText(String name, String text) {
-                 Select select = new Select(findElementByName(name));
-                 select.selectByVisibleText(text);
-             }
-              // 根据name获取下拉框，根据Value选择选项
-              public void findSelectByNameAndSelectByValue(String name, String value) {
-                 Select select = new Select(findElementByName(name));
-                 select.selectByValue(value);
-             }
-              // 根据name获取下拉框，根据index选择选项
+
+             // 根据name获取下拉框，根据index选择选项
               public void findSelectByNameAndSelectByIndex(String name, int index) {
                  Select select = new Select(findElementByName(name));
                  select.selectByIndex(index);
@@ -697,9 +707,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                   Select select = new Select(findElementByXpath(xpath));
                   select.selectByValue(value);
                }
+            //通过linkText查找元素
+                public void findElementByLinkText(String linkText){
+                  driver.findElement(By.linkText(linkText));
+                }
 
 
-              /**
+
+        /**
         *     定位select并选中对应text的option
         * @param locator
         * @param text
@@ -952,7 +967,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
              /**
        *    上一个页面(点击浏览器返回)
        */
-             public static void returnToPreviousPage() {
+             public  void returnToPreviousPage() {
+
                  driver.navigate().back();
              }
 

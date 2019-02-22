@@ -1,8 +1,47 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 112.722 s <<< FAILURE! - in TestSuite
-CompiledPlayer(GameTestCase.PlayersManagementTest)  Time elapsed: 30.161 s  <<< FAILURE!
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 135.971 s <<< FAILURE! - in TestSuite
+serviceFeeIncome(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 14.951 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
-	at GameTestCase.PlayersManagementTest.CompiledPlayer(PlayersManagementTest.java:162)
+	at InbetAdminTestCase.AdminHomeTest.serviceFeeIncome(AdminHomeTest.java:42)
+
+sinceBusinessOperationsTotalArrears(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 14.654 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at InbetAdminTestCase.AdminHomeTest.sinceBusinessOperationsTotalArrears(AdminHomeTest.java:72)
+
+busniessMoneyTotal(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 15.454 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at InbetAdminTestCase.AdminHomeTest.busniessMoneyTotal(AdminHomeTest.java:101)
+
+playerNumber(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 12.884 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at InbetAdminTestCase.AdminHomeTest.playerNumber(AdminHomeTest.java:129)
+
+systermWinOrLose(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 21.138 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/section/section/main/div[2]/div[1]/div/div/div/div[3]/table/tbody/tr[1]/td[7]/div/div"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:32805}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir45940_15037}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f73f907d54cd266f458c09d9814b3d25
+*** Element info: {Using=xpath, value=//*[@id="root"]/section/section/main/div[2]/div[1]/div/div/div/div[3]/table/tbody/tr[1]/td[7]/div/div}
+	at InbetAdminTestCase.AdminHomeTest.systermWinOrLose(AdminHomeTest.java:149)
+
+totalsystermWinOrLose(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 30.677 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at InbetAdminTestCase.AdminHomeTest.totalsystermWinOrLose(AdminHomeTest.java:187)
+
+todayCommission(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 12.207 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at InbetAdminTestCase.AdminHomeTest.todayCommission(AdminHomeTest.java:214)
+
+totalCommission(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 12.203 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at InbetAdminTestCase.AdminHomeTest.totalCommission(AdminHomeTest.java:241)
 
