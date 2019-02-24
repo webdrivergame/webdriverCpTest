@@ -458,6 +458,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                  return findElementByName(name).getText();
              }
 
+              public String getAttribute(String xpath ){
+                  return findElementByXpath(xpath).getAttribute("class");
+              }
 
               /**
         *     定位元素，并指定点击次数(连续点击) 0s
@@ -579,6 +582,45 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                 wait.until(ExpectedConditions.textToBePresentInElementValue(By.xpath(xpath),text));
             }
 
+
+
+
+
+        /***
+         *  只有满足显式等待的条件满足，测试代码才会继续向后执行后续的测试逻辑
+         *
+         * 如果超过设定的最大显式等待时间阈值， 这测试程序会抛出异常。
+         *
+         */
+
+
+            public void WebElementWaitLocated(String xpath){
+
+                WebDriverWait wait=new WebDriverWait(driver,10);
+
+                wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
+
+                }
+
+        /***
+         * 页面元素是否在页面上可用和可被单击 elementToBeClickable(By locator)
+         */
+
+
+            public void WebElementWaitClick(String xpath){
+
+                WebDriverWait wait = new WebDriverWait(driver,10);
+
+                wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+
+            }
+
+
+            //页面元素处于被选中状态  elementToBeSelected(WebElement element)
+
+            //页面元素在页面中存在  presenceOfElementLocated(By locator)
+
+            //在页面元素中是否包含特定的文本  textToBePresentInElement(By locator)
 
 
               /**
@@ -1153,7 +1195,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
              }
 
 
-         //---------------------------------------Cookie操作---------------------------------------------------------
+
+
+             //获取动态id值
+           //String s1=driver.findElement(By.xpath("//input[9]")).getAttribute("id");
+
+
+
+        //---------------------------------------Cookie操作---------------------------------------------------------
              /**
        *     获取当前域所有的cookies
        * @return Set&lt;Cookie> 当前的cookies集合
@@ -1259,6 +1308,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                      }
              }
 
+        public Object toString(String s) {return s;
+        }
 
 
-}
+    }
