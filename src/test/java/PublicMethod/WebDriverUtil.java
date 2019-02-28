@@ -53,7 +53,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                private static List<WebElement> elementList = null;
                private static long timeOutInSeconds = 10;
                private Object senior;
-
+               private boolean acceptNextAlert = true;
                //--------------------自定义常量------------------------
                public final String LINE = "\r\n";
                public final String smile = "^_^";
@@ -1311,5 +1311,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         public Object toString(String s) {return s;
         }
 
+            //获取警告弹窗文本信息
 
+        private String closeAlertAndGetItsText() {
+
+            try {
+                Alert alert = driver.switchTo().alert();
+                String alertText = alert.getText();
+                if (acceptNextAlert) {
+                    alert.accept();
+                } else {
+                    alert.dismiss();
+                }
+                return alertText;
+            } finally {
+                acceptNextAlert = true;
+            }
+        }
     }

@@ -78,12 +78,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.7.4</version>
-        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
         <dependency>
@@ -103,44 +98,28 @@
 
     </dependencies>
 
-<build>
-    <plugins>
+    <build>
+        <plugins>
             <plugin>
-
-                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.22.0</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20</version>
                 <configuration>
-
-                    <testFailureIgnore>true</testFailureIgnore>
-
-                    <suiteXmlFiles>
-                    <!-- 要运行的testng.xml文件 -->
-                    <suiteXmlFile>testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-
-                    <systemProperties>
-                        <property>
-                            <name>allure.results.directory</name>
-                            <value>./target/allure-results</value>
-                        </property>
-                    </systemProperties>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
                 </configuration>
-
-
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
-        <plugin>
-            <!-- 本地显示测试报告的插件 -->
-            <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-maven-plugin -->
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-maven-plugin</artifactId>
-            <version>9.2.10.v20150310</version>
-        </plugin>
-    </plugins>
+        </plugins>
+    </build>
 
-</build>
     <reporting>
         <excludeDefaults>true</excludeDefaults>
         <plugins>

@@ -23,7 +23,7 @@ public class AdminHomeTest {
         private void serviceFeeIncome() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("http://192.168.1.9:9091");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(8000);
@@ -52,7 +52,7 @@ public class AdminHomeTest {
         public void sinceBusinessOperationsTotalArrears() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("http://192.168.1.9:9091");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
@@ -81,7 +81,7 @@ public class AdminHomeTest {
         public void busniessMoneyTotal() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("http://192.168.1.9:9091");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
@@ -93,7 +93,6 @@ public class AdminHomeTest {
 
                 Thread.sleep(3000);
             String busniessMoneyTotal1 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div/li/span[2]");
-
 
                 Assertion.setFlag(true);
                 Assertion.verifyEquals(busniessMoneyTotal,busniessMoneyTotal1);
@@ -111,7 +110,7 @@ public class AdminHomeTest {
         public void playerNumber() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("http://192.168.1.9:9091");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
@@ -140,7 +139,7 @@ public class AdminHomeTest {
         public void systermWinOrLose() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("http://192.168.1.9:9091");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
@@ -169,7 +168,7 @@ public class AdminHomeTest {
         public void totalsystermWinOrLose() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("http://192.168.1.9:9091");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
@@ -178,7 +177,13 @@ public class AdminHomeTest {
 
             String totalsystermWinOrLose = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div/div[3]/table/tbody/tr[2]/td[7]/div/div");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","现金模式游戏输赢统计");
-            driverUtil.findElementByXpathAndClick("//*[@id=\"rest_cash_game_win_lose_list\"]/li/span");
+
+            /***
+             * ------------------------------------------------------问题区----------------------------------------
+             */
+
+            driverUtil.findElementByXpathAndClick("");//*[@id="button387484304"]/span
+
                 Thread.sleep(3000);
             String totalPlayerWinOrLose = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div/div/div[2]/div[1]/div[4]/li/span[2]");
 
@@ -198,7 +203,7 @@ public class AdminHomeTest {
         public void todayCommission() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("http://192.168.1.9:9091");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
@@ -226,7 +231,7 @@ public class AdminHomeTest {
         public void totalCommission() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("http://192.168.1.9:9091");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
