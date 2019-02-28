@@ -2,48 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96204fec-b768-4500-a32d-bdf317ef3d35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/serverErrorTestCase/adminHomeCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/PlayersManagementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/PlayersManagementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/06bb9d94-4c09-474f-b75b-ed181cce298e-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/06e1c5c4-e437-4d22-91cb-f3cecc4057ed-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/1690eb7a-6a2d-4a69-b872-8394340895b2-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/6502f147-38dc-4a47-985d-1ad7327cdf76-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/687c4c7d-c06e-439a-a29b-72b93f7e9485-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/6a8bbef5-fb7c-46b9-98af-3ef2007cfe74-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/76c0d669-8bdf-4711-9d3c-8dd62c049e17-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/8ed674c4-4e9a-484d-bb12-231dc68d27fe-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/90438b97-8a74-4830-8743-c3b7b1ff06a3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/b41c94a3-b7fb-4b81-941c-ead7f067380c-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/bf957ed3-0075-4141-b344-5d5bc08df374-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/ecab1ac5-62a7-44b8-a5c7-578c6f3c3d41-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_jtc_IdeaProjects_game.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_jtc_IdeaProjects_game.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-InbetAdminTestCase.AdminHomeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-InbetAdminTestCase.AdminHomeTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/C__Users_jtc_IdeaProjects_game.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -179,7 +138,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3696">
+            <state relative-caret-position="3840">
               <caret line="184" column="51" selection-start-line="184" selection-start-column="51" selection-end-line="184" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -460,7 +419,7 @@
     <property name="SearchEverywhereHistoryKey" value="link&#9;PSI&#9;JAVA://io.qameta.allure.Link&#10;we&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil&#10;classname&#9;FILE&#9;jar://C:/Users/jtc/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.0/jackson-databind-2.7.0.jar!/com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver.class&#10;return&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#returnToPreviousPage&#10;js&#9;PSI&#9;JAVA://jdk.nashorn.internal.scripts.JS&#10;滚动条&#9;null&#9;null&#10;findElementByX&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#findElementByXpath" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551348855361" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551350194345" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -672,7 +631,7 @@
       <workItem from="1550113486947" duration="36808000" />
       <workItem from="1550217117830" duration="66258000" />
       <workItem from="1550819121902" duration="64166000" />
-      <workItem from="1551323161040" duration="7021000" />
+      <workItem from="1551323161040" duration="8088000" />
     </task>
     <servers />
   </component>
@@ -709,7 +668,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="435133000" />
+    <option name="totallyTimeSpent" value="436200000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -960,7 +919,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3696">
+        <state relative-caret-position="3840">
           <caret line="184" column="51" selection-start-line="184" selection-start-column="51" selection-end-line="184" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
