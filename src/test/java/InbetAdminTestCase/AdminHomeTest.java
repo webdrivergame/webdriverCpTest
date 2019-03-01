@@ -182,7 +182,7 @@ public class AdminHomeTest {
              * ------------------------------------------------------问题区----------------------------------------
              */
 
-            driverUtil.findElementByXpathAndClick("");//*[@id="button387484304"]/span
+            driverUtil.findElementByTextAndClick("重置");
 
                 Thread.sleep(3000);
             String totalPlayerWinOrLose = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div/div/div[2]/div[1]/div[4]/li/span[2]");

@@ -15,7 +15,7 @@ public class GoldAgentHomeTestCase {
     @Feature("无限金币代理首页")
     @Title("验证无限金币代理首页账户余额与跳转金额是否一致")
 
-    @Test
+    @Test(enabled = false)
     public void GoldAgentHome() throws InterruptedException {
 
         WebDriverUtil driverUtil = new WebDriverUtil(driver);

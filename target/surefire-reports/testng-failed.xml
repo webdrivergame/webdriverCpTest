@@ -6,7 +6,6 @@
       <class name="InbetCashAgentTestCase.AgentHomeTestCase">
         <methods>
           <include name="homeIncomeToday"/>
-          <include name="homeWaitSettlementMoney"/>
         </methods>
       </class> <!-- InbetCashAgentTestCase.AgentHomeTestCase -->
       <class name="InbetGoldAgentTestCase.GoldAgentHomeTestCase">
@@ -17,12 +16,13 @@
       <class name="InbetAdminTestCase.AdminHomeTest">
         <methods>
           <include name="totalsystermWinOrLose"/>
+          <include name="systermWinOrLose"/>
+          <include name="serviceFeeIncome"/>
         </methods>
       </class> <!-- InbetAdminTestCase.AdminHomeTest -->
       <class name="InbetCashBusinessTestCase.BusinessHomeTestCase">
         <methods>
           <include name="businessHome"/>
-          <include name="waitSettlementMoney"/>
         </methods>
       </class> <!-- InbetCashBusinessTestCase.BusinessHomeTestCase -->
       <class name="InbetAdminTestCase.PlayersManagementTest">

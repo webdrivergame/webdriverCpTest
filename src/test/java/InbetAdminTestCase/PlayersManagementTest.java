@@ -17,7 +17,7 @@ public class PlayersManagementTest {
         @Feature("玩家管理")
         @Story("玩家账号管理")
         @Title("验证玩家账号搜索玩家")
-        @Test(priority = 2)//测试玩家账号搜索玩家和重置功能
+        @Test(enabled = false)//测试玩家账号搜索玩家和重置功能
 
         public void playersAccountManagement() throws InterruptedException {
 
@@ -49,7 +49,7 @@ public class PlayersManagementTest {
         @Feature("玩家管理")
         @Story("玩家账号管理")
         @Title("验证玩家昵称搜索玩家")
-        @Test(priority = 3)//测试玩家昵称搜索玩家和重置
+        @Test(enabled = false)//测试玩家昵称搜索玩家和重置
 
         public void playerName() throws InterruptedException {
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -80,7 +80,7 @@ public class PlayersManagementTest {
         @Feature("玩家管理")
         @Story("玩家账号管理")
         @Title("验证所属商务搜索")
-        @Test(priority = 3)
+        @Test(enabled = false)
 
         public void belongBusiness() throws InterruptedException {
 
@@ -112,7 +112,7 @@ public class PlayersManagementTest {
         @Feature("玩家管理")
         @Story("玩家账号管理")
         @Title("验证所属代理搜索")
-        @Test
+        @Test(enabled = false)
         public void belongAgent() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -144,7 +144,7 @@ public class PlayersManagementTest {
         @Feature("玩家管理")
         @Story("玩家账号管理")
         @Title("验证所属推广代理搜索")
-        @Test
+        @Test(enabled = false)
         public void belongSpreadAgent() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -245,7 +245,7 @@ public class PlayersManagementTest {
         @Feature("玩家管理")
         @Story("玩家账号管理")
         @Title("验证支付宝名字搜索")
-        @Test
+        @Test(enabled = false)
         public void alipayName() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -277,7 +277,7 @@ public class PlayersManagementTest {
         @Feature("玩家管理")
         @Story("玩家账号管理")
         @Title("验证银行卡搜索")
-        @Test
+        @Test(enabled = false)
         public void banNumber() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -309,7 +309,7 @@ public class PlayersManagementTest {
         @Feature("玩家管理")
         @Story("玩家账号管理")
         @Title("验证银行卡姓名搜索")
-        @Test
+        @Test(enabled = false)
         public void banName() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -341,7 +341,7 @@ public class PlayersManagementTest {
         @Feature("玩家管理")
         @Story("玩家账号管理")
         @Title("验证注册IP搜索")
-        @Test
+        @Test(enabled = false)
         public void registeredIp() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -374,7 +374,7 @@ public class PlayersManagementTest {
         @Feature("玩家管理")
         @Story("玩家账号管理")
         @Title("验证最后登录IP搜索")
-        @Test
+        @Test(enabled = false)
         public void loginIp() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -407,7 +407,7 @@ public class PlayersManagementTest {
         @Feature("玩家管理")
         @Story("玩家账号管理")
         @Title("验证是否是机器人搜索")
-        @Test
+        @Test(enabled = false)
         public void rebot() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);

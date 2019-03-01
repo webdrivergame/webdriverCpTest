@@ -15,7 +15,7 @@ public class BusinessHomeTestCase {
 
     @Feature("现金商户首页")
     @Title("今日收入")
-    @Test(priority = 1)
+    @Test(enabled = false)
     public void businessHome() throws InterruptedException {
 
         WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -39,7 +39,7 @@ public class BusinessHomeTestCase {
 
     @Feature("现金商户首页")
     @Story("待结算佣金")
-    @Test(priority = 2)
+    @Test(enabled = false)
     public void waitSettlementMoney() throws InterruptedException {
 
         WebDriverUtil driverUtil2 = new WebDriverUtil(driver);

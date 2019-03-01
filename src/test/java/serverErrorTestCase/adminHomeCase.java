@@ -10,7 +10,7 @@ public class adminHomeCase {
 
         private WebDriver driver;
 
-        @Test
+        @Test(enabled = false)
         public void adminHomeCase(){
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);

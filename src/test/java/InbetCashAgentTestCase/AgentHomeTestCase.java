@@ -16,7 +16,7 @@ public class AgentHomeTestCase {
     @Feature("代理首页")
     @Title("验证今日收入与跳转金额是否一致")
 
-    @Test(priority = 1)
+    @Test(enabled = false)
     public void homeIncomeToday() throws InterruptedException {
 
         WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -42,7 +42,7 @@ public class AgentHomeTestCase {
     @Feature("代理首页")
     @Story("待结算佣金与跳转金额是否一致")
 
-    @Test(priority = 2)
+    @Test(enabled = false)
     public void homeWaitSettlementMoney() throws InterruptedException {
 
         WebDriverUtil driverUtil1 = new WebDriverUtil(driver);

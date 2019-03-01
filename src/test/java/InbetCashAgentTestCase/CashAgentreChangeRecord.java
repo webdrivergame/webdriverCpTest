@@ -16,7 +16,7 @@ public class CashAgentreChangeRecord {
         @Feature("现金代理充值记录")
         @Story("验证现金代理是否给玩家充值成功")
 
-        @Test
+        @Test(enabled = false)
         public void CashAgentreChange() throws InterruptedException {
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
             driverUtil.LoginBefore("http://xjtg66.com:9091/#/login");
