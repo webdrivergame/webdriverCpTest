@@ -932,10 +932,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
              }
 
              // 滚动到页面底部
-              public void scrollToBottom() {
-                 ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,10000);");
-             }
-
+              //public void scrollToBottom() {
+                 //((JavascriptExecutor) driver).executeScript("window.scrollTo(0,10000);");
+             //}
+                public void scrollToBottom(){
+                    ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,document.body.scrollHeight)");
+                }
               //设置窗口比例
                public void scrollToWindow(){
                    ((JavascriptExecutor) driver).executeScript("document.body.style.zoom='90%';");

@@ -23,14 +23,14 @@ public class AdminHomeTest {
         private void serviceFeeIncome() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(8000);
 
 
             //判断首页无限金币今日服务费收入与下级服务费我的服务费总计金额是否一致
-            String ServiceFeeIncomeToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div/div[3]/table/tbody/tr[1]/td[2]/div/div");
+            String ServiceFeeIncomeToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[2]/div/div");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级服务费统计");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_sub_agent_recharge_record_statistics\"]/li/span");
                 Thread.sleep(3000);
@@ -52,14 +52,14 @@ public class AdminHomeTest {
         public void sinceBusinessOperationsTotalArrears() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
 
 
             //判断服务费收入总计与下级服务费统计的生成服务费总计金额是否一致
-            String SinceBusinessOperationsTotalArrears = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div/div[3]/table/tbody/tr[2]/td[2]/div/div");
+            String SinceBusinessOperationsTotalArrears = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[2]/td[2]/div/div");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级服务费统计");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_sub_agent_recharge_record_statistics\"]/li/span");
                 Thread.sleep(3000);
@@ -78,24 +78,24 @@ public class AdminHomeTest {
         @Title("验证商户欠款总计与下级服务费结算记录总欠款是否一致")
 
         @Test(priority = 3)
-        public void busniessMoneyTotal() throws InterruptedException {
+        public void businessMoneyTotal() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
 
             //判断首页商户欠款总计与下级服务费结算记录总欠款是否一致
-            String busniessMoneyTotal = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div/div[3]/table/tbody/tr[2]/td[3]/div/div");
+            String businessMoneyTotal = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[2]/td[3]/div/div");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级服务费结算记录");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_sub_agent_recharge_record\"]/li/span");
 
                 Thread.sleep(3000);
-            String busniessMoneyTotal1 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div/li/span[2]");
+            String businessMoneyTotal1 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div/li/span[2]");
 
                 Assertion.setFlag(true);
-                Assertion.verifyEquals(busniessMoneyTotal,busniessMoneyTotal1);
+                Assertion.verifyEquals(businessMoneyTotal1,businessMoneyTotal);
                 Assert.assertTrue(Assertion.currentFlag());
 
             driverUtil.LoginAfter();
@@ -110,14 +110,14 @@ public class AdminHomeTest {
         public void playerNumber() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
 
             //验证今日新增玩家与留存统计今日注册玩家数量是否一致
 
-            String playerNumber = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div/div[3]/table/tbody/tr[1]/td[5]/div/div");
+            String playerNumber = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[5]/div/div");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","留存统计");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_login_statistic\"]/li/span");
                 Thread.sleep(4000);
@@ -136,23 +136,23 @@ public class AdminHomeTest {
         @Title("验证今日系统盈亏与玩家输赢金额是否一致")
 
         @Test(priority = 5)
-        public void systermWinOrLose() throws InterruptedException {
+        public void systemWinOrLose() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
 
             //验证今日系统盈亏与玩家输赢同进金额是否一致
-            String systermWinOrLose = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div/div[3]/table/tbody/tr[1]/td[7]/div/div");
+            String systemWinOrLose = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[7]/div/div");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","现金模式游戏输赢统计");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_cash_game_win_lose_list\"]/li/span");
                 Thread.sleep(3000);
             String playerWinOrLose = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div/div/div[2]/div[1]/div[4]/li/span[2]");
 
                 Assertion.setFlag(true);
-                Assertion.verifyEquals(systermWinOrLose,playerWinOrLose);
+                Assertion.verifyEquals(systemWinOrLose,playerWinOrLose);
                 Assert.assertTrue(Assertion.currentFlag());
 
             driverUtil.LoginAfter();
@@ -165,7 +165,7 @@ public class AdminHomeTest {
         @Title("验证系统盈亏总计与玩家输赢总计金额是否一致")
 
         @Test(priority = 6)
-        public void totalsystermWinOrLose() throws InterruptedException {
+        public void totalSystemWinOrLose() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
             driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
@@ -175,20 +175,20 @@ public class AdminHomeTest {
 
             //验证系统盈亏总计与玩家输赢总计金额是否一致
 
-            String totalsystermWinOrLose = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div/div[3]/table/tbody/tr[2]/td[7]/div/div");
+            String totalSystemWinOrLose = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[2]/td[7]/div/div");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","现金模式游戏输赢统计");
 
             /***
              * ------------------------------------------------------问题区----------------------------------------
              */
 
-            driverUtil.findElementByTextAndClick("重置");
+            driverUtil.findElementByXpathAndClick("");
 
                 Thread.sleep(3000);
             String totalPlayerWinOrLose = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div/div/div[2]/div[1]/div[4]/li/span[2]");
 
                 Assertion.setFlag(true);
-                Assertion.verifyEquals(totalPlayerWinOrLose,totalsystermWinOrLose);
+                Assertion.verifyEquals(totalPlayerWinOrLose,totalSystemWinOrLose);
                 Assert.assertTrue(Assertion.currentFlag());
 
             driverUtil.LoginAfter();
@@ -203,20 +203,20 @@ public class AdminHomeTest {
         public void todayCommission() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
 
             //验证今日佣金与下级佣金统计-商户今日佣金金额是否一致
-            String todaycommission = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div/div[3]/table/tbody/tr[1]/td[8]/div/div");
+            String commissionToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[8]/div/div");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级佣金统计");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_sub_promotion_agent_statistics\"]/li/span");
                 Thread.sleep(3000);
-            String bussniessTodaycommission = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div[4]/span[2]");
+            String businessCommissionToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div[4]/span[2]");
 
                 Assertion.setFlag(true);
-                Assertion.verifyEquals(todaycommission,bussniessTodaycommission);
+                Assertion.verifyEquals(commissionToday,businessCommissionToday);
                 Assert.assertTrue(Assertion.currentFlag());
 
             driverUtil.LoginAfter();
@@ -231,20 +231,20 @@ public class AdminHomeTest {
         public void totalCommission() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("https://admin.oneonewan.com/#//login");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
 
             //验证佣金总计与下级佣金统计-商户所占佣金金额是否一致
-            String totalCommission = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div/div[3]/table/tbody/tr[2]/td[8]/div/div");
+            String totalCommission = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[2]/td[8]/div/div");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级佣金统计");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_sub_promotion_agent_statistics\"]/li/span");
                 Thread.sleep(3000);
-            String bussinessCommission = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div[2]/span[2]");
+            String businessCommission = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div[2]/span[2]");
 
                 Assertion.setFlag(true);
-                Assertion.verifyEquals(totalCommission,bussinessCommission);
+                Assertion.verifyEquals(totalCommission,businessCommission);
                 Assert.assertTrue(Assertion.currentFlag());
 
             driverUtil.LoginAfter();
@@ -256,7 +256,7 @@ public class AdminHomeTest {
         @Title("验证今日充值金额与现金充值提现记录-人工充值+在线充值是否一致")
 
         @Test(enabled = false)
-        public void rechangeToday() throws InterruptedException {
+        public void rechargeToday() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
             driverUtil.LoginBefore("http://192.168.1.9:9091");
