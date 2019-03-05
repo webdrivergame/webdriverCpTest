@@ -177,12 +177,12 @@ public class AdminHomeTest {
 
             String totalSystemWinOrLose = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[2]/td[7]/div/div");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","现金模式游戏输赢统计");
-
-            /***
-             * ------------------------------------------------------问题区----------------------------------------
-             */
-
-            driverUtil.findElementByXpathAndClick("");
+            driverUtil.findElementByXpathAndClick("//*[@id=\"rest_cash_game_win_lose_list\"]/li/span");
+                Thread.sleep(2000);
+            //*[@id="button6007101759"]/span
+            //By.xpath("//input[contains(@id,'_')]")
+            //By.xpath("//input[start-with(@id,'file')
+            driverUtil.findElementByXpathAndClick("//button[contains(@id,'button')]");
 
                 Thread.sleep(3000);
             String totalPlayerWinOrLose = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div/div/div[2]/div[1]/div[4]/li/span[2]");

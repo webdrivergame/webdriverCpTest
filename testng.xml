@@ -4,6 +4,7 @@
     <test verbose="2" preserve-order="true" name="C:/Users/jtc/IdeaProjects/game">
         <classes>
             <class name="InbetAdminTestCase.AdminHomeTest"></class>
+            <class name="AgentManagement.CashBusinessDetail"></class>
 
         </classes>
     </test>
