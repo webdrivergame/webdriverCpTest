@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96204fec-b768-4500-a32d-bdf317ef3d35" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/d15aca2c-001f-40cd-9c08-6ef1712a0331-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2019-03-05T03-41-07_804-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0f8606b7-5d86-484b-94e2-b23d0d4d2174-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/12f801e0-f929-49b9-bec2-8f4d2567ef98-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1593749f-b3da-43fb-8fd7-cccabe395279-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1ca6c1b1-b677-4cf5-91c9-be00ca4a9ff2-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/26754013-02ea-4ff7-8f37-f2c0db2e9711-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3696a2e0-d3cd-4f60-a3d4-054312744103-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3d3c70de-0fea-4be0-8e25-84821cc69f08-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/62354f53-bef1-4f58-a5a0-c004982d03ce-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/66c0b8af-ed9a-4da3-bbd1-1236fe07d218-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/6759f41e-3d74-4751-b4ba-de31ecda3e34-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7a095e67-0660-4f20-8b93-bcfe8bcfadde-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/996b22a9-21b1-4632-90ae-e2782d8e6172-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a216500d-0c1b-4ab8-b8d4-e7faff6642ad-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/af88cdbd-ec2d-4d61-b970-be571f9f2e67-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/bb2acaf3-397e-4581-9f4b-f9215c91074d-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/cfe259cd-36e5-4a87-a945-a94639ad3375-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/da25ed1d-95e6-4c7d-a9da-ddcfbbff6172-testsuite.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,15 +83,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="81" />
-          <entry key="java" value="25694" />
-          <entry key="xml" value="489" />
+          <entry key="java" value="26026" />
+          <entry key="xml" value="491" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="25694" />
+          <entry key="JAVA" value="26026" />
           <entry key="PLAIN_TEXT" value="81" />
-          <entry key="XML" value="489" />
+          <entry key="XML" value="491" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -109,11 +121,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+            <state relative-caret-position="120">
+              <caret line="5" column="67" lean-forward="true" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -130,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-879">
-              <caret line="183" column="54" lean-forward="true" selection-start-line="183" selection-start-column="54" selection-end-line="183" selection-end-column="54" />
+            <state relative-caret-position="1001">
+              <caret line="252" column="59" selection-start-line="252" selection-start-column="59" selection-end-line="252" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="179" column="29" selection-start-line="179" selection-start-column="29" selection-end-line="179" selection-end-column="29" />
+            <state relative-caret-position="-463">
+              <caret line="267" selection-start-line="267" selection-end-line="267" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -239,9 +251,9 @@
         <option value="$PROJECT_DIR$/src/test/java/InbetGoldAgentTestCase/GoldAgentHomeTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/serverErrorTestCase/adminHomeCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" />
+        <option value="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" />
       </list>
     </option>
   </component>
@@ -367,7 +379,7 @@
     <property name="SearchEverywhereHistoryKey" value="link&#9;PSI&#9;JAVA://io.qameta.allure.Link&#10;we&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil&#10;classname&#9;FILE&#9;jar://C:/Users/jtc/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.0/jackson-databind-2.7.0.jar!/com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver.class&#10;return&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#returnToPreviousPage&#10;js&#9;PSI&#9;JAVA://jdk.nashorn.internal.scripts.JS&#10;滚动条&#9;null&#9;null&#10;findElementByX&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#findElementByXpath" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551798518182" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551799626032" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -597,7 +609,7 @@
       <workItem from="1550113486947" duration="36808000" />
       <workItem from="1550217117830" duration="66258000" />
       <workItem from="1550819121902" duration="64166000" />
-      <workItem from="1551323161040" duration="39306000" />
+      <workItem from="1551323161040" duration="40621000" />
     </task>
     <servers />
   </component>
@@ -634,7 +646,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467418000" />
+    <option name="totallyTimeSpent" value="468733000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -658,7 +670,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.48968512" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.06188925" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.06188925" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.10206298" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -880,30 +892,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java">
+    <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-879">
-          <caret line="183" column="54" lean-forward="true" selection-start-line="183" selection-start-column="54" selection-end-line="183" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="5" column="67" lean-forward="true" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="179" column="29" selection-start-line="179" selection-start-column="29" selection-end-line="179" selection-end-column="29" />
+        <state relative-caret-position="-463">
+          <caret line="267" selection-start-line="267" selection-end-line="267" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        <state relative-caret-position="1001">
+          <caret line="252" column="59" selection-start-line="252" selection-start-column="59" selection-end-line="252" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

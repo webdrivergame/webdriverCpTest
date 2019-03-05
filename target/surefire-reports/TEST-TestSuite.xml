@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="129.89" tests="8" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="131.99" tests="8" errors="0" skipped="0" failures="4">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
@@ -64,21 +64,70 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="serviceFeeIncome" classname="InbetAdminTestCase.AdminHomeTest" time="20.216"/>
-  <testcase name="sinceBusinessOperationsTotalArrears" classname="InbetAdminTestCase.AdminHomeTest" time="17.05"/>
-  <testcase name="businessMoneyTotal" classname="InbetAdminTestCase.AdminHomeTest" time="16.776"/>
-  <testcase name="playerNumber" classname="InbetAdminTestCase.AdminHomeTest" time="18.04"/>
-  <testcase name="systemWinOrLose" classname="InbetAdminTestCase.AdminHomeTest" time="14.988">
+  <testcase name="serviceFeeIncome" classname="InbetAdminTestCase.AdminHomeTest" time="17.897">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at InbetAdminTestCase.AdminHomeTest.serviceFeeIncome(AdminHomeTest.java:41)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 40117
+Only local connections are allowed.
+三月 05, 2019 10:12:20 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+三月 05, 2019 10:12:22 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Detected dialect: OSS
+java.lang.AssertionError: expected [63.91] but found [18.95]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at ListenerPackage.Assertion.verifyEquals(Assertion.java:24)
+	at InbetAdminTestCase.AdminHomeTest.serviceFeeIncome(AdminHomeTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]></system-err>
+  </testcase>
+  <testcase name="sinceBusinessOperationsTotalArrears" classname="InbetAdminTestCase.AdminHomeTest" time="16.732"/>
+  <testcase name="businessMoneyTotal" classname="InbetAdminTestCase.AdminHomeTest" time="16.956"/>
+  <testcase name="playerNumber" classname="InbetAdminTestCase.AdminHomeTest" time="17.814"/>
+  <testcase name="systemWinOrLose" classname="InbetAdminTestCase.AdminHomeTest" time="14.767">
     <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
 	at InbetAdminTestCase.AdminHomeTest.systemWinOrLose(AdminHomeTest.java:156)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 22596
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 14053
 Only local connections are allowed.
-三月 05, 2019 4:23:36 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
+三月 05, 2019 10:13:29 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
 信息: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-三月 05, 2019 4:23:38 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
+三月 05, 2019 10:13:30 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
 信息: Detected dialect: OSS
-java.lang.AssertionError: expected [218,558.71] but found [-218,558.83]
+java.lang.AssertionError: expected [198,021.51] but found [-198,021.51]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
@@ -115,30 +164,99 @@ java.lang.AssertionError: expected [218,558.71] but found [-218,558.83]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]></system-err>
   </testcase>
-  <testcase name="totalSystemWinOrLose" classname="InbetAdminTestCase.AdminHomeTest" time="11.72">
-    <failure message="invalid selector: Unable to locate an element with the xpath expression  because of the following error:&#10;SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;&apos; is not a valid XPath expression.&#10;  (Session info: chrome=71.0.3578.98)&#10;  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 17 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;&#10;System info: host: &apos;DESKTOP-NDF1E9V&apos;, ip: &apos;192.168.1.252&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:14604}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir88264_29117}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: a29214ce73421614c4593bbf28ed4c1f&#10;*** Element info: {Using=xpath, value=}" type="org.openqa.selenium.InvalidSelectorException">org.openqa.selenium.InvalidSelectorException: 
-invalid selector: Unable to locate an element with the xpath expression  because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression.
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:14604}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir88264_29117}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a29214ce73421614c4593bbf28ed4c1f
-*** Element info: {Using=xpath, value=}
-	at InbetAdminTestCase.AdminHomeTest.totalSystemWinOrLose(AdminHomeTest.java:185)
+  <testcase name="totalSystemWinOrLose" classname="InbetAdminTestCase.AdminHomeTest" time="16.667">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at InbetAdminTestCase.AdminHomeTest.totalSystemWinOrLose(AdminHomeTest.java:192)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 22135
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 35173
 Only local connections are allowed.
-三月 05, 2019 4:23:51 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
+三月 05, 2019 10:13:43 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
 信息: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-三月 05, 2019 4:23:52 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
+三月 05, 2019 10:13:45 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
 信息: Detected dialect: OSS
+java.lang.AssertionError: expected [16,268,639.23] but found [198,021.51]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at ListenerPackage.Assertion.verifyEquals(Assertion.java:24)
+	at InbetAdminTestCase.AdminHomeTest.totalSystemWinOrLose(AdminHomeTest.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]></system-err>
   </testcase>
-  <testcase name="todayCommission" classname="InbetAdminTestCase.AdminHomeTest" time="14.797"/>
-  <testcase name="totalCommission" classname="InbetAdminTestCase.AdminHomeTest" time="14.918"/>
+  <testcase name="todayCommission" classname="InbetAdminTestCase.AdminHomeTest" time="14.675">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at InbetAdminTestCase.AdminHomeTest.todayCommission(AdminHomeTest.java:220)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 10099
+Only local connections are allowed.
+三月 05, 2019 10:14:00 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+三月 05, 2019 10:14:02 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Detected dialect: OSS
+java.lang.AssertionError: expected [10,704.79] but found [10,762.34]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at ListenerPackage.Assertion.verifyEquals(Assertion.java:24)
+	at InbetAdminTestCase.AdminHomeTest.todayCommission(AdminHomeTest.java:219)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]></system-err>
+  </testcase>
+  <testcase name="totalCommission" classname="InbetAdminTestCase.AdminHomeTest" time="15.067"/>
 </testsuite>

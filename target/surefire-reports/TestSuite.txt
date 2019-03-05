@@ -1,24 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 129.89 s <<< FAILURE! - in TestSuite
-systemWinOrLose(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 14.988 s  <<< FAILURE!
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 131.99 s <<< FAILURE! - in TestSuite
+serviceFeeIncome(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 17.897 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at InbetAdminTestCase.AdminHomeTest.serviceFeeIncome(AdminHomeTest.java:41)
+
+systemWinOrLose(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 14.767 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at InbetAdminTestCase.AdminHomeTest.systemWinOrLose(AdminHomeTest.java:156)
 
-totalSystemWinOrLose(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 11.72 s  <<< FAILURE!
-org.openqa.selenium.InvalidSelectorException: 
-invalid selector: Unable to locate an element with the xpath expression  because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression.
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 17 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:14604}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir88264_29117}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a29214ce73421614c4593bbf28ed4c1f
-*** Element info: {Using=xpath, value=}
-	at InbetAdminTestCase.AdminHomeTest.totalSystemWinOrLose(AdminHomeTest.java:185)
+totalSystemWinOrLose(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 16.667 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at InbetAdminTestCase.AdminHomeTest.totalSystemWinOrLose(AdminHomeTest.java:192)
+
+todayCommission(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 14.675 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at InbetAdminTestCase.AdminHomeTest.todayCommission(AdminHomeTest.java:220)
 
