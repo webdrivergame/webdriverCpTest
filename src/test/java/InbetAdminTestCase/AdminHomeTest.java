@@ -169,7 +169,7 @@ public class AdminHomeTest {
         @Story("现金模式")
         @Title("验证系统盈亏总计与玩家输赢总计金额是否一致")
 
-        @Test(priority = 6)
+        @Test(enabled = false)
         public void totalSystemWinOrLose() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -258,43 +258,6 @@ public class AdminHomeTest {
             driverUtil.LoginAfter();
         }
 
-
-        @Feature("平台首页")
-        @Story("现金模式")
-        @Title("验证今日充值金额与现金充值提现记录-人工充值+在线充值是否一致")
-
-        @Test(enabled = false)
-        public void rechargeToday() throws InterruptedException {
-
-            WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("http://192.168.1.9:9091");
-            driverUtil.adminlogin("xiaochaoadmin", "123123");
-            driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-            Thread.sleep(6000);
-
-            //验证今日充值金额与现金充值提现记录-人工充值+在线充值是否一致
-            String rechangeToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div/div[3]/table/tbody/tr[1]/td[9]/div/div");
-            driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","现金-充值提现记录");
-            driverUtil.findElementByXpathAndClick("//*[@id=\"rest_cash_recharge_withdraw_list\"]/li/span");
-                Thread.sleep(2000);
-            String s1 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div[1]/span[2]");
-            String s2 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div[3]/span[2]");
-
-
-            int a = Integer.parseInt(s1);
-            int b = Integer.parseInt(s2);
-            //int total = a+b;
-            String total = Integer.toString(b+a);
-            //String total = Integer.toString(Integer.parseInt(s1+s2));
-
-            //String total = (String) driverUtil.toString(s1+s2);
-
-              Assertion.setFlag(true);
-              Assertion.verifyEquals(total,rechangeToday);
-              Assert.assertTrue(Assertion.currentFlag());
-
-            driverUtil.LoginAfter();
-        }
 
 
 

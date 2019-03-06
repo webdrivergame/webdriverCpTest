@@ -22,7 +22,7 @@ public class CashBusinessDetail {
         public void immediateLowerAgentNumber() throws InterruptedException {
 
             WebDriverUtil driverUtil = new WebDriverUtil(driver);
-            driverUtil.LoginBefore("http://192.168.1.9:9091/#/login");
+            driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminlogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                 Thread.sleep(6000);
@@ -31,7 +31,7 @@ public class CashBusinessDetail {
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_cash_list\"]/li/span");
                 Thread.sleep(5000);
             //搜索商户
-            driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","xjtg66");
+            driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","qaxjtg01");
             driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
                 Thread.sleep(3000);
 
@@ -58,7 +58,7 @@ public class CashBusinessDetail {
     public void taxTotal() throws InterruptedException {
 
         WebDriverUtil driverUtil = new WebDriverUtil(driver);
-        driverUtil.LoginBefore("http://192.168.1.9:9091/#/login");
+        driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
         driverUtil.adminlogin("xiaochaoadmin", "123123");
         driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
         Thread.sleep(6000);
@@ -67,7 +67,7 @@ public class CashBusinessDetail {
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_cash_list\"]/li/span");
         Thread.sleep(5000);
         //搜索商户
-        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "xjtg66");
+        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "qaxjtg01");
         driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
         Thread.sleep(3000);
         //进入商户详情
@@ -83,7 +83,7 @@ public class CashBusinessDetail {
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_sub_promotion_agent_statistics\"]/li/span");
         Thread.sleep(3000);
 
-        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "xjtg66");
+        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "qaxjtg01");
         driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
         Thread.sleep(3000);
 
@@ -106,7 +106,7 @@ public class CashBusinessDetail {
     public void alreadySettlementMoney() throws InterruptedException {
 
         WebDriverUtil driverUtil = new WebDriverUtil(driver);
-        driverUtil.LoginBefore("http://192.168.1.9:9091/#/login");
+        driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
         driverUtil.adminlogin("xiaochaoadmin", "123123");
         driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
             Thread.sleep(6000);
@@ -115,7 +115,7 @@ public class CashBusinessDetail {
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_cash_list\"]/li/span");
             Thread.sleep(5000);
         //搜索商户
-        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "xjtg66");
+        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "qaxjtg01");
         driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
             Thread.sleep(3000);
         //进入商户详情
@@ -129,7 +129,7 @@ public class CashBusinessDetail {
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_sub_promotion_agent_statistics\"]/li/span");
             Thread.sleep(3000);
         //按照商户搜索
-        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "xjtg66");
+        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "qaxjtg01");
         driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
             Thread.sleep(3000);
         //获取已提现佣金
@@ -151,7 +151,7 @@ public class CashBusinessDetail {
     public void waitWithdrawMoney() throws InterruptedException {
 
         WebDriverUtil driverUtil = new WebDriverUtil(driver);
-        driverUtil.LoginBefore("http://192.168.1.9:9091/#/login");
+        driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
         driverUtil.adminlogin("xiaochaoadmin", "123123");
         driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
             Thread.sleep(6000);
@@ -160,7 +160,7 @@ public class CashBusinessDetail {
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_cash_list\"]/li/span");
             Thread.sleep(5000);
         //搜索商户
-        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "xjtg66");
+        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "qaxjtg01");
         driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
             Thread.sleep(3000);
         //进入商户详情
@@ -175,7 +175,7 @@ public class CashBusinessDetail {
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_sub_promotion_agent_statistics\"]/li/span");
             Thread.sleep(3000);
         //待提现佣金
-        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "xjtg66");
+        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "qaxjtg01");
         driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
             Thread.sleep(3000);
 
@@ -198,7 +198,7 @@ public class CashBusinessDetail {
     public void rechargeBalance() throws InterruptedException {
 
         WebDriverUtil driverUtil = new WebDriverUtil(driver);
-        driverUtil.LoginBefore("http://192.168.1.9:9091/#/login");
+        driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
         driverUtil.adminlogin("xiaochaoadmin", "123123");
         driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
             Thread.sleep(6000);
@@ -207,7 +207,7 @@ public class CashBusinessDetail {
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_cash_list\"]/li/span");
             Thread.sleep(5000);
         //搜索商户
-        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "xjtg66");
+        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "qaxjtg01");
         driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
             Thread.sleep(3000);
         //进入商户详情
@@ -221,7 +221,7 @@ public class CashBusinessDetail {
             Thread.sleep(3000);
 
         //搜索商户
-        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/div[1]/input", "xjtg66");
+        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/div[1]/input", "qaxjtg01");
         driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
             Thread.sleep(3000);
         String rechargeBalance2 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div/div[3]/table/tbody/tr/td[4]/div");
@@ -242,7 +242,7 @@ public class CashBusinessDetail {
     public void onlineRechargeCredit() throws InterruptedException {
 
         WebDriverUtil driverUtil = new WebDriverUtil(driver);
-        driverUtil.LoginBefore("http://192.168.1.9:9091/#/login");
+        driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
         driverUtil.adminlogin("xiaochaoadmin", "123123");
         driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
             Thread.sleep(6000);
@@ -251,7 +251,7 @@ public class CashBusinessDetail {
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_cash_list\"]/li/span");
             Thread.sleep(5000);
         //搜索商户
-        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "xjtg66");
+        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "qaxjtg01");
         driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
             Thread.sleep(3000);
         //进入商户详情
@@ -282,7 +282,7 @@ public class CashBusinessDetail {
     public void onlineWithdrawCredit() throws InterruptedException {
 
         WebDriverUtil driverUtil = new WebDriverUtil(driver);
-        driverUtil.LoginBefore("http://192.168.1.9:9091/#/login");
+        driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
         driverUtil.adminlogin("xiaochaoadmin", "123123");
         driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
             Thread.sleep(6000);
@@ -291,7 +291,7 @@ public class CashBusinessDetail {
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_cash_list\"]/li/span");
             Thread.sleep(5000);
         //搜索商户
-        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "xjtg66");
+        driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input", "qaxjtg01");
         driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
             Thread.sleep(3000);
         //进入商户详情

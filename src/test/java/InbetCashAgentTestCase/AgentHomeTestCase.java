@@ -20,8 +20,8 @@ public class AgentHomeTestCase {
     public void homeIncomeToday() throws InterruptedException {
 
         WebDriverUtil driverUtil = new WebDriverUtil(driver);
-        driverUtil.LoginBefore("http://xjtg66.com:9091/#/login");
-        driverUtil.adminlogin("ddddd","123456");
+        driverUtil.LoginBefore("https://koudai.oneonewan.com/#/login");
+        driverUtil.adminlogin("44444","123456");
         driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
             Thread.sleep(4000);
 
@@ -46,8 +46,8 @@ public class AgentHomeTestCase {
     public void homeWaitSettlementMoney() throws InterruptedException {
 
         WebDriverUtil driverUtil1 = new WebDriverUtil(driver);
-        driverUtil1.LoginBefore("http://xjtg66.com:9091/#/login");
-        driverUtil1.adminlogin("ddddd","123456");
+        driverUtil1.LoginBefore("https://koudai.oneonewan.com/#/login");
+        driverUtil1.adminlogin("44444","123456");
         driverUtil1.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
             Thread.sleep(4000);
 

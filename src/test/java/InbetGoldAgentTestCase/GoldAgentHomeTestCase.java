@@ -19,8 +19,8 @@ public class GoldAgentHomeTestCase {
     public void GoldAgentHome() throws InterruptedException {
 
         WebDriverUtil driverUtil = new WebDriverUtil(driver);
-        driverUtil.LoginBefore("http://wxjb66.com:9091/#/login");
-        driverUtil.adminlogin("wxjbdl","123456");
+        driverUtil.LoginBefore("https://binli.oneonewan.com/#/login");
+        driverUtil.adminlogin("wxjbdl1","123456");
         driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
             Thread.sleep(4000);
 
@@ -44,8 +44,8 @@ public class GoldAgentHomeTestCase {
     public void PlayerArrearsTotal() throws InterruptedException {
 
         WebDriverUtil driverUtil1 = new WebDriverUtil(driver);
-        driverUtil1.LoginBefore("http://wxjb66.com:9091/#/login");
-        driverUtil1.adminlogin("wxjbdl","123456");
+        driverUtil1.LoginBefore("https://binli.oneonewan.com/#/login");
+        driverUtil1.adminlogin("wxjbdl1","123456");
         driverUtil1.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
             Thread.sleep(2000);
 

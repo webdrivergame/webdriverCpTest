@@ -19,8 +19,8 @@ public class BusinessHomeTestCase {
     public void businessHome() throws InterruptedException {
 
         WebDriverUtil driverUtil = new WebDriverUtil(driver);
-        driverUtil.LoginBefore("http://xjtg66.com:9091/#/login");
-        driverUtil.adminlogin("xjtg66","123456");
+        driverUtil.LoginBefore("https://koudai.oneonewan.com/#/login");
+        driverUtil.adminlogin("qaxjtg01","123123");
         driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
             Thread.sleep(4000);
 
@@ -43,8 +43,8 @@ public class BusinessHomeTestCase {
     public void waitSettlementMoney() throws InterruptedException {
 
         WebDriverUtil driverUtil2 = new WebDriverUtil(driver);
-        driverUtil2.LoginBefore("http://xjtg66.com:9091/#/login");
-        driverUtil2.adminlogin("xjtg66","123456");
+        driverUtil2.LoginBefore("https://koudai.oneonewan.com/#/login");
+        driverUtil2.adminlogin("qaxjtg01","123123");
         driverUtil2.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
             Thread.sleep(4000);
 

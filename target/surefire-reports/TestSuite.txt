@@ -1,20 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 131.99 s <<< FAILURE! - in TestSuite
-serviceFeeIncome(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 17.897 s  <<< FAILURE!
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 128.11 s <<< FAILURE! - in TestSuite
+playerNumber(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 15.395 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
-	at InbetAdminTestCase.AdminHomeTest.serviceFeeIncome(AdminHomeTest.java:41)
+	at InbetAdminTestCase.AdminHomeTest.playerNumber(AdminHomeTest.java:132)
 
-systemWinOrLose(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 14.767 s  <<< FAILURE!
+totalSystemWinOrLose(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 16.479 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
-	at InbetAdminTestCase.AdminHomeTest.systemWinOrLose(AdminHomeTest.java:156)
-
-totalSystemWinOrLose(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 16.667 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at InbetAdminTestCase.AdminHomeTest.totalSystemWinOrLose(AdminHomeTest.java:192)
-
-todayCommission(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 14.675 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at InbetAdminTestCase.AdminHomeTest.todayCommission(AdminHomeTest.java:220)
+	at InbetAdminTestCase.AdminHomeTest.totalSystemWinOrLose(AdminHomeTest.java:198)
 

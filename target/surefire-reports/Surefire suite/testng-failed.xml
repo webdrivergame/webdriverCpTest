@@ -6,9 +6,7 @@
       <class name="InbetAdminTestCase.AdminHomeTest">
         <methods>
           <include name="totalSystemWinOrLose"/>
-          <include name="todayCommission"/>
-          <include name="systemWinOrLose"/>
-          <include name="serviceFeeIncome"/>
+          <include name="playerNumber"/>
         </methods>
       </class> <!-- InbetAdminTestCase.AdminHomeTest -->
     </classes>
