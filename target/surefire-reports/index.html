@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,11 +102,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="InbetAdminTestCase.AdminHomeTest" hash-for-method="playerNumber">playerNumber</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="InbetAdminTestCase.AdminHomeTest" hash-for-method="totalSystemWinOrLose">totalSystemWinOrLose</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -173,17 +168,6 @@
                   <span class="method-name">playerNumber</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
 	at InbetAdminTestCase.AdminHomeTest.playerNumber(AdminHomeTest.java:132)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="totalSystemWinOrLose">
-                  </a> <!-- totalSystemWinOrLose -->
-                  <span class="method-name">totalSystemWinOrLose</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at InbetAdminTestCase.AdminHomeTest.totalSystemWinOrLose(AdminHomeTest.java:198)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -294,44 +278,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'serviceFeeIncome')
 data.setCell(0, 2, 'InbetAdminTestCase.AdminHomeTest')
-data.setCell(0, 3, 19423);
+data.setCell(0, 3, 19489);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'totalSystemWinOrLose')
+data.setCell(1, 1, 'systemWinOrLose')
 data.setCell(1, 2, 'InbetAdminTestCase.AdminHomeTest')
-data.setCell(1, 3, 16387);
+data.setCell(1, 3, 16601);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'businessMoneyTotal')
+data.setCell(2, 1, 'sinceBusinessOperationsTotalArrears')
 data.setCell(2, 2, 'InbetAdminTestCase.AdminHomeTest')
-data.setCell(2, 3, 16219);
+data.setCell(2, 3, 16481);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'sinceBusinessOperationsTotalArrears')
+data.setCell(3, 1, 'playerNumber')
 data.setCell(3, 2, 'InbetAdminTestCase.AdminHomeTest')
-data.setCell(3, 3, 16209);
+data.setCell(3, 3, 16190);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'playerNumber')
+data.setCell(4, 1, 'businessMoneyTotal')
 data.setCell(4, 2, 'InbetAdminTestCase.AdminHomeTest')
-data.setCell(4, 3, 15237);
+data.setCell(4, 3, 16183);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'todayCommission')
 data.setCell(5, 2, 'InbetAdminTestCase.AdminHomeTest')
-data.setCell(5, 3, 14457);
+data.setCell(5, 3, 14623);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'systemWinOrLose')
+data.setCell(6, 1, 'totalCommission')
 data.setCell(6, 2, 'InbetAdminTestCase.AdminHomeTest')
-data.setCell(6, 3, 14340);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'totalCommission')
-data.setCell(7, 2, 'InbetAdminTestCase.AdminHomeTest')
-data.setCell(7, 3, 14208);
+data.setCell(6, 3, 14569);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -359,13 +339,6 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">InbetAdminTestCase.AdminHomeTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">rechargeToday</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">InbetCashBusinessTestCase.BusinessHomeTestCase</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">businessHome</span>
@@ -380,6 +353,13 @@ return data;
                 <span class="ignored-method-name">GoldAgentHome</span>
                 <br/>
                 <span class="ignored-method-name">PlayerArrearsTotal</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">InbetAdminTestCase.AdminHomeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">totalSystemWinOrLose</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -398,35 +378,29 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sinceBusinessOperationsTotalArrears</span>
-                <span class="method-start">19562 ms</span>
+                <span class="method-start">19585 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">businessMoneyTotal</span>
-                <span class="method-start">35772 ms</span>
+                <span class="method-start">36068 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">playerNumber</span>
-                <span class="method-start">51992 ms</span>
+                <span class="method-start">52252 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">systemWinOrLose</span>
-                <span class="method-start">67244 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">totalSystemWinOrLose</span>
-                <span class="method-start">81586 ms</span>
+                <span class="method-start">68461 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">todayCommission</span>
-                <span class="method-start">97974 ms</span>
+                <span class="method-start">85063 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">totalCommission</span>
-                <span class="method-start">112434 ms</span>
+                <span class="method-start">99689 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

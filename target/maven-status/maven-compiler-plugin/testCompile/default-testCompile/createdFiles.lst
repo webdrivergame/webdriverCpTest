@@ -1,7 +1,6 @@
 InbetCashBusinessTestCase\BusinessHomeTestCase.class
 InbetGoldAgentTestCase\GoldAgentHomeTestCase.class
 serverErrorTestCase\adminHomeCase.class
-InbetCashAgentTestCase\CashAgentreChangeRecord.class
 AgentManagement\CashBusinessDetail.class
 ListenerPackage\AssertionListener.class
 PublicMethod\WebDriverUtil.class

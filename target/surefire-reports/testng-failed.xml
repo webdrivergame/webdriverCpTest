@@ -5,7 +5,6 @@
     <classes>
       <class name="InbetAdminTestCase.AdminHomeTest">
         <methods>
-          <include name="totalSystemWinOrLose"/>
           <include name="playerNumber"/>
         </methods>
       </class> <!-- InbetAdminTestCase.AdminHomeTest -->
