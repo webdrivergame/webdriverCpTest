@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 115.542 s <<< FAILURE! - in TestSuite
-playerNumber(InbetAdminTestCase.AdminHomeTest)  Time elapsed: 16.313 s  <<< FAILURE!
+Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 291.457 s <<< FAILURE! - in TestSuite
+rechargeBalance(AgentManagement.CashBusinessDetail)  Time elapsed: 26.157 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
-	at InbetAdminTestCase.AdminHomeTest.playerNumber(AdminHomeTest.java:132)
+	at AgentManagement.CashBusinessDetail.rechargeBalance(CashBusinessDetail.java:231)
 

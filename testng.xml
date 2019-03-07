@@ -5,6 +5,7 @@
         <classes>
             <class name="InbetAdminTestCase.AdminHomeTest"></class>
             <class name="AgentManagement.CashBusinessDetail"></class>
+            <class name="AgentManagement.CashAgentDetail"></class>
         </classes>
     </test>
 </suite>

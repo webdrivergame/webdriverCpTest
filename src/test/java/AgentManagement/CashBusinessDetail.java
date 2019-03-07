@@ -16,7 +16,7 @@ public class CashBusinessDetail {
 
         @Feature("代理管理-现金推广代理")
         @Story("现金推广商户详情")
-        @Title("验证运营数据-直属下级代理人数是否一致")
+        @Title("现金商户详情-验证运营数据-直属下级代理人数是否一致")
 
         @Test(priority = 1)
         public void immediateLowerAgentNumber() throws InterruptedException {
@@ -52,7 +52,7 @@ public class CashBusinessDetail {
 
     @Feature("代理管理-现金推广代理")
     @Story("现金推广商户详情")
-    @Title("验证运营数据-税收总计是否与下级佣金统计税收一致")
+    @Title("现金商户详情-验证运营数据-税收总计是否与下级佣金统计税收一致")
 
     @Test(priority = 2)
     public void taxTotal() throws InterruptedException {
@@ -100,7 +100,7 @@ public class CashBusinessDetail {
 
     @Feature("代理管理-现金推广代理")
     @Story("现金推广商户详情")
-    @Title("验证运营数据-获取佣金总计是否与下级佣金统计该商户已结算金额一致")
+    @Title("现金商户详情-验证运营数据-获取佣金总计是否与下级佣金统计该商户已结算金额一致")
 
     @Test(priority = 3)
     public void alreadySettlementMoney() throws InterruptedException {
@@ -145,7 +145,7 @@ public class CashBusinessDetail {
 
     @Feature("代理管理-现金推广代理")
     @Story("现金推广商户详情")
-    @Title("验证运营数据-待领取佣金是否与下级佣金统计待提现佣金一致")
+    @Title("现金商户详情-验证运营数据-待领取佣金是否与下级佣金统计待提现佣金一致")
 
     @Test(priority = 4)
     public void waitWithdrawMoney() throws InterruptedException {
@@ -192,7 +192,7 @@ public class CashBusinessDetail {
 
     @Feature("代理管理-现金推广代理")
     @Story("现金推广商户详情")
-    @Title("验证运营数据-充值余额是否与代理充值提现额度管理该商户金额一致")
+    @Title("现今商户详情-验证运营数据-充值余额是否与代理充值提现额度管理该商户金额一致")
 
     @Test(priority = 5)
     public void rechargeBalance() throws InterruptedException {
@@ -236,7 +236,7 @@ public class CashBusinessDetail {
 
     @Feature("代理管理-现金推广代理")
     @Story("现金推广商户详情")
-    @Title("验证运营数据-在线充值可用额度金额是否与在线充值提现额度列表该商户金额一致")
+    @Title("现金商户详情-验证运营数据-在线充值可用额度金额是否与在线充值提现额度列表该商户金额一致")
 
     @Test( priority = 6)
     public void onlineRechargeCredit() throws InterruptedException {
@@ -276,7 +276,7 @@ public class CashBusinessDetail {
 
     @Feature("代理管理-现金推广代理")
     @Story("现金推广商户详情")
-    @Title("验证运营数据-在线提现可用额度金额是否与在线充值提现额度列表该商户金额一致")
+    @Title("现金商户详情-验证运营数据-在线提现可用额度金额是否与在线充值提现额度列表该商户金额一致")
 
     @Test(priority = 7)
     public void onlineWithdrawCredit() throws InterruptedException {

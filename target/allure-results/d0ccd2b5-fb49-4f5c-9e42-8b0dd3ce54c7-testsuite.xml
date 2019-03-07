@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1551944822697" stop="1551944854079" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : game</name>
+    <title>Default Suite : game</title>
+    <test-cases>
+        <test-case start="1551944822821" stop="1551944854061" status="passed">
+            <name>addWithdrawalMoney</name>
+            <title>现金推广代理详情-验证运营数据-累计提款金额与下级佣金统计已领取金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="AgentManagement.CashAgentDetail"/>
+                <label name="testMethod" value="addWithdrawalMoney"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="111096@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

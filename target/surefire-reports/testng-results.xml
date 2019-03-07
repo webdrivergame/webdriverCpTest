@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="7" passed="6">
+<testng-results skipped="0" failed="1" total="14" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="114318" started-at="2019-03-06T04:36:27Z" finished-at="2019-03-06T04:38:21Z">
+  <suite name="All Test Suite" duration-ms="289259" started-at="2019-03-07T03:31:31Z" finished-at="2019-03-07T03:36:21Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="114318" started-at="2019-03-06T04:36:27Z" finished-at="2019-03-06T04:38:21Z">
-      <class name="InbetAdminTestCase.AdminHomeTest">
-        <test-method status="PASS" signature="serviceFeeIncome()[pri:1, instance:InbetAdminTestCase.AdminHomeTest@1c4057f9]" name="serviceFeeIncome" duration-ms="19489" started-at="2019-03-06T11:36:27Z" finished-at="2019-03-06T11:36:47Z">
+    <test name="C:/Users/jtc/IdeaProjects/game" duration-ms="289259" started-at="2019-03-07T03:31:31Z" finished-at="2019-03-07T03:36:21Z">
+      <class name="AgentManagement.CashBusinessDetail">
+        <test-method status="PASS" signature="immediateLowerAgentNumber()[pri:1, instance:AgentManagement.CashBusinessDetail@1958c0d9]" name="immediateLowerAgentNumber" duration-ms="22363" started-at="2019-03-07T10:33:24Z" finished-at="2019-03-07T10:33:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- serviceFeeIncome -->
-        <test-method status="PASS" signature="sinceBusinessOperationsTotalArrears()[pri:2, instance:InbetAdminTestCase.AdminHomeTest@1c4057f9]" name="sinceBusinessOperationsTotalArrears" duration-ms="16481" started-at="2019-03-06T11:36:47Z" finished-at="2019-03-06T11:37:03Z">
+        </test-method> <!-- immediateLowerAgentNumber -->
+        <test-method status="PASS" signature="taxTotal()[pri:2, instance:AgentManagement.CashBusinessDetail@1958c0d9]" name="taxTotal" duration-ms="28340" started-at="2019-03-07T10:33:47Z" finished-at="2019-03-07T10:34:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sinceBusinessOperationsTotalArrears -->
-        <test-method status="PASS" signature="businessMoneyTotal()[pri:3, instance:InbetAdminTestCase.AdminHomeTest@1c4057f9]" name="businessMoneyTotal" duration-ms="16183" started-at="2019-03-06T11:37:03Z" finished-at="2019-03-06T11:37:19Z">
+        </test-method> <!-- taxTotal -->
+        <test-method status="PASS" signature="alreadySettlementMoney()[pri:3, instance:AgentManagement.CashBusinessDetail@1958c0d9]" name="alreadySettlementMoney" duration-ms="26209" started-at="2019-03-07T10:34:15Z" finished-at="2019-03-07T10:34:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- businessMoneyTotal -->
-        <test-method status="FAIL" signature="playerNumber()[pri:4, instance:InbetAdminTestCase.AdminHomeTest@1c4057f9]" name="playerNumber" duration-ms="16190" started-at="2019-03-06T11:37:19Z" finished-at="2019-03-06T11:37:36Z">
+        </test-method> <!-- alreadySettlementMoney -->
+        <test-method status="PASS" signature="waitWithdrawMoney()[pri:4, instance:AgentManagement.CashBusinessDetail@1958c0d9]" name="waitWithdrawMoney" duration-ms="26571" started-at="2019-03-07T10:34:41Z" finished-at="2019-03-07T10:35:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitWithdrawMoney -->
+        <test-method status="FAIL" signature="rechargeBalance()[pri:5, instance:AgentManagement.CashBusinessDetail@1958c0d9]" name="rechargeBalance" duration-ms="26091" started-at="2019-03-07T10:35:08Z" finished-at="2019-03-07T10:35:34Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -30,7 +34,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at InbetAdminTestCase.AdminHomeTest.playerNumber(AdminHomeTest.java:132)
+	at AgentManagement.CashBusinessDetail.rechargeBalance(CashBusinessDetail.java:231)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -52,10 +56,9 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
@@ -64,20 +67,46 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- rechargeBalance -->
+        <test-method status="PASS" signature="onlineRechargeCredit()[pri:6, instance:AgentManagement.CashBusinessDetail@1958c0d9]" name="onlineRechargeCredit" duration-ms="23256" started-at="2019-03-07T10:35:34Z" finished-at="2019-03-07T10:35:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onlineRechargeCredit -->
+        <test-method status="PASS" signature="onlineWithdrawCredit()[pri:7, instance:AgentManagement.CashBusinessDetail@1958c0d9]" name="onlineWithdrawCredit" duration-ms="23226" started-at="2019-03-07T10:35:57Z" finished-at="2019-03-07T10:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onlineWithdrawCredit -->
+      </class> <!-- AgentManagement.CashBusinessDetail -->
+      <class name="InbetAdminTestCase.AdminHomeTest">
+        <test-method status="PASS" signature="serviceFeeIncome()[pri:1, instance:InbetAdminTestCase.AdminHomeTest@574ebdaf]" name="serviceFeeIncome" duration-ms="21627" started-at="2019-03-07T10:31:31Z" finished-at="2019-03-07T10:31:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serviceFeeIncome -->
+        <test-method status="PASS" signature="sinceBusinessOperationsTotalArrears()[pri:2, instance:InbetAdminTestCase.AdminHomeTest@574ebdaf]" name="sinceBusinessOperationsTotalArrears" duration-ms="16507" started-at="2019-03-07T10:31:53Z" finished-at="2019-03-07T10:32:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sinceBusinessOperationsTotalArrears -->
+        <test-method status="PASS" signature="businessMoneyTotal()[pri:3, instance:InbetAdminTestCase.AdminHomeTest@574ebdaf]" name="businessMoneyTotal" duration-ms="16385" started-at="2019-03-07T10:32:10Z" finished-at="2019-03-07T10:32:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- businessMoneyTotal -->
+        <test-method status="PASS" signature="playerNumber()[pri:4, instance:InbetAdminTestCase.AdminHomeTest@574ebdaf]" name="playerNumber" duration-ms="15242" started-at="2019-03-07T10:32:26Z" finished-at="2019-03-07T10:32:41Z">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- playerNumber -->
-        <test-method status="PASS" signature="systemWinOrLose()[pri:5, instance:InbetAdminTestCase.AdminHomeTest@1c4057f9]" name="systemWinOrLose" duration-ms="16601" started-at="2019-03-06T11:37:36Z" finished-at="2019-03-06T11:37:52Z">
+        <test-method status="PASS" signature="systemWinOrLose()[pri:5, instance:InbetAdminTestCase.AdminHomeTest@574ebdaf]" name="systemWinOrLose" duration-ms="14232" started-at="2019-03-07T10:32:41Z" finished-at="2019-03-07T10:32:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- systemWinOrLose -->
-        <test-method status="PASS" signature="todayCommission()[pri:7, instance:InbetAdminTestCase.AdminHomeTest@1c4057f9]" name="todayCommission" duration-ms="14623" started-at="2019-03-06T11:37:52Z" finished-at="2019-03-06T11:38:07Z">
+        <test-method status="PASS" signature="todayCommission()[pri:7, instance:InbetAdminTestCase.AdminHomeTest@574ebdaf]" name="todayCommission" duration-ms="14120" started-at="2019-03-07T10:32:56Z" finished-at="2019-03-07T10:33:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- todayCommission -->
-        <test-method status="PASS" signature="totalCommission()[pri:8, instance:InbetAdminTestCase.AdminHomeTest@1c4057f9]" name="totalCommission" duration-ms="14569" started-at="2019-03-06T11:38:07Z" finished-at="2019-03-06T11:38:21Z">
+        <test-method status="PASS" signature="totalCommission()[pri:8, instance:InbetAdminTestCase.AdminHomeTest@574ebdaf]" name="totalCommission" duration-ms="14592" started-at="2019-03-07T10:33:10Z" finished-at="2019-03-07T10:33:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- totalCommission -->
       </class> <!-- InbetAdminTestCase.AdminHomeTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- C:/Users/jtc/IdeaProjects/game -->
+  </suite> <!-- All Test Suite -->
 </testng-results>

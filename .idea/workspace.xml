@@ -2,26 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96204fec-b768-4500-a32d-bdf317ef3d35" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/319d4976-d6c2-4b83-831f-c1e2285ff867-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/testng-failed.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-InbetAdminTestCase.AdminHomeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-InbetAdminTestCase.AdminHomeTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/Surefire test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -84,23 +93,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="81" />
-          <entry key="java" value="26084" />
-          <entry key="xml" value="499" />
+          <entry key="dummy" value="87" />
+          <entry key="java" value="26955" />
+          <entry key="xml" value="538" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="26084" />
-          <entry key="PLAIN_TEXT" value="81" />
-          <entry key="XML" value="499" />
+          <entry key="JAVA" value="26955" />
+          <entry key="PLAIN_TEXT" value="87" />
+          <entry key="XML" value="538" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="5" />
           <entry key="iml" value="1" />
-          <entry key="java" value="197" />
+          <entry key="java" value="198" />
           <entry key="json" value="2" />
           <entry key="log" value="1" />
           <entry key="md" value="1" />
@@ -112,7 +121,7 @@
         <counts>
           <entry key="CLASS" value="5" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="197" />
+          <entry key="JAVA" value="198" />
           <entry key="JSON" value="2" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
@@ -126,41 +135,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+            <state relative-caret-position="168">
+              <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1276">
-              <caret line="938" column="113" selection-start-line="938" selection-start-column="113" selection-end-line="938" selection-end-column="113" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/InbetGoldAgentTestCase/GoldAgentHomeTestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4200">
-              <caret line="175" column="35" selection-start-line="175" selection-start-column="35" selection-end-line="175" selection-end-column="35" />
+            <state relative-caret-position="1248">
+              <caret line="373" selection-start-line="373" selection-end-line="373" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,8 +156,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="118" column="20" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
+            <state relative-caret-position="2496">
+              <caret line="104" column="62" lean-forward="true" selection-start-line="104" selection-start-column="62" selection-end-line="104" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -180,20 +165,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="293" column="189" selection-start-line="293" selection-start-column="189" selection-end-line="293" selection-end-column="189" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/serverErrorTestCase/adminHomeCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="-3960">
+              <caret line="57" column="24" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -204,7 +177,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/InbetCashAgentTestCase/AgentHomeTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
+            <state relative-caret-position="1176">
               <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -217,7 +190,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/InbetCashBusinessTestCase/BusinessHomeTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
-              <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="24" />
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -253,7 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/PageMelement/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/logintest/base/LoginCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/PublicMethod/LoginModel.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTestCase/DebugTest.java" />
@@ -297,12 +269,13 @@
         <option value="$PROJECT_DIR$/src/test/java/InbetCashAgentTestCase/CashAgentreChangeRecord.java" />
         <option value="$PROJECT_DIR$/src/test/java/serverErrorTestCase/adminHomeCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/InbetCashAgentTestCase/AgentHomeTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/InbetGoldAgentTestCase/GoldAgentHomeTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/InbetCashBusinessTestCase/BusinessHomeTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" />
         <option value="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -453,11 +426,11 @@
     <property name="SearchEverywhereHistoryKey" value="link&#9;PSI&#9;JAVA://io.qameta.allure.Link&#10;we&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil&#10;classname&#9;FILE&#9;jar://C:/Users/jtc/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.0/jackson-databind-2.7.0.jar!/com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver.class&#10;return&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#returnToPreviousPage&#10;js&#9;PSI&#9;JAVA://jdk.nashorn.internal.scripts.JS&#10;滚动条&#9;null&#9;null&#10;findElementByX&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#findElementByXpath" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551847914974" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551947606997" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/testng.xml" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -489,7 +462,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.&lt;default&gt;">
+  <component name="RunManager" selected="TestNG.CashAgentDetail.DirectPushPlayerNumber">
     <configuration name="AdminHomeTest" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
@@ -515,6 +488,96 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CashAgentDetail.DirectPushPlayerNumber" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AgentManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AgentManagement" />
+      <option name="MAIN_CLASS_NAME" value="AgentManagement.CashAgentDetail" />
+      <option name="METHOD_NAME" value="DirectPushPlayerNumber" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CashAgentDetail.acceptRedEnvelopeTotal" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AgentManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AgentManagement" />
+      <option name="MAIN_CLASS_NAME" value="AgentManagement.CashAgentDetail" />
+      <option name="METHOD_NAME" value="acceptRedEnvelopeTotal" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CashAgentDetail.addWithdrawalMoney" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AgentManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AgentManagement" />
+      <option name="MAIN_CLASS_NAME" value="AgentManagement.CashAgentDetail" />
+      <option name="METHOD_NAME" value="addWithdrawalMoney" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CashAgentDetail.commissionAccountBalance" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AgentManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AgentManagement" />
+      <option name="MAIN_CLASS_NAME" value="AgentManagement.CashAgentDetail" />
+      <option name="METHOD_NAME" value="commissionAccountBalance" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CashAgentDetail.rechargeBalance" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AgentManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AgentManagement" />
+      <option name="MAIN_CLASS_NAME" value="AgentManagement.CashAgentDetail" />
+      <option name="METHOD_NAME" value="rechargeBalance" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CashBusinessDetail" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
@@ -531,64 +594,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CashBusinessDetail.alreadySettlementMoney" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testng.xml" type="TestNG" factoryName="TestNG">
       <module name="game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AgentManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AgentManagement" />
-      <option name="MAIN_CLASS_NAME" value="AgentManagement.CashBusinessDetail" />
-      <option name="METHOD_NAME" value="alreadySettlementMoney" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CashBusinessDetail.taxTotal" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AgentManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AgentManagement" />
-      <option name="MAIN_CLASS_NAME" value="AgentManagement.CashBusinessDetail" />
-      <option name="METHOD_NAME" value="taxTotal" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CashBusinessDetail.waitWithdrawMoney" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AgentManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AgentManagement" />
-      <option name="MAIN_CLASS_NAME" value="AgentManagement.CashBusinessDetail" />
-      <option name="METHOD_NAME" value="waitWithdrawMoney" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="&lt;default&gt;" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="game" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -598,17 +614,20 @@
     <list>
       <item itemvalue="TestNG.CashBusinessDetail" />
       <item itemvalue="TestNG.AdminHomeTest" />
-      <item itemvalue="TestNG.CashBusinessDetail.alreadySettlementMoney" />
-      <item itemvalue="TestNG.CashBusinessDetail.taxTotal" />
-      <item itemvalue="TestNG.CashBusinessDetail.waitWithdrawMoney" />
-      <item itemvalue="TestNG.&lt;default&gt;" />
+      <item itemvalue="TestNG.testng.xml" />
+      <item itemvalue="TestNG.CashAgentDetail.acceptRedEnvelopeTotal" />
+      <item itemvalue="TestNG.CashAgentDetail.addWithdrawalMoney" />
+      <item itemvalue="TestNG.CashAgentDetail.commissionAccountBalance" />
+      <item itemvalue="TestNG.CashAgentDetail.rechargeBalance" />
+      <item itemvalue="TestNG.CashAgentDetail.DirectPushPlayerNumber" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.&lt;default&gt;" />
-        <item itemvalue="TestNG.CashBusinessDetail.waitWithdrawMoney" />
-        <item itemvalue="TestNG.CashBusinessDetail.alreadySettlementMoney" />
-        <item itemvalue="TestNG.CashBusinessDetail.taxTotal" />
+        <item itemvalue="TestNG.CashAgentDetail.DirectPushPlayerNumber" />
+        <item itemvalue="TestNG.CashAgentDetail.rechargeBalance" />
+        <item itemvalue="TestNG.CashAgentDetail.commissionAccountBalance" />
+        <item itemvalue="TestNG.CashAgentDetail.addWithdrawalMoney" />
+        <item itemvalue="TestNG.CashAgentDetail.acceptRedEnvelopeTotal" />
       </list>
     </recent_temporary>
   </component>
@@ -674,44 +693,44 @@
       <workItem from="1550113486947" duration="36808000" />
       <workItem from="1550217117830" duration="66258000" />
       <workItem from="1550819121902" duration="64166000" />
-      <workItem from="1551323161040" duration="47276000" />
+      <workItem from="1551323161040" duration="57626000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CashBusinessDetail_alreadySettlementMoney - 2019.03.05 at 20h 14m 35s.xml">
-      <configuration name="CashBusinessDetail.alreadySettlementMoney" configurationId="TestNG" />
+    <history-entry file="CashAgentDetail_taxTotal - 2019.03.07 at 11h 45m 20s.xml">
+      <configuration name="CashAgentDetail.taxTotal" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CashBusinessDetail_alreadySettlementMoney - 2019.03.05 at 20h 20m 22s.xml">
-      <configuration name="CashBusinessDetail.alreadySettlementMoney" configurationId="TestNG" />
+    <history-entry file="CashAgentDetail_taxTotal - 2019.03.07 at 11h 48m 11s.xml">
+      <configuration name="CashAgentDetail.taxTotal" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CashBusinessDetail_alreadySettlementMoney - 2019.03.05 at 20h 22m 39s.xml">
-      <configuration name="CashBusinessDetail.alreadySettlementMoney" configurationId="TestNG" />
+    <history-entry file="CashAgentDetail_promotionCommissionTotal - 2019.03.07 at 11h 59m 54s.xml">
+      <configuration name="CashAgentDetail.promotionCommissionTotal" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CashBusinessDetail - 2019.03.05 at 20h 35m 17s.xml">
-      <configuration name="CashBusinessDetail" configurationId="TestNG" />
+    <history-entry file="CashAgentDetail_acceptRedEnvelopeTotal - 2019.03.07 at 14h 37m 49s.xml">
+      <configuration name="CashAgentDetail.acceptRedEnvelopeTotal" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CashBusinessDetail - 2019.03.05 at 20h 53m 55s.xml">
-      <configuration name="CashBusinessDetail" configurationId="TestNG" />
+    <history-entry file="CashAgentDetail_acceptRedEnvelopeTotal - 2019.03.07 at 14h 47m 21s.xml">
+      <configuration name="CashAgentDetail.acceptRedEnvelopeTotal" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CashBusinessDetail_waitWithdrawMoney - 2019.03.05 at 20h 58m 41s.xml">
-      <configuration name="CashBusinessDetail.waitWithdrawMoney" configurationId="TestNG" />
+    <history-entry file="CashAgentDetail_addWithdrawalMoney - 2019.03.07 at 14h 47m 34s.xml">
+      <configuration name="CashAgentDetail.addWithdrawalMoney" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CashBusinessDetail_waitWithdrawMoney - 2019.03.05 at 21h 08m 43s.xml">
-      <configuration name="CashBusinessDetail.waitWithdrawMoney" configurationId="TestNG" />
+    <history-entry file="CashAgentDetail_commissionAccountBalance - 2019.03.07 at 14h 53m 48s.xml">
+      <configuration name="CashAgentDetail.commissionAccountBalance" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CashBusinessDetail_waitWithdrawMoney - 2019.03.05 at 22h 03m 53s.xml">
-      <configuration name="CashBusinessDetail.waitWithdrawMoney" configurationId="TestNG" />
+    <history-entry file="CashAgentDetail_rechargeBalance - 2019.03.07 at 15h 01m 22s.xml">
+      <configuration name="CashAgentDetail.rechargeBalance" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_default_ - 2019.03.06 at 11h 21m 20s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
+    <history-entry file="CashAgentDetail_rechargeBalance - 2019.03.07 at 15h 02m 57s.xml">
+      <configuration name="CashAgentDetail.rechargeBalance" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_default__(1) - 2019.03.06 at 11h 28m 41s.xml">
-      <configuration name="&lt;default&gt; (1)" configurationId="TestNG" />
+    <history-entry file="CashAgentDetail_DirectPushPlayerNumber - 2019.03.07 at 15h 14m 56s.xml">
+      <configuration name="CashAgentDetail.DirectPushPlayerNumber" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="475388000" />
+    <option name="totallyTimeSpent" value="485738000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -735,7 +754,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.48968512" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.06840391" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.057546146" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.10206298" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -782,7 +801,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Test/rechargecashrecord.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/gameWebTest/Playerlist.java" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -910,13 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetCashAgentTestCase/CashAgentreChangeRecord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -929,8 +940,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetGoldAgentTestCase/GoldAgentHomeTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
+        <state relative-caret-position="352">
           <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -940,17 +961,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetCashBusinessTestCase/BusinessHomeTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="293" column="189" selection-start-line="293" selection-start-column="189" selection-end-line="293" selection-end-column="189" />
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -959,7 +970,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetCashAgentTestCase/AgentHomeTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
+        <state relative-caret-position="1176">
           <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -967,10 +978,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java">
+    <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4200">
-          <caret line="175" column="35" selection-start-line="175" selection-start-column="35" selection-end-line="175" selection-end-column="35" />
+        <state relative-caret-position="168">
+          <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3960">
+          <caret line="57" column="24" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="373" selection-start-line="373" selection-end-line="373" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -979,8 +1007,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="118" column="20" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
+        <state relative-caret-position="2496">
+          <caret line="104" column="62" lean-forward="true" selection-start-line="104" selection-start-column="62" selection-end-line="104" selection-end-column="62" />
         </state>
       </provider>
     </entry>

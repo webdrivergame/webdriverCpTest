@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="115.542" tests="7" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="291.457" tests="14" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
@@ -64,29 +64,34 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="serviceFeeIncome" classname="InbetAdminTestCase.AdminHomeTest" time="19.488"/>
-  <testcase name="sinceBusinessOperationsTotalArrears" classname="InbetAdminTestCase.AdminHomeTest" time="16.481"/>
-  <testcase name="businessMoneyTotal" classname="InbetAdminTestCase.AdminHomeTest" time="16.183"/>
-  <testcase name="playerNumber" classname="InbetAdminTestCase.AdminHomeTest" time="16.313">
+  <testcase name="serviceFeeIncome" classname="InbetAdminTestCase.AdminHomeTest" time="21.626"/>
+  <testcase name="sinceBusinessOperationsTotalArrears" classname="InbetAdminTestCase.AdminHomeTest" time="16.507"/>
+  <testcase name="businessMoneyTotal" classname="InbetAdminTestCase.AdminHomeTest" time="16.386"/>
+  <testcase name="playerNumber" classname="InbetAdminTestCase.AdminHomeTest" time="15.242"/>
+  <testcase name="systemWinOrLose" classname="InbetAdminTestCase.AdminHomeTest" time="14.232"/>
+  <testcase name="todayCommission" classname="InbetAdminTestCase.AdminHomeTest" time="14.12"/>
+  <testcase name="totalCommission" classname="InbetAdminTestCase.AdminHomeTest" time="14.591"/>
+  <testcase name="immediateLowerAgentNumber" classname="AgentManagement.CashBusinessDetail" time="22.363"/>
+  <testcase name="taxTotal" classname="AgentManagement.CashBusinessDetail" time="28.339"/>
+  <testcase name="alreadySettlementMoney" classname="AgentManagement.CashBusinessDetail" time="26.209"/>
+  <testcase name="waitWithdrawMoney" classname="AgentManagement.CashBusinessDetail" time="26.571"/>
+  <testcase name="rechargeBalance" classname="AgentManagement.CashBusinessDetail" time="26.157">
     <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at InbetAdminTestCase.AdminHomeTest.playerNumber(AdminHomeTest.java:132)
+	at AgentManagement.CashBusinessDetail.rechargeBalance(CashBusinessDetail.java:231)
 </failure>
-    <system-out><![CDATA[首页-今日新增玩家：0
-留存统计：2
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 37663
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 11858
 Only local connections are allowed.
-三月 06, 2019 11:37:20 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
+三月 07, 2019 10:35:08 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
 信息: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-三月 06, 2019 11:37:22 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
+三月 07, 2019 10:35:10 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
 信息: Detected dialect: OSS
-java.lang.AssertionError: expected [2] but found [0]
+java.lang.AssertionError: expected [47,811,578] but found [47,811,578.00]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:167)
 	at ListenerPackage.Assertion.verifyEquals(Assertion.java:24)
-	at InbetAdminTestCase.AdminHomeTest.playerNumber(AdminHomeTest.java:131)
+	at AgentManagement.CashBusinessDetail.rechargeBalance(CashBusinessDetail.java:230)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,16 +113,14 @@ java.lang.AssertionError: expected [2] but found [0]
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]></system-err>
   </testcase>
-  <testcase name="systemWinOrLose" classname="InbetAdminTestCase.AdminHomeTest" time="16.497"/>
-  <testcase name="todayCommission" classname="InbetAdminTestCase.AdminHomeTest" time="14.623"/>
-  <testcase name="totalCommission" classname="InbetAdminTestCase.AdminHomeTest" time="14.569"/>
+  <testcase name="onlineRechargeCredit" classname="AgentManagement.CashBusinessDetail" time="23.255"/>
+  <testcase name="onlineWithdrawCredit" classname="AgentManagement.CashBusinessDetail" time="23.226"/>
 </testsuite>

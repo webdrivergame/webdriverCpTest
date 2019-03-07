@@ -17,7 +17,7 @@ public class AdminHomeTest {
 
         @Feature("平台首页")
         @Story("信用模式")
-        @Title("验证今日服务费收入与下级服务费金额是否一致")
+        @Title("平台首页-验证今日服务费收入与下级服务费金额是否一致")
 
         @Test(priority = 1)
         private void serviceFeeIncome() throws InterruptedException {
@@ -47,7 +47,7 @@ public class AdminHomeTest {
 
         @Feature("平台首页")
         @Story("信用模式")
-        @Title("验证服务费收入总计与下级服务费统计的生成服务费总计金额是否一致")
+        @Title("平台首页-验证服务费收入总计与下级服务费统计的生成服务费总计金额是否一致")
 
         @Test(priority = 2)
         public void sinceBusinessOperationsTotalArrears() throws InterruptedException {
@@ -77,7 +77,7 @@ public class AdminHomeTest {
 
         @Feature("平台首页")
         @Story("信用模式")
-        @Title("验证商户欠款总计与下级服务费结算记录总欠款是否一致")
+        @Title("平台首页-验证商户欠款总计与下级服务费结算记录总欠款是否一致")
 
         @Test(priority = 3)
         public void businessMoneyTotal() throws InterruptedException {
@@ -107,7 +107,7 @@ public class AdminHomeTest {
 
         @Feature("平台首页")
         @Story("信用模式")
-        @Title("验证今日新增玩家与留存统计今日注册玩家数量是否一致")
+        @Title("平台首页-验证今日新增玩家与留存统计今日注册玩家数量是否一致")
 
         @Test(priority = 4)
         public void playerNumber() throws InterruptedException {
@@ -137,7 +137,7 @@ public class AdminHomeTest {
 
         @Feature("平台首页")
         @Story("现金模式")
-        @Title("验证今日系统盈亏与玩家输赢金额是否一致")
+        @Title("平台首页-验证今日系统盈亏与玩家输赢金额是否一致")
 
         @Test(priority = 5)
         public void systemWinOrLose() throws InterruptedException {
@@ -167,7 +167,7 @@ public class AdminHomeTest {
 
         @Feature("平台首页")
         @Story("现金模式")
-        @Title("验证系统盈亏总计与玩家输赢总计金额是否一致")
+        @Title("平台首页-验证系统盈亏总计与玩家输赢总计金额是否一致")
 
         @Test(enabled = false)
         public void totalSystemWinOrLose() throws InterruptedException {
@@ -203,7 +203,7 @@ public class AdminHomeTest {
 
         @Feature("平台首页")
         @Story("现金模式")
-        @Title("验证今日佣金与下级佣金统计-商户今日佣金金额是否一致")
+        @Title("平台首页-验证今日佣金与下级佣金统计-商户今日佣金金额是否一致")
 
         @Test(priority = 7)
         public void todayCommission() throws InterruptedException {
@@ -232,7 +232,7 @@ public class AdminHomeTest {
 
         @Feature("平台首页")
         @Story("现金模式")
-        @Title("验证佣金总计与下级佣金统计-商户所占佣金金额是否一致")
+        @Title("平台首页-验证佣金总计与下级佣金统计-商户所占佣金金额是否一致")
 
         @Test(priority = 8)
         public void totalCommission() throws InterruptedException {
