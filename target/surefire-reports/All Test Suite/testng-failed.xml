@@ -3,6 +3,11 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
   <test name="C:/Users/jtc/IdeaProjects/game(failed)">
     <classes>
+      <class name="AgentManagement.CashAgentDetail">
+        <methods>
+          <include name="rechargeBalance"/>
+        </methods>
+      </class> <!-- AgentManagement.CashAgentDetail -->
       <class name="AgentManagement.CashBusinessDetail">
         <methods>
           <include name="rechargeBalance"/>

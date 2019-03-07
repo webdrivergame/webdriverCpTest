@@ -1,9 +1,7 @@
-InbetCashBusinessTestCase\BusinessHomeTestCase.class
-InbetGoldAgentTestCase\GoldAgentHomeTestCase.class
+AgentManagement\CashAgentDetail.class
 serverErrorTestCase\adminHomeCase.class
 AgentManagement\CashBusinessDetail.class
 ListenerPackage\AssertionListener.class
 PublicMethod\WebDriverUtil.class
 InbetAdminTestCase\AdminHomeTest.class
-InbetCashAgentTestCase\AgentHomeTestCase.class
 ListenerPackage\Assertion.class

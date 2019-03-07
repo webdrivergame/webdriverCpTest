@@ -1,8 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 291.457 s <<< FAILURE! - in TestSuite
-rechargeBalance(AgentManagement.CashBusinessDetail)  Time elapsed: 26.157 s  <<< FAILURE!
+Tests run: 22, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 556.744 s <<< FAILURE! - in TestSuite
+rechargeBalance(AgentManagement.CashBusinessDetail)  Time elapsed: 27.792 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at AgentManagement.CashBusinessDetail.rechargeBalance(CashBusinessDetail.java:231)
+
+rechargeBalance(AgentManagement.CashAgentDetail)  Time elapsed: 31.647 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at AgentManagement.CashAgentDetail.rechargeBalance(CashAgentDetail.java:369)
 
