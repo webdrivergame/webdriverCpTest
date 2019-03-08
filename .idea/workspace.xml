@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96204fec-b768-4500-a32d-bdf317ef3d35" name="Default Changelist" comment="" />
+    <list default="true" id="96204fec-b768-4500-a32d-bdf317ef3d35" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,14 +68,14 @@
         <counts>
           <entry key="dummy" value="87" />
           <entry key="java" value="27870" />
-          <entry key="xml" value="538" />
+          <entry key="xml" value="542" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="27870" />
           <entry key="PLAIN_TEXT" value="87" />
-          <entry key="XML" value="538" />
+          <entry key="XML" value="542" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -106,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+            <state relative-caret-position="144">
+              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -115,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="717">
-              <caret line="54" column="5" selection-start-line="15" selection-start-column="4" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="666">
+              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/creditDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="389" column="32" lean-forward="true" selection-start-line="389" selection-start-column="32" selection-end-line="389" selection-end-column="32" />
+            <state relative-caret-position="6594">
+              <caret line="389" column="32" selection-start-line="389" selection-start-column="32" selection-end-line="389" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,11 +147,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11620">
-              <caret line="83" column="43" lean-forward="true" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+            <state relative-caret-position="290">
+              <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -244,10 +246,10 @@
         <option value="$PROJECT_DIR$/src/test/java/InbetCashBusinessTestCase/BusinessHomeTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java" />
         <option value="$PROJECT_DIR$/src/test/java/AgentManagement/creditDetail.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
       </list>
     </option>
   </component>
@@ -381,7 +383,7 @@
     <property name="SearchEverywhereHistoryKey" value="link&#9;PSI&#9;JAVA://io.qameta.allure.Link&#10;we&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil&#10;classname&#9;FILE&#9;jar://C:/Users/jtc/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.0/jackson-databind-2.7.0.jar!/com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver.class&#10;return&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#returnToPreviousPage&#10;js&#9;PSI&#9;JAVA://jdk.nashorn.internal.scripts.JS&#10;滚动条&#9;null&#9;null&#10;findElementByX&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#findElementByXpath" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552036602754" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552037714276" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -650,7 +652,7 @@
       <workItem from="1551955797049" duration="187000" />
       <workItem from="1551956020771" duration="324000" />
       <workItem from="1551956367740" duration="847000" />
-      <workItem from="1551960037565" duration="14483000" />
+      <workItem from="1551960037565" duration="15882000" />
     </task>
     <servers />
   </component>
@@ -687,7 +689,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="507095000" />
+    <option name="totallyTimeSpent" value="508494000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -700,7 +702,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2249467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -717,7 +718,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32681867" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32681867" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32765958" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.1606949" />
@@ -858,13 +859,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetCashBusinessTestCase/BusinessHomeTestCase.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetCashAgentTestCase/AgentHomeTestCase.java" />
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1872">
@@ -882,10 +876,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/creditDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6594">
+          <caret line="389" column="32" selection-start-line="389" selection-start-column="32" selection-end-line="389" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="54" column="5" selection-start-line="15" selection-start-column="4" selection-end-line="54" selection-end-column="5" />
+        <state relative-caret-position="666">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -894,18 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11620">
-          <caret line="83" column="43" lean-forward="true" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/creditDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="389" column="32" lean-forward="true" selection-start-line="389" selection-start-column="32" selection-end-line="389" selection-end-column="32" />
+        <state relative-caret-position="290">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
