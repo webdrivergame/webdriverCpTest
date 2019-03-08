@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1552036231485" stop="1552036257717" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : game</name>
+    <title>Default Suite : game</title>
+    <test-cases>
+        <test-case start="1552036231597" stop="1552036257707" status="passed">
+            <name>creditBusinessServiceAccountBalance</name>
+            <title>信用模式代理详情-验证信用商户运营数据-服务费账户余额与下级服务费统计-今日结算后余额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="AgentManagement.creditDetail"/>
+                <label name="testMethod" value="creditBusinessServiceAccountBalance"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="98024@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

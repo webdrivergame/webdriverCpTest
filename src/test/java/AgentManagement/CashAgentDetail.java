@@ -36,13 +36,17 @@ public class CashAgentDetail {
         driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","44444");
         driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
             Thread.sleep(3000);
+
         String immediateLowerAgentNumber = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[2]/div/div[3]/table/tbody/tr/td[3]/div/a");
         System.out.println("下级人数："+immediateLowerAgentNumber);
+
+
         driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[2]/div/div[4]/div[2]/table/tbody/tr/td[1]/div/a");
             Thread.sleep(3000);
         //获取直属下级代理人数
         String immediateLowerAgentNumber1 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div[2]/div/div[2]/div/form/div[1]/div/span");
         System.out.println("代理运营详情-直属下级代理人数："+immediateLowerAgentNumber1);
+
             Assertion.setFlag(true);
             Assertion.verifyEquals(immediateLowerAgentNumber,immediateLowerAgentNumber1);
             Assert.assertTrue(Assertion.currentFlag());
@@ -76,11 +80,14 @@ public class CashAgentDetail {
             Thread.sleep(3000);
         String DirectPushPlayerNumber = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[2]/div/div[3]/table/tbody/tr/td[4]/div/a");
         System.out.println("玩家数："+DirectPushPlayerNumber);
+
+
         driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[2]/div/div[4]/div[2]/table/tbody/tr/td[1]/div/a");
             Thread.sleep(3000);
         //获取直推玩家人数
         String DirectPushPlayerNumber1 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div[2]/div/div[2]/div/form/div[2]/div/span");
         System.out.println("直推玩家数："+DirectPushPlayerNumber1);
+
             Assertion.setFlag(true);
             Assertion.verifyEquals(DirectPushPlayerNumber,DirectPushPlayerNumber1);
             Assert.assertTrue(Assertion.currentFlag());
@@ -116,6 +123,9 @@ public class CashAgentDetail {
         //获取运营数据-税收总计
         String taxTotal = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div[2]/div/div[2]/div/form/div[6]/div/span");
         System.out.println("现金推广代理税收总计："+taxTotal);
+
+
+
         //进入下级佣金统计-现金代理税收金额
         driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级佣金统计");
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_sub_promotion_agent_statistics\"]/li/span");
@@ -128,6 +138,7 @@ public class CashAgentDetail {
         //获取税收金额
         String taxTotal1 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[5]/div");
         System.out.println("下级佣金统计-推广代理税收总计："+taxTotal1);
+
             Assertion.setFlag(true);
             Assertion.verifyEquals(taxTotal,taxTotal1);
             Assert.assertTrue(Assertion.currentFlag());
@@ -163,6 +174,9 @@ public class CashAgentDetail {
         //获取运营数据-推广佣金累计
         String promotionCommissionTotal = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div[2]/div/div[2]/div/form/div[7]/div/span");
         System.out.println("现金推广佣金总计：" + promotionCommissionTotal);
+
+
+
         //进入下级佣金统计-现金代理生成佣金金额
         driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input", "下级佣金统计");
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_sub_promotion_agent_statistics\"]/li/span");
@@ -175,6 +189,7 @@ public class CashAgentDetail {
         //获取生成佣金金额
         String promotionCommissionTotal1 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[7]/div");
         System.out.println("下级佣金统计-推广代理生成佣金总计：" + promotionCommissionTotal1);
+
             Assertion.setFlag(true);
             Assertion.verifyEquals(promotionCommissionTotal, promotionCommissionTotal1);
             Assert.assertTrue(Assertion.currentFlag());
@@ -211,6 +226,9 @@ public class CashAgentDetail {
         //获取运营数据-领取红包总计
         String acceptRedEnvelopeTotal = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div[2]/div/div[2]/div/form/div[8]/div/span");
         System.out.println("现金推广领取红包总计：" + acceptRedEnvelopeTotal);
+
+
+
         //进入下级佣金统计-已领取红包金额
         driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input", "下级佣金统计");
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_sub_promotion_agent_statistics\"]/li/span");
@@ -223,6 +241,7 @@ public class CashAgentDetail {
         //获取已领取红包
         String acceptRedEnvelopeTotal1 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[10]/div");
         System.out.println("下级佣金统计-已领取红包：" + acceptRedEnvelopeTotal1);
+
             Assertion.setFlag(true);
             Assertion.verifyEquals(acceptRedEnvelopeTotal, acceptRedEnvelopeTotal1);
             Assert.assertTrue(Assertion.currentFlag());
@@ -258,6 +277,9 @@ public class CashAgentDetail {
         //获取运营数据-累计提款金额
         String addWithdrawalMoney = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div[2]/div/div[2]/div/form/div[9]/div/span");
         System.out.println("累计提款金额：" + addWithdrawalMoney);
+
+
+
         //进入下级佣金统计-已提现佣金
         driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input", "下级佣金统计");
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_sub_promotion_agent_statistics\"]/li/span");
@@ -305,6 +327,9 @@ public class CashAgentDetail {
         //获取运营数据-佣金账户余额
         String commissionAccountBalance = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div[2]/div/div[2]/div/form/div[10]/div/span");
         System.out.println("累计提款金额：" + commissionAccountBalance);
+
+
+
         //进入下级佣金统计-待提现佣金
         driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input", "下级佣金统计");
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_sub_promotion_agent_statistics\"]/li/span");
@@ -317,12 +342,14 @@ public class CashAgentDetail {
         //获取待提现佣金
         String commissionAccountBalance1 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[12]/div/div");
         System.out.println("下级佣金统计-待提现佣金：" + commissionAccountBalance1);
-        Assertion.setFlag(true);
-        Assertion.verifyEquals(commissionAccountBalance, commissionAccountBalance1);
-        Assert.assertTrue(Assertion.currentFlag());
+
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(commissionAccountBalance, commissionAccountBalance1);
+            Assert.assertTrue(Assertion.currentFlag());
 
         driverUtil.LoginAfter();
     }
+
 
 
     @Feature("代理管理-现金推广代理")
@@ -352,6 +379,9 @@ public class CashAgentDetail {
         //获取运营数据-充值余额
         String rechargeBalance = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div[2]/div/div[2]/div/form/div[11]/div/span");
         System.out.println("现金代理详情-充值余额：" + rechargeBalance);
+
+
+
         //进入代理充值提现额度管理-代理充值余额
         driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input", "代理充值提现额度管理");
         driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_amount_list\"]/li/span");
@@ -364,6 +394,7 @@ public class CashAgentDetail {
         //获取充值余额
         String rechargeBalance1 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[2]/div/div[3]/table/tbody/tr/td[4]/div");
         System.out.println("额度管理-充值余额：" + rechargeBalance1);
+
             Assertion.setFlag(true);
             Assertion.verifyEquals(rechargeBalance, rechargeBalance1);
             Assert.assertTrue(Assertion.currentFlag());
