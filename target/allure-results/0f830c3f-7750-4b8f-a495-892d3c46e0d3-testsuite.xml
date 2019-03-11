@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1552300464404" stop="1552300497694" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : game</name>
+    <title>Default Suite : game</title>
+    <test-cases>
+        <test-case start="1552300464528" stop="1552300497675" status="passed">
+            <name>taxTotal</name>
+            <title>现金商户详情-验证运营数据-税收总计是否与下级佣金统计税收一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="AgentManagement.CashBusinessDetail"/>
+                <label name="testMethod" value="taxTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="120080@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

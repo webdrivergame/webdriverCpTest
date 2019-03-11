@@ -3,6 +3,45 @@
   <component name="ChangeListManager">
     <list default="true" id="96204fec-b768-4500-a32d-bdf317ef3d35" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AgentManagement/creditDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AgentManagement/creditDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ListenerPackage/Assertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ListenerPackage/Assertion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/12ef0e70-5e5e-414a-9d9e-c2a79755015f-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/213e642e-232c-41e5-a5fd-2aeecfaa0e8d-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/437ce673-4fd4-47ac-b228-695f57d39c6a-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/514c8afd-dbd0-4abc-9e42-f40b37f567eb-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/73c73b30-4cc9-49c3-bb66-37ca728fabcd-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7d8aa3cf-e856-4365-b164-d8faff397731-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/801aac8c-b718-4db0-a2c7-0164fd4d13b6-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/8e670449-99a5-4d34-ba70-4f58ef879e08-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9fb693b1-ea0a-43d8-9f41-72fa97a4fc5a-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a0db154f-656f-4023-82a4-9814fcd6dcfd-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a5ecf632-36bd-4e13-8226-5754b9029032-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/aa6a3de2-5c53-4e55-9c58-1f3b0ad4caf3-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/c4502220-cb13-4149-9c4d-00c67aefcdb3-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ec8417c3-dd2b-414b-993c-3fca6774079a-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_jtc_IdeaProjects_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_jtc_IdeaProjects_game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_jtc_IdeaProjects_game.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_jtc_IdeaProjects_game.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.CashAgentDetail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.CashAgentDetail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.CashBusinessDetail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.CashBusinessDetail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-InbetAdminTestCase.AdminHomeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-InbetAdminTestCase.AdminHomeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,10 +77,11 @@
     <session id="-997552775">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="52" />
+          <entry key="project.closed" value="56" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
@@ -59,21 +99,21 @@
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="9" />
-          <entry key="project.open.time.7" value="6" />
-          <entry key="project.opened" value="58" />
+          <entry key="project.open.time.6" value="10" />
+          <entry key="project.open.time.7" value="8" />
+          <entry key="project.opened" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="87" />
-          <entry key="java" value="27870" />
+          <entry key="java" value="28987" />
           <entry key="xml" value="542" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="27870" />
+          <entry key="JAVA" value="28987" />
           <entry key="PLAIN_TEXT" value="87" />
           <entry key="XML" value="542" />
         </counts>
@@ -82,23 +122,23 @@
         <counts>
           <entry key="class" value="5" />
           <entry key="iml" value="1" />
-          <entry key="java" value="200" />
+          <entry key="java" value="212" />
           <entry key="json" value="2" />
           <entry key="log" value="1" />
           <entry key="md" value="1" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="18" />
+          <entry key="xml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="5" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="200" />
+          <entry key="JAVA" value="212" />
           <entry key="JSON" value="2" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="18" />
+          <entry key="XML" value="19" />
         </counts>
       </usages-collector>
     </session>
@@ -106,31 +146,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testng.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+            <state relative-caret-position="655">
+              <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/creditDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6205">
-              <caret line="389" column="32" selection-start-line="389" selection-start-column="32" selection-end-line="389" selection-end-column="32" />
+            <state relative-caret-position="110">
+              <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,31 +170,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1872">
-              <caret line="104" column="62" selection-start-line="104" selection-start-column="62" selection-end-line="104" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-730">
-              <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4724">
-              <caret line="297" column="60" selection-start-line="297" selection-start-column="60" selection-end-line="297" selection-end-column="60" />
+            <state relative-caret-position="685">
+              <caret line="256" column="78" lean-forward="true" selection-start-line="256" selection-start-column="78" selection-end-line="256" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -199,7 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/PublicMethod/LoginModel.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTestCase/DebugTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTestCase/HomePlatformTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTestCase/PlayersmanagementTest.java" />
@@ -214,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ListenerPackage/AssertListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/ListenerPackage/AssertionListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/ListenerPackage/Assert.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ListenerPackage/Assertion.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTestCase/HomeCashPromotionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTestCase/HomeUnlimitedGoldTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTestCase/AdminHomeTest.java" />
@@ -244,17 +252,25 @@
         <option value="$PROJECT_DIR$/src/test/java/InbetCashAgentTestCase/AgentHomeTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/InbetGoldAgentTestCase/GoldAgentHomeTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/InbetCashBusinessTestCase/BusinessHomeTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AgentManagement/creditDetail.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/AgentManagement/werewr.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ListenerPackage/Assertion.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AgentManagement/creditDetail.java" />
+        <option value="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -281,8 +297,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1987" />
-    <option name="y" value="96" />
+    <option name="x" value="2378" />
+    <option name="y" value="248" />
     <option name="width" value="1550" />
     <option name="height" value="831" />
   </component>
@@ -320,11 +336,6 @@
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
@@ -371,7 +382,10 @@
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="serverErrorTestCase" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -383,7 +397,7 @@
     <property name="SearchEverywhereHistoryKey" value="link&#9;PSI&#9;JAVA://io.qameta.allure.Link&#10;we&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil&#10;classname&#9;FILE&#9;jar://C:/Users/jtc/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.0/jackson-databind-2.7.0.jar!/com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver.class&#10;return&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#returnToPreviousPage&#10;js&#9;PSI&#9;JAVA://jdk.nashorn.internal.scripts.JS&#10;滚动条&#9;null&#9;null&#10;findElementByX&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#findElementByXpath" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552047160899" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552313175178" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -391,7 +405,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -419,7 +433,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.creditDetail.creditBusinessServiceHistoryTotal">
+  <component name="RunManager" selected="TestNG.creditDetail">
     <configuration name="AdminHomeTest" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
@@ -445,6 +459,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AdminHomeTest.rechargeMoneyToday" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="InbetAdminTestCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="InbetAdminTestCase" />
+      <option name="MAIN_CLASS_NAME" value="InbetAdminTestCase.AdminHomeTest" />
+      <option name="METHOD_NAME" value="rechargeMoneyToday" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CashBusinessDetail" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
@@ -455,6 +487,42 @@
       </extension>
       <option name="PACKAGE_NAME" value="AgentManagement" />
       <option name="MAIN_CLASS_NAME" value="AgentManagement.CashBusinessDetail" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CashBusinessDetail.immediateLowerAgentNumber" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AgentManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AgentManagement" />
+      <option name="MAIN_CLASS_NAME" value="AgentManagement.CashBusinessDetail" />
+      <option name="METHOD_NAME" value="immediateLowerAgentNumber" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CashBusinessDetail.taxTotal" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AgentManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AgentManagement" />
+      <option name="MAIN_CLASS_NAME" value="AgentManagement.CashBusinessDetail" />
+      <option name="METHOD_NAME" value="taxTotal" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -477,7 +545,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="creditDetail.creditAgentServiceHistoryTotal" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="creditDetail.creditExplorerServiceHistoryTotal" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
         <pattern>
@@ -487,61 +555,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="AgentManagement" />
       <option name="MAIN_CLASS_NAME" value="AgentManagement.creditDetail" />
-      <option name="METHOD_NAME" value="creditAgentServiceHistoryTotal" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="creditDetail.creditBusinessNumber" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AgentManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AgentManagement" />
-      <option name="MAIN_CLASS_NAME" value="AgentManagement.creditDetail" />
-      <option name="METHOD_NAME" value="creditBusinessNumber" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="creditDetail.creditBusinessServiceAccountBalance" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AgentManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AgentManagement" />
-      <option name="MAIN_CLASS_NAME" value="AgentManagement.creditDetail" />
-      <option name="METHOD_NAME" value="creditBusinessServiceAccountBalance" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="creditDetail.creditBusinessServiceHistoryTotal" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AgentManagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AgentManagement" />
-      <option name="MAIN_CLASS_NAME" value="AgentManagement.creditDetail" />
-      <option name="METHOD_NAME" value="creditBusinessServiceHistoryTotal" />
+      <option name="METHOD_NAME" value="creditExplorerServiceHistoryTotal" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -570,19 +584,19 @@
       <item itemvalue="TestNG.CashBusinessDetail" />
       <item itemvalue="TestNG.AdminHomeTest" />
       <item itemvalue="TestNG.testng.xml" />
-      <item itemvalue="TestNG.creditDetail.creditBusinessServiceAccountBalance" />
+      <item itemvalue="TestNG.creditDetail.creditExplorerServiceHistoryTotal" />
+      <item itemvalue="TestNG.CashBusinessDetail.immediateLowerAgentNumber" />
+      <item itemvalue="TestNG.CashBusinessDetail.taxTotal" />
+      <item itemvalue="TestNG.AdminHomeTest.rechargeMoneyToday" />
       <item itemvalue="TestNG.creditDetail" />
-      <item itemvalue="TestNG.creditDetail.creditBusinessNumber" />
-      <item itemvalue="TestNG.creditDetail.creditBusinessServiceHistoryTotal" />
-      <item itemvalue="TestNG.creditDetail.creditAgentServiceHistoryTotal" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.creditDetail.creditBusinessServiceHistoryTotal" />
-        <item itemvalue="TestNG.creditDetail.creditBusinessServiceAccountBalance" />
-        <item itemvalue="TestNG.creditDetail.creditAgentServiceHistoryTotal" />
-        <item itemvalue="TestNG.creditDetail.creditBusinessNumber" />
         <item itemvalue="TestNG.creditDetail" />
+        <item itemvalue="TestNG.AdminHomeTest.rechargeMoneyToday" />
+        <item itemvalue="TestNG.creditDetail.creditExplorerServiceHistoryTotal" />
+        <item itemvalue="TestNG.CashBusinessDetail.immediateLowerAgentNumber" />
+        <item itemvalue="TestNG.CashBusinessDetail.taxTotal" />
       </list>
     </recent_temporary>
   </component>
@@ -652,44 +666,48 @@
       <workItem from="1551955797049" duration="187000" />
       <workItem from="1551956020771" duration="324000" />
       <workItem from="1551956367740" duration="847000" />
-      <workItem from="1551960037565" duration="17822000" />
+      <workItem from="1551960037565" duration="47089000" />
+      <workItem from="1552280257583" duration="325000" />
+      <workItem from="1552280624542" duration="918000" />
+      <workItem from="1552287451868" duration="82000" />
+      <workItem from="1552287565660" duration="19417000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="creditDetail_creditBusinessService - 2019.03.08 at 15h 10m 09s.xml">
-      <configuration name="creditDetail.creditBusinessService" configurationId="TestNG" />
+    <history-entry file="creditDetail_creditExplorerServiceHistoryTotal - 2019.03.11 at 17h 00m 42s.xml">
+      <configuration name="creditDetail.creditExplorerServiceHistoryTotal" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="creditDetail_creditBusinessServiceAccountBalance - 2019.03.08 at 15h 10m 55s.xml">
-      <configuration name="creditDetail.creditBusinessServiceAccountBalance" configurationId="TestNG" />
+    <history-entry file="CashBusinessDetail_immediateLowerAgentNumber - 2019.03.11 at 17h 27m 46s.xml">
+      <configuration name="CashBusinessDetail.immediateLowerAgentNumber" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="creditDetail - 2019.03.08 at 16h 00m 29s.xml">
+    <history-entry file="CashBusinessDetail_immediateLowerAgentNumber - 2019.03.11 at 17h 33m 24s.xml">
+      <configuration name="CashBusinessDetail.immediateLowerAgentNumber" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CashBusinessDetail_taxTotal - 2019.03.11 at 17h 34m 58s.xml">
+      <configuration name="CashBusinessDetail.taxTotal" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CashBusinessDetail_immediateLowerAgentNumber - 2019.03.11 at 17h 36m 55s.xml">
+      <configuration name="CashBusinessDetail.immediateLowerAgentNumber" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="creditDetail_creditExplorerServiceHistoryTotal - 2019.03.11 at 17h 45m 38s.xml">
+      <configuration name="creditDetail.creditExplorerServiceHistoryTotal" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="creditDetail_creditExplorerServiceHistoryTotal - 2019.03.11 at 17h 48m 47s.xml">
+      <configuration name="creditDetail.creditExplorerServiceHistoryTotal" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminHomeTest_rechargeMoneyToday - 2019.03.11 at 20h 08m 11s.xml">
+      <configuration name="AdminHomeTest.rechargeMoneyToday" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminHomeTest_rechargeMoneyToday - 2019.03.11 at 20h 20m 23s.xml">
+      <configuration name="AdminHomeTest.rechargeMoneyToday" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="creditDetail - 2019.03.11 at 21h 05m 15s.xml">
       <configuration name="creditDetail" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="creditDetail_creditBusinessNumber - 2019.03.08 at 16h 05m 17s.xml">
-      <configuration name="creditDetail.creditBusinessNumber" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="creditDetail_creditBusinessServiceHistoryTotal - 2019.03.08 at 16h 05m 49s.xml">
-      <configuration name="creditDetail.creditBusinessServiceHistoryTotal" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="creditDetail_creditBusinessServiceAccountBalance - 2019.03.08 at 16h 06m 41s.xml">
-      <configuration name="creditDetail.creditBusinessServiceAccountBalance" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="creditDetail_creditAgentServiceHistoryTotal - 2019.03.08 at 16h 09m 34s.xml">
-      <configuration name="creditDetail.creditAgentServiceHistoryTotal" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="creditDetail_creditBusinessServiceAccountBalance - 2019.03.08 at 16h 10m 58s.xml">
-      <configuration name="creditDetail.creditBusinessServiceAccountBalance" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="creditDetail_creditBusinessServiceHistoryTotal - 2019.03.08 at 16h 11m 29s.xml">
-      <configuration name="creditDetail.creditBusinessServiceHistoryTotal" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="creditDetail_creditBusinessServiceHistoryTotal - 2019.03.08 at 16h 13m 36s.xml">
-      <configuration name="creditDetail.creditBusinessServiceHistoryTotal" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="510434000" />
+    <option name="totallyTimeSpent" value="560443000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -702,9 +720,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2249467" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20396146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -713,16 +730,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.48968512" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.15200868" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5920177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.10206298" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32815966" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.072747014" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.17849223" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32765958" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.1606949" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.15964523" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -748,9 +765,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java</url>
-          <line>12</line>
+          <line>14</line>
           <properties />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/AgentManagement/creditDetail.java</url>
+          <line>62</line>
+          <properties class="AgentManagement.creditDetail" method="creditExplorerServiceHistoryTotal">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -760,11 +785,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/wushuaiTest/base.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtilTest.java" />
@@ -815,20 +835,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/InbetHomeTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/example/tests.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/Untili.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/ListenerPackage/Assertion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ListenerPackage/AssertionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/qameta/allure/allure-java-commons/2.6.0/allure-java-commons-2.6.0.jar!/io/qameta/allure/Link.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -838,56 +844,169 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/allure-results/adb40936-3d48-4639-ac21-7c09b4373809-container.json" />
     <entry file="file://$PROJECT_DIR$/allure-results/44c1e030-37e3-45bc-ae7c-3d47fc0a5ebc-result.json" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/serverErrorTestCase/adminHomeCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/PlayersManagementTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetCashAgentTestCase/CashAgentreChangeRecord.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetGoldAgentTestCase/GoldAgentHomeTestCase.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetCashBusinessTestCase/BusinessHomeTestCase.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetCashAgentTestCase/AgentHomeTestCase.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1872">
+        <state>
           <caret line="104" column="62" selection-start-line="104" selection-start-column="62" selection-end-line="104" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/werewr.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/ListenerPackage/Assertion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4724">
-          <caret line="297" column="60" selection-start-line="297" selection-start-column="60" selection-end-line="297" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="312">
+          <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/serverErrorTestCase/adminHomeCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ListenerPackage/AssertionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-730">
-          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+        <state relative-caret-position="602">
+          <caret line="456" column="54" selection-start-line="456" selection-start-column="54" selection-end-line="456" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8742#8743#0" expanded="true" />
+            <element signature="e#8827#8828#0" expanded="true" />
+            <element signature="e#9097#9098#0" expanded="true" />
+            <element signature="e#9182#9183#0" expanded="true" />
+            <element signature="e#9412#9413#0" expanded="true" />
+            <element signature="e#9498#9499#0" expanded="true" />
+            <element signature="e#12793#12794#0" expanded="true" />
+            <element signature="e#12879#12880#0" expanded="true" />
+            <element signature="e#13097#13098#0" expanded="true" />
+            <element signature="e#13177#13178#0" expanded="true" />
+            <element signature="e#19725#19726#0" expanded="true" />
+            <element signature="e#19801#19802#0" expanded="true" />
+            <element signature="e#19863#19864#0" expanded="true" />
+            <element signature="e#19942#19943#0" expanded="true" />
+            <element signature="e#19995#19996#0" expanded="true" />
+            <element signature="e#20065#20066#0" expanded="true" />
+            <element signature="e#20122#20123#0" expanded="true" />
+            <element signature="e#20196#20197#0" expanded="true" />
+            <element signature="e#20254#20255#0" expanded="true" />
+            <element signature="e#20344#20345#0" expanded="true" />
+            <element signature="e#26343#26344#0" expanded="true" />
+            <element signature="e#26437#26438#0" expanded="true" />
+            <element signature="e#26500#26501#0" expanded="true" />
+            <element signature="e#26594#26595#0" expanded="true" />
+            <element signature="e#26845#26846#0" expanded="true" />
+            <element signature="e#26933#26934#0" expanded="true" />
+            <element signature="e#26995#26996#0" expanded="true" />
+            <element signature="e#27087#27088#0" expanded="true" />
+            <element signature="e#27339#27340#0" expanded="true" />
+            <element signature="e#27428#27429#0" expanded="true" />
+            <element signature="e#27490#27491#0" expanded="true" />
+            <element signature="e#27583#27584#0" expanded="true" />
+            <element signature="e#31515#31516#0" expanded="true" />
+            <element signature="e#31594#31595#0" expanded="true" />
+            <element signature="e#35279#35280#0" expanded="true" />
+            <element signature="e#35344#35345#0" expanded="true" />
+            <element signature="e#35515#35516#0" expanded="true" />
+            <element signature="e#35583#35584#0" expanded="true" />
+            <element signature="e#35700#35701#0" expanded="true" />
+            <element signature="e#35766#35767#0" expanded="true" />
+            <element signature="e#35826#35827#0" expanded="true" />
+            <element signature="e#35890#35891#0" expanded="true" />
+            <element signature="e#35953#35954#0" expanded="true" />
+            <element signature="e#36039#36040#0" expanded="true" />
+            <element signature="e#36168#36169#0" expanded="true" />
+            <element signature="e#36238#36239#0" expanded="true" />
+            <element signature="e#36362#36363#0" expanded="true" />
+            <element signature="e#36442#36443#0" expanded="true" />
+            <element signature="e#36640#36641#0" expanded="true" />
+            <element signature="e#36751#36752#0" expanded="true" />
+            <element signature="e#36841#36842#0" expanded="true" />
+            <element signature="e#36921#36922#0" expanded="true" />
+            <element signature="e#36978#36979#0" expanded="true" />
+            <element signature="e#37046#37047#0" expanded="true" />
+            <element signature="e#37099#37100#0" expanded="true" />
+            <element signature="e#37163#37164#0" expanded="true" />
+            <element signature="e#37225#37226#0" expanded="true" />
+            <element signature="e#37298#37299#0" expanded="true" />
+            <element signature="e#37355#37356#0" expanded="true" />
+            <element signature="e#37423#37424#0" expanded="true" />
+            <element signature="e#37492#37493#0" expanded="true" />
+            <element signature="e#37594#37595#0" expanded="true" />
+            <element signature="e#37822#37823#0" expanded="true" />
+            <element signature="e#37954#37955#0" expanded="true" />
+            <element signature="e#38022#38023#0" expanded="true" />
+            <element signature="e#38138#38139#0" expanded="true" />
+            <element signature="e#38205#38206#0" expanded="true" />
+            <element signature="e#38315#38316#0" expanded="true" />
+            <element signature="e#39347#39348#0" expanded="true" />
+            <element signature="e#39395#39396#0" expanded="true" />
+            <element signature="e#39504#39505#0" expanded="true" />
+            <element signature="e#39551#39552#0" expanded="true" />
+            <element signature="e#39637#39638#0" expanded="true" />
+            <element signature="e#39706#39707#0" expanded="true" />
+            <element signature="e#39830#39831#0" expanded="true" />
+            <element signature="e#39926#39927#0" expanded="true" />
+            <element signature="e#40019#40020#0" expanded="true" />
+            <element signature="e#40077#40078#0" expanded="true" />
+            <element signature="e#40174#40175#0" expanded="true" />
+            <element signature="e#40237#40238#0" expanded="true" />
+            <element signature="e#40541#40542#0" expanded="true" />
+            <element signature="e#40602#40603#0" expanded="true" />
+            <element signature="e#40696#40697#0" expanded="true" />
+            <element signature="e#40757#40758#0" expanded="true" />
+            <element signature="e#48206#48207#0" expanded="true" />
+            <element signature="e#48290#48291#0" expanded="true" />
+            <element signature="e#48544#48545#0" expanded="true" />
+            <element signature="e#48634#48635#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="38" column="70" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="256" column="78" lean-forward="true" selection-start-line="256" selection-start-column="78" selection-end-line="256" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -896,18 +1015,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/creditDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6205">
-          <caret line="389" column="32" selection-start-line="389" selection-start-column="32" selection-end-line="389" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="110">
+          <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -920,6 +1029,17 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,5 +1,6 @@
 AgentManagement\CashAgentDetail.class
 serverErrorTestCase\adminHomeCase.class
+AgentManagement\creditDetail.class
 AgentManagement\CashBusinessDetail.class
 ListenerPackage\AssertionListener.class
 PublicMethod\WebDriverUtil.class

@@ -3,16 +3,25 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
   <test name="C:/Users/jtc/IdeaProjects/game(failed)">
     <classes>
-      <class name="AgentManagement.CashAgentDetail">
-        <methods>
-          <include name="rechargeBalance"/>
-        </methods>
-      </class> <!-- AgentManagement.CashAgentDetail -->
       <class name="AgentManagement.CashBusinessDetail">
         <methods>
-          <include name="rechargeBalance"/>
+          <include name="immediateLowerAgentNumber"/>
         </methods>
       </class> <!-- AgentManagement.CashBusinessDetail -->
+      <class name="InbetAdminTestCase.AdminHomeTest">
+        <methods>
+          <include name="systemWinOrLose"/>
+        </methods>
+      </class> <!-- InbetAdminTestCase.AdminHomeTest -->
+      <class name="AgentManagement.creditDetail">
+        <methods>
+          <include name="creditAgentServiceHistoryTotal"/>
+          <include name="creditBusinessServiceAccountBalance"/>
+          <include name="creditBusinessServiceHistoryTotal"/>
+          <include name="creditAgentServiceAccountBalance"/>
+          <include name="creditExplorerServiceHistoryTotal"/>
+        </methods>
+      </class> <!-- AgentManagement.creditDetail -->
     </classes>
   </test> <!-- C:/Users/jtc/IdeaProjects/game(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

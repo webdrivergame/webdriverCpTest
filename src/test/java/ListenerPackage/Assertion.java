@@ -8,15 +8,12 @@ import org.testng.Assert;
 public class Assertion {
 
     public static boolean flag = true;
-
     public static boolean currentFlag() {
         return flag;
     }
-
     public static void setFlag(boolean flag) {
         Assertion.flag = flag;
     }
-
     public static List<Error> errors = new ArrayList<Error>();
 
     public static void verifyEquals(Object actual, Object expected){

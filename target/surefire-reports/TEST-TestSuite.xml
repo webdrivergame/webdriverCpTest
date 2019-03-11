@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="556.744" tests="22" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="806.146" tests="30" errors="0" skipped="0" failures="7">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="D:\maven\apache-maven-3.5.4\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_191/bin;C:\Program Files\Java\jdk1.8.0_191/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;&quot;;C:\Program Files\Java\jdk-11.0.1\bin;&quot;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\jmeter\apache-jmeter-5.0\bin;&quot;;C:\Program Files\MySQL\MySQL Server 8.0\bin&quot;;&quot;C:\Program Files\Java\jdk1.8.0_191\bin;&quot;;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\maven\apache-maven-3.5.4\bin;D:\git\Git\cmd;D:\git\Git;D:\tomcat\apache-tomcat-9.0.12\bin;D:\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe;C:\Users\jtc\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;&quot;;C:\Program Files\Java\jdk-11.0.1\bin;&quot;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\jmeter\apache-jmeter-5.0\bin;&quot;;C:\Program Files\MySQL\MySQL Server 8.0\bin&quot;;&quot;C:\Program Files\Java\jdk1.8.0_191\bin;&quot;;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\maven\apache-maven-3.5.4\bin;D:\git\Git\cmd;D:\git\Git;D:\tomcat\apache-tomcat-9.0.12\bin;D:\allure-2.7.0\allure-2.7.0\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe;C:\Users\jtc\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="maven.conf" value="D:\maven\apache-maven-3.5.4\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -53,43 +53,41 @@
     <property name="java.version" value="1.8.0_191"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes"/>
+    <property name="sun.stderr.encoding" value="ms936"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="D:\maven\apache-maven-3.5.4\bin\.."/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="ms936"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="serviceFeeIncome" classname="InbetAdminTestCase.AdminHomeTest" time="21.696"/>
-  <testcase name="sinceBusinessOperationsTotalArrears" classname="InbetAdminTestCase.AdminHomeTest" time="17.993"/>
-  <testcase name="businessMoneyTotal" classname="InbetAdminTestCase.AdminHomeTest" time="17.924"/>
-  <testcase name="playerNumber" classname="InbetAdminTestCase.AdminHomeTest" time="18.827"/>
-  <testcase name="systemWinOrLose" classname="InbetAdminTestCase.AdminHomeTest" time="17.908"/>
-  <testcase name="todayCommission" classname="InbetAdminTestCase.AdminHomeTest" time="15.743"/>
-  <testcase name="totalCommission" classname="InbetAdminTestCase.AdminHomeTest" time="15.736"/>
-  <testcase name="immediateLowerAgentNumber" classname="AgentManagement.CashBusinessDetail" time="27.154"/>
-  <testcase name="taxTotal" classname="AgentManagement.CashBusinessDetail" time="27.716"/>
-  <testcase name="alreadySettlementMoney" classname="AgentManagement.CashBusinessDetail" time="27.882"/>
-  <testcase name="waitWithdrawMoney" classname="AgentManagement.CashBusinessDetail" time="27.667"/>
-  <testcase name="rechargeBalance" classname="AgentManagement.CashBusinessDetail" time="27.792">
+  <testcase name="serviceFeeIncome" classname="InbetAdminTestCase.AdminHomeTest" time="19.081"/>
+  <testcase name="sinceBusinessOperationsTotalArrears" classname="InbetAdminTestCase.AdminHomeTest" time="17.504"/>
+  <testcase name="businessMoneyTotal" classname="InbetAdminTestCase.AdminHomeTest" time="17.432"/>
+  <testcase name="playerNumber" classname="InbetAdminTestCase.AdminHomeTest" time="16.608"/>
+  <testcase name="systemWinOrLose" classname="InbetAdminTestCase.AdminHomeTest" time="15.719">
     <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at AgentManagement.CashBusinessDetail.rechargeBalance(CashBusinessDetail.java:231)
+	at InbetAdminTestCase.AdminHomeTest.systemWinOrLose(AdminHomeTest.java:161)
 </failure>
-    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 45744
+    <system-out><![CDATA[首页-今日系统盈亏5,009.227
+现金玩家输赢统计-5,009.227
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 39786
 Only local connections are allowed.
-三月 07, 2019 4:18:17 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+三月 11, 2019 3:59:54 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
 信息: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-三月 07, 2019 4:18:19 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+三月 11, 2019 3:59:56 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
 信息: Detected dialect: OSS
-java.lang.AssertionError: expected [47,811,578] but found [47,811,578.00]
+java.lang.AssertionError: expected [-5,009.227] but found [5,009.227]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:167)
-	at ListenerPackage.Assertion.verifyEquals(Assertion.java:24)
-	at AgentManagement.CashBusinessDetail.rechargeBalance(CashBusinessDetail.java:230)
+	at ListenerPackage.Assertion.verifyEquals(Assertion.java:21)
+	at InbetAdminTestCase.AdminHomeTest.systemWinOrLose(AdminHomeTest.java:160)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,35 +117,264 @@ java.lang.AssertionError: expected [47,811,578] but found [47,811,578.00]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]></system-err>
   </testcase>
-  <testcase name="onlineRechargeCredit" classname="AgentManagement.CashBusinessDetail" time="25.918"/>
-  <testcase name="onlineWithdrawCredit" classname="AgentManagement.CashBusinessDetail" time="24.772"/>
-  <testcase name="immediateLowerAgentNumber" classname="AgentManagement.CashAgentDetail" time="25.264"/>
-  <testcase name="DirectPushPlayerNumber" classname="AgentManagement.CashAgentDetail" time="25.332"/>
-  <testcase name="taxTotal" classname="AgentManagement.CashAgentDetail" time="30.768"/>
-  <testcase name="promotionCommissionTotal" classname="AgentManagement.CashAgentDetail" time="30.822"/>
-  <testcase name="acceptRedEnvelopeTotal" classname="AgentManagement.CashAgentDetail" time="31.645"/>
-  <testcase name="addWithdrawalMoney" classname="AgentManagement.CashAgentDetail" time="31.703"/>
-  <testcase name="commissionAccountBalance" classname="AgentManagement.CashAgentDetail" time="31.476"/>
-  <testcase name="rechargeBalance" classname="AgentManagement.CashAgentDetail" time="31.647">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at AgentManagement.CashAgentDetail.rechargeBalance(CashAgentDetail.java:369)
+  <testcase name="todayCommission" classname="InbetAdminTestCase.AdminHomeTest" time="15.442"/>
+  <testcase name="totalCommission" classname="InbetAdminTestCase.AdminHomeTest" time="17.698"/>
+  <testcase name="immediateLowerAgentNumber" classname="AgentManagement.CashBusinessDetail" time="30.469">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div/div[3]/table/tbody/tr[2]/td[3]/div/a&quot;}&#10;  (Session info: chrome=72.0.3626.121)&#10;  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 10.01 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;&#10;System info: host: &apos;DESKTOP-NDF1E9V&apos;, ip: &apos;192.168.1.252&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61142}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir121508_21586}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.121, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 2ba9433523414dbe182069483af07b86&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;root&quot;]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div/div[3]/table/tbody/tr[2]/td[3]/div/a}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div/div[3]/table/tbody/tr[2]/td[3]/div/a"}
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61142}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir121508_21586}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.121, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2ba9433523414dbe182069483af07b86
+*** Element info: {Using=xpath, value=//*[@id="root"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div/div[3]/table/tbody/tr[2]/td[3]/div/a}
+	at AgentManagement.CashBusinessDetail.immediateLowerAgentNumber(CashBusinessDetail.java:38)
 </failure>
-    <system-out><![CDATA[现金代理详情-充值余额：10,231,200.00
-额度管理-充值余额：10,231,200
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 46055
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 47143
 Only local connections are allowed.
-三月 07, 2019 4:23:03 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+三月 11, 2019 4:00:43 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
 信息: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-三月 07, 2019 4:23:05 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+三月 11, 2019 4:00:45 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
 信息: Detected dialect: OSS
-java.lang.AssertionError: expected [10,231,200] but found [10,231,200.00]
+]]></system-err>
+  </testcase>
+  <testcase name="taxTotal" classname="AgentManagement.CashBusinessDetail" time="29.54"/>
+  <testcase name="alreadySettlementMoney" classname="AgentManagement.CashBusinessDetail" time="27.534"/>
+  <testcase name="waitWithdrawMoney" classname="AgentManagement.CashBusinessDetail" time="27.793"/>
+  <testcase name="rechargeBalance" classname="AgentManagement.CashBusinessDetail" time="30.048"/>
+  <testcase name="onlineRechargeCredit" classname="AgentManagement.CashBusinessDetail" time="28.545"/>
+  <testcase name="onlineWithdrawCredit" classname="AgentManagement.CashBusinessDetail" time="26.508"/>
+  <testcase name="immediateLowerAgentNumber" classname="AgentManagement.CashAgentDetail" time="26.982"/>
+  <testcase name="DirectPushPlayerNumber" classname="AgentManagement.CashAgentDetail" time="24.985"/>
+  <testcase name="taxTotal" classname="AgentManagement.CashAgentDetail" time="33.349"/>
+  <testcase name="promotionCommissionTotal" classname="AgentManagement.CashAgentDetail" time="34.438"/>
+  <testcase name="acceptRedEnvelopeTotal" classname="AgentManagement.CashAgentDetail" time="32.541"/>
+  <testcase name="addWithdrawalMoney" classname="AgentManagement.CashAgentDetail" time="35.218"/>
+  <testcase name="commissionAccountBalance" classname="AgentManagement.CashAgentDetail" time="35.047"/>
+  <testcase name="rechargeBalance" classname="AgentManagement.CashAgentDetail" time="34.679"/>
+  <testcase name="creditExplorerNumber" classname="AgentManagement.creditDetail" time="24.217"/>
+  <testcase name="creditExplorerServiceHistoryTotal" classname="AgentManagement.creditDetail" time="27.448">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at AgentManagement.creditDetail.creditExplorerServiceHistoryTotal(creditDetail.java:97)
+</failure>
+    <system-out><![CDATA[历史服务费总计：0.000
+下级服务费统计-生成服务费总计：19,597,720.023
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 3655
+Only local connections are allowed.
+三月 11, 2019 4:08:45 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+三月 11, 2019 4:08:47 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Detected dialect: OSS
+java.lang.AssertionError: expected [19,597,720.023] but found [0.000]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:167)
-	at ListenerPackage.Assertion.verifyEquals(Assertion.java:24)
-	at AgentManagement.CashAgentDetail.rechargeBalance(CashAgentDetail.java:368)
+	at ListenerPackage.Assertion.verifyEquals(Assertion.java:21)
+	at AgentManagement.creditDetail.creditExplorerServiceHistoryTotal(creditDetail.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]></system-err>
+  </testcase>
+  <testcase name="creditExplorerAccountBalance" classname="AgentManagement.creditDetail" time="27.509"/>
+  <testcase name="creditBusinessNumber" classname="AgentManagement.creditDetail" time="26.253"/>
+  <testcase name="creditBusinessServiceHistoryTotal" classname="AgentManagement.creditDetail" time="33.577">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at AgentManagement.creditDetail.creditBusinessServiceHistoryTotal(creditDetail.java:239)
+</failure>
+    <system-out><![CDATA[商务历史服务费总计：0.000
+商务下级服务费统计-生成服务费总计：-16,750.427
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 11306
+Only local connections are allowed.
+三月 11, 2019 4:10:07 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+三月 11, 2019 4:10:08 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Detected dialect: OSS
+java.lang.AssertionError: expected [-16,750.427] but found [0.000]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at ListenerPackage.Assertion.verifyEquals(Assertion.java:21)
+	at AgentManagement.creditDetail.creditBusinessServiceHistoryTotal(creditDetail.java:238)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]></system-err>
+  </testcase>
+  <testcase name="creditBusinessServiceAccountBalance" classname="AgentManagement.creditDetail" time="30.28">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at AgentManagement.creditDetail.creditBusinessServiceAccountBalance(creditDetail.java:289)
+</failure>
+    <system-out><![CDATA[商务服务费账户余额：0.000
+商务下级服务费统计-今日结算后余额：-13,921.427
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 12449
+Only local connections are allowed.
+三月 11, 2019 4:10:40 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+三月 11, 2019 4:10:42 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Detected dialect: OSS
+java.lang.AssertionError: expected [-13,921.427] but found [0.000]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at ListenerPackage.Assertion.verifyEquals(Assertion.java:21)
+	at AgentManagement.creditDetail.creditBusinessServiceAccountBalance(creditDetail.java:288)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]></system-err>
+  </testcase>
+  <testcase name="creditAgentServiceHistoryTotal" classname="AgentManagement.creditDetail" time="28.573">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at AgentManagement.creditDetail.creditAgentServiceHistoryTotal(creditDetail.java:338)
+</failure>
+    <system-out><![CDATA[历史服务费总计：0.000
+信用代理下级服务费统计-生成服务费总计：-18,273.193
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 42809
+Only local connections are allowed.
+三月 11, 2019 4:11:10 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+三月 11, 2019 4:11:12 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Detected dialect: OSS
+java.lang.AssertionError: expected [-18,273.193] but found [0.000]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at ListenerPackage.Assertion.verifyEquals(Assertion.java:21)
+	at AgentManagement.creditDetail.creditAgentServiceHistoryTotal(creditDetail.java:337)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]></system-err>
+  </testcase>
+  <testcase name="creditAgentServiceAccountBalance" classname="AgentManagement.creditDetail" time="28.655">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at AgentManagement.creditDetail.creditAgentServiceAccountBalance(creditDetail.java:387)
+</failure>
+    <system-out><![CDATA[服务费账户余额：0.000
+信用代理下级服务费统计-今日结算后余额：-17,623.193
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 23343
+Only local connections are allowed.
+三月 11, 2019 4:11:39 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+三月 11, 2019 4:11:40 下午 org.openqa.selenium.remote.ProtocolHandshake createSession
+信息: Detected dialect: OSS
+java.lang.AssertionError: expected [-17,623.193] but found [0.000]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at ListenerPackage.Assertion.verifyEquals(Assertion.java:21)
+	at AgentManagement.creditDetail.creditAgentServiceAccountBalance(creditDetail.java:386)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
