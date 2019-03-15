@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1552572240632" stop="1552572256824" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : game</name>
+    <title>Default Suite : game</title>
+    <test-cases>
+        <test-case start="1552572240771" stop="1552572256812" status="passed">
+            <name>rechargeMoneyToday</name>
+            <title>平台首页-验证现今模式今日充值金额是否相等</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="InbetAdminTestCase.AdminHomeTest"/>
+                <label name="testMethod" value="rechargeMoneyToday"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="2716@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

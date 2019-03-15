@@ -8,13 +8,14 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Title;
+import util.StringToNumber;
 
 import java.math.BigDecimal;
 
 
 public class AdminHomeTest {
 
-    private WebDriver driver;
+        private WebDriver driver;
 
 
         @Feature("平台首页")
@@ -168,8 +169,6 @@ public class AdminHomeTest {
 
 
 
-
-
         @Feature("平台首页")
         @Story("现金模式")
         @Title("平台首页-验证今日佣金与下级佣金统计-商户今日佣金金额是否一致")
@@ -242,23 +241,62 @@ public class AdminHomeTest {
 
                 //获取现今模式今日充值金额
                 String rechargeMoneyToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[9]/div/div");
-                System.out.println("首页-今日充值金额："+rechargeMoneyToday);
-
+                BigDecimal a2 = StringToNumber.toBigDecimal(rechargeMoneyToday);
+                System.out.println("首页-今日充值金额："+a2);
 
                 driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","现金-充值提现记录");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"rest_cash_recharge_withdraw_list\"]/li/span");
                         Thread.sleep(3000);
                 String rechargeTotalArtificial = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div[3]/span[2]");
                 String rechargeTotalOnline = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div[1]/span[2]");
-
+                System.out.println("人工充值金额："+rechargeTotalArtificial);
+                System.out.println("在线充值金额："+rechargeTotalOnline);
                 //判断在线充值+人工充值是否等于首页今日总充值金额
-                BigDecimal a1 = new BigDecimal(rechargeTotalArtificial);
-                BigDecimal a2 = new BigDecimal(rechargeTotalOnline);
-                BigDecimal total = a1.add(new BigDecimal(String.valueOf(a2)));
-                System.out.println("在线充值+人工充值："+total);
+                //BigDecimal a2 = new BigDecimal(rechargeTotalOnline);
+                BigDecimal a1 = StringToNumber.toBigDecimal(rechargeTotalArtificial);
+                BigDecimal total = a1.add(StringToNumber.toBigDecimal(rechargeTotalOnline));
+                System.out.println("在线充值+人工充值总计金额："+total);
 
                         Assertion.setFlag(true);
-                        Assertion.verifyEquals(rechargeMoneyToday,total);
+                        Assertion.verifyEquals(a2,total);
+                        Assert.assertTrue(Assertion.currentFlag());
+                driverUtil.LoginAfter();
+        }
+
+
+        @Feature("平台首页")
+        @Story("现金模式")
+        @Title("平台首页-验证现金模式-今日提现金额是否相等")
+
+        @Test(priority = 9)
+        public void withdrawMoneyToday() throws InterruptedException {
+
+                WebDriverUtil driverUtil = new WebDriverUtil(driver);
+                driverUtil.LoginBefore("https://admin.oneonewan.com/#/login");
+                driverUtil.adminlogin("xiaochaoadmin", "123123");
+                driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
+                        Thread.sleep(5000);
+
+                //获取现今模式今日充值金额
+                String withdrawMoneyToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[10]/div/div");
+                BigDecimal a2 = StringToNumber.toBigDecimal(withdrawMoneyToday);
+                System.out.println("首页-今日提现金额："+a2);
+
+                driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","现金-充值提现记录");
+                driverUtil.findElementByXpathAndClick("//*[@id=\"rest_cash_recharge_withdraw_list\"]/li/span");
+                        Thread.sleep(3000);
+                String withdrawTotalArtificial = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div[4]/span[2]");
+                String withdrawTotalOnline = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div[2]/span[2]");
+                System.out.println("人工提现金额："+withdrawTotalArtificial);
+                System.out.println("在线提现金额："+withdrawTotalOnline);
+                //判断在线提现+人工提现是否等于首页今日总充值金额
+
+                BigDecimal a1 = StringToNumber.toBigDecimal(withdrawTotalArtificial);
+                BigDecimal total = a1.add(StringToNumber.toBigDecimal(withdrawTotalOnline));
+                System.out.println("在线提现+人工提现总计金额："+total);
+
+                        Assertion.setFlag(true);
+                        Assertion.verifyEquals(a2,total);
                         Assert.assertTrue(Assertion.currentFlag());
 
                 driverUtil.LoginAfter();
