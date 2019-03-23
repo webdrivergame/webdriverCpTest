@@ -5,8 +5,8 @@
     <classes>
       <class name="InbetAdminTestCase.AdminHomeTest">
         <methods>
-          <include name="totalsystermWinOrLose"/>
-          <include name="systermWinOrLose"/>
+          <include name="withdrawMoneyToday"/>
+          <include name="playerNumber"/>
         </methods>
       </class> <!-- InbetAdminTestCase.AdminHomeTest -->
     </classes>

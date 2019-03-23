@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>game</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 28 16:04:12 ICT 2019</td>
+<td>Started on:</td><td>Thu Mar 21 19:58:26 ICT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>171 seconds (171634 ms)</td>
+<tr><td>Total time:</td><td>143 seconds (143781 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='InbetAdminTestCase.AdminHomeTest.systermWinOrLose()'><b>systermWinOrLose</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
+<td title='adminTestCase.AdminHomeTest.playerNumber()'><b>playerNumber</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at InbetAdminTestCase.AdminHomeTest.systermWinOrLose(AdminHomeTest.java:156)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace69150541", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace69150541'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at adminTestCase.AdminHomeTest.playerNumber(AdminHomeTest.java:129)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1672523441", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1672523441'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at InbetAdminTestCase.AdminHomeTest.systermWinOrLose(AdminHomeTest.java:156)
+	at adminTestCase.AdminHomeTest.playerNumber(AdminHomeTest.java:129)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,19 +109,57 @@ function toggleAllBoxes() {
 	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
 </pre></div></td>
-<td>18</td>
-<td>InbetAdminTestCase.AdminHomeTest@338d47b</td></tr>
+<td>15</td>
+<td>InbetAdminTestCase.AdminHomeTest@34cb0e49</td></tr>
 <tr>
-<td title='InbetAdminTestCase.AdminHomeTest.totalsystermWinOrLose()'><b>totalsystermWinOrLose</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at InbetAdminTestCase.AdminHomeTest.totalsystermWinOrLose(AdminHomeTest.java:186)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2126920602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2126920602'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at InbetAdminTestCase.AdminHomeTest.totalsystermWinOrLose(AdminHomeTest.java:186)
+<td title='InbetAdminTestCase.AdminHomeTest.withdrawMoneyToday()'><b>withdrawMoneyToday</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/section/section/main/div[2]/div[2]/div[1]/div[2]/span[2]&quot;}
+  (Session info: chrome=73.0.3683.75)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
+System info: host: &apos;DESKTOP-NDF1E9V&apos;, ip: &apos;192.168.232.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:37564}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir16324_14829}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.75, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6283b667c60ca05d7c19859bbbe818fe
+*** Element info: {Using=xpath, value=//*[@id=&quot;root&quot;]/section/section/main/div[2]/div[2]/div[1]/div[2]/span[2]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at PublicMethod.WebDriverUtil.findElementByXpath(WebDriverUtil.java:192)
+	at PublicMethod.WebDriverUtil.getTextByXpath(WebDriverUtil.java:449)
+	at InbetAdminTestCase.AdminHomeTest.withdrawMoneyToday(AdminHomeTest.java:266)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1254810823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1254810823'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/section/section/main/div[2]/div[2]/div[1]/div[2]/span[2]&quot;}
+  (Session info: chrome=73.0.3683.75)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
+System info: host: &apos;DESKTOP-NDF1E9V&apos;, ip: &apos;192.168.232.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:37564}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir16324_14829}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.75, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6283b667c60ca05d7c19859bbbe818fe
+*** Element info: {Using=xpath, value=//*[@id=&quot;root&quot;]/section/section/main/div[2]/div[2]/div[1]/div[2]/span[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at PublicMethod.WebDriverUtil.findElementByXpath(WebDriverUtil.java:192)
+	at PublicMethod.WebDriverUtil.getTextByXpath(WebDriverUtil.java:449)
+	at InbetAdminTestCase.AdminHomeTest.withdrawMoneyToday(AdminHomeTest.java:266)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -146,8 +184,8 @@ function toggleAllBoxes() {
 	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
 </pre></div></td>
-<td>22</td>
-<td>InbetAdminTestCase.AdminHomeTest@338d47b</td></tr>
+<td>24</td>
+<td>InbetAdminTestCase.AdminHomeTest@34cb0e49</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -157,35 +195,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='InbetAdminTestCase.AdminHomeTest.busniessMoneyTotal()'><b>busniessMoneyTotal</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
+<td title='adminTestCase.AdminHomeTest.businessMoneyTotal()'><b>businessMoneyTotal</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
 <td></td>
-<td>21</td>
-<td>InbetAdminTestCase.AdminHomeTest@338d47b</td></tr>
+<td>16</td>
+<td>InbetAdminTestCase.AdminHomeTest@34cb0e49</td></tr>
 <tr>
-<td title='InbetAdminTestCase.AdminHomeTest.playerNumber()'><b>playerNumber</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
+<td title='adminTestCase.AdminHomeTest.rechargeMoneyToday()'><b>rechargeMoneyToday</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
 <td></td>
-<td>19</td>
-<td>InbetAdminTestCase.AdminHomeTest@338d47b</td></tr>
+<td>13</td>
+<td>InbetAdminTestCase.AdminHomeTest@34cb0e49</td></tr>
 <tr>
-<td title='InbetAdminTestCase.AdminHomeTest.serviceFeeIncome()'><b>serviceFeeIncome</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
+<td title='adminTestCase.AdminHomeTest.serviceIncomeToday()'><b>serviceIncomeToday</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
 <td></td>
-<td>25</td>
-<td>InbetAdminTestCase.AdminHomeTest@338d47b</td></tr>
+<td>17</td>
+<td>InbetAdminTestCase.AdminHomeTest@34cb0e49</td></tr>
 <tr>
-<td title='InbetAdminTestCase.AdminHomeTest.sinceBusinessOperationsTotalArrears()'><b>sinceBusinessOperationsTotalArrears</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
+<td title='adminTestCase.AdminHomeTest.sinceBusinessOperationsTotalArrears()'><b>sinceBusinessOperationsTotalArrears</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
 <td></td>
-<td>23</td>
-<td>InbetAdminTestCase.AdminHomeTest@338d47b</td></tr>
+<td>16</td>
+<td>InbetAdminTestCase.AdminHomeTest@34cb0e49</td></tr>
+<tr>
+<td title='InbetAdminTestCase.AdminHomeTest.systemWinOrLose()'><b>systemWinOrLose</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
+<td></td>
+<td>14</td>
+<td>InbetAdminTestCase.AdminHomeTest@34cb0e49</td></tr>
 <tr>
 <td title='InbetAdminTestCase.AdminHomeTest.todayCommission()'><b>todayCommission</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
 <td></td>
-<td>20</td>
-<td>InbetAdminTestCase.AdminHomeTest@338d47b</td></tr>
+<td>13</td>
+<td>InbetAdminTestCase.AdminHomeTest@34cb0e49</td></tr>
 <tr>
 <td title='InbetAdminTestCase.AdminHomeTest.totalCommission()'><b>totalCommission</b><br>Test class: InbetAdminTestCase.AdminHomeTest</td>
 <td></td>
-<td>19</td>
-<td>InbetAdminTestCase.AdminHomeTest@338d47b</td></tr>
+<td>13</td>
+<td>InbetAdminTestCase.AdminHomeTest@34cb0e49</td></tr>
 </table><p>
 </body>
 </html>

@@ -3,10 +3,10 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test name="game(failed)">
     <classes>
-      <class name="InbetAdminTestCase.AdminHomeTest">
+      <class name="adminTestCase.AdminHomeTest">
         <methods>
-          <include name="totalsystermWinOrLose"/>
-          <include name="systermWinOrLose"/>
+          <include name="withdrawMoneyToday"/>
+          <include name="playerNumber"/>
         </methods>
       </class> <!-- InbetAdminTestCase.AdminHomeTest -->
     </classes>

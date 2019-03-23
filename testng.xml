@@ -3,10 +3,10 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/jtc/IdeaProjects/game">
         <classes>
-            <class name="InbetAdminTestCase.AdminHomeTest"></class>
-            <class name="AgentManagement.CashBusinessDetail"></class>
-            <class name="AgentManagement.CashAgentDetail"></class>
-            <class name="AgentManagement.creditDetail"></class>
+            <class name="adminTestCase.adminHomeTestCase"></class>
+            <class name="adminTestCase.CashBusinessDetailTestCase"></class>
+            <class name="adminTestCase.CashAgentDetailTestCase"></class>
+            <class name="adminTestCase.creditDetailTestCase"></class>
         </classes>
     </test>
 </suite>

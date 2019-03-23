@@ -5,12 +5,12 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
@@ -35,7 +35,6 @@ import org.openqa.selenium.interactions.HasInputDevices;
 import org.openqa.selenium.interactions.Keyboard;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -45,7 +44,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
      */
            public class WebDriverUtil {
 
-               public static List<Error> errors = new ArrayList<Error>();
+            private static final Object BigDecimal = null;
+            public static List<Error> errors = new ArrayList<Error>();
                private static WebDriver driver = null;
                private static Select select = null;
                private static Alert alert = null;
@@ -62,8 +62,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
         public WebDriverUtil(WebDriver driver) {
-                   WebDriverUtil.driver = driver;
-                   WebDriverUtil.timeOutInSeconds = timeOutInSeconds;
+                  WebDriverUtil.driver = driver;
+                  WebDriverUtil.timeOutInSeconds = timeOutInSeconds;
                }
 
 
@@ -73,7 +73,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                 *    *        adminlogin
                 */
 
-               public void adminlogin(String username,String password){
+               public void adminLogin(String username,String password){
                    WebElement user = driver.findElement(By.xpath("//*[@id=\"login_username\"]"));
                    user.clear();
                    user.click();
@@ -88,7 +88,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
                //浏览器打开Url
 
-               public void LoginBefore(String Url){
+               public void loginBefore(String Url){
                    System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
                    // 去掉浏览器中的“--ignore-certificate-errors”
                    DesiredCapabilities capabilities = DesiredCapabilities.chrome();
@@ -414,9 +414,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
              }
 
 
-              public void findElementByXpathAndClearSendkeys(String xpath, int num) {
+              public void findElementByXpathAndClearSendkeys(String xpath, BigDecimal text) {
                  findElementByXpath(xpath).clear();
-                 findElementByXpath(xpath).sendKeys(num + "");
+                 findElementByXpath(xpath).sendKeys((CharSequence) BigDecimal);
              }
               public void findElementByXpathAndClearSendkeys(String xpath, String text) {
                  driver.findElement(By.xpath(xpath)).clear();
@@ -1076,7 +1076,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                  File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
                  SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHmmss");
                  String time = sdf.format(new Date());
-                 String file = "C:\\Users\\zhangsan\\Desktop\\picture\\" + time + ".png";
+                 String file = "C:\\Users\\jtc\\Desktop\\picture\\" + time + ".png";
                  FileUtils.copyFile(srcFile, new File(file));
              }
      // 截图重命名保存至桌面
@@ -1330,4 +1330,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                 acceptNextAlert = true;
             }
         }
+
+            public String getProperty(String datePlayerAccount) {
+
+                    return datePlayerAccount;
+            }
     }

@@ -3,25 +3,46 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
   <test name="C:/Users/jtc/IdeaProjects/game(failed)">
     <classes>
-      <class name="AgentManagement.CashBusinessDetail">
+      <class name="agentManagement.CashBusinessDetail">
         <methods>
-          <include name="immediateLowerAgentNumber"/>
+          <include name="alreadySettlementMoney"/>
+          <include name="onlineWithdrawCredit"/>
+          <include name="onlineRechargeCredit"/>
         </methods>
-      </class> <!-- AgentManagement.CashBusinessDetail -->
+      </class> <!-- agentManagement.CashBusinessDetail -->
       <class name="InbetAdminTestCase.AdminHomeTest">
         <methods>
+          <include name="totalCommission"/>
+          <include name="todayCommission"/>
           <include name="systemWinOrLose"/>
+          <include name="withdrawMoneyToday"/>
+          <include name="rechargeMoneyToday"/>
+          <include name="businessMoneyTotal"/>
         </methods>
       </class> <!-- InbetAdminTestCase.AdminHomeTest -->
-      <class name="AgentManagement.creditDetail">
+      <class name="agentManagement.creditDetail">
         <methods>
           <include name="creditAgentServiceHistoryTotal"/>
           <include name="creditBusinessServiceAccountBalance"/>
-          <include name="creditBusinessServiceHistoryTotal"/>
           <include name="creditAgentServiceAccountBalance"/>
           <include name="creditExplorerServiceHistoryTotal"/>
+          <include name="creditBusinessServiceHistoryTotal"/>
+          <include name="creditBusinessNumber"/>
+          <include name="creditExplorerAccountBalance"/>
         </methods>
-      </class> <!-- AgentManagement.creditDetail -->
+      </class> <!-- agentManagement.creditDetail -->
+      <class name="agentManagement.CashAgentDetail">
+        <methods>
+          <include name="addWithdrawalMoney"/>
+          <include name="commissionAccountBalance"/>
+          <include name="rechargeBalance"/>
+          <include name="acceptRedEnvelopeTotal"/>
+          <include name="promotionCommissionTotal"/>
+          <include name="DirectPushPlayerNumber"/>
+          <include name="immediateLowerAgentNumber"/>
+          <include name="taxTotal"/>
+        </methods>
+      </class> <!-- agentManagement.CashAgentDetail -->
     </classes>
   </test> <!-- C:/Users/jtc/IdeaProjects/game(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
