@@ -27,7 +27,7 @@ public class adminHomeTestCase {
                 driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
                 driverUtil.adminLogin("xiaochaoadmin", "123123");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                        Thread.sleep(5000);
+                        Thread.sleep(4000);
                 //判断首页无限金币今日服务费收入与下级服务费我的服务费总计金额是否一致
                 String serviceIncomeToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[2]/div/div");
                 System.out.println("首页-今日服务费收入："+serviceIncomeToday);
@@ -53,7 +53,7 @@ public class adminHomeTestCase {
                 driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
                 driverUtil.adminLogin("xiaochaoadmin", "123123");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                        Thread.sleep(6000);
+                        Thread.sleep(4000);
                 //判断服务费收入总计与下级服务费统计的生成服务费总计金额是否一致
                 String SinceBusinessOperationsTotalArrears = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[2]/td[2]/div/div");
                 System.out.println("首页-服务费收入总计："+SinceBusinessOperationsTotalArrears);
@@ -79,7 +79,7 @@ public class adminHomeTestCase {
                 driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
                 driverUtil.adminLogin("xiaochaoadmin", "123123");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                        Thread.sleep(6000);
+                        Thread.sleep(4000);
                 //判断首页商户欠款总计与下级服务费结算记录总欠款是否一致
                 String businessMoneyTotal = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[2]/td[3]/div/div");
                 System.out.println("首页-商户欠款总计："+businessMoneyTotal);
@@ -105,12 +105,12 @@ public class adminHomeTestCase {
                 driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
                 driverUtil.adminLogin("xiaochaoadmin", "123123");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                        Thread.sleep(6000);
+                        Thread.sleep(4000);
                 String playerNumberToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[5]/div/div");
                 System.out.println("首页-今日新增玩家："+playerNumberToday);
                 driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","信用留存统计");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"rest_login_statistic\"]/li/span");
-                        Thread.sleep(4000);
+                        Thread.sleep(3000);
                 //获取信用留存今日新增玩家
                 String creditPlayerNumber = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div");
                 System.out.println("信用留存今日新增玩家："+creditPlayerNumber);
@@ -140,7 +140,7 @@ public class adminHomeTestCase {
                 driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
                 driverUtil.adminLogin("xiaochaoadmin", "123123");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                        Thread.sleep(6000);
+                        Thread.sleep(4000);
                 //验证今日系统盈亏与玩家输赢统计金额是否一致
                 String systemWinOrLose = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[7]/div/div");
                 BigDecimal a1 = StringToNumber.toBigDecimal(systemWinOrLose).abs();
@@ -169,7 +169,7 @@ public class adminHomeTestCase {
                 driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
                 driverUtil.adminLogin("xiaochaoadmin", "123123");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                        Thread.sleep(5000);
+                        Thread.sleep(4000);
                 //验证今日佣金与下级佣金统计-商户今日佣金金额是否一致
                 String commissionToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[8]/div/div");
                 System.out.println("首页-今日佣金总计"+commissionToday);
@@ -195,7 +195,7 @@ public class adminHomeTestCase {
                 driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
                 driverUtil.adminLogin("xiaochaoadmin", "123123");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                        Thread.sleep(5000);
+                        Thread.sleep(4000);
                 //验证佣金总计与下级佣金统计-商户所占佣金金额是否一致
                 String totalCommission = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[2]/td[8]/div/div");
                 System.out.println("首页-佣金总计："+totalCommission);
@@ -220,7 +220,7 @@ public class adminHomeTestCase {
                 driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
                 driverUtil.adminLogin("xiaochaoadmin", "123123");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                        Thread.sleep(5000);
+                        Thread.sleep(4000);
                 //获取现今模式今日充值金额
                 String rechargeMoneyToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[9]/div/div");
                 BigDecimal a1 = StringToNumber.toBigDecimal(rechargeMoneyToday);
@@ -254,7 +254,7 @@ public class adminHomeTestCase {
                 driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
                 driverUtil.adminLogin("xiaochaoadmin", "123123");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                        Thread.sleep(5000);
+                        Thread.sleep(4000);
                 //获取现今模式今日提现金额
                 String withdrawMoneyToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[10]/div/div");
                 BigDecimal a2 = StringToNumber.toBigDecimal(withdrawMoneyToday);

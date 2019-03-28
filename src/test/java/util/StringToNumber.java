@@ -22,20 +22,9 @@ public class StringToNumber {
                 return null;
         }
 
-        /**
-         * 带”人“的数字替换为空，保留数字
-         */
-
-        public static BigDecimal peopleBigDecimal(String text) {
-                if (StringUtils.isNotEmpty(text)) {
-                        String total = text.replaceAll("人", "");
-                        return new BigDecimal(total);
-                }
-                return null;
-        }
 
         /**
-         * 带”人“的数字替换为空，保留数字
+         * 带”-“的数字替换为空，保留数字
          */
 
 
@@ -48,19 +37,6 @@ public class StringToNumber {
         }
 
 
-        /***
-         *
-          * @param text
-         * @return 带”¥“的替换为空，保留数字
-         */
-
-        public static BigDecimal moneyBigDecimal(String text) {
-                if (StringUtils.isNotEmpty(text)) {
-                        String total = text.replaceAll("¥","");
-                        return new BigDecimal(total);
-                }
-                return null;
-        }
 
 
        // public static void main(String[] ars){

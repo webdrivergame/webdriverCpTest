@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1553592564465" stop="1553592578597" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : game</name>
+    <title>Default Suite : game</title>
+    <test-cases>
+        <test-case start="1553592564589" stop="1553592578586" status="passed">
+            <name>incomeToday</name>
+            <title>现金代理首页-验证今日收入金额与今日产生佣金账单金额一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="cashAgentTestCase.cashAgentHomeTestCase"/>
+                <label name="testMethod" value="incomeToday"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="26496@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

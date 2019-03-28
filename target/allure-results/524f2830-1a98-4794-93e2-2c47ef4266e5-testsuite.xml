@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1553575475161" stop="1553575698474" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : game</name>
+    <title>Default Suite : game</title>
+    <test-cases>
+        <test-case start="1553575475275" stop="1553575497936" status="passed">
+            <name>immediateLowerAgentNumber</name>
+            <title>现金推广代理详情-验证运营数据-直属下级代理人数是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.CashAgentDetailTestCase"/>
+                <label name="testMethod" value="immediateLowerAgentNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="25296@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553575497941" stop="1553575520410" status="passed">
+            <name>DirectPushPlayerNumber</name>
+            <title>现金推广代理详情-验证运营数据-直推玩家人数是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.CashAgentDetailTestCase"/>
+                <label name="testMethod" value="DirectPushPlayerNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="25296@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553575520414" stop="1553575550084" status="passed">
+            <name>taxTotal</name>
+            <title>现金推广代理详情-验证运营数据-税收总计与下级佣金统计税收金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.CashAgentDetailTestCase"/>
+                <label name="testMethod" value="taxTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="25296@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553575550087" stop="1553575578223" status="passed">
+            <name>promotionCommissionTotal</name>
+            <title>现金推广代理详情-验证运营数据-推广佣金总计与下级佣金统计生成佣金总额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.CashAgentDetailTestCase"/>
+                <label name="testMethod" value="promotionCommissionTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="25296@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553575578226" stop="1553575606229" status="passed">
+            <name>acceptRedEnvelopeTotal</name>
+            <title>现金推广代理详情-验证运营数据-领取红包总计与下级佣金统计领取红包总额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.CashAgentDetailTestCase"/>
+                <label name="testMethod" value="acceptRedEnvelopeTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="25296@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553575606232" stop="1553575633919" status="passed">
+            <name>addWithdrawalMoney</name>
+            <title>现金推广代理详情-验证运营数据-累计提款金额与下级佣金统计已领取金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.CashAgentDetailTestCase"/>
+                <label name="testMethod" value="addWithdrawalMoney"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="25296@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553575633924" stop="1553575669478" status="passed">
+            <name>commissionAccountBalance</name>
+            <title>现金推广代理详情-验证运营数据-佣金账户余额与下级佣金统计待提现佣金是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.CashAgentDetailTestCase"/>
+                <label name="testMethod" value="commissionAccountBalance"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="25296@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553575669484" stop="1553575698457" status="passed">
+            <name>rechargeBalance</name>
+            <title>现金推广代理详情-验证运营数据-充值余额与代理充值提现额度管理代理额度是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.CashAgentDetailTestCase"/>
+                <label name="testMethod" value="rechargeBalance"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="25296@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

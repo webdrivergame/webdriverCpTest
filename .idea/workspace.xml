@@ -2,47 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96204fec-b768-4500-a32d-bdf317ef3d35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/adminTestCase/adminHomeTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentHomeTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentPlayerTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cashAgentTestCase/cashAgentHomeTestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AgentManagement/CashAgentDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/adminTestCase/CashAgentDetailTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AgentManagement/CashBusinessDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/adminTestCase/CashBusinessDetailTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AgentManagement/creditDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/adminTestCase/creditDetailTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ListenerPackage/Assertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/listenerPackage/Assertion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ListenerPackage/AssertionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/listenerPackage/AssertionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/serverErrorTestCase/adminHomeCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/adminTestCase/CashAgentDetailTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/adminTestCase/cashAgentDetailTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/adminTestCase/CashBusinessDetailTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/adminTestCase/cashBusinessDetailTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/adminTestCase/adminHomeTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/adminTestCase/adminHomeTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/adminTestCase/creditDetailTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/adminTestCase/creditDetailTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentHomeTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentHomeTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentPlayerTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentPlayerTestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/util/StringToNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/StringToNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/0f830c3f-7750-4b8f-a495-892d3c46e0d3-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/21fa0763-113c-4119-8236-7f667637c401-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/256c80e4-aaa1-4154-a48c-cf61a6a96931-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/28340581-46d0-49db-8cb0-88ff778a0907-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/28c0befb-6b4a-40a3-bfed-5ff1df4102b0-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/297e5ef7-f711-46a4-90e0-4cdc97bbea3f-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/2a527a5a-da6c-4a1b-9eae-e71a602767a2-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/34305e57-2baa-4d1c-90be-17ac3f3fce31-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/404c7fe3-c38a-407f-8330-856314dac286-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/6d5ff086-bbbc-43b7-91a3-1d78b442d858-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/6ef15d06-75b3-4a9c-8b32-9114d3545f89-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/7784cb29-b1aa-4383-8212-1814df298dad-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/79430910-f2c5-4df3-bd9f-ece4c9f50097-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/7a6d0f55-0e82-4948-a837-a944f4d6e91a-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/7fd309a5-18c7-461a-a388-dd493cd73aa3-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/8555b1c3-8217-4dfd-bef9-19fa54843496-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/8c6fcbe8-0b03-4ea2-b595-513f2b88d1db-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/8def61ce-c89a-41cf-a91f-6c022b4e4d04-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/8ec0dc72-efcd-405a-b1fd-ce53ec9f18c6-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/93310c02-fd1a-4ba9-b27f-f6427d3d05d9-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/ab148399-baee-45d0-8de7-1dc4d2e80428-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/b5f39699-dd80-48e9-a288-8aca673d36b7-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/cc990813-3253-41b7-8ec4-9230b693c5b1-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/ce43f8c9-4270-4263-b4ed-d759125441ec-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/e0fe19a5-a0b9-4386-91c0-88973130933a-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/f0a35f93-bd37-48b7-85ca-83a749c0535e-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/f3d7d544-a80d-46a3-a74b-e8d05a8f6b66-testsuite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/fb82f438-95c9-43ec-9f5a-6265bc563c3a-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/27df0cc4-87f0-4614-9b5f-aef649be6515-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4eec64b2-05ba-4bdb-adf5-3b75969f1376-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5ae38089-6f16-4ddc-b812-0bfe9cd6bc55-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/6989446c-e6c9-428e-a6a2-ecf932803b9b-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/70debb70-f841-4ec0-a751-3fb81e9625d4-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7ee1cb67-e8fe-4e2f-afab-bce45e7468b8-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/86e7cb66-40c6-4940-b24e-f815ebad230b-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/870a3834-5654-46a0-b925-1d36cfe3542c-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9c323c13-e343-4435-a416-e5a4caeee86d-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9dea1b7a-5dd0-4bbc-af94-a0f82abaa6ac-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/b4d09b12-2a6c-4ab8-af5b-843cfa194e3d-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ce9076b4-f935-4d78-a0d6-446aed71bfae-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d32c33d5-0dc1-408c-8e20-e2117ab637ed-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d409b6ea-cacd-4b4e-8d73-2e0b214fe4eb-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d6a66ace-88b5-4791-929b-ed23f55ce748-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d992f5e1-9485-4dac-8f15-57cd2125ab8c-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/dfb23dc4-aca5-4479-880b-6c54a1140cc8-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e2e7f238-4ea6-48f8-82d0-1275f09e93d0-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f448df2f-a0c5-4cff-b186-a1e9202afa38-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f9218dfe-6082-48f7-9ba5-264fd561f552-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f9729321-38c5-48e0-bfa5-b0612329d6fd-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/fabbf62a-0512-4d2c-8929-663365558b8e-testsuite.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_jtc_IdeaProjects_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/C__Users_jtc_IdeaProjects_game.html" afterDir="false" />
@@ -52,10 +42,10 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.CashAgentDetail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.CashAgentDetail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.CashBusinessDetail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.CashBusinessDetail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.creditDetail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.creditDetail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-InbetAdminTestCase.AdminHomeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-InbetAdminTestCase.AdminHomeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.CashAgentDetail.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.CashBusinessDetail.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-AgentManagement.creditDetail.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-InbetAdminTestCase.AdminHomeTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods.html" afterDir="false" />
@@ -64,20 +54,6 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/game.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/game.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-InbetAdminTestCase.AdminHomeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-InbetAdminTestCase.AdminHomeTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Default Suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -114,7 +90,7 @@
     <session id="-997552775">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="61" />
+          <entry key="project.closed" value="63" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
@@ -124,7 +100,7 @@
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="2" />
-          <entry key="project.open.time.20" value="3" />
+          <entry key="project.open.time.20" value="4" />
           <entry key="project.open.time.21" value="6" />
           <entry key="project.open.time.22" value="7" />
           <entry key="project.open.time.23" value="6" />
@@ -140,23 +116,24 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="10" />
           <entry key="project.open.time.7" value="8" />
-          <entry key="project.opened" value="68" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="131" />
+          <entry key="dummy" value="134" />
           <entry key="html" value="13" />
-          <entry key="java" value="32076" />
-          <entry key="xml" value="554" />
+          <entry key="java" value="35386" />
+          <entry key="xml" value="569" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="13" />
-          <entry key="JAVA" value="32076" />
-          <entry key="PLAIN_TEXT" value="131" />
-          <entry key="XML" value="554" />
+          <entry key="JAVA" value="35386" />
+          <entry key="PLAIN_TEXT" value="134" />
+          <entry key="XML" value="569" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -164,12 +141,12 @@
           <entry key="class" value="7" />
           <entry key="html" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="235" />
+          <entry key="java" value="238" />
           <entry key="json" value="2" />
           <entry key="log" value="3" />
           <entry key="md" value="1" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="25" />
+          <entry key="xml" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -177,11 +154,11 @@
           <entry key="CLASS" value="7" />
           <entry key="HTML" value="2" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="235" />
+          <entry key="JAVA" value="238" />
           <entry key="JSON" value="2" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="XML" value="25" />
+          <entry key="XML" value="26" />
         </counts>
       </usages-collector>
     </session>
@@ -191,8 +168,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/creditDetailTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-188">
-              <caret line="299" column="29" selection-start-line="299" selection-start-column="29" selection-end-line="299" selection-end-column="29" />
+            <state relative-caret-position="-5945">
+              <caret line="79" column="77" selection-start-line="79" selection-start-column="77" selection-end-line="79" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -201,10 +178,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/cashBusinessDetailTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1592">
-              <caret line="90" column="51" lean-forward="true" selection-start-line="90" selection-start-column="51" selection-end-line="90" selection-end-column="51" />
+            <state relative-caret-position="55">
+              <caret line="255" column="30" selection-start-line="255" selection-start-column="30" selection-end-line="255" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,10 +190,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/CashBusinessDetailTestCase.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/adminHomeTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="257" column="25" selection-start-line="257" selection-start-column="25" selection-end-line="257" selection-end-column="25" />
+            <state relative-caret-position="-3345">
+              <caret line="112" column="38" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -227,8 +204,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/util/StringToNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2000">
-              <caret line="80" column="80" selection-start-line="80" selection-start-column="80" selection-end-line="80" selection-end-column="80" />
+            <state relative-caret-position="900">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/cashAgentDetailTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="207" column="26" lean-forward="true" selection-start-line="207" selection-start-column="26" selection-end-line="207" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -237,34 +226,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/adminHomeTestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="254" column="33" selection-start-line="254" selection-start-column="33" selection-end-line="254" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/CashAgentDetailTestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-302">
-              <caret line="342" column="25" selection-start-line="342" selection-start-column="25" selection-end-line="342" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentPlayerTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+            <state relative-caret-position="215">
+              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -275,8 +240,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentHomeTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="-145">
+              <caret line="111" column="80" selection-start-line="111" selection-start-column="80" selection-end-line="111" selection-end-column="80" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testng.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cashAgentTestCase/cashAgentHomeTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-945">
+              <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -287,7 +273,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/listenerPackage/Assertion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
+            <state relative-caret-position="416">
               <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -296,15 +282,6 @@
                 <element signature="e#284#285#0" expanded="true" />
                 <element signature="e#321#322#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2800">
-              <caret line="112" column="63" lean-forward="true" selection-start-line="112" selection-start-column="63" selection-end-line="112" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -344,9 +321,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/GameTestCase/PlayersManagementTest.java" />
-        <option value="$PROJECT_DIR$/replay_pid34568.log" />
-        <option value="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/GoldModeRechangeRecord.java" />
         <option value="$PROJECT_DIR$/src/test/java/InbetAdminTestCase/PlayerLoginLog.java" />
         <option value="$PROJECT_DIR$/src/test/java/InbetGoldBusinessTestCase/GoldAgentHome.java" />
         <option value="$PROJECT_DIR$/src/test/java/InbetGoldBusinessTestCase/GoldBusinessHome.java" />
@@ -386,15 +360,18 @@
         <option value="$PROJECT_DIR$/test-output/Default Suite/game.html" />
         <option value="$PROJECT_DIR$/src/test/java/adminTestCase/homeTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/creditAgentTestCase/date.java" />
-        <option value="$PROJECT_DIR$/src/test/java/util/StringToNumber.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/adminHomeTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/CashAgentDetailTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/CashBusinessDetailTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/creditDetailTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/creditAgentTestCase/playerTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/util/StringToNumber.java" />
         <option value="$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentHomeTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/CashBusinessDetailTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/CashAgentDetailTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/creditDetailTestCase.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/adminHomeTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/cashBusinessDetailTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cashAgentTestCase/cashAgentHomeTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentPlayerTestCase.java" />
       </list>
     </option>
   </component>
@@ -463,7 +440,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -504,23 +480,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cashAgentTestCase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="creditAgentTestCase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="listenerPackage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="PublicMethod" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
@@ -537,30 +505,20 @@
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="link&#9;PSI&#9;JAVA://io.qameta.allure.Link&#10;we&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil&#10;classname&#9;FILE&#9;jar://C:/Users/jtc/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.0/jackson-databind-2.7.0.jar!/com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver.class&#10;return&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#returnToPreviousPage&#10;js&#9;PSI&#9;JAVA://jdk.nashorn.internal.scripts.JS&#10;滚动条&#9;null&#9;null&#10;findElementByX&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#findElementByXpath" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553352830261" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553745021524" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -568,7 +526,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -599,20 +557,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.adminHomeTestCase">
-    <configuration name="StringToNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="util.StringToNumber" />
-      <module name="game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.creditAgentPlayerTestCase.newPlayer">
     <configuration name="AdminHomeTest" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
@@ -638,7 +583,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CashBusinessDetailTestCase" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+    <configuration name="cashAgentHomeTestCase.incomeTotalMonth" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cashAgentTestCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cashAgentTestCase" />
+      <option name="MAIN_CLASS_NAME" value="cashAgentTestCase.cashAgentHomeTestCase" />
+      <option name="METHOD_NAME" value="incomeTotalMonth" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cashAgentHomeTestCase.playerNumberTotal" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cashAgentTestCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cashAgentTestCase" />
+      <option name="MAIN_CLASS_NAME" value="cashAgentTestCase.cashAgentHomeTestCase" />
+      <option name="METHOD_NAME" value="playerNumberTotal" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cashAgentHomeTestCase.waitSettlementCommission" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cashAgentTestCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cashAgentTestCase" />
+      <option name="MAIN_CLASS_NAME" value="cashAgentTestCase.cashAgentHomeTestCase" />
+      <option name="METHOD_NAME" value="waitSettlementCommission" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cashBusinessDetailTestCase" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
         <pattern>
@@ -647,30 +646,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="AgentManagement" />
-      <option name="MAIN_CLASS_NAME" value="adminTestCase.CashBusinessDetailTestCase" />
+      <option name="MAIN_CLASS_NAME" value="adminTestCase.cashBusinessDetailTestCase" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="adminHomeTestCase" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="adminTestCase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="adminTestCase" />
-      <option name="MAIN_CLASS_NAME" value="adminTestCase.adminHomeTestCase" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="creditAgentHomeTestCase" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="creditAgentPlayerTestCase" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
         <pattern>
@@ -679,25 +662,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="creditAgentTestCase" />
-      <option name="MAIN_CLASS_NAME" value="creditAgentTestCase.creditAgentHomeTestCase" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="creditAgentHomeTestCase.accountBalance" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="creditAgentTestCase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="creditAgentTestCase" />
-      <option name="MAIN_CLASS_NAME" value="creditAgentTestCase.creditAgentHomeTestCase" />
-      <option name="METHOD_NAME" value="accountBalance" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="creditAgentTestCase.creditAgentPlayerTestCase" />
       <properties />
       <listeners />
       <method v="2">
@@ -740,22 +705,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.CashBusinessDetailTestCase" />
+      <item itemvalue="TestNG.cashBusinessDetailTestCase" />
       <item itemvalue="TestNG.AdminHomeTest" />
       <item itemvalue="TestNG.testng.xml" />
+      <item itemvalue="TestNG.cashAgentHomeTestCase.incomeTotalMonth" />
+      <item itemvalue="TestNG.cashAgentHomeTestCase.waitSettlementCommission" />
+      <item itemvalue="TestNG.cashAgentHomeTestCase.playerNumberTotal" />
+      <item itemvalue="TestNG.creditAgentPlayerTestCase" />
       <item itemvalue="TestNG.creditAgentPlayerTestCase.newPlayer" />
-      <item itemvalue="Application.StringToNumber" />
-      <item itemvalue="TestNG.creditAgentHomeTestCase.accountBalance" />
-      <item itemvalue="TestNG.creditAgentHomeTestCase" />
-      <item itemvalue="TestNG.adminHomeTestCase" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.adminHomeTestCase" />
-        <item itemvalue="TestNG.creditAgentHomeTestCase" />
-        <item itemvalue="TestNG.creditAgentHomeTestCase.accountBalance" />
         <item itemvalue="TestNG.creditAgentPlayerTestCase.newPlayer" />
-        <item itemvalue="Application.StringToNumber" />
+        <item itemvalue="TestNG.creditAgentPlayerTestCase" />
+        <item itemvalue="TestNG.cashAgentHomeTestCase.playerNumberTotal" />
+        <item itemvalue="TestNG.cashAgentHomeTestCase.waitSettlementCommission" />
+        <item itemvalue="TestNG.cashAgentHomeTestCase.incomeTotalMonth" />
       </list>
     </recent_temporary>
   </component>
@@ -835,44 +800,46 @@
       <workItem from="1552551962758" duration="599000" />
       <workItem from="1552553248469" duration="908000" />
       <workItem from="1552559546698" duration="58202000" />
-      <workItem from="1553224218194" duration="16724000" />
+      <workItem from="1553224218194" duration="17395000" />
+      <workItem from="1553353585799" duration="21857000" />
+      <workItem from="1553508888210" duration="25540000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="playerTestCase_newPlayer - 2019.03.22 at 11h 21m 17s.xml">
-      <configuration name="playerTestCase.newPlayer" configurationId="TestNG" />
+    <history-entry file="cashAgentHomeTestCase_playerNumberTotal - 2019.03.26 at 19h 46m 14s.xml">
+      <configuration name="cashAgentHomeTestCase.playerNumberTotal" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="playerTestCase_newPlayer - 2019.03.22 at 11h 25m 43s.xml">
-      <configuration name="playerTestCase.newPlayer" configurationId="TestNG" />
+    <history-entry file="cashAgentHomeTestCase_playerNumberTotal - 2019.03.26 at 19h 50m 22s.xml">
+      <configuration name="cashAgentHomeTestCase.playerNumberTotal" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="playerTestCase_newPlayer - 2019.03.22 at 11h 45m 00s.xml">
-      <configuration name="playerTestCase.newPlayer" configurationId="TestNG" />
+    <history-entry file="cashAgentHomeTestCase_playerNumberTotal - 2019.03.26 at 19h 51m 54s.xml">
+      <configuration name="cashAgentHomeTestCase.playerNumberTotal" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="playerTestCase_newPlayer - 2019.03.22 at 11h 58m 25s.xml">
-      <configuration name="playerTestCase.newPlayer" configurationId="TestNG" />
+    <history-entry file="cashAgentHomeTestCase_playerNumberTotal - 2019.03.26 at 19h 54m 07s.xml">
+      <configuration name="cashAgentHomeTestCase.playerNumberTotal" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="playerTestCase_newPlayer - 2019.03.23 at 14h 24m 40s.xml">
-      <configuration name="playerTestCase.newPlayer" configurationId="TestNG" />
+    <history-entry file="cashAgentHomeTestCase_playerNumberTotal - 2019.03.26 at 19h 55m 07s.xml">
+      <configuration name="cashAgentHomeTestCase.playerNumberTotal" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="playerTestCase_newPlayer - 2019.03.23 at 14h 30m 50s.xml">
-      <configuration name="playerTestCase.newPlayer" configurationId="TestNG" />
+    <history-entry file="creditAgentPlayerTestCase - 2019.03.26 at 20h 01m 16s.xml">
+      <configuration name="creditAgentPlayerTestCase" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="creditAgentHomeTestCase_accountBalance - 2019.03.23 at 16h 01m 38s.xml">
-      <configuration name="creditAgentHomeTestCase.accountBalance" configurationId="TestNG" />
+    <history-entry file="creditAgentPlayerTestCase_newPlayer - 2019.03.26 at 20h 04m 39s.xml">
+      <configuration name="creditAgentPlayerTestCase.newPlayer" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="creditAgentHomeTestCase_accountBalance - 2019.03.23 at 16h 02m 26s.xml">
-      <configuration name="creditAgentHomeTestCase.accountBalance" configurationId="TestNG" />
+    <history-entry file="creditAgentPlayerTestCase - 2019.01.26 at 20h 05m 36s.xml">
+      <configuration name="creditAgentPlayerTestCase" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="creditAgentHomeTestCase - 2019.03.23 at 16h 04m 38s.xml">
-      <configuration name="creditAgentHomeTestCase" configurationId="TestNG" />
+    <history-entry file="creditAgentPlayerTestCase - 2019.01.26 at 20h 12m 06s.xml">
+      <configuration name="creditAgentPlayerTestCase" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="adminHomeTestCase - 2019.03.23 at 21h 52m 25s.xml">
-      <configuration name="adminHomeTestCase" configurationId="TestNG" />
+    <history-entry file="creditAgentPlayerTestCase_newPlayer - 2019.01.26 at 20h 14m 08s.xml">
+      <configuration name="creditAgentPlayerTestCase.newPlayer" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="656989000" />
+    <option name="totallyTimeSpent" value="705057000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -885,8 +852,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21321961" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18923241" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -895,7 +863,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.42282608" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.54347825" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20978262" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.13195202" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -936,7 +904,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/adminTestCase/creditDetailTestCase.java</url>
-          <line>60</line>
+          <line>63</line>
           <properties class="adminTestCase.creditDetailTestCase">
             <option name="EMULATED" value="true" />
           </properties>
@@ -950,7 +918,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/IJavaScriptExecutor.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/ListenerPackage/AssertListener.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/ListenerPackage/Assert.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/GameTestCase/HomeCashPromotionTest.java" />
@@ -1018,22 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/listenerPackage/AssertionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2005">
-          <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-output/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-532">
@@ -1063,6 +1014,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/date.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentHome/TestCase.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2800">
@@ -1070,16 +1023,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/date.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="13286">
+          <caret line="596" column="45" selection-start-line="596" selection-start-column="24" selection-end-line="596" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/listenerPackage/AssertionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/listenerPackage/Assertion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
+        <state relative-caret-position="416">
           <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1091,74 +1063,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentHome/TestCase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/util/StringToNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="900">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        <state relative-caret-position="275">
+          <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/CashAgentDetailTestCase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/adminHomeTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-302">
-          <caret line="342" column="25" selection-start-line="342" selection-start-column="25" selection-end-line="342" selection-end-column="25" />
+        <state relative-caret-position="-3345">
+          <caret line="112" column="38" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/CashBusinessDetailTestCase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/cashAgentDetailTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="257" column="25" selection-start-line="257" selection-start-column="25" selection-end-line="257" selection-end-column="25" />
+        <state relative-caret-position="600">
+          <caret line="207" column="26" lean-forward="true" selection-start-line="207" selection-start-column="26" selection-end-line="207" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PublicMethod/WebDriverUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/cashBusinessDetailTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1592">
-          <caret line="90" column="51" lean-forward="true" selection-start-line="90" selection-start-column="51" selection-end-line="90" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/util/StringToNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2000">
-          <caret line="80" column="80" selection-start-line="80" selection-start-column="80" selection-end-line="80" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentPlayerTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentHomeTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="55">
+          <caret line="255" column="30" selection-start-line="255" selection-start-column="30" selection-end-line="255" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1167,18 +1112,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/creditDetailTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-188">
-          <caret line="299" column="29" selection-start-line="299" selection-start-column="29" selection-end-line="299" selection-end-column="29" />
+        <state relative-caret-position="-5945">
+          <caret line="79" column="77" selection-start-line="79" selection-start-column="77" selection-end-line="79" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/adminHomeTestCase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/cashAgentTestCase/cashAgentHomeTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="254" column="33" selection-start-line="254" selection-start-column="33" selection-end-line="254" selection-end-column="33" />
+        <state relative-caret-position="-945">
+          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentHomeTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="111" column="80" selection-start-line="111" selection-start-column="80" selection-end-line="111" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentPlayerTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

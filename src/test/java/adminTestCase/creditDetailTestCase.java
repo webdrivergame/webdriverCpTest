@@ -23,10 +23,10 @@ public class creditDetailTestCase {
             driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminLogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                Thread.sleep(5000);
+                Thread.sleep(4000);
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","信用模式代理");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_list\"]/li/span");
-                Thread.sleep(4000);
+                Thread.sleep(3000);
             //信用模式商户详情
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","zongguan001");
             driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
@@ -34,7 +34,10 @@ public class creditDetailTestCase {
             String creditExplorerNumber = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div/div[3]/table/tbody/tr/td[3]/div/span");
             System.out.println("下级商务人数："+creditExplorerNumber);
             driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div/div[4]/div[2]/table/tbody/tr/td[1]/div/a");
-                Thread.sleep(3000);
+
+
+
+
             //获取直属下级代理人数
             String creditExplorerNumber1 = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div/div[2]/div/div[2]/div/div/form/div[1]/div/span");
             System.out.println("信用商户运营详情-直属下级商务人数："+creditExplorerNumber1);
@@ -56,10 +59,10 @@ public class creditDetailTestCase {
             driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminLogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                Thread.sleep(5000);
+                Thread.sleep(4000);
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","信用模式代理");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_list\"]/li/span");
-                Thread.sleep(4000);
+                Thread.sleep(3000);
             //信用模式商户详情
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","zongguan001");
             driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
@@ -75,7 +78,10 @@ public class creditDetailTestCase {
 
             //System.out.println("总计："+sum);
             System.out.println("历史服务费总计："+creditExplorerServiceHistoryTotal);
-                Thread.sleep(2000);
+
+
+
+
             //获取商户生成服务费总计金额
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级服务费统计");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_sub_agent_recharge_record_statistics\"]/li/span");
@@ -102,7 +108,7 @@ public class creditDetailTestCase {
             driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminLogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                Thread.sleep(5000);
+                Thread.sleep(4000);
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","信用模式代理");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_list\"]/li/span");
                 Thread.sleep(4000);
@@ -113,7 +119,10 @@ public class creditDetailTestCase {
             driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[2]/div/div[4]/div[2]/table/tbody/tr/td[1]/div/a");
             String creditExplorerAccountBalance = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div/div[2]/div/div[2]/div/div/form/div[5]/div/span");
             System.out.println("服务费账户余额："+creditExplorerAccountBalance);
-                Thread.sleep(2000);
+
+
+
+
             //获取下级服务费统计-今日结算后余额
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级服务费统计");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_sub_agent_recharge_record_statistics\"]/li/span");
@@ -141,12 +150,12 @@ public class creditDetailTestCase {
             driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminLogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-            Thread.sleep(5000);
+            Thread.sleep(4000);
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","信用模式代理");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_list\"]/li/span");
-            Thread.sleep(4000);
+            Thread.sleep(3000);
             //信用模式商务详情
-            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/ul/div[2]/li/span");
+            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/ul/div[2]/li/span");
                 Thread.sleep(3000);
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","wxjb66");
             driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
@@ -175,12 +184,12 @@ public class creditDetailTestCase {
             driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminLogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                Thread.sleep(5000);
+                Thread.sleep(4000);
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","信用模式代理");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_list\"]/li/span");
-                Thread.sleep(4000);
+                Thread.sleep(3000);
             //信用模式商务详情
-            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/ul/div[2]/li/span");
+            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/ul/div[2]/li/span");
                 Thread.sleep(3000);
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","wxjb66");
             driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
@@ -188,12 +197,15 @@ public class creditDetailTestCase {
             driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[2]/div/div[4]/div[2]/table/tbody/tr/td[1]/div/a");
             String creditBusinessServiceHistoryTotal = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div/div[2]/div/div[2]/div/div/form/div[4]/div/span");
             System.out.println("商务历史服务费总计："+creditBusinessServiceHistoryTotal);
-                Thread.sleep(2000);
+
+
+
+
             //获取商务生成服务费总计金额
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级服务费统计");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_sub_agent_recharge_record_statistics\"]/li/span");
                 Thread.sleep(3000);
-            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/ul/div[2]/li/span");
+            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/ul/div[2]/li/span");
                 Thread.sleep(3000);
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","wxjb66");
             driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
@@ -217,24 +229,28 @@ public class creditDetailTestCase {
             driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminLogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                Thread.sleep(5000);
+                Thread.sleep(4000);
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","信用模式代理");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_list\"]/li/span");
-                Thread.sleep(4000);
+                Thread.sleep(3000);
             //信用模式商务详情
-            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/ul/div[2]/li/span");
+            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/ul/div[2]/li/span");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","wxjb66");
             driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
                 Thread.sleep(3000);
             driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[2]/div/div[4]/div[2]/table/tbody/tr/td[1]/div/a");
             String creditBusinessServiceAccountBalance = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div/div[2]/div/div[2]/div/div/form/div[5]/div/span");
             System.out.println("商务服务费账户余额："+creditBusinessServiceAccountBalance);
-                Thread.sleep(2000);
+
+
+
+
+
             //获取商务今日结算后余额
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级服务费统计");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_sub_agent_recharge_record_statistics\"]/li/span");
                 Thread.sleep(3000);
-            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/ul/div[2]/li/span");
+            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/ul/div[2]/li/span");
                 Thread.sleep(2000);
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[2]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","wxjb66");
             driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
@@ -258,24 +274,27 @@ public class creditDetailTestCase {
             driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminLogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                Thread.sleep(5000);
+                Thread.sleep(4000);
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","信用模式代理");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_list\"]/li/span");
-                Thread.sleep(4000);
+                Thread.sleep(3000);
             //信用模式代理详情
-            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/ul/div[3]/li/span");
+            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/ul/div[3]/li/span");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[3]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","wxjbdl1");
             driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
                 Thread.sleep(3000);
             driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[3]/div/div[2]/div/div[4]/div[2]/table/tbody/tr/td[1]/div/a");
             String creditBusinessServiceAccountBalance = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div/div[2]/div/div[2]/div/div/form/div[4]/div/span");
             System.out.println("历史服务费总计："+creditBusinessServiceAccountBalance);
-                Thread.sleep(2000);
+
+
+
+
             //获取信用代理历史服务费总计
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级服务费统计");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_sub_agent_recharge_record_statistics\"]/li/span");
                 Thread.sleep(3000);
-            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/ul/div[3]/li/span");
+            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/ul/div[3]/li/span");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[3]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","wxjbdl1");
             driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
                 Thread.sleep(3000);
@@ -299,24 +318,27 @@ public class creditDetailTestCase {
             driverUtil.loginBefore("https://admin.oneonewan.com/#/login");
             driverUtil.adminLogin("xiaochaoadmin", "123123");
             driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
-                Thread.sleep(5000);
+                Thread.sleep(4000);
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","信用模式代理");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_agent_list\"]/li/span");
-                Thread.sleep(4000);
+                Thread.sleep(3000);
             //信用模式代理详情
-            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/ul/div[3]/li/span");
+            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/ul/div[3]/li/span");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[3]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","wxjbdl1");
             driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
                 Thread.sleep(3000);
             driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[3]/div/div[2]/div/div[4]/div[2]/table/tbody/tr/td[1]/div/a");
             String creditAgentServiceAccountBalance = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div/div[2]/div/div[2]/div/div/form/div[5]/div/span");
             System.out.println("服务费账户余额："+creditAgentServiceAccountBalance);
-                Thread.sleep(2000);
+
+
+
+
             //获取服务费账户余额
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级服务费统计");
             driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_sub_agent_recharge_record_statistics\"]/li/span");
                 Thread.sleep(3000);
-            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/ul/div[3]/li/span");
+            driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/ul/div[3]/li/span");
             driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[3]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input","wxjbdl1");
             driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
                 Thread.sleep(3000);
