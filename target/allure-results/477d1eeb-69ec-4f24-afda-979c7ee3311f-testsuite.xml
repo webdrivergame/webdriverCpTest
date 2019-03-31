@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1553940484748" stop="1553940576729" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : game</name>
+    <title>Default Suite : game</title>
+    <test-cases>
+        <test-case start="1553940484883" stop="1553940500117" status="passed">
+            <name>loginNumber</name>
+            <title>平台-现金模式综合统计-验证登录人数数据</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.cashModeComplexStatisticsTestCase"/>
+                <label name="testMethod" value="loginNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="1904@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553940500122" stop="1553940514533" status="passed">
+            <name>registeredNumber</name>
+            <title>平台-现今模式综合统计-验证注册人数数据</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.cashModeComplexStatisticsTestCase"/>
+                <label name="testMethod" value="registeredNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="1904@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553940514535" stop="1553940528881" status="passed">
+            <name>activePlayers</name>
+            <title>平台-现金模式综合统计-验证活跃玩家和现金新增留存统计数据</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.cashModeComplexStatisticsTestCase"/>
+                <label name="testMethod" value="activePlayers"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="1904@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553940528883" stop="1553940546823" status="passed">
+            <name>rechargeTotalToday</name>
+            <title>平台-现金模式综合统计-验证今日总充值金额数据</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.cashModeComplexStatisticsTestCase"/>
+                <label name="testMethod" value="rechargeTotalToday"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="1904@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553940546826" stop="1553940564594" status="passed">
+            <name>rechargeNumberTotal</name>
+            <title>平台-现金模式综合统计-验证今日充值人数</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.cashModeComplexStatisticsTestCase"/>
+                <label name="testMethod" value="rechargeNumberTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="1904@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553940564597" stop="1553940576713" status="passed">
+            <name>rechargeNumberAverage</name>
+            <title>平台-现金模式综合统计-验证人均充值人数</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.cashModeComplexStatisticsTestCase"/>
+                <label name="testMethod" value="rechargeNumberAverage"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="1904@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

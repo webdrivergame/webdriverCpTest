@@ -12,7 +12,7 @@ import ru.yandex.qatools.allure.annotations.Title;
 
 public class cashAgentHomeTestCase {
 
-        private WebDriver driver;
+        public WebDriver driver;
 
         @Feature("现金代理首页")
         @Story("今日收入")

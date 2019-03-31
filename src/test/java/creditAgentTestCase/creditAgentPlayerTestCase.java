@@ -13,10 +13,11 @@ import java.util.Date;
 
 public class creditAgentPlayerTestCase {
 
-        private WebDriver driver;
+        public WebDriver driver;
 
-        @Feature("玩家账号管理")
-        @Title("验证信用代理新增玩家功能")
+        @Feature("信用代理")
+        @Story("玩家账号管理")
+        @Title("信用代理-玩家账号管理-验证信用代理新增玩家功能")
         @Test(priority = 1)
         public void newPlayer() throws InterruptedException {
                 WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -27,9 +28,9 @@ public class creditAgentPlayerTestCase {
                 driverUtil.findElementByXpathAndClick("//*[@id=\"rest_online_player\"]/span");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"rest_system_operation_list\"]/li/span");
                         Thread.sleep(2000);
-                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd ");//设置日期格式
+                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");//设置日期格式
                 Date now = new Date();
-                String playerDate = dateFormat.format(now).substring(0,8);//去掉时间后的空格
+                String playerDate = dateFormat.format(now);
                 System.out.println("获取时间的玩家："+playerDate);
                 driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/button[1]/span");
                 driverUtil.findElementByXpathAndClearSendkeys("/html/body/div[4]/div/div[2]/div/div[1]/form/div[1]/div/div/div/div/input",playerDate);
@@ -45,5 +46,7 @@ public class creditAgentPlayerTestCase {
                 Assert.assertTrue(Assertion.currentFlag());
                 driverUtil.LoginAfter();
                 }
+
+
 
 }

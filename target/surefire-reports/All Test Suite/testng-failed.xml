@@ -3,33 +3,22 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
   <test name="C:/Users/jtc/IdeaProjects/game(failed)">
     <classes>
-      <class name="adminTestCase.creditDetailTestCase">
+      <class name="cashAgentTestCase.cashAgentHomeTestCase">
         <methods>
-          <include name="creditBusinessNumber"/>
-          <include name="creditAgentServiceHistoryTotal"/>
-          <include name="creditAgentServiceAccountBalance"/>
-          <include name="creditBusinessServiceAccountBalance"/>
-          <include name="creditBusinessServiceHistoryTotal"/>
+          <include name="incomeTotalMonth"/>
         </methods>
-      </class> <!-- adminTestCase.creditDetailTestCase -->
-      <class name="adminTestCase.CashBusinessDetailTestCase">
-        <methods>
-          <include name="onlineWithdrawCredit"/>
-          <include name="onlineRechargeCredit"/>
-        </methods>
-      </class> <!-- adminTestCase.CashBusinessDetailTestCase -->
-      <class name="adminTestCase.CashAgentDetailTestCase">
+      </class> <!-- cashAgentTestCase.cashAgentHomeTestCase -->
+      <class name="adminTestCase.cashAgentDetailTestCase">
         <methods>
           <include name="rechargeBalance"/>
-          <include name="acceptRedEnvelopeTotal"/>
-          <include name="addWithdrawalMoney"/>
-          <include name="commissionAccountBalance"/>
-          <include name="promotionCommissionTotal"/>
-          <include name="taxTotal"/>
-          <include name="DirectPushPlayerNumber"/>
-          <include name="immediateLowerAgentNumber"/>
         </methods>
-      </class> <!-- adminTestCase.CashAgentDetailTestCase -->
+      </class> <!-- adminTestCase.cashAgentDetailTestCase -->
+      <class name="creditAgentTestCase.creditAgentHomeTestCase">
+        <methods>
+          <include name="lowerSinceOperationsAgentNumber"/>
+          <include name="SinceOperationsPlayerNumber"/>
+        </methods>
+      </class> <!-- creditAgentTestCase.creditAgentHomeTestCase -->
     </classes>
   </test> <!-- C:/Users/jtc/IdeaProjects/game(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

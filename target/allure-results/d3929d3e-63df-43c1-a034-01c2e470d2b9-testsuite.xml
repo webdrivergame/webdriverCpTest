@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1553917638500" stop="1553917768694" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : game</name>
+    <title>Default Suite : game</title>
+    <test-cases>
+        <test-case start="1553917638629" stop="1553917652848" status="passed">
+            <name>incomeToday</name>
+            <title>现金代理首页-验证今日收入金额与今日产生佣金账单金额一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="cashAgentTestCase.cashAgentHomeTestCase"/>
+                <label name="testMethod" value="incomeToday"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="42316@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553917652853" stop="1553917678428" status="passed">
+            <name>incomeTotalMonth</name>
+            <title>现今代理首页-验证30日总收入金额是否等于我的推广佣金账单30天金额</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="cashAgentTestCase.cashAgentHomeTestCase"/>
+                <label name="testMethod" value="incomeTotalMonth"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="42316@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553917678433" stop="1553917689893" status="passed">
+            <name>waitSettlementCommission</name>
+            <title>现金代理首页-验证首页待结算佣金金额是否等于我的佣金账户变动余额</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="cashAgentTestCase.cashAgentHomeTestCase"/>
+                <label name="testMethod" value="waitSettlementCommission"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="42316@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553917689896" stop="1553917707687" status="passed">
+            <name>playerNumberTotal</name>
+            <title>现金代理首页-验证首页玩家总数是否与玩家管理数量一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="cashAgentTestCase.cashAgentHomeTestCase"/>
+                <label name="testMethod" value="playerNumberTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="42316@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553917707691" stop="1553917727607" status="passed">
+            <name>rechargeTotal</name>
+            <title>现金代理-玩家账号管理-验证玩家总充值排序功能</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="cashAgentTestCase.playerAccountAdminTestCase"/>
+                <label name="testMethod" value="rechargeTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="42316@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553917727610" stop="1553917748490" status="passed">
+            <name>withdrawTotal</name>
+            <title>现今代理-玩家账号管理-验证玩家总提现排序功能</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="cashAgentTestCase.playerAccountAdminTestCase"/>
+                <label name="testMethod" value="withdrawTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="42316@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553917748492" stop="1553917768669" status="passed">
+            <name>additionalUpPoints</name>
+            <title>现今代理-玩家账号管理-验证额外补分排序功能</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="cashAgentTestCase.playerAccountAdminTestCase"/>
+                <label name="testMethod" value="additionalUpPoints"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="42316@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

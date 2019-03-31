@@ -3,13 +3,21 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/jtc/IdeaProjects/game">
         <classes>
-            <class name="adminTestCase.adminHomeTestCase"></class>
-            <class name="adminTestCase.cashBusinessDetailTestCase"></class>
-            <class name="adminTestCase.cashAgentDetailTestCase"></class>
-            <class name="adminTestCase.creditDetailTestCase"></class>
-            <class name="cashAgentTestCase.cashAgentHomeTestCase"></class>
             <class name="creditAgentTestCase.creditAgentHomeTestCase"></class>
             <class name="creditAgentTestCase.creditAgentPlayerTestCase"></class>
+
+            <class name="creditAgentTestCase.creditAgentHomeTestCase"></class>
+            <class name="cashAgentTestCase.changeRecordCreditTestCase"></class>
+            <class name="cashAgentTestCase.myCommissionAccountChangeTestCase"></class>
+            <class name="cashAgentTestCase.playerAccountAdminTestCase"></class>
+
+            <class name="adminTestCase.adminHomeTestCase"></class>
+            <class name="adminTestCase.cashAgentDetailTestCase"></class>
+            <class name="adminTestCase.cashBusinessDetailTestCase"></class>
+            <class name="adminTestCase.cashModeComplexStatisticsTestCase"></class>
+            <class name="adminTestCase.creditDetailTestCase"></class>
+            <class name="adminTestCase.creditModeComplexStatisticsTestCase"></class>
+
         </classes>
     </test>
 </suite>

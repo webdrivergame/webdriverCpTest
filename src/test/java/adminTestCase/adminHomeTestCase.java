@@ -10,17 +10,17 @@ import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Title;
 import util.StringToNumber;
 import java.math.BigDecimal;
-
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 
 public class adminHomeTestCase {
 
-        private WebDriver driver;
+        public WebDriver driver;
 
-        @Feature("平台首页")
-        @Story("信用模式")
+        @Feature("平台")
+        @Story("首页")
         @Title("平台首页-验证今日服务费收入与下级服务费金额是否一致")
-
         @Test(priority = 1)
         public void serviceIncomeToday() throws InterruptedException {
                 WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -28,7 +28,7 @@ public class adminHomeTestCase {
                 driverUtil.adminLogin("xiaochaoadmin", "123123");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                         Thread.sleep(4000);
-                //判断首页无限金币今日服务费收入与下级服务费我的服务费总计金额是否一致
+
                 String serviceIncomeToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[2]/div/div");
                 System.out.println("首页-今日服务费收入："+serviceIncomeToday);
                 driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级服务费统计");
@@ -43,10 +43,9 @@ public class adminHomeTestCase {
         }
 
 
-        @Feature("平台首页")
-        @Story("信用模式")
+        @Feature("平台")
+        @Story("首页")
         @Title("平台首页-验证服务费收入总计与下级服务费统计的生成服务费总计金额是否一致")
-
         @Test(priority = 2)
         public void sinceBusinessOperationsTotalArrears() throws InterruptedException {
                 WebDriverUtil driverUtil = new WebDriverUtil(driver);
@@ -54,7 +53,6 @@ public class adminHomeTestCase {
                 driverUtil.adminLogin("xiaochaoadmin", "123123");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"login_submit\"]");
                         Thread.sleep(4000);
-                //判断服务费收入总计与下级服务费统计的生成服务费总计金额是否一致
                 String SinceBusinessOperationsTotalArrears = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[2]/td[2]/div/div");
                 System.out.println("首页-服务费收入总计："+SinceBusinessOperationsTotalArrears);
                 driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","下级服务费统计");
@@ -111,21 +109,22 @@ public class adminHomeTestCase {
                 driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","信用留存统计");
                 driverUtil.findElementByXpathAndClick("//*[@id=\"rest_login_statistic\"]/li/span");
                         Thread.sleep(3000);
-                //获取信用留存今日新增玩家
-                String creditPlayerNumber = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div");
-                System.out.println("信用留存今日新增玩家："+creditPlayerNumber);
-                //获取现金留存今日新增玩家
-                //driverUtil.findElementByXpathAndClearSendkeys("//*[@id=\"root\"]/section/div[1]/div[1]/div/input","现金留存统计");
-                //driverUtil.findElementByXpathAndClick("//*[@id=\"opt_rest_login_statistic_cash\"]/li/span");
-                //Thread.sleep(2000);
-                //String registeredCashPlayerNumber = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div");
-                //System.out.println("现金留存今日新增玩家："+registeredCashPlayerNumber);
-                //BigDecimal a1 = new BigDecimal(creditPlayerNumber);
-                // BigDecimal total = a1.add(new BigDecimal(registeredCashPlayerNumber));
+                SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");//设置日期格式
+                Date date = new Date();//Date转换String
+                String c1 = df.format(date);
+                System.out.println("系统时间："+c1);// new Date()为获取当前系统时间
+                String dateToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[1]/div");
+                System.out.println("获取时间："+dateToday);
+                if (dateToday.equals(c1)){
+                        String numberToday = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div");
                         Assertion.setFlag(true);
-                        Assertion.verifyEquals(playerNumberToday,creditPlayerNumber);
-                        //Assertion.verifyEquals(playerNumberToday,String.valueOf(total));//int转换String类型值比较
+                        Assertion.verifyEquals(playerNumberToday,numberToday);
                         Assert.assertTrue(Assertion.currentFlag());
+                }else if (! dateToday.equals(c1)){
+                        Assertion.setFlag(true);
+                        Assertion.verifyEquals("0",playerNumberToday);
+                        Assert.assertTrue(Assertion.currentFlag());
+                }
                 driverUtil.LoginAfter();
         }
 

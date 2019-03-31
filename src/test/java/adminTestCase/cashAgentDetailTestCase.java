@@ -11,7 +11,7 @@ import ru.yandex.qatools.allure.annotations.Title;
 
 public class cashAgentDetailTestCase {
 
-    private WebDriver driver;
+    public WebDriver driver;
 
     @Feature("代理管理-现金推广代理")
     @Story("现金推广代理详情")

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1553917363502" stop="1553917380072" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : game</name>
+    <title>Default Suite : game</title>
+    <test-cases>
+        <test-case start="1553917363671" stop="1553917380050" status="passed">
+            <name>registeredNumber</name>
+            <title>平台-信用模式综合统计-验证当日注册人数数量</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="adminTestCase.creditModeComplexStatisticsTestCase"/>
+                <label name="testMethod" value="registeredNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="42700@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

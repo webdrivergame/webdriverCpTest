@@ -1,9 +1,10 @@
+adminTestCase\cashBusinessDetailTestCase.class
 listenerPackage\Assertion.class
 util\StringToNumber.class
-adminTestCase\CashAgentDetailTestCase.class
+cashAgentTestCase\cashAgentHomeTestCase.class
 creditAgentTestCase\creditAgentHomeTestCase.class
 creditAgentTestCase\creditAgentPlayerTestCase.class
-adminTestCase\CashBusinessDetailTestCase.class
+adminTestCase\cashAgentDetailTestCase.class
 adminTestCase\creditDetailTestCase.class
 listenerPackage\AssertionListener.class
 PublicMethod\WebDriverUtil.class

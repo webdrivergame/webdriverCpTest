@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 
 public class creditAgentHomeTestCase {
 
-        private WebDriver driver;
+        public WebDriver driver;
         @Feature("信用代理首页")
         @Story("账户余额")
         @Title("信用代理首页-验证首页账户余额与跳转页面服务费金额减去已缴款金额是否一致")
@@ -109,7 +109,7 @@ public class creditAgentHomeTestCase {
                 driverUtil.findElementByXpathAndClick("//*[@id=\"reset\"]/span");
                         Thread.sleep(3000);
                 String playerNumber = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[3]/span[1]");
-                String b1 = playerNumber.substring(2,playerNumber.indexOf("条"));
+                String b1 = playerNumber.substring(2,playerNumber.indexOf(" 条"));
                 System.out.println("玩家账号管理玩家："+b1);
                         Assertion.setFlag(true);
                         Assertion.verifyEquals(SinceOperationsPlayerNumber,b1);
@@ -130,13 +130,10 @@ public class creditAgentHomeTestCase {
                 String lowerSinceOperationsAgentNumber = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div[5]/div/div/div/div[1]/div[2]/div[2]/span/span[1]");
                 System.out.println("首页下级自运营代理人数："+lowerSinceOperationsAgentNumber);
                 driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div[5]/div/div/div/div[1]/div[2]/div[2]/span/span[3]");
-                driverUtil.WebElementWaitLocated("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div/div[1]/div[3]/div/div/div/input");
-                driverUtil.findElementByXpathAndClick("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div/div/div[1]/div/form/div[1]/div/div[1]/div[3]/div/div/div/input");
-                driverUtil.findElementByXpathAndClick("/html/body/div[6]/div[1]/div[1]/ul/li[2]/span");
-                driverUtil.findElementByXpathAndClick("//*[@id=\"submit\"]/span");
-                driverUtil.WebElementWaitLocated("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div/div/div[3]/span[1]");
+                        Thread.sleep(2000);
                 String agentNumber = driverUtil.getTextByXpath("//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div/div/div[3]/span[1]");
-                String a1 = agentNumber.substring(2,4);
+                String a1 = agentNumber.substring(2,agentNumber.indexOf(" 条"));
+                System.out.println("信用模式代理："+a1);
                         Assertion.setFlag(true);
                         Assertion.verifyEquals(lowerSinceOperationsAgentNumber,a1);
                         Assert.assertTrue(Assertion.currentFlag());

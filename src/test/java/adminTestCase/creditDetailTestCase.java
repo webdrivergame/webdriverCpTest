@@ -11,7 +11,7 @@ import ru.yandex.qatools.allure.annotations.Title;
 
 public class creditDetailTestCase {
 
-        private WebDriver driver;
+        public WebDriver driver;
 
 
         @Feature("代理管理-信用模式代理")

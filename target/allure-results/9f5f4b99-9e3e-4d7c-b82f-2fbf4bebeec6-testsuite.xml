@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1553775131102" stop="1553775946708" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>All Test Suite : C:/Users/jtc/IdeaProjects/game</name>
+    <title>All Test Suite : C:/Users/jtc/IdeaProjects/game</title>
+    <test-cases>
+        <test-case start="1553775131213" stop="1553775147076" status="passed">
+            <name>serviceIncomeToday</name>
+            <title>平台首页-验证今日服务费收入与下级服务费金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.adminHomeTestCase"/>
+                <label name="testMethod" value="serviceIncomeToday"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775147082" stop="1553775161340" status="passed">
+            <name>sinceBusinessOperationsTotalArrears</name>
+            <title>平台首页-验证服务费收入总计与下级服务费统计的生成服务费总计金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.adminHomeTestCase"/>
+                <label name="testMethod" value="sinceBusinessOperationsTotalArrears"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775161342" stop="1553775173536" status="passed">
+            <name>businessMoneyTotal</name>
+            <title>平台首页-验证商户欠款总计与下级服务费结算记录总欠款是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.adminHomeTestCase"/>
+                <label name="testMethod" value="businessMoneyTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775173542" stop="1553775187258" status="passed">
+            <name>playerNumber</name>
+            <title>平台首页-验证今日新增玩家与留存统计今日注册玩家数量是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.adminHomeTestCase"/>
+                <label name="testMethod" value="playerNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775187263" stop="1553775201545" status="passed">
+            <name>systemWinOrLose</name>
+            <title>平台首页-验证今日系统盈亏与玩家输赢金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.adminHomeTestCase"/>
+                <label name="testMethod" value="systemWinOrLose"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775201547" stop="1553775215804" status="passed">
+            <name>todayCommission</name>
+            <title>平台首页-验证今日佣金与下级佣金统计-商户今日佣金金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.adminHomeTestCase"/>
+                <label name="testMethod" value="todayCommission"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775215806" stop="1553775227766" status="passed">
+            <name>totalCommission</name>
+            <title>平台首页-验证佣金总计与下级佣金统计-商户所占佣金金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.adminHomeTestCase"/>
+                <label name="testMethod" value="totalCommission"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775227769" stop="1553775242215" status="passed">
+            <name>rechargeMoneyToday</name>
+            <title>平台首页-验证现今模式今日充值金额是否相等</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.adminHomeTestCase"/>
+                <label name="testMethod" value="rechargeMoneyToday"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775242217" stop="1553775256517" status="passed">
+            <name>withdrawMoneyToday</name>
+            <title>平台首页-验证现金模式-今日提现金额是否相等</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.adminHomeTestCase"/>
+                <label name="testMethod" value="withdrawMoneyToday"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775256522" stop="1553775277338" status="passed">
+            <name>immediateLowerAgentNumber</name>
+            <title>现金商户详情-验证运营数据-直属下级代理人数是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashBusinessDetailTestCase"/>
+                <label name="testMethod" value="immediateLowerAgentNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775277341" stop="1553775303323" status="passed">
+            <name>taxTotal</name>
+            <title>现金商户详情-验证运营数据-税收总计是否与下级佣金统计税收一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashBusinessDetailTestCase"/>
+                <label name="testMethod" value="taxTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775303326" stop="1553775323575" status="passed">
+            <name>alreadySettlementMoney</name>
+            <title>现金商户详情-验证运营数据-推广佣金总计是否与下级佣金统计该商户所占佣金是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashBusinessDetailTestCase"/>
+                <label name="testMethod" value="alreadySettlementMoney"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775323579" stop="1553775345736" status="passed">
+            <name>waitWithdrawMoney</name>
+            <title>现金商户详情-验证运营数据-待领取佣金是否与下级佣金统计待提现佣金一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashBusinessDetailTestCase"/>
+                <label name="testMethod" value="waitWithdrawMoney"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775345738" stop="1553775367746" status="passed">
+            <name>rechargeBalance</name>
+            <title>现今商户详情-验证运营数据-充值余额是否与代理充值提现额度管理该商户金额一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashBusinessDetailTestCase"/>
+                <label name="testMethod" value="rechargeBalance"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775367748" stop="1553775390350" status="passed">
+            <name>onlineRechargeCredit</name>
+            <title>现金商户详情-验证运营数据-在线充值可用额度金额是否与在线充值提现额度列表该商户金额一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashBusinessDetailTestCase"/>
+                <label name="testMethod" value="onlineRechargeCredit"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775390353" stop="1553775406917" status="passed">
+            <name>onlineWithdrawCredit</name>
+            <title>现金商户详情-验证运营数据-在线提现可用额度金额是否与在线充值提现额度列表该商户金额一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashBusinessDetailTestCase"/>
+                <label name="testMethod" value="onlineWithdrawCredit"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775406920" stop="1553775429647" status="passed">
+            <name>immediateLowerAgentNumber</name>
+            <title>现金推广代理详情-验证运营数据-直属下级代理人数是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashAgentDetailTestCase"/>
+                <label name="testMethod" value="immediateLowerAgentNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775429648" stop="1553775454163" status="passed">
+            <name>DirectPushPlayerNumber</name>
+            <title>现金推广代理详情-验证运营数据-直推玩家人数是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashAgentDetailTestCase"/>
+                <label name="testMethod" value="DirectPushPlayerNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775454165" stop="1553775481696" status="passed">
+            <name>taxTotal</name>
+            <title>现金推广代理详情-验证运营数据-税收总计与下级佣金统计税收金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashAgentDetailTestCase"/>
+                <label name="testMethod" value="taxTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775481700" stop="1553775509292" status="passed">
+            <name>promotionCommissionTotal</name>
+            <title>现金推广代理详情-验证运营数据-推广佣金总计与下级佣金统计生成佣金总额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashAgentDetailTestCase"/>
+                <label name="testMethod" value="promotionCommissionTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775509295" stop="1553775536322" status="passed">
+            <name>acceptRedEnvelopeTotal</name>
+            <title>现金推广代理详情-验证运营数据-领取红包总计与下级佣金统计领取红包总额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashAgentDetailTestCase"/>
+                <label name="testMethod" value="acceptRedEnvelopeTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775536325" stop="1553775563525" status="passed">
+            <name>addWithdrawalMoney</name>
+            <title>现金推广代理详情-验证运营数据-累计提款金额与下级佣金统计已领取金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashAgentDetailTestCase"/>
+                <label name="testMethod" value="addWithdrawalMoney"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775563530" stop="1553775592637" status="passed">
+            <name>commissionAccountBalance</name>
+            <title>现金推广代理详情-验证运营数据-佣金账户余额与下级佣金统计待提现佣金是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashAgentDetailTestCase"/>
+                <label name="testMethod" value="commissionAccountBalance"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775592640" stop="1553775611389" status="broken">
+            <name>rechargeBalance</name>
+            <title>现金推广代理详情-验证运营数据-充值余额与代理充值提现额度管理代理额度是否一致</title>
+            <failure>
+                <message>WebDriverException: unknown error: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (80, 120). Other element would receive the click: &lt;form class="el-form el-form--label-right page-details-view-container"&gt;...&lt;/form&gt;
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.232.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:31121}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir33612_11566}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c58ec8e31d6f2069a0ed19172c3dddd1</message>
+                <stack-trace>org.openqa.selenium.WebDriverException: unknown error: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (80, 120). Other element would receive the click: &lt;form class="el-form el-form--label-right page-details-view-container"&gt;...&lt;/form&gt;
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.232.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:31121}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir33612_11566}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c58ec8e31d6f2069a0ed19172c3dddd1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at PublicMethod.WebDriverUtil.findElementByXpathAndClick(WebDriverUtil.java:305)
+	at adminTestCase.cashAgentDetailTestCase.rechargeBalance(cashAgentDetailTestCase.java:361)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.cashAgentDetailTestCase"/>
+                <label name="testMethod" value="rechargeBalance"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775611390" stop="1553775627539" status="passed">
+            <name>creditExplorerNumber</name>
+            <title>信用模式代理详情-验证信用商户运营数据-直属下级商务人数是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.creditDetailTestCase"/>
+                <label name="testMethod" value="creditExplorerNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775627542" stop="1553775651673" status="passed">
+            <name>creditExplorerServiceHistoryTotal</name>
+            <title>信用模式代理详情-验证信用商户运营数据-历史服务费总计与下级服务费统计该商户的生成服务费总计金额一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.creditDetailTestCase"/>
+                <label name="testMethod" value="creditExplorerServiceHistoryTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775651674" stop="1553775674537" status="passed">
+            <name>creditExplorerAccountBalance</name>
+            <title>信用模式代理详情-验证信用商户运营数据-服务费账户余额与下级服务费统计-今日结算后余额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.creditDetailTestCase"/>
+                <label name="testMethod" value="creditExplorerAccountBalance"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775674542" stop="1553775697598" status="passed">
+            <name>creditBusinessNumber</name>
+            <title>信用模式代理详情-验证信用商务运营数据-直属下级代理人数是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.creditDetailTestCase"/>
+                <label name="testMethod" value="creditBusinessNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775697601" stop="1553775725647" status="passed">
+            <name>creditBusinessServiceHistoryTotal</name>
+            <title>信用模式代理详情-验证信用商务运营数据-历史服务费总计与下级服务费统计该商务的生成服务费总计金额一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.creditDetailTestCase"/>
+                <label name="testMethod" value="creditBusinessServiceHistoryTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775725650" stop="1553775750067" status="passed">
+            <name>creditBusinessServiceAccountBalance</name>
+            <title>信用模式代理详情-验证信用商务运营数据-服务费账户余额与下级服务费统计-今日结算后余额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.creditDetailTestCase"/>
+                <label name="testMethod" value="creditBusinessServiceAccountBalance"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775750069" stop="1553775773072" status="passed">
+            <name>creditAgentServiceHistoryTotal</name>
+            <title>信用模式代理详情-验证信用代理运营数据-历史服务费总计与下级服务费的生成服务费总计是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.creditDetailTestCase"/>
+                <label name="testMethod" value="creditAgentServiceHistoryTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775773075" stop="1553775796047" status="passed">
+            <name>creditAgentServiceAccountBalance</name>
+            <title>信用模式代理详情-验证信用代理运营数据-信用代理服务费账户余额与下级服务费的今日结算后余额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="adminTestCase.creditDetailTestCase"/>
+                <label name="testMethod" value="creditAgentServiceAccountBalance"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775796052" stop="1553775809427" status="passed">
+            <name>incomeToday</name>
+            <title>现金代理首页-验证今日收入金额与今日产生佣金账单金额一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="cashAgentTestCase.cashAgentHomeTestCase"/>
+                <label name="testMethod" value="incomeToday"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775809429" stop="1553775820764" status="failed">
+            <name>incomeTotalMonth</name>
+            <title>现今代理首页-验证30日总收入金额是否等于我的推广佣金账单30天金额</title>
+            <failure>
+                <message>AssertionError: expected [true] but found [false]</message>
+                <stack-trace>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at cashAgentTestCase.cashAgentHomeTestCase.incomeTotalMonth(cashAgentHomeTestCase.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="cashAgentTestCase.cashAgentHomeTestCase"/>
+                <label name="testMethod" value="incomeTotalMonth"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775820765" stop="1553775833829" status="passed">
+            <name>waitSettlementCommission</name>
+            <title>现金代理首页-验证首页待结算佣金金额是否等于我的佣金账户变动余额</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="cashAgentTestCase.cashAgentHomeTestCase"/>
+                <label name="testMethod" value="waitSettlementCommission"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775833831" stop="1553775863889" status="passed">
+            <name>playerNumberTotal</name>
+            <title>现金代理首页-验证首页玩家总数是否与玩家管理数量一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="cashAgentTestCase.cashAgentHomeTestCase"/>
+                <label name="testMethod" value="playerNumberTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775863891" stop="1553775877811" status="passed">
+            <name>accountBalance</name>
+            <title>信用代理首页-验证首页账户余额与跳转页面服务费金额减去已缴款金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="creditAgentTestCase.creditAgentHomeTestCase"/>
+                <label name="testMethod" value="accountBalance"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775877813" stop="1553775888527" status="passed">
+            <name>playerArrearsTotal</name>
+            <title>信用代理首页-验证玩家欠款总计金额是否正确</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="creditAgentTestCase.creditAgentHomeTestCase"/>
+                <label name="testMethod" value="playerArrearsTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775888529" stop="1553775899265" status="passed">
+            <name>lowerServiceArrearsTotal</name>
+            <title>信用代理首页-验证下级服务费欠款总计是否正确</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="creditAgentTestCase.creditAgentHomeTestCase"/>
+                <label name="testMethod" value="lowerServiceArrearsTotal"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775899267" stop="1553775911494" status="failed">
+            <name>SinceOperationsPlayerNumber</name>
+            <title>信用代理首页-验证自运营玩家数是否正确</title>
+            <failure>
+                <message>AssertionError: expected [true] but found [false]</message>
+                <stack-trace>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at creditAgentTestCase.creditAgentHomeTestCase.SinceOperationsPlayerNumber(creditAgentHomeTestCase.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="creditAgentTestCase.creditAgentHomeTestCase"/>
+                <label name="testMethod" value="SinceOperationsPlayerNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775911496" stop="1553775930935" status="broken">
+            <name>lowerSinceOperationsAgentNumber</name>
+            <title>信用代理-验证下级自运营代理人数是否正确</title>
+            <failure>
+                <message>NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div[1]/div[1]/ul/li[2]/span"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.232.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:31938}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir37700_18791}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b4099f76ee5c21c44fc287e3ee43e56
+*** Element info: {Using=xpath, value=/html/body/div[6]/div[1]/div[1]/ul/li[2]/span}</message>
+                <stack-trace>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div[1]/div[1]/ul/li[2]/span"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.232.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:31938}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir37700_18791}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b4099f76ee5c21c44fc287e3ee43e56
+*** Element info: {Using=xpath, value=/html/body/div[6]/div[1]/div[1]/ul/li[2]/span}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at PublicMethod.WebDriverUtil.findElementByXpathAndClick(WebDriverUtil.java:305)
+	at creditAgentTestCase.creditAgentHomeTestCase.lowerSinceOperationsAgentNumber(creditAgentHomeTestCase.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="creditAgentTestCase.creditAgentHomeTestCase"/>
+                <label name="testMethod" value="lowerSinceOperationsAgentNumber"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553775930937" stop="1553775946667" status="passed">
+            <name>newPlayer</name>
+            <title>验证信用代理新增玩家功能</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="C:/Users/jtc/IdeaProjects/game"/>
+                <label name="testClass" value="creditAgentTestCase.creditAgentPlayerTestCase"/>
+                <label name="testMethod" value="newPlayer"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="32752@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

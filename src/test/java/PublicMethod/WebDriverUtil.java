@@ -99,11 +99,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                    capabilities.setCapability("chrom.binary",
                            "src/ucBrowserDrivers/chromedriver.exe");
                    capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+                   DesiredCapabilities sCaps = new DesiredCapabilities();
+                   sCaps.setJavascriptEnabled(true);//允许执行js代码
                    driver = new ChromeDriver(capabilities);
                    driver.get(Url);
                    driver.manage().window().maximize();
                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                }
+
+
+
+
+
 
                //结束测试
 
@@ -878,8 +885,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
               /**
         *    切换到指定iframe
         */
-              public void switchToFrameById(String frameId) {
-                 driver.switchTo().frame(frameId);
+              public void switchToFrameByXpath(String frameXpath) {
+                 driver.switchTo().frame(frameXpath);
              }
               public void switchToFrameByIndex(int index) {
                  driver.switchTo().frame(index);
@@ -1335,4 +1342,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
                     return datePlayerAccount;
             }
+
+
+            /*
+             *获取系统日期
+             * String
+             */
+
+            public  void date() {
+                    SimpleDateFormat df = new SimpleDateFormat("yyyyMMdd ");//设置日期格式
+                    System.out.println(df.format(new Date()));// new Date()为获取当前系统时间
+            }
+
+
+            /**   setScale(1,BigDecimal.ROUND_DOWN)直接删除多余的小数位，如2.35会变成2.3
+             *   setScale(1,BigDecimal.ROUND_HALF_UP)四舍五入，2.35变成2.4
+             *   BigDecimal b = new BigDecimal("123.456");
+             *   b.scale(),返回的就是3.
+             * */
     }
