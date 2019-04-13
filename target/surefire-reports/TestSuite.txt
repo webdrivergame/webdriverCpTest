@@ -1,40 +1,168 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 42, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 817.214 s <<< FAILURE! - in TestSuite
-rechargeBalance(adminTestCase.cashAgentDetailTestCase)  Time elapsed: 18.745 s  <<< FAILURE!
+Tests run: 45, Failures: 14, Errors: 0, Skipped: 0, Time elapsed: 418.4 s <<< FAILURE! - in TestSuite
+todayCommission(Admin.AdminHomeTestCase)  Time elapsed: 6.728 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at Admin.AdminHomeTestCase.todayCommission(AdminHomeTestCase.java:258)
+
+businessTaxTotal(Admin.BusinessDetailCashTestCase)  Time elapsed: 9.352 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at Admin.BusinessDetailCashTestCase.businessTaxTotal(BusinessDetailCashTestCase.java:109)
+
+businessCommissionTotal(Admin.BusinessDetailCashTestCase)  Time elapsed: 9.005 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at Admin.BusinessDetailCashTestCase.businessCommissionTotal(BusinessDetailCashTestCase.java:148)
+
+creditBusinessServiceHistoryTotal(Admin.BusinessDetailCreditTestCase)  Time elapsed: 15.434 s  <<< FAILURE!
 org.openqa.selenium.WebDriverException: 
-unknown error: Element <span>...</span> is not clickable at point (80, 120). Other element would receive the click: <form class="el-form el-form--label-right page-details-view-container">...</form>
+unknown error: Element <span>...</span> is not clickable at point (1184, 226). Other element would receive the click: <div class="el-form-item__content">...</div>
   (Session info: chrome=73.0.3683.86)
   (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 40 milliseconds
+Command duration or timeout: 41 milliseconds
 Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.232.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:31121}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir33612_11566}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c58ec8e31d6f2069a0ed19172c3dddd1
-	at adminTestCase.cashAgentDetailTestCase.rechargeBalance(cashAgentDetailTestCase.java:361)
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:46675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir38052_8506}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7f631c8def6fb00df1feda133cda8413
+	at Admin.BusinessDetailCreditTestCase.creditBusinessServiceHistoryTotal(BusinessDetailCreditTestCase.java:164)
 
-incomeTotalMonth(cashAgentTestCase.cashAgentHomeTestCase)  Time elapsed: 11.405 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at cashAgentTestCase.cashAgentHomeTestCase.incomeTotalMonth(cashAgentHomeTestCase.java:67)
+rechargeNumberAverage(Admin.ModeComplexStatisticsCashTestCase)  Time elapsed: 3.42 s  <<< FAILURE!
+java.lang.ArithmeticException: Division undefined
+	at Admin.ModeComplexStatisticsCashTestCase.rechargeNumberAverage(ModeComplexStatisticsCashTestCase.java:233)
 
-SinceOperationsPlayerNumber(creditAgentTestCase.creditAgentHomeTestCase)  Time elapsed: 12.303 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at creditAgentTestCase.creditAgentHomeTestCase.SinceOperationsPlayerNumber(creditAgentHomeTestCase.java:116)
-
-lowerSinceOperationsAgentNumber(creditAgentTestCase.creditAgentHomeTestCase)  Time elapsed: 19.365 s  <<< FAILURE!
+serviceMoney(Admin.ModeComplexStatisticsCreditTestCase)  Time elapsed: 15.761 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div[1]/div[1]/ul/li[2]/span"}
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/div[3]/span[2]"}
   (Session info: chrome=73.0.3683.86)
   (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.03 seconds
+Command duration or timeout: 10.02 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.232.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:31938}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir37700_18791}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 6b4099f76ee5c21c44fc287e3ee43e56
-*** Element info: {Using=xpath, value=/html/body/div[6]/div[1]/div[1]/ul/li[2]/span}
-	at creditAgentTestCase.creditAgentHomeTestCase.lowerSinceOperationsAgentNumber(creditAgentHomeTestCase.java:135)
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:46675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir38052_8506}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7f631c8def6fb00df1feda133cda8413
+*** Element info: {Using=xpath, value=//*[@id="root"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/div[3]/span[2]}
+	at Admin.ModeComplexStatisticsCreditTestCase.serviceMoney(ModeComplexStatisticsCreditTestCase.java:176)
+
+cashAgentCredit(CashAgent.ChangeRecordCreditTestCase)  Time elapsed: 10.017 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="rest_recharge_withdraw"]/span"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:47091}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir40560_16183}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4deec7408c5032b95f1536401b893ff2
+*** Element info: {Using=xpath, value=//*[@id="rest_recharge_withdraw"]/span}
+	at CashAgent.ChangeRecordCreditTestCase.cashAgentCredit(ChangeRecordCreditTestCase.java:32)
+
+rechargeAgentAdminCredit(CashAgent.ChangeRecordCreditTestCase)  Time elapsed: 10.053 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="rest_recharge_withdraw"]/span"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:47091}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir40560_16183}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4deec7408c5032b95f1536401b893ff2
+*** Element info: {Using=xpath, value=//*[@id="rest_recharge_withdraw"]/span}
+	at CashAgent.ChangeRecordCreditTestCase.rechargeAgentAdminCredit(ChangeRecordCreditTestCase.java:75)
+
+rechargeAgentCredit(CashAgent.ChangeRecordCreditTestCase)  Time elapsed: 10.047 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="rest_recharge_withdraw"]/span"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:47091}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir40560_16183}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4deec7408c5032b95f1536401b893ff2
+*** Element info: {Using=xpath, value=//*[@id="rest_recharge_withdraw"]/span}
+	at CashAgent.ChangeRecordCreditTestCase.rechargeAgentCredit(ChangeRecordCreditTestCase.java:104)
+
+myCommissionAccountChange(CashAgent.MyCommissionAccountChangeTestCase)  Time elapsed: 10.062 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="rest_activity_manager"]/span"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:47091}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir40560_16183}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4deec7408c5032b95f1536401b893ff2
+*** Element info: {Using=xpath, value=//*[@id="rest_activity_manager"]/span}
+	at CashAgent.MyCommissionAccountChangeTestCase.myCommissionAccountChange(MyCommissionAccountChangeTestCase.java:30)
+
+incomeTotalThirty(CashBusiness.BusinessHomeTestCase)  Time elapsed: 10.013 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/section/section/main/div[2]/div[1]/div[1]/div/div/div[1]/div/div/div/div[3]/div/span[2]"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:47230}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir40432_3393}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5c3fb2fc327cfaf76ef6d45f1bc747ea
+*** Element info: {Using=xpath, value=//*[@id="root"]/section/section/main/div[2]/div[1]/div[1]/div/div/div[1]/div/div/div/div[3]/div/span[2]}
+	at CashBusiness.BusinessHomeTestCase.incomeTotalThirty(BusinessHomeTestCase.java:59)
+
+waitSettlementCommission(CashBusiness.BusinessHomeTestCase)  Time elapsed: 10.043 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/section/section/main/div[2]/div[1]/div[1]/div/div/div[2]/div/div/div/div[1]/div[2]/div[2]/span/span[2]"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:47230}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir40432_3393}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5c3fb2fc327cfaf76ef6d45f1bc747ea
+*** Element info: {Using=xpath, value=//*[@id="root"]/section/section/main/div[2]/div[1]/div[1]/div/div/div[2]/div/div/div/div[1]/div[2]/div[2]/span/span[2]}
+	at CashBusiness.BusinessHomeTestCase.waitSettlementCommission(BusinessHomeTestCase.java:83)
+
+playerNumber(CashBusiness.BusinessHomeTestCase)  Time elapsed: 10.011 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/section/section/main/div[2]/div[1]/div[1]/div/div/div[3]/div/div/div/div[1]/div[2]/div[2]/span/span[1]"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:47230}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir40432_3393}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5c3fb2fc327cfaf76ef6d45f1bc747ea
+*** Element info: {Using=xpath, value=//*[@id="root"]/section/section/main/div[2]/div[1]/div[1]/div/div/div[3]/div/div/div/div[1]/div[2]/div[2]/span/span[1]}
+	at CashBusiness.BusinessHomeTestCase.playerNumber(BusinessHomeTestCase.java:102)
+
+lowerSpreadAgent(CashBusiness.BusinessHomeTestCase)  Time elapsed: 10.047 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/section/section/main/div[2]/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div[2]/div[2]/span/span[1]"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.1.252', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:47230}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir40432_3393}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5c3fb2fc327cfaf76ef6d45f1bc747ea
+*** Element info: {Using=xpath, value=//*[@id="root"]/section/section/main/div[2]/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div[2]/div[2]/span/span[1]}
+	at CashBusiness.BusinessHomeTestCase.lowerSpreadAgent(BusinessHomeTestCase.java:123)
 

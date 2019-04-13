@@ -6,20 +6,20 @@
     <groups>
     </groups>
     <test name="game" duration-ms="143781" started-at="2019-03-21T12:58:26Z" finished-at="2019-03-21T13:00:49Z">
-      <class name="adminTestCase.AdminHomeTest">
-        <test-method status="PASS" signature="serviceIncomeToday()[pri:1, instance:adminTestCase.AdminHomeTest@34cb0e49]" name="serviceIncomeToday" duration-ms="17226" started-at="2019-03-21T19:58:26Z" finished-at="2019-03-21T19:58:43Z">
+      <class name="Admin.AdminHomeTest">
+        <test-method status="PASS" signature="serviceIncomeToday()[pri:1, instance:Admin.AdminHomeTest@34cb0e49]" name="serviceIncomeToday" duration-ms="17226" started-at="2019-03-21T19:58:26Z" finished-at="2019-03-21T19:58:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serviceIncomeToday -->
-        <test-method status="PASS" signature="sinceBusinessOperationsTotalArrears()[pri:2, instance:adminTestCase.AdminHomeTest@34cb0e49]" name="sinceBusinessOperationsTotalArrears" duration-ms="16302" started-at="2019-03-21T19:58:43Z" finished-at="2019-03-21T19:58:59Z">
+        <test-method status="PASS" signature="sinceBusinessOperationsTotalArrears()[pri:2, instance:Admin.AdminHomeTest@34cb0e49]" name="sinceBusinessOperationsTotalArrears" duration-ms="16302" started-at="2019-03-21T19:58:43Z" finished-at="2019-03-21T19:58:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sinceBusinessOperationsTotalArrears -->
-        <test-method status="PASS" signature="businessMoneyTotal()[pri:3, instance:adminTestCase.AdminHomeTest@34cb0e49]" name="businessMoneyTotal" duration-ms="16190" started-at="2019-03-21T19:58:59Z" finished-at="2019-03-21T19:59:16Z">
+        <test-method status="PASS" signature="businessMoneyTotal()[pri:3, instance:Admin.AdminHomeTest@34cb0e49]" name="businessMoneyTotal" duration-ms="16190" started-at="2019-03-21T19:58:59Z" finished-at="2019-03-21T19:59:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- businessMoneyTotal -->
-        <test-method status="FAIL" signature="playerNumber()[pri:4, instance:adminTestCase.AdminHomeTest@34cb0e49]" name="playerNumber" duration-ms="15216" started-at="2019-03-21T19:59:16Z" finished-at="2019-03-21T19:59:31Z">
+        <test-method status="FAIL" signature="playerNumber()[pri:4, instance:Admin.AdminHomeTest@34cb0e49]" name="playerNumber" duration-ms="15216" started-at="2019-03-21T19:59:16Z" finished-at="2019-03-21T19:59:31Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -60,23 +60,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- playerNumber -->
-        <test-method status="PASS" signature="systemWinOrLose()[pri:5, instance:adminTestCase.AdminHomeTest@34cb0e49]" name="systemWinOrLose" duration-ms="14309" started-at="2019-03-21T19:59:31Z" finished-at="2019-03-21T19:59:45Z">
+        <test-method status="PASS" signature="systemWinOrLose()[pri:5, instance:Admin.AdminHomeTest@34cb0e49]" name="systemWinOrLose" duration-ms="14309" started-at="2019-03-21T19:59:31Z" finished-at="2019-03-21T19:59:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- systemWinOrLose -->
-        <test-method status="PASS" signature="todayCommission()[pri:6, instance:adminTestCase.AdminHomeTest@34cb0e49]" name="todayCommission" duration-ms="13261" started-at="2019-03-21T19:59:45Z" finished-at="2019-03-21T19:59:58Z">
+        <test-method status="PASS" signature="todayCommission()[pri:6, instance:Admin.AdminHomeTest@34cb0e49]" name="todayCommission" duration-ms="13261" started-at="2019-03-21T19:59:45Z" finished-at="2019-03-21T19:59:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- todayCommission -->
-        <test-method status="PASS" signature="totalCommission()[pri:7, instance:adminTestCase.AdminHomeTest@34cb0e49]" name="totalCommission" duration-ms="13375" started-at="2019-03-21T19:59:58Z" finished-at="2019-03-21T20:00:12Z">
+        <test-method status="PASS" signature="totalCommission()[pri:7, instance:Admin.AdminHomeTest@34cb0e49]" name="totalCommission" duration-ms="13375" started-at="2019-03-21T19:59:58Z" finished-at="2019-03-21T20:00:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- totalCommission -->
-        <test-method status="PASS" signature="rechargeMoneyToday()[pri:8, instance:adminTestCase.AdminHomeTest@34cb0e49]" name="rechargeMoneyToday" duration-ms="13513" started-at="2019-03-21T20:00:12Z" finished-at="2019-03-21T20:00:25Z">
+        <test-method status="PASS" signature="rechargeMoneyToday()[pri:8, instance:Admin.AdminHomeTest@34cb0e49]" name="rechargeMoneyToday" duration-ms="13513" started-at="2019-03-21T20:00:12Z" finished-at="2019-03-21T20:00:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rechargeMoneyToday -->
-        <test-method status="FAIL" signature="withdrawMoneyToday()[pri:9, instance:adminTestCase.AdminHomeTest@34cb0e49]" name="withdrawMoneyToday" duration-ms="24168" started-at="2019-03-21T20:00:25Z" finished-at="2019-03-21T20:00:49Z">
+        <test-method status="FAIL" signature="withdrawMoneyToday()[pri:9, instance:Admin.AdminHomeTest@34cb0e49]" name="withdrawMoneyToday" duration-ms="24168" started-at="2019-03-21T20:00:25Z" finished-at="2019-03-21T20:00:49Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/section/section/main/div[2]/div[2]/div[1]/div[2]/span[2]"}
@@ -92,7 +92,7 @@ Session ID: 6283b667c60ca05d7c19859bbbe818fe
 *** Element info: {Using=xpath, value=//*[@id="root"]/section/section/main/div[2]/div[2]/div[1]/div[2]/span[2]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/section/section/main/div[2]/div[2]/div[1]/div[2]/span[2]"}
+                <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/section/section/main/div[2]/div[2]/div[1]/div[2]/span[2]"}
   (Session info: chrome=73.0.3683.75)
   (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 10.05 seconds
@@ -114,9 +114,9 @@ Session ID: 6283b667c60ca05d7c19859bbbe818fe
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at PublicMethod.WebDriverUtil.findElementByXpath(WebDriverUtil.java:192)
-	at PublicMethod.WebDriverUtil.getTextByXpath(WebDriverUtil.java:449)
-	at adminTestCase.AdminHomeTest.withdrawMoneyToday(AdminHomeTest.java:266)
+	at SeleniumMethod.WebDriverUtil.findElementByXpath(WebDriverUtil.java:192)
+	at SeleniumMethod.WebDriverUtil.getTextByXpath(WebDriverUtil.java:449)
+	at Admin.AdminHomeTest.withdrawMoneyToday(AdminHomeTest.java:266)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -146,7 +146,7 @@ Session ID: 6283b667c60ca05d7c19859bbbe818fe
           <reporter-output>
           </reporter-output>
         </test-method> <!-- withdrawMoneyToday -->
-      </class> <!-- adminTestCase.AdminHomeTest -->
+      </class> <!-- Admin.AdminHomeTest -->
     </test> <!-- game -->
   </suite> <!-- Default Suite -->
 </testng-results>

@@ -3,7 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test name="game(failed)">
     <classes>
-      <class name="adminTestCase.AdminHomeTest">
+      <class name="Admin.AdminHomeTest">
         <methods>
           <include name="withdrawMoneyToday"/>
           <include name="playerNumber"/>

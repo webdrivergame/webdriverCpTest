@@ -1,24 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
-  <test name="C:/Users/jtc/IdeaProjects/game(failed)">
+  <test name="Admin(failed)">
     <classes>
-      <class name="cashAgentTestCase.cashAgentHomeTestCase">
+      <class name="CashAgent.AgentHomeTestCase">
         <methods>
-          <include name="incomeTotalMonth"/>
+          <include name="loginAdmin"/>
         </methods>
-      </class> <!-- cashAgentTestCase.cashAgentHomeTestCase -->
-      <class name="adminTestCase.cashAgentDetailTestCase">
+      </class> <!-- CashAgent.AgentHomeTestCase -->
+      <class name="CashAgent.PlayerAccountAdminTestCase">
         <methods>
-          <include name="rechargeBalance"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- adminTestCase.cashAgentDetailTestCase -->
-      <class name="creditAgentTestCase.creditAgentHomeTestCase">
+      </class> <!-- CashAgent.PlayerAccountAdminTestCase -->
+      <class name="Admin.ModeComplexStatisticsCashTestCase">
         <methods>
-          <include name="lowerSinceOperationsAgentNumber"/>
-          <include name="SinceOperationsPlayerNumber"/>
+          <include name="rechargeNumberAverage"/>
         </methods>
-      </class> <!-- creditAgentTestCase.creditAgentHomeTestCase -->
+      </class> <!-- Admin.ModeComplexStatisticsCashTestCase -->
+      <class name="Admin.AdminHomeTestCase">
+        <methods>
+          <include name="todayCommission"/>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- Admin.AdminHomeTestCase -->
+      <class name="Admin.BusinessDetailCreditTestCase">
+        <methods>
+          <include name="creditBusinessServiceHistoryTotal"/>
+        </methods>
+      </class> <!-- Admin.BusinessDetailCreditTestCase -->
+      <class name="CashBusiness.BusinessHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CashBusiness.BusinessHomeTestCase -->
+      <class name="Admin.BusinessDetailCashTestCase">
+        <methods>
+          <include name="businessCommissionTotal"/>
+          <include name="businessTaxTotal"/>
+        </methods>
+      </class> <!-- Admin.BusinessDetailCashTestCase -->
+      <class name="Admin.ModeComplexStatisticsCreditTestCase">
+        <methods>
+          <include name="serviceMoney"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Admin.ModeComplexStatisticsCreditTestCase -->
     </classes>
-  </test> <!-- C:/Users/jtc/IdeaProjects/game(failed) -->
+  </test> <!-- Admin(failed) -->
+  <test name="CashAgent(failed)">
+    <classes>
+      <class name="CashAgent.AgentHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- CashAgent.AgentHomeTestCase -->
+      <class name="CashAgent.PlayerAccountAdminTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CashAgent.PlayerAccountAdminTestCase -->
+      <class name="CashAgent.ChangeRecordCreditTestCase">
+        <methods>
+          <include name="rechargeAgentAdminCredit"/>
+          <include name="rechargeAgentCredit"/>
+          <include name="cashAgentCredit"/>
+        </methods>
+      </class> <!-- CashAgent.ChangeRecordCreditTestCase -->
+      <class name="Admin.AdminHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- Admin.AdminHomeTestCase -->
+      <class name="CashBusiness.BusinessHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CashBusiness.BusinessHomeTestCase -->
+      <class name="Admin.ModeComplexStatisticsCreditTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Admin.ModeComplexStatisticsCreditTestCase -->
+      <class name="CashAgent.MyCommissionAccountChangeTestCase">
+        <methods>
+          <include name="myCommissionAccountChange"/>
+        </methods>
+      </class> <!-- CashAgent.MyCommissionAccountChangeTestCase -->
+    </classes>
+  </test> <!-- CashAgent(failed) -->
+  <test name="CashBusiness(failed)">
+    <classes>
+      <class name="CashAgent.AgentHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- CashAgent.AgentHomeTestCase -->
+      <class name="CashAgent.PlayerAccountAdminTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CashAgent.PlayerAccountAdminTestCase -->
+      <class name="Admin.AdminHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- Admin.AdminHomeTestCase -->
+      <class name="CashBusiness.BusinessHomeTestCase">
+        <methods>
+          <include name="playerNumber"/>
+          <include name="loginAdmin"/>
+          <include name="incomeTotalThirty"/>
+          <include name="waitSettlementCommission"/>
+          <include name="lowerSpreadAgent"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CashBusiness.BusinessHomeTestCase -->
+      <class name="Admin.ModeComplexStatisticsCreditTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Admin.ModeComplexStatisticsCreditTestCase -->
+    </classes>
+  </test> <!-- CashBusiness(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

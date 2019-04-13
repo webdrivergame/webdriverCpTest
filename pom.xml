@@ -17,6 +17,7 @@
     </properties>
 
 
+
     <dependencies>
 
         <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
@@ -97,6 +98,7 @@
 
 
     </dependencies>
+
 
     <build>
         <plugins>

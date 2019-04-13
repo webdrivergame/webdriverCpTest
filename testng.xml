@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/jtc/IdeaProjects/game">
+<suite name="All Test Suite" >
+    <test name="Admin" preserve-order="true">
         <classes>
-            <class name="creditAgentTestCase.creditAgentHomeTestCase"></class>
-            <class name="creditAgentTestCase.creditAgentPlayerTestCase"></class>
+            <class name="Admin.AdminHomeTestCase"></class>
+            <class name="Admin.BusinessDetailCashTestCase"></class>
+            <class name="Admin.BusinessDetailCreditTestCase"></class>
+            <class name="Admin.ModeComplexStatisticsCashTestCase"></class>
+            <class name="Admin.ModeComplexStatisticsCreditTestCase"></class>
+        </classes>
+    </test>
 
-            <class name="creditAgentTestCase.creditAgentHomeTestCase"></class>
-            <class name="cashAgentTestCase.changeRecordCreditTestCase"></class>
-            <class name="cashAgentTestCase.myCommissionAccountChangeTestCase"></class>
-            <class name="cashAgentTestCase.playerAccountAdminTestCase"></class>
+    <test name="CashAgent" preserve-order="true">
+        <classes>
+            <class name="CashAgent.AgentHomeTestCase"></class>
+            <class name="CashAgent.ChangeRecordCreditTestCase"></class>
+            <class name="CashAgent.MyCommissionAccountChangeTestCase"></class>
+            <class name="CashAgent.PlayerAccountAdminTestCase"></class>
+        </classes>
 
-            <class name="adminTestCase.adminHomeTestCase"></class>
-            <class name="adminTestCase.cashAgentDetailTestCase"></class>
-            <class name="adminTestCase.cashBusinessDetailTestCase"></class>
-            <class name="adminTestCase.cashModeComplexStatisticsTestCase"></class>
-            <class name="adminTestCase.creditDetailTestCase"></class>
-            <class name="adminTestCase.creditModeComplexStatisticsTestCase"></class>
-
+    </test>
+    <test name="CashBusiness">
+        <classes>
+            <class name="CashBusiness.BusinessHomeTestCase"></class>
         </classes>
     </test>
 </suite>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1555146411306" stop="1555146436548" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : game</name>
+    <title>Default Suite : game</title>
+    <test-cases>
+        <test-case start="1555146422315" stop="1555146429956" status="passed">
+            <name>rechargeTotal</name>
+            <title>验证玩家总充值排序功能</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="CashAgent.PlayerAccountAdminTestCase"/>
+                <label name="testMethod" value="rechargeTotal"/>
+                <label name="story" value="玩家账号管理"/>
+                <label name="feature" value="现金代理"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="41100@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1555146429961" stop="1555146432215" status="passed">
+            <name>withdrawTotal</name>
+            <title>验证玩家总提现排序功能</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="CashAgent.PlayerAccountAdminTestCase"/>
+                <label name="testMethod" value="withdrawTotal"/>
+                <label name="story" value="玩家账号管理"/>
+                <label name="feature" value="现金代理"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="41100@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1555146432217" stop="1555146434457" status="passed">
+            <name>additionalUpPoints</name>
+            <title>验证额外补分排序功能</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="game"/>
+                <label name="testClass" value="CashAgent.PlayerAccountAdminTestCase"/>
+                <label name="testMethod" value="additionalUpPoints"/>
+                <label name="story" value="玩家账号管理"/>
+                <label name="feature" value="现金代理"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="41100@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
