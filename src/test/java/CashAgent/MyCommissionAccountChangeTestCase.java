@@ -1,5 +1,6 @@
 package CashAgent;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import SeleniumMethod.WebDriverUtil;
 import ListenerPackage.Assertion;
@@ -22,6 +23,8 @@ public class MyCommissionAccountChangeTestCase {
         String login = "//*[@id=\"login_submit\"]";
         String inputText = "//*[@id=\"root\"]/section/div[1]/div[1]/div/input";
 
+
+
          /***
          *
          * 点击我的佣金账户变动
@@ -38,7 +41,7 @@ public class MyCommissionAccountChangeTestCase {
         @Features("现金代理")
         @Stories("我的佣金账户变动")
         @Title("验证我的佣金账户变动数据")
-        @Test(priority = 1)
+        @Test(priority = 8)
         public void myCommissionAccountChange() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"我的佣金账户变动");
                 driverUtil.findElementByXpathAndClick(myCommissionAccount);
@@ -66,7 +69,7 @@ public class MyCommissionAccountChangeTestCase {
                         Assertion.verifyEquals(getChangeMoneyAfter,commissionProduce);
                         Assert.assertTrue(Assertion.currentFlag());
                 }
-
-
         }
+
+
 }

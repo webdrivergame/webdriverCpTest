@@ -1,128 +1,332 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
-  <test name="Admin(failed)">
+  <test name="平台管理员(failed)">
     <classes>
-      <class name="CashAgent.AgentHomeTestCase">
+      <class name="CreditBusiness.CreditBusinessHomeTestCase">
         <methods>
           <include name="loginAdmin"/>
         </methods>
-      </class> <!-- CashAgent.AgentHomeTestCase -->
-      <class name="CashAgent.PlayerAccountAdminTestCase">
+      </class> <!-- CreditBusiness.CreditBusinessHomeTestCase -->
+      <class name="CashAgent.AgentHomeCashTestCase">
         <methods>
-          <include name="close"/>
+          <include name="loginAdmin"/>
         </methods>
-      </class> <!-- CashAgent.PlayerAccountAdminTestCase -->
-      <class name="Admin.ModeComplexStatisticsCashTestCase">
+      </class> <!-- CashAgent.AgentHomeCashTestCase -->
+      <class name="Admin.BusinessDetailCashTestCase">
         <methods>
-          <include name="rechargeNumberAverage"/>
+          <include name="waitWithdrawCommission"/>
         </methods>
-      </class> <!-- Admin.ModeComplexStatisticsCashTestCase -->
+      </class> <!-- Admin.BusinessDetailCashTestCase -->
       <class name="Admin.AdminHomeTestCase">
         <methods>
           <include name="todayCommission"/>
           <include name="loginAdmin"/>
         </methods>
       </class> <!-- Admin.AdminHomeTestCase -->
-      <class name="Admin.BusinessDetailCreditTestCase">
+      <class name="CreditExplorer.MyServiceAccountChangeTestCase">
         <methods>
-          <include name="creditBusinessServiceHistoryTotal"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- Admin.BusinessDetailCreditTestCase -->
+      </class> <!-- CreditExplorer.MyServiceAccountChangeTestCase -->
+      <class name="Admin.ModeComplexStatisticsCashTestCase">
+        <methods>
+          <include name="rechargeNumberAverage"/>
+        </methods>
+      </class> <!-- Admin.ModeComplexStatisticsCashTestCase -->
       <class name="CashBusiness.BusinessHomeTestCase">
         <methods>
           <include name="loginAdmin"/>
           <include name="close"/>
         </methods>
       </class> <!-- CashBusiness.BusinessHomeTestCase -->
-      <class name="Admin.BusinessDetailCashTestCase">
+      <class name="CreditExplorer.CreditExplorerHomeTestCase">
         <methods>
-          <include name="businessCommissionTotal"/>
-          <include name="businessTaxTotal"/>
+          <include name="loginAdmin"/>
         </methods>
-      </class> <!-- Admin.BusinessDetailCashTestCase -->
+      </class> <!-- CreditExplorer.CreditExplorerHomeTestCase -->
+      <class name="CreditAgent.MyServiceAccountChangeTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CreditAgent.MyServiceAccountChangeTestCase -->
       <class name="Admin.ModeComplexStatisticsCreditTestCase">
         <methods>
           <include name="serviceMoney"/>
           <include name="close"/>
         </methods>
       </class> <!-- Admin.ModeComplexStatisticsCreditTestCase -->
-    </classes>
-  </test> <!-- Admin(failed) -->
-  <test name="CashAgent(failed)">
-    <classes>
-      <class name="CashAgent.AgentHomeTestCase">
+      <class name="CreditBusiness.MyServiceAccountChangeTestCase">
         <methods>
-          <include name="loginAdmin"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- CashAgent.AgentHomeTestCase -->
+      </class> <!-- CreditBusiness.MyServiceAccountChangeTestCase -->
+      <class name="CreditAgent.AgentHomeCreditTestCase">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- CreditAgent.AgentHomeCreditTestCase -->
       <class name="CashAgent.PlayerAccountAdminTestCase">
         <methods>
           <include name="close"/>
         </methods>
       </class> <!-- CashAgent.PlayerAccountAdminTestCase -->
-      <class name="CashAgent.ChangeRecordCreditTestCase">
-        <methods>
-          <include name="rechargeAgentAdminCredit"/>
-          <include name="rechargeAgentCredit"/>
-          <include name="cashAgentCredit"/>
-        </methods>
-      </class> <!-- CashAgent.ChangeRecordCreditTestCase -->
-      <class name="Admin.AdminHomeTestCase">
+    </classes>
+  </test> <!-- 平台管理员(failed) -->
+  <test name="现金代理(failed)">
+    <classes>
+      <class name="CreditBusiness.CreditBusinessHomeTestCase">
         <methods>
           <include name="loginAdmin"/>
         </methods>
-      </class> <!-- Admin.AdminHomeTestCase -->
+      </class> <!-- CreditBusiness.CreditBusinessHomeTestCase -->
+      <class name="CreditExplorer.MyServiceAccountChangeTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CreditExplorer.MyServiceAccountChangeTestCase -->
+      <class name="CashAgent.AgentHomeCashTestCase">
+        <methods>
+          <include name="incomeToday"/>
+          <include name="loginAdmin"/>
+          <include name="waitSettlementCommission"/>
+        </methods>
+      </class> <!-- CashAgent.AgentHomeCashTestCase -->
       <class name="CashBusiness.BusinessHomeTestCase">
         <methods>
           <include name="loginAdmin"/>
           <include name="close"/>
         </methods>
       </class> <!-- CashBusiness.BusinessHomeTestCase -->
+      <class name="CreditExplorer.CreditExplorerHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- CreditExplorer.CreditExplorerHomeTestCase -->
+      <class name="CreditAgent.MyServiceAccountChangeTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CreditAgent.MyServiceAccountChangeTestCase -->
       <class name="Admin.ModeComplexStatisticsCreditTestCase">
         <methods>
           <include name="close"/>
         </methods>
       </class> <!-- Admin.ModeComplexStatisticsCreditTestCase -->
-      <class name="CashAgent.MyCommissionAccountChangeTestCase">
-        <methods>
-          <include name="myCommissionAccountChange"/>
-        </methods>
-      </class> <!-- CashAgent.MyCommissionAccountChangeTestCase -->
-    </classes>
-  </test> <!-- CashAgent(failed) -->
-  <test name="CashBusiness(failed)">
-    <classes>
-      <class name="CashAgent.AgentHomeTestCase">
-        <methods>
-          <include name="loginAdmin"/>
-        </methods>
-      </class> <!-- CashAgent.AgentHomeTestCase -->
-      <class name="CashAgent.PlayerAccountAdminTestCase">
+      <class name="CreditBusiness.MyServiceAccountChangeTestCase">
         <methods>
           <include name="close"/>
         </methods>
-      </class> <!-- CashAgent.PlayerAccountAdminTestCase -->
+      </class> <!-- CreditBusiness.MyServiceAccountChangeTestCase -->
+      <class name="CreditAgent.AgentHomeCreditTestCase">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- CreditAgent.AgentHomeCreditTestCase -->
       <class name="Admin.AdminHomeTestCase">
         <methods>
           <include name="loginAdmin"/>
         </methods>
       </class> <!-- Admin.AdminHomeTestCase -->
+      <class name="CashAgent.PlayerAccountAdminTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CashAgent.PlayerAccountAdminTestCase -->
+    </classes>
+  </test> <!-- 现金代理(failed) -->
+  <test name="现金商户(failed)">
+    <classes>
+      <class name="CreditBusiness.CreditBusinessHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- CreditBusiness.CreditBusinessHomeTestCase -->
+      <class name="CreditExplorer.MyServiceAccountChangeTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CreditExplorer.MyServiceAccountChangeTestCase -->
       <class name="CashBusiness.BusinessHomeTestCase">
         <methods>
           <include name="playerNumber"/>
+          <include name="incomeToday"/>
           <include name="loginAdmin"/>
           <include name="incomeTotalThirty"/>
           <include name="waitSettlementCommission"/>
-          <include name="lowerSpreadAgent"/>
           <include name="close"/>
         </methods>
       </class> <!-- CashBusiness.BusinessHomeTestCase -->
+      <class name="CashAgent.AgentHomeCashTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- CashAgent.AgentHomeCashTestCase -->
+      <class name="CreditExplorer.CreditExplorerHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- CreditExplorer.CreditExplorerHomeTestCase -->
+      <class name="CreditAgent.MyServiceAccountChangeTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CreditAgent.MyServiceAccountChangeTestCase -->
       <class name="Admin.ModeComplexStatisticsCreditTestCase">
         <methods>
           <include name="close"/>
         </methods>
       </class> <!-- Admin.ModeComplexStatisticsCreditTestCase -->
+      <class name="CreditBusiness.MyServiceAccountChangeTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CreditBusiness.MyServiceAccountChangeTestCase -->
+      <class name="CreditAgent.AgentHomeCreditTestCase">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- CreditAgent.AgentHomeCreditTestCase -->
+      <class name="Admin.AdminHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- Admin.AdminHomeTestCase -->
+      <class name="CashAgent.PlayerAccountAdminTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CashAgent.PlayerAccountAdminTestCase -->
     </classes>
-  </test> <!-- CashBusiness(failed) -->
+  </test> <!-- 现金商户(failed) -->
+  <test name="信用商务(failed)">
+    <classes>
+      <class name="CreditBusiness.CreditBusinessHomeTestCase">
+        <methods>
+          <include name="agentArrearsTotal"/>
+          <include name="loginAdmin"/>
+          <include name="playerNumber"/>
+          <include name="serviceIncomeToday"/>
+          <include name="accountBalance"/>
+          <include name="agentNumber"/>
+        </methods>
+      </class> <!-- CreditBusiness.CreditBusinessHomeTestCase -->
+      <class name="CreditExplorer.MyServiceAccountChangeTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CreditExplorer.MyServiceAccountChangeTestCase -->
+      <class name="CashBusiness.BusinessHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CashBusiness.BusinessHomeTestCase -->
+      <class name="CashAgent.AgentHomeCashTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- CashAgent.AgentHomeCashTestCase -->
+      <class name="CreditExplorer.CreditExplorerHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- CreditExplorer.CreditExplorerHomeTestCase -->
+      <class name="CreditAgent.MyServiceAccountChangeTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CreditAgent.MyServiceAccountChangeTestCase -->
+      <class name="Admin.ModeComplexStatisticsCreditTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Admin.ModeComplexStatisticsCreditTestCase -->
+      <class name="CreditBusiness.MyServiceAccountChangeTestCase">
+        <methods>
+          <include name="myServiceAccountChangeMoney"/>
+          <include name="changeMoney"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CreditBusiness.MyServiceAccountChangeTestCase -->
+      <class name="CreditAgent.AgentHomeCreditTestCase">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- CreditAgent.AgentHomeCreditTestCase -->
+      <class name="Admin.AdminHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- Admin.AdminHomeTestCase -->
+      <class name="CashAgent.PlayerAccountAdminTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CashAgent.PlayerAccountAdminTestCase -->
+    </classes>
+  </test> <!-- 信用商务(failed) -->
+  <test name="信用总管(failed)">
+    <classes>
+      <class name="CreditBusiness.CreditBusinessHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- CreditBusiness.CreditBusinessHomeTestCase -->
+      <class name="CreditExplorer.MyServiceAccountChangeTestCase">
+        <methods>
+          <include name="myServiceAccountChangeMoney"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CreditExplorer.MyServiceAccountChangeTestCase -->
+      <class name="CashBusiness.BusinessHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CashBusiness.BusinessHomeTestCase -->
+      <class name="CashAgent.AgentHomeCashTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- CashAgent.AgentHomeCashTestCase -->
+      <class name="CreditExplorer.CreditExplorerHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+          <include name="playerNumber"/>
+          <include name="agentNumber"/>
+        </methods>
+      </class> <!-- CreditExplorer.CreditExplorerHomeTestCase -->
+      <class name="CreditAgent.MyServiceAccountChangeTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CreditAgent.MyServiceAccountChangeTestCase -->
+      <class name="Admin.ModeComplexStatisticsCreditTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Admin.ModeComplexStatisticsCreditTestCase -->
+      <class name="CreditBusiness.MyServiceAccountChangeTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CreditBusiness.MyServiceAccountChangeTestCase -->
+      <class name="CreditAgent.AgentHomeCreditTestCase">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- CreditAgent.AgentHomeCreditTestCase -->
+      <class name="Admin.AdminHomeTestCase">
+        <methods>
+          <include name="loginAdmin"/>
+        </methods>
+      </class> <!-- Admin.AdminHomeTestCase -->
+      <class name="CashAgent.PlayerAccountAdminTestCase">
+        <methods>
+          <include name="close"/>
+        </methods>
+      </class> <!-- CashAgent.PlayerAccountAdminTestCase -->
+    </classes>
+  </test> <!-- 信用总管(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1555576281878" stop="1555576311272" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>All Test Suite : 信用代理</name>
+    <title>All Test Suite : 信用代理</title>
+    <test-cases>
+        <test-case start="1555576290947" stop="1555576293208" status="passed">
+            <name>addPlayerToday</name>
+            <title>验证今日新增玩家</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="信用代理"/>
+                <label name="testClass" value="CreditAgent.AgentHomeCreditTestCase"/>
+                <label name="testMethod" value="addPlayerToday"/>
+                <label name="story" value="首页"/>
+                <label name="feature" value="信用代理"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="3644@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1555576293209" stop="1555576297695" status="passed">
+            <name>activePlayerTodayHome</name>
+            <title>验证今日活跃和昨日活跃玩家</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="信用代理"/>
+                <label name="testClass" value="CreditAgent.AgentHomeCreditTestCase"/>
+                <label name="testMethod" value="activePlayerTodayHome"/>
+                <label name="story" value="首页"/>
+                <label name="feature" value="信用代理"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="3644@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1555576297698" stop="1555576302199" status="passed">
+            <name>systemLoseOrWinToday</name>
+            <title>验证今日系统输赢</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="信用代理"/>
+                <label name="testClass" value="CreditAgent.AgentHomeCreditTestCase"/>
+                <label name="testMethod" value="systemLoseOrWinToday"/>
+                <label name="story" value="首页"/>
+                <label name="feature" value="信用代理"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="3644@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1555576302200" stop="1555576306626" status="passed">
+            <name>serviceToday</name>
+            <title>验证我的服务费账单</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="信用代理"/>
+                <label name="testClass" value="CreditAgent.AgentHomeCreditTestCase"/>
+                <label name="testMethod" value="serviceToday"/>
+                <label name="story" value="首页"/>
+                <label name="feature" value="信用代理"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="3644@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1555576306628" stop="1555576308891" status="passed">
+            <name>myServiceAccountChangeMoney</name>
+            <title>验证变动金额是否等于变动前与变动后金额计算值</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="信用代理"/>
+                <label name="testClass" value="CreditAgent.MyServiceAccountChangeTestCase"/>
+                <label name="testMethod" value="myServiceAccountChangeMoney"/>
+                <label name="story" value="首页"/>
+                <label name="feature" value="信用代理"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="3644@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1555576308893" stop="1555576308940" status="passed">
+            <name>changeMoney</name>
+            <title>验证昨日变动后金额是否等于今日变动前金额</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="信用代理"/>
+                <label name="testClass" value="CreditAgent.MyServiceAccountChangeTestCase"/>
+                <label name="testMethod" value="changeMoney"/>
+                <label name="story" value="我的服务费账户变动"/>
+                <label name="feature" value="信用代理"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="3644@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

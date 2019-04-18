@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" >
-    <test name="Admin" preserve-order="true">
+    <test name="平台管理员" preserve-order="true" >
         <classes>
             <class name="Admin.AdminHomeTestCase"></class>
             <class name="Admin.BusinessDetailCashTestCase"></class>
@@ -10,19 +10,35 @@
             <class name="Admin.ModeComplexStatisticsCreditTestCase"></class>
         </classes>
     </test>
-
-    <test name="CashAgent" preserve-order="true">
+    <test name="现金代理" >
         <classes>
-            <class name="CashAgent.AgentHomeTestCase"></class>
+            <class name="CashAgent.AgentHomeCashTestCase"></class>
             <class name="CashAgent.ChangeRecordCreditTestCase"></class>
             <class name="CashAgent.MyCommissionAccountChangeTestCase"></class>
             <class name="CashAgent.PlayerAccountAdminTestCase"></class>
         </classes>
-
     </test>
-    <test name="CashBusiness">
+    <test name="现金商户">
         <classes>
             <class name="CashBusiness.BusinessHomeTestCase"></class>
+        </classes>
+    </test>
+    <test name="信用代理">
+        <classes>
+            <class name="CreditAgent.AgentHomeCreditTestCase"></class>
+            <class name="CreditAgent.MyServiceAccountChangeTestCase"></class>
+        </classes>
+    </test>
+    <test name="信用商务">
+        <classes>
+            <class name="CreditBusiness.CreditBusinessHomeTestCase"></class>
+            <class name="CreditBusiness.MyServiceAccountChangeTestCase"></class>
+        </classes>
+    </test>
+    <test name="信用总管">
+        <classes>
+            <class name="CreditExplorer.CreditExplorerHomeTestCase"></class>
+            <class name="CreditExplorer.MyServiceAccountChangeTestCase"></class>
         </classes>
     </test>
 </suite>

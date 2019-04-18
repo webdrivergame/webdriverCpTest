@@ -41,7 +41,7 @@ public class PlayerAccountAdminTestCase {
         @Features("现金代理")
         @Stories("玩家账号管理")
         @Title("验证玩家总充值排序功能")
-        @Test(priority = 1)
+        @Test(priority = 9)
         public  void rechargeTotal() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"玩家账号管理");
                 driverUtil.findElementByXpathAndClick(clickPlayerAccountAdmin);
@@ -78,7 +78,7 @@ public class PlayerAccountAdminTestCase {
         @Features("现金代理")
         @Stories("玩家账号管理")
         @Title("验证玩家总提现排序功能")
-        @Test(priority = 2)
+        @Test(priority = 10)
         public void withdrawTotal() throws InterruptedException {
                 driverUtil.findElementByXpathAndClick(withdrawTotalDesc);
                 Thread.sleep(2000);//总提现降序排列
@@ -111,7 +111,7 @@ public class PlayerAccountAdminTestCase {
         @Features("现金代理")
         @Stories("玩家账号管理")
         @Title("验证额外补分排序功能")
-        @Test(priority = 3)
+        @Test(priority = 11)
         public void additionalUpPoints() throws InterruptedException {
                 driverUtil.findElementByXpathAndClick(clickAdditionalPoint);
                 Thread.sleep(2000);//额外补分降序排列

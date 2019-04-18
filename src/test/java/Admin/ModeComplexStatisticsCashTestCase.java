@@ -47,7 +47,7 @@ public class ModeComplexStatisticsCashTestCase {
         @Features("平台管理员")
         @Stories("现金模式综合统计")
         @Title("验证登录人数是否等于留存登录人数数据")
-        @Test(priority = 1)
+        @Test(priority = 20)
         public void loginNumber() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金模式综合统计");
                 driverUtil.findElementByXpathAndClick(clickCashModelComplexStatistics);
@@ -95,7 +95,7 @@ public class ModeComplexStatisticsCashTestCase {
         @Features("平台管理员")
         @Stories("现金模式综合统计")
         @Title("验证注册人数是否等于现金留存数据")
-        @Test(priority = 2)
+        @Test(priority = 21)
         public void registeredNumber() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金模式综合统计");
                 driverUtil.findElementByXpathAndClick(clickCashModelComplexStatistics);
@@ -145,7 +145,7 @@ public class ModeComplexStatisticsCashTestCase {
         @Features("平台管理员")
         @Stories("现金模式综合统计")
         @Title("验证今日总充值金额数据是否等于现金充值记录今日充值金额")
-        @Test(priority = 4)
+        @Test(priority = 22)
         public void rechargeTotalToday() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金模式综合统计");
                 driverUtil.findElementByXpathAndClick(clickCashModelComplexStatistics);
@@ -184,7 +184,7 @@ public class ModeComplexStatisticsCashTestCase {
         @Features("平台管理员")
         @Stories("现金模式综合统计")
         @Title("验证今日充值人数是否等于总充人数")
-        @Test(priority = 5)
+        @Test(priority = 23)
         public void rechargeNumberTotal() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金模式综合统计");
                 driverUtil.findElementByXpathAndClick(clickCashModelComplexStatistics);
@@ -218,7 +218,7 @@ public class ModeComplexStatisticsCashTestCase {
         @Features("平台管理员")
         @Stories("现金模式综合统计")
         @Title("验证人均充值金额是否等于总充金额/人数")
-        @Test(priority = 6)
+        @Test(priority = 24)
         public void rechargeNumberAverage() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金模式综合统计");
                 driverUtil.findElementByXpathAndClick(clickCashModelComplexStatistics);

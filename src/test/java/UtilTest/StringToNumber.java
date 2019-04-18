@@ -17,6 +17,7 @@ public class StringToNumber {
         public static BigDecimal toBigDecimal(String text) {
                 if (StringUtils.isNotEmpty(text)) {
                         String total = text.replaceAll(",", "");
+                        String total2 = text.replaceAll(".", "");
                         return new BigDecimal(total);
                 }
                 return null;

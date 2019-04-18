@@ -42,12 +42,12 @@ public class BusinessDetailCashTestCase {
         String businessPlayerTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr/td[6]/div/a";
         String PlayerAdminNumber = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[3]/span[1]";
 
-        //-------------------------------------------------验证商户详情推广玩家总数----------------------------------------------------
+        //---------------------------------------------验证商户详情推广玩家总数----------------------------------------------------
 
         @Features("平台管理员")
         @Stories("现金商户详情")
         @Title("验证推广玩家总数")
-        @Test(priority = 1)
+        @Test(priority = 10)
         public void BusinessPlayerTotal() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金推广代理");
                 driverUtil.findElementByXpathAndClick(clickCashAgent);
@@ -82,11 +82,12 @@ public class BusinessDetailCashTestCase {
         String inquire = "//*[@id=\"submit\"]/span";
         String lowerRunDetailsTax= "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div/div[3]/table/tbody/tr/td[6]/div";
 
-        //--------------------------------------------------------验证现金商户详情税收总计-----------------------------------------------
+        //----------------------------------------------验证现金商户详情税收总计-----------------------------------------------
+
         @Features("平台管理员")
         @Stories("现金商户详情")
         @Title("验证商户税收总计金额是否与下级经营明细该商户税收总计一致")
-        @Test(priority = 2)
+        @Test(priority = 11)
         public void businessTaxTotal() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金推广代理");
                 driverUtil.findElementByXpathAndClick(clickCashAgent);
@@ -120,12 +121,12 @@ public class BusinessDetailCashTestCase {
          String businessCommissionTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr/td[9]/div/div/span";
          String lowerCommissionTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div/div[3]/table/tbody/tr/td[7]/div";
 
-        //--------------------------------------------------------验证现金商户详情佣金总计-----------------------------------------------
+        //--------------------------------------------验证现金商户详情佣金总计-----------------------------------------------
 
         @Features("平台管理员")
         @Stories("现金商户详情")
         @Title("验证现今商户佣金总计与下级经营明细佣金是否一致")
-        @Test(priority = 3)
+        @Test(priority = 12)
         public void businessCommissionTotal() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金推广代理");
                 driverUtil.findElementByXpathAndClick(clickCashAgent);
@@ -174,23 +175,19 @@ public class BusinessDetailCashTestCase {
         String waitWithdrawCommission = "//*[@id=\"root\"]/section/section/main/div[2]/div[4]/div/div/div[2]/div/div[2]/div/div/form/div[8]/div/span";
         //下级佣金结算记录-结算前金额
         String lowerCommissionSettlementRecord = "//*[@id=\"rest_agent_withdraw_list\"]/li/span";
-        String inputLowerCommissionSettlementRecord = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input";
-        String settlementBeforeBalance2 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[2]/td[5]/div";
+        //String inputLowerCommissionSettlementRecord = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input";
         String settlementBeforeBalance1 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[5]/div";
         String SettlementMoney = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[4]/div";
         //下级佣金结算记录-累计提款金额
         String WithdrawalMoney1 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[8]/div";
         String WithdrawalMoney2 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[2]/td[8]/div";
-        //登录商户账号获取我的佣金账户变动-变动后余额
-        String businessLogin = "//*[@id=\"login_submit\"]";
-        String clickMyCommissionAccount = "//*[@id=\"rest_promotion_agent_recharge_record\"]/li/span";
-        String changeAfterMoney = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div[2]/div[3]/table/tbody/tr[1]/td[5]/div";
 
+        //-------------------------------------------验证商户详情待结算佣金--下级佣金结算记录--------------------------------------------------
 
         @Features("平台管理员")
         @Stories("现金商户详情")
-        @Title("验证/1现金商户待提现佣金是否等于该商户佣金变动后余额/2下级佣金结算记录变动前后金额计算无误/3累计提款金额计算无误")
-        @Test(priority = 4)
+        @Title("验证1下级佣金结算记录变动前后金额计算无误,2累计提款金额计算无误")
+        @Test(priority = 13)
         public void waitWithdrawCommission() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金推广代理");
                 driverUtil.findElementByXpathAndClick(clickCashAgent);
@@ -215,13 +212,11 @@ public class BusinessDetailCashTestCase {
 
                 //结算前金额2减去结算金额等于结算金额1
                 String getSettlementBeforeBalance1 = driverUtil.getTextByXpath(settlementBeforeBalance1);
-                String getSettlementBeforeBalance2 = driverUtil.getTextByXpath(settlementBeforeBalance2);
                 String getSettlementMoney = driverUtil.getTextByXpath(SettlementMoney);
-                System.out.println("下级佣金结算记录变动前余额2："+getSettlementBeforeBalance2);
                 System.out.println("下级佣金结算记录变动前余额1："+getSettlementBeforeBalance1);
                 System.out.println("下级佣金结算记录结算金额："+getSettlementMoney);
                 BigDecimal a1 = StringToNumber.toBigDecimal(getSettlementBeforeBalance1);
-                BigDecimal a2 = StringToNumber.toBigDecimal(getSettlementBeforeBalance2);
+                BigDecimal a2 = StringToNumber.toBigDecimal(getWaitWithdrawCommission);
                 BigDecimal a3 = new BigDecimal(getSettlementMoney).abs();
                 BigDecimal result = a2.subtract(a3);
 
@@ -237,7 +232,6 @@ public class BusinessDetailCashTestCase {
                 Assertion.verifyEquals(result,a1);
                 Assertion.verifyEquals(result2,b1);
                 Assert.assertTrue(Assertion.currentFlag());
-
         }
 
 }

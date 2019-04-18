@@ -2,7 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96204fec-b768-4500-a32d-bdf317ef3d35" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreditAgent/AgentHomeCreditTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreditAgent/MyServiceAccountChangeTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreditBusiness/CreditBusinessHomeTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreditBusiness/MyServiceAccountChangeTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreditExplorer/CreditExplorerHomeTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreditExplorer/MyServiceAccountChangeTestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Admin/AdminHomeTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Admin/AdminHomeTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Admin/BusinessDetailCashTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Admin/BusinessDetailCashTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Admin/BusinessDetailCreditTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Admin/BusinessDetailCreditTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Admin/ModeComplexStatisticsCashTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Admin/ModeComplexStatisticsCashTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Admin/ModeComplexStatisticsCreditTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Admin/ModeComplexStatisticsCreditTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CashAgent/AgentHomeTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CashAgent/AgentHomeCashTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CashAgent/ChangeRecordCreditTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CashAgent/ChangeRecordCreditTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CashAgent/MyCommissionAccountChangeTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CashAgent/MyCommissionAccountChangeTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CashAgent/PlayerAccountAdminTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CashAgent/PlayerAccountAdminTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CashBusiness/BusinessHomeTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CashBusiness/BusinessHomeTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UtilTest/StringToNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UtilTest/StringToNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0f573848-3f6a-4826-a795-38c437389fad-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/12828d1c-5b8b-44fa-a403-678c2f6145e5-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2516a454-ac77-40d4-a144-2deb0d2e8223-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/53bcc4b9-36d1-490f-b600-dcaf243a9c67-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/545b9c28-c3aa-4fa5-8412-e8d0ae7d6ab6-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/55cb0435-8eb3-4920-98ed-2275726474b5-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5a61404f-157b-4825-b997-c4e5f871d8e5-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/721176c1-18b9-4125-8cdb-89c5312fee50-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/78476c4a-73b6-418b-8ae3-ae049a0aa5b8-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9621b310-29d4-4af4-ac92-5300e7757014-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d28f4bac-fbe4-4ac9-9e97-95889e0555fe-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e0d1ca52-f06e-4fc4-aed6-dc227230fac4-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ee55e415-6468-4547-9f09-a4f88abced8e-testsuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/Admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/Admin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/CashAgent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/CashAgent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/CashBusiness.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/CashBusiness.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Admin.AdminHomeTestCase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Admin.BusinessDetailCashTestCase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Admin.BusinessDetailCreditTestCase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Admin.ModeComplexStatisticsCashTestCase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Admin.ModeComplexStatisticsCreditTestCase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-CashAgent.AgentHomeTestCase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-CashAgent.ChangeRecordCreditTestCase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-CashAgent.MyCommissionAccountChangeTestCase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-CashAgent.PlayerAccountAdminTestCase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-CashBusiness.BusinessHomeTestCase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/Admin.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/CashAgent.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/CashBusiness.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,17 +118,17 @@
     <session id="-997552775">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="67" />
+          <entry key="project.closed" value="69" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="3" />
-          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.17" value="3" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="2" />
-          <entry key="project.open.time.20" value="4" />
+          <entry key="project.open.time.20" value="5" />
           <entry key="project.open.time.21" value="6" />
           <entry key="project.open.time.22" value="7" />
           <entry key="project.open.time.23" value="6" />
@@ -65,51 +145,51 @@
           <entry key="project.open.time.6" value="10" />
           <entry key="project.open.time.7" value="8" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="74" />
+          <entry key="project.opened" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="262" />
+          <entry key="dummy" value="274" />
           <entry key="html" value="13" />
-          <entry key="java" value="64995" />
+          <entry key="java" value="71795" />
           <entry key="json" value="7" />
-          <entry key="xml" value="965" />
+          <entry key="xml" value="1269" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="13" />
-          <entry key="JAVA" value="64995" />
+          <entry key="JAVA" value="71795" />
           <entry key="JSON" value="7" />
-          <entry key="PLAIN_TEXT" value="262" />
-          <entry key="XML" value="965" />
+          <entry key="PLAIN_TEXT" value="274" />
+          <entry key="XML" value="1269" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="7" />
+          <entry key="class" value="9" />
           <entry key="html" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="369" />
+          <entry key="java" value="412" />
           <entry key="json" value="3" />
           <entry key="log" value="3" />
           <entry key="md" value="1" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="42" />
+          <entry key="xml" value="46" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="7" />
+          <entry key="CLASS" value="9" />
           <entry key="HTML" value="2" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="369" />
+          <entry key="JAVA" value="412" />
           <entry key="JSON" value="3" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="XML" value="42" />
+          <entry key="XML" value="46" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -118,36 +198,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/ModeComplexStatisticsCreditTestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3996">
-              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#9113#9114#0" expanded="true" />
-                <element signature="e#9150#9151#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/ModeComplexStatisticsCashTestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Admin/AdminHomeTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="36" column="9" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
+            <state relative-caret-position="8294">
+              <caret line="370" selection-start-line="370" selection-end-line="370" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,24 +210,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CashBusiness/BusinessHomeTestCase.java">
+        <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4155">
-              <caret line="214" column="79" selection-start-line="214" selection-start-column="79" selection-end-line="214" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7243#7244#0" expanded="true" />
-                <element signature="e#7294#7295#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1160">
+              <caret line="40" column="72" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CashAgent/AgentHomeTestCase.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/CreditAgent/AgentHomeCreditTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+            <state relative-caret-position="-4914">
+              <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,10 +231,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CashAgent/ChangeRecordCreditTestCase.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/CreditAgent/MyServiceAccountChangeTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+            <state relative-caret-position="511">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,10 +243,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CashAgent/MyCommissionAccountChangeTestCase.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/CreditBusiness/MyServiceAccountChangeTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="590">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -206,14 +255,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CashAgent/PlayerAccountAdminTestCase.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/CreditExplorer/MyServiceAccountChangeTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="512">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7330#7331#0" expanded="true" />
-                <element signature="e#7381#7382#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/CashBusiness/BusinessHomeTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4286">
+              <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/UtilTest/StringToNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="18" column="64" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/CreditBusiness/CreditBusinessHomeTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4535">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/CreditExplorer/CreditExplorerHomeTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3322">
+              <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -258,16 +353,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/cashBusinessTestCase/addNews.java" />
-        <option value="$PROJECT_DIR$/target/allure-results/environment.xml" />
-        <option value="$PROJECT_DIR$/target/allure-results/categories.json" />
-        <option value="$PROJECT_DIR$/src/main/java/allure-plugin.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/cashAgentDetailTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/agentRechargeCreditAdminTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cashAgentTestCase/changeRecordCreditTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/creditDetailTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/adminTestCase/creditModeComplexStatisticsTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/cerditBusiness/ceriditAgentAdminTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/cerditBusiness/test.java" />
         <option value="$PROJECT_DIR$/src/test/java/cerditBusiness/creditAgentAdminTestCase.java" />
@@ -299,16 +384,26 @@
         <option value="$PROJECT_DIR$/src/test/java/cashBusiness/homeTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/cashAgent/changeRecordCreditTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/CashBusiness/HomeTestCase.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/CashAgent/AgentHomeTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/UtilTest/StringToNumber.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CashAgent/AgentHomeCashTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Admin/AdminHomeTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CashBusiness/BusinessHomeTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CreditAgent/AgentHomeCreditTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/BusinessDetailCashTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/BusinessDetailCreditTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Admin/ModeComplexStatisticsCreditTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/ModeComplexStatisticsCashTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CashAgent/AgentHomeTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CashBusiness/BusinessHomeTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Admin/ModeComplexStatisticsCreditTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/CashAgent/ChangeRecordCreditTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CashAgent/PlayerAccountAdminTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/CashAgent/MyCommissionAccountChangeTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CashAgent/PlayerAccountAdminTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CreditBusiness/CreditBusinessHomeTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CreditExplorer/CreditExplorer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CreditExplorer/CreditExplorerHomeTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CreditAgent/MyServiceAccountChangeTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CreditBusiness/MyServiceAccountChangeTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CreditExplorer/MyServiceAccountChangeTestCase.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
       </list>
     </option>
   </component>
@@ -346,10 +441,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="738" />
-    <option name="height" value="392" />
+    <option name="x" value="2125" />
+    <option name="y" value="214" />
+    <option name="width" value="1551" />
+    <option name="height" value="839" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -377,7 +472,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -438,7 +532,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ListenerPackage" type="462c0819:PsiDirectoryNode" />
+              <item name="CreditAgent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
@@ -446,7 +540,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SeleniumMethod" type="462c0819:PsiDirectoryNode" />
+              <item name="CreditBusiness" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="CreditExplorer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
@@ -465,6 +567,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -472,7 +575,7 @@
     <property name="SearchEverywhereHistoryKey" value="link&#9;PSI&#9;JAVA://io.qameta.allure.Link&#10;we&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil&#10;classname&#9;FILE&#9;jar://C:/Users/jtc/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.0/jackson-databind-2.7.0.jar!/com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver.class&#10;return&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#returnToPreviousPage&#10;js&#9;PSI&#9;JAVA://jdk.nashorn.internal.scripts.JS&#10;滚动条&#9;null&#9;null&#10;findElementByX&#9;PSI&#9;JAVA://PublicMethod.WebDriverUtil#findElementByXpath" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555148425378" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555575930901" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -481,7 +584,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -513,34 +616,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.PlayerAccountAdminTestCase">
-    <configuration name="BusinessHomeTestCase" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.testng.xml">
+    <configuration name="AgentHomeCreditTestCase.myServiceAccountChangeMoney" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CashBusiness.*" />
+          <option name="PATTERN" value="CreditAgent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="CashBusiness" />
-      <option name="MAIN_CLASS_NAME" value="CashBusiness.BusinessHomeTestCase" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BusinessHomeTestCase.lowerSpreadAgent" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CashBusiness.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CashBusiness" />
-      <option name="MAIN_CLASS_NAME" value="CashBusiness.BusinessHomeTestCase" />
-      <option name="METHOD_NAME" value="lowerSpreadAgent" />
+      <option name="PACKAGE_NAME" value="CreditAgent" />
+      <option name="MAIN_CLASS_NAME" value="CreditAgent.AgentHomeCreditTestCase" />
+      <option name="METHOD_NAME" value="myServiceAccountChangeMoney" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -548,50 +635,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChangeRecordCreditTestCase" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreditExplorerHomeTestCase" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CashAgent.*" />
+          <option name="PATTERN" value="CreditExplorer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="CashAgent" />
-      <option name="MAIN_CLASS_NAME" value="CashAgent.ChangeRecordCreditTestCase" />
+      <option name="PACKAGE_NAME" value="CreditExplorer" />
+      <option name="MAIN_CLASS_NAME" value="CreditExplorer.CreditExplorerHomeTestCase" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModeComplexStatisticsCreditTestCase.serviceMoney" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MyServiceAccountChangeTestCase (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Admin.*" />
+          <option name="PATTERN" value="CreditBusiness.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Admin" />
-      <option name="MAIN_CLASS_NAME" value="Admin.ModeComplexStatisticsCreditTestCase" />
-      <option name="METHOD_NAME" value="serviceMoney" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="CreditBusiness" />
+      <option name="MAIN_CLASS_NAME" value="CreditBusiness.MyServiceAccountChangeTestCase" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerAccountAdminTestCase" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MyServiceAccountChangeTestCase (2)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="game" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CashAgent.*" />
+          <option name="PATTERN" value="CreditExplorer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="CashAgent" />
-      <option name="MAIN_CLASS_NAME" value="CashAgent.PlayerAccountAdminTestCase" />
+      <option name="PACKAGE_NAME" value="CreditExplorer" />
+      <option name="MAIN_CLASS_NAME" value="CreditExplorer.MyServiceAccountChangeTestCase" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyServiceAccountChangeTestCase" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CreditAgent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CreditAgent" />
+      <option name="MAIN_CLASS_NAME" value="CreditAgent.MyServiceAccountChangeTestCase" />
       <properties />
       <listeners />
       <method v="2">
@@ -667,21 +768,22 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.creditBusinessDetailTestCase" />
       <item itemvalue="TestNG.adminTestCase" />
       <item itemvalue="TestNG.testng.xml" />
-      <item itemvalue="TestNG.ModeComplexStatisticsCreditTestCase.serviceMoney" />
-      <item itemvalue="TestNG.ChangeRecordCreditTestCase" />
-      <item itemvalue="TestNG.BusinessHomeTestCase" />
-      <item itemvalue="TestNG.BusinessHomeTestCase.lowerSpreadAgent" />
-      <item itemvalue="TestNG.PlayerAccountAdminTestCase" />
+      <item itemvalue="TestNG.AgentHomeCreditTestCase.myServiceAccountChangeMoney" />
+      <item itemvalue="TestNG.MyServiceAccountChangeTestCase" />
+      <item itemvalue="TestNG.MyServiceAccountChangeTestCase (1)" />
+      <item itemvalue="TestNG.CreditExplorerHomeTestCase" />
+      <item itemvalue="TestNG.MyServiceAccountChangeTestCase (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PlayerAccountAdminTestCase" />
-        <item itemvalue="TestNG.BusinessHomeTestCase.lowerSpreadAgent" />
-        <item itemvalue="TestNG.BusinessHomeTestCase" />
-        <item itemvalue="TestNG.ChangeRecordCreditTestCase" />
-        <item itemvalue="TestNG.ModeComplexStatisticsCreditTestCase.serviceMoney" />
+        <item itemvalue="TestNG.MyServiceAccountChangeTestCase (2)" />
+        <item itemvalue="TestNG.CreditExplorerHomeTestCase" />
+        <item itemvalue="TestNG.MyServiceAccountChangeTestCase (1)" />
+        <item itemvalue="TestNG.MyServiceAccountChangeTestCase" />
+        <item itemvalue="TestNG.AgentHomeCreditTestCase.myServiceAccountChangeMoney" />
       </list>
     </recent_temporary>
   </component>
@@ -767,44 +869,46 @@
       <workItem from="1553938274666" duration="98708000" />
       <workItem from="1554519833497" duration="563000" />
       <workItem from="1554523735930" duration="45459000" />
-      <workItem from="1554733640436" duration="81647000" />
+      <workItem from="1554733640436" duration="98260000" />
+      <workItem from="1555399019316" duration="3145000" />
+      <workItem from="1555473777260" duration="30489000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BusinessDetailCreditTestCase_creditBusinessServiceHistoryTotal - 2019.04.13 at 10h 45m 45s.xml">
-      <configuration name="BusinessDetailCreditTestCase.creditBusinessServiceHistoryTotal" configurationId="TestNG" />
+    <history-entry file="MyServiceAccountChangeTestCase - 2019.04.17 at 20h 38m 39s.xml">
+      <configuration name="MyServiceAccountChangeTestCase" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ModeComplexStatisticsCashTestCase_rechargeNumberAverage - 2019.04.13 at 10h 48m 28s.xml">
-      <configuration name="ModeComplexStatisticsCashTestCase.rechargeNumberAverage" configurationId="TestNG" />
+    <history-entry file="MyServiceAccountChangeTestCase - 2019.04.17 at 20h 40m 42s.xml">
+      <configuration name="MyServiceAccountChangeTestCase" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ModeComplexStatisticsCashTestCase_rechargeNumberAverage - 2019.04.13 at 10h 52m 16s.xml">
-      <configuration name="ModeComplexStatisticsCashTestCase.rechargeNumberAverage" configurationId="TestNG" />
+    <history-entry file="MyServiceAccountChangeTestCase_(1) - 2019.04.18 at 11h 19m 17s.xml">
+      <configuration name="MyServiceAccountChangeTestCase (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ModeComplexStatisticsCreditTestCase_serviceMoney - 2019.04.13 at 10h 57m 43s.xml">
-      <configuration name="ModeComplexStatisticsCreditTestCase.serviceMoney" configurationId="TestNG" />
+    <history-entry file="MyServiceAccountChangeTestCase_(1) - 2019.04.18 at 11h 32m 07s.xml">
+      <configuration name="MyServiceAccountChangeTestCase (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ChangeRecordCreditTestCase - 2019.04.13 at 10h 59m 46s.xml">
-      <configuration name="ChangeRecordCreditTestCase" configurationId="TestNG" />
+    <history-entry file="MyServiceAccountChangeTestCase_(1) - 2019.04.18 at 11h 33m 28s.xml">
+      <configuration name="MyServiceAccountChangeTestCase (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ChangeRecordCreditTestCase - 2019.04.13 at 11h 44m 01s.xml">
-      <configuration name="ChangeRecordCreditTestCase" configurationId="TestNG" />
+    <history-entry file="MyServiceAccountChangeTestCase_(1) - 2019.04.18 at 11h 41m 09s.xml">
+      <configuration name="MyServiceAccountChangeTestCase (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BusinessHomeTestCase - 2019.04.13 at 14h 30m 12s.xml">
-      <configuration name="BusinessHomeTestCase" configurationId="TestNG" />
+    <history-entry file="CreditExplorerHomeTestCase - 2019.04.18 at 14h 07m 08s.xml">
+      <configuration name="CreditExplorerHomeTestCase" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BusinessHomeTestCase - 2019.04.13 at 15h 28m 35s.xml">
-      <configuration name="BusinessHomeTestCase" configurationId="TestNG" />
+    <history-entry file="CreditExplorerHomeTestCase - 2019.04.18 at 14h 10m 28s.xml">
+      <configuration name="CreditExplorerHomeTestCase" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="BusinessHomeTestCase_lowerSpreadAgent - 2019.04.13 at 15h 30m 56s.xml">
-      <configuration name="BusinessHomeTestCase.lowerSpreadAgent" configurationId="TestNG" />
+    <history-entry file="CreditExplorerHomeTestCase - 2019.04.18 at 14h 11m 44s.xml">
+      <configuration name="CreditExplorerHomeTestCase" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PlayerAccountAdminTestCase - 2019.04.13 at 16h 07m 17s.xml">
-      <configuration name="PlayerAccountAdminTestCase" configurationId="TestNG" />
+    <history-entry file="MyServiceAccountChangeTestCase_(2) - 2019.04.18 at 15h 17m 29s.xml">
+      <configuration name="MyServiceAccountChangeTestCase (2)" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="986933000" />
+    <option name="totallyTimeSpent" value="1037180000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -817,8 +921,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21108742" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23134328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -827,13 +932,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.422367" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4451683" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.15526602" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5504886" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.50705755" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32717392" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3995657" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3995657" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32715377" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.45928338" />
@@ -874,33 +979,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test-output/testng-failed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Default Suite/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="212" column="24" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/testng-results.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/InbetAdminTestCase/AdminHomeTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/date.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentHome/TestCase.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/cashRechargeWithdrawRecordTestCase.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/changeRecordCreditTestCase.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/cashBusinessTestCase/addMarqueeNewsTestCase.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/creditAgentTestCase/creditAgentHomeTestCase.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/cashBusinessTestCase/addNews.java" />
     <entry file="file://$PROJECT_DIR$/target/allure-results/environment.xml" />
@@ -921,11 +999,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/adminTestCase/agentRechargeCreditAdminTestCase.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12012" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -954,59 +1027,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-54">
           <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/admin/creditDetailTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9628">
-          <caret line="332" column="36" selection-start-line="332" selection-start-column="36" selection-end-line="332" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/admin/cashAgentDetailTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6028">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/UtilTest/StringToNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="85" column="56" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/admin/creditDetailTestCase.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/admin/cashAgentDetailTestCase.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/ListenerPackage/AssertionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="944">
           <caret line="63" column="72" lean-forward="true" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,37 +1083,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/BusinessDetailCashTestCase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/CashBusiness/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/CreditBusiness/test3.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2238">
-          <caret line="241" selection-start-line="241" selection-end-line="241" />
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#11486#11492#0" expanded="true" />
+            <element signature="e#11517#11523#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/target/test-classes/CashAgent/AgentHomeTestCase.class" />
+    <entry file="file://$PROJECT_DIR$/target/test-classes/CashAgent/ChangeRecordCreditTestCase.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="-172" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/BusinessDetailCashTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-709">
+          <caret line="189" column="27" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/BusinessDetailCreditTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="19" column="66" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="19" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/AdminHomeTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="36" column="9" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
+        <state relative-caret-position="-274">
+          <caret line="309" column="27" selection-start-line="309" selection-start-column="27" selection-end-line="309" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1093,8 +1123,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/ModeComplexStatisticsCashTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="-100">
+          <caret line="220" column="27" selection-start-line="220" selection-start-column="27" selection-end-line="220" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1103,50 +1133,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/ModeComplexStatisticsCreditTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3996">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        <state relative-caret-position="625">
+          <caret line="189" column="27" lean-forward="true" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9113#9114#0" expanded="true" />
-            <element signature="e#9150#9151#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CashBusiness/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1218">
-          <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CreditBusiness/test3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CashAgent/AgentHomeTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#9413#9414#0" expanded="true" />
+            <element signature="e#9464#9465#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CashAgent/MyCommissionAccountChangeTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="-245">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1155,20 +1155,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CashAgent/PlayerAccountAdminTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="16">
+          <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7330#7331#0" expanded="true" />
-            <element signature="e#7381#7382#0" expanded="true" />
+            <element signature="e#6018#6019#0" expanded="true" />
+            <element signature="e#6069#6070#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CashAgent/ChangeRecordCreditTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+        <state relative-caret-position="-202">
+          <caret line="134" column="26" selection-start-line="134" selection-start-column="26" selection-end-line="134" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CashAgent/AgentHomeCashTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1509">
+          <caret line="187" selection-start-line="187" selection-end-line="187" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/AdminHomeTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8294">
+          <caret line="370" selection-start-line="370" selection-end-line="370" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CreditExplorer/CreditExplorer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="38" column="45" selection-end-line="198" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/UtilTest/StringToNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="18" column="64" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CreditExplorer/CreditExplorerHomeTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3322">
+          <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CreditBusiness/CreditBusinessHomeTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4535">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CreditAgent/AgentHomeCreditTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4914">
+          <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CreditAgent/MyServiceAccountChangeTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CreditBusiness/MyServiceAccountChangeTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CreditExplorer/MyServiceAccountChangeTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1177,13 +1277,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CashBusiness/BusinessHomeTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4155">
-          <caret line="214" column="79" selection-start-line="214" selection-start-column="79" selection-end-line="214" selection-end-column="79" />
+        <state relative-caret-position="-4286">
+          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7243#7244#0" expanded="true" />
-            <element signature="e#7294#7295#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1160">
+          <caret line="40" column="72" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
         </state>
       </provider>
     </entry>

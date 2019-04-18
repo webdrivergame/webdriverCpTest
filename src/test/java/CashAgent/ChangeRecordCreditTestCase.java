@@ -1,5 +1,6 @@
 package CashAgent;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import SeleniumMethod.WebDriverUtil;
 import ListenerPackage.Assertion;
@@ -22,7 +23,7 @@ public class ChangeRecordCreditTestCase {
         String inputText = "//*[@id=\"root\"]/section/div[1]/div[1]/div/input";
 
 
-         /***
+        /***
          *
          * 点击额度变动记录
          * 获取操作类型
@@ -42,7 +43,7 @@ public class ChangeRecordCreditTestCase {
         @Features("现金代理")
         @Stories("额度变动记录")
         @Title("验证现金代理额度变动数据增减金额是否有误")
-        @Test(priority = 1)
+        @Test(priority = 5)
         public void cashAgentCredit() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"额度变动记录");
                 driverUtil.findElementByXpathAndClick(CreditChangeRecord);
@@ -98,7 +99,7 @@ public class ChangeRecordCreditTestCase {
         @Features("现金代理")
         @Stories("额度变动记录")
         @Title("验证充值代理总管额度变动数据")
-        @Test(priority = 2)
+        @Test(priority = 6)
         public void rechargeAgentAdminCredit() throws InterruptedException {
                 driverUtil.findElementByXpathAndClick(clickRechargeAgentBusiness);
                 Thread.sleep(2000);
@@ -131,7 +132,7 @@ public class ChangeRecordCreditTestCase {
         @Features("现金代理")
         @Stories("额度变动记录")
         @Title("验证充值代理额度变动数据")
-        @Test(priority = 3)
+        @Test(priority = 7)
         public void rechargeAgentCredit() throws InterruptedException {
                 driverUtil.findElementByXpathAndClick(clickRechargeAgent);
                 Thread.sleep(2000);
@@ -158,8 +159,6 @@ public class ChangeRecordCreditTestCase {
                         Assert.assertTrue(Assertion.currentFlag());
                         System.out.println("操作类型：充值代理-转入");
                 }
-
-
         }
 
 

@@ -76,7 +76,7 @@ public class BusinessHomeTestCase {
 
         String home = "//*[@id=\"rest_case_agent_tenant_home\"]/li/span";
         String incomeMonth = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div/div/div[1]/div/div/div/div[3]/div/span[2]";
-        String clickMoths = "/html/body/div[3]/div[1]/div[1]/button[5]";
+        String clickMoths = "/html/body/div[4]/div[1]/div[1]/button[5]";
         String getIncomeMyCommissionMoths = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div[1]/div/div[1]/div[2]/span[2]";
 
         @Features("现金商户")

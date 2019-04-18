@@ -21,7 +21,6 @@ public class BusinessDetailCreditTestCase {
 
 
 
-
           /*** *
 
          *  点击信用模式代理
@@ -50,7 +49,7 @@ public class BusinessDetailCreditTestCase {
         @Features("平台管理员")
         @Stories("信用代理详情")
         @Title("验证信用商户运营数据-历史服务费总计与下级服务费统计该商户的生成服务费总计金额一致")
-        @Test(priority = 1)
+        @Test(priority = 14)
         public void creditExplorerServiceHistoryTotal() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText, "信用模式代理");
                 driverUtil.findElementByXpathAndClick(clickCreditModelAgent);
@@ -98,7 +97,7 @@ public class BusinessDetailCreditTestCase {
         @Features("平台管理员")
         @Stories("信用代理详情")
         @Title("验证信用商户运营数据-服务费账户余额与下级服务费统计-今日结算后余额是否一致")
-        @Test(priority = 2)
+        @Test(priority = 15)
         public void creditExplorerAccountBalance() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText, "信用模式代理");
                 driverUtil.findElementByXpathAndClick(clickCreditModelAgent);
@@ -148,7 +147,7 @@ public class BusinessDetailCreditTestCase {
         @Features("平台管理员")
         @Stories("信用代理详情")
         @Title("验证信用商务运营数据-历史服务费总计与下级服务费统计该商务的生成服务费总计金额一致")
-        @Test(priority = 3)
+        @Test(priority = 16)
         public void creditBusinessServiceHistoryTotal() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText, "信用模式代理");
                 driverUtil.findElementByXpathAndClick(clickCreditModelAgent);
@@ -167,6 +166,7 @@ public class BusinessDetailCreditTestCase {
                 driverUtil.findElementByXpathAndClick(lowerServiceStatistics);
                 Thread.sleep(3000);
                 driverUtil.findElementByXpathAndClick(clickLowerBusiness2);
+                Thread.sleep(2000);
                 driverUtil.findElementByXpathAndClearSendkeys(sendKeysLowerBusiness,"wxjb66");
                 driverUtil.findElementByXpathAndClick(Inquire);
                 Thread.sleep(2000);
@@ -200,7 +200,7 @@ public class BusinessDetailCreditTestCase {
         @Features("平台管理员")
         @Stories("信用代理详情")
         @Title("验证信用商务运营数据-服务费账户余额与下级服务费统计-今日结算后余额是否一致")
-        @Test(priority = 4)
+        @Test(priority = 17)
         public void creditBusinessServiceAccountBalance() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText, "信用模式代理");
                 driverUtil.findElementByXpathAndClick(clickCreditModelAgent);
@@ -256,7 +256,7 @@ public class BusinessDetailCreditTestCase {
         @Features("平台管理员")
         @Stories("信用代理详情")
         @Title("验证信用代理运营数据-历史服务费总计与下级服务费的生成服务费总计是否一致")
-        @Test(priority = 5)
+        @Test(priority = 18)
         public void creditAgentServiceHistoryTotal() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText, "信用模式代理");
                 driverUtil.findElementByXpathAndClick(clickCreditModelAgent);
@@ -307,7 +307,7 @@ public class BusinessDetailCreditTestCase {
         @Features("平台管理员")
         @Stories("信用代理详情")
         @Title("验证信用代理运营数据-信用代理服务费账户余额与下级服务费的今日结算后余额是否一致")
-        @Test(priority = 6)
+        @Test(priority = 19)
         public void creditAgentServiceAccountBalance() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText, "信用模式代理");
                 driverUtil.findElementByXpathAndClick(clickCreditModelAgent);
