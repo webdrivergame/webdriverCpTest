@@ -24,7 +24,6 @@ public class MyCommissionAccountChangeTestCase {
         String inputText = "//*[@id=\"root\"]/section/div[1]/div[1]/div/input";
 
 
-
          /***
          *
          * 点击我的佣金账户变动
@@ -71,5 +70,20 @@ public class MyCommissionAccountChangeTestCase {
                 }
         }
 
+        String changeMooneyYesterday = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div[2]/div[3]/table/tbody/tr[2]/td[5]/div";
 
+        @Features("现金代理")
+        @Stories("我的佣金账户变动")
+        @Title("验证我的佣金账户变动昨日变动后金额等于今日变动前金额")
+        @Test(priority = 9)
+        public void changeMoney(){
+                String getChangeMooneyYesterday = driverUtil.getTextByXpath(changeMooneyYesterday);
+                System.out.println("昨日变动后金额："+getChangeMooneyYesterday);
+                String getChangeMoneyBefore = driverUtil.getTextByXpath(changeMoneyBefore);
+                System.out.println("今日变动前金额："+getChangeMoneyBefore);
+                Assertion.setFlag(true);
+                Assertion.verifyEquals(getChangeMoneyBefore,getChangeMooneyYesterday);
+                Assert.assertTrue(Assertion.currentFlag());
+
+        }
 }

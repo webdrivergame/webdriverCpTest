@@ -72,8 +72,8 @@ public class StringToNumber {
 
         @Test
         public void subString(){
-                String a1 = "-";
-                String a2 = a1.substring(0,1);
+                String a1 = "0.000/0";
+                String a2 = a1.substring(a1.indexOf("/")+1);
                 System.out.println(a2);
         }
         @Test
@@ -85,4 +85,8 @@ public class StringToNumber {
 
         }
         //BigDecimal类型断言，都要转换为BigDecimal类型，而不是int或String
+
+
+
+
 }

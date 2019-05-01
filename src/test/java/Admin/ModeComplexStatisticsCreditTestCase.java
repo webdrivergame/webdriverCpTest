@@ -25,6 +25,7 @@ public class ModeComplexStatisticsCreditTestCase {
         String adminHome = "//*[@id=\"rest_admin_home\"]/li/span";
 
 
+
          /***
          *
          * 点击信用模式综合统计
@@ -45,7 +46,7 @@ public class ModeComplexStatisticsCreditTestCase {
         @Features("平台管理员")
         @Stories("信用模式综合统计")
         @Title("验证当日注册人数数量")
-        @Test(priority = 25)
+        @Test(priority = 1)
             public void registeredNumber() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"信用模式综合统计");
                 driverUtil.findElementByXpathAndClick(clickCreditModelComplexStatistics);
@@ -89,7 +90,7 @@ public class ModeComplexStatisticsCreditTestCase {
         @Features("平台管理员")
         @Stories("信用模式综合统计")
         @Title("验证登录人数数据")
-        @Test(priority = 26)
+        @Test(priority = 2)
             public void loginNumber() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"信用模式综合统计");
                 driverUtil.findElementByXpathAndClick(clickCreditModelComplexStatistics);
@@ -135,7 +136,7 @@ public class ModeComplexStatisticsCreditTestCase {
         @Features("平台管理员")
         @Stories("信用模式综合统计")
         @Title("验证投注额是否等于信用模式游戏输赢统计投注额")
-        @Test(priority = 27)
+        @Test(priority = 3)
             public void Bet() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"信用模式综合统计");
                 driverUtil.findElementByXpathAndClick(clickCreditModelComplexStatistics);
@@ -151,7 +152,6 @@ public class ModeComplexStatisticsCreditTestCase {
                 Assertion.verifyEquals(getBet,getCreditModelComplexStatisticsBex);
                 Assert.assertTrue(Assertion.currentFlag());
         }
-
 
           /***
           *
@@ -169,7 +169,7 @@ public class ModeComplexStatisticsCreditTestCase {
         @Features("平台管理员")
         @Stories("信用模式综合统计")
         @Title("验证服务费金额数据是否与下级服务费统计今日服务费金额一致")
-        @Test(priority = 28)
+        @Test(priority = 4)
             public void serviceMoney() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"信用模式综合统计");
                 driverUtil.findElementByXpathAndClick(clickCreditModelComplexStatistics);

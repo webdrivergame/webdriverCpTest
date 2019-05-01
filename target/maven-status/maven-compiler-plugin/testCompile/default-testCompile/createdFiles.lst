@@ -4,10 +4,14 @@ CashAgent\ChangeRecordCreditTestCase.class
 CashAgent\AgentHomeCashTestCase.class
 CreditBusiness\CreditBusinessHomeTestCase.class
 Admin\ModeComplexStatisticsCreditTestCase.class
+Admin\LowerServiceSettlementRecord.class
+CreditExplorer\CreditModelAgentTestCase.class
+CreditExplorer\GeneralStatisticsTestCase.class
 ListenerPackage\AssertionListener.class
 CreditExplorer\CreditExplorerHomeTestCase.class
 Admin\AdminHomeTestCase.class
 UtilTest\StringToNumber.class
+Admin\LowerCommissionSettlementRecord.class
 CashBusiness\BusinessHomeTestCase.class
 CreditExplorer\MyServiceAccountChangeTestCase.class
 CashAgent\MyCommissionAccountChangeTestCase.class

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>平台管理员</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>24/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>24/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 18 15:25:25 ICT 2019</td>
+<td>Started on:</td><td>Tue Apr 30 14:38:10 ICT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>278 seconds (278530 ms)</td>
+<tr><td>Total time:</td><td>292 seconds (292779 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Admin.ModeComplexStatisticsCashTestCase.rechargeNumberAverage()'><b>rechargeNumberAverage</b><br>Test class: Admin.ModeComplexStatisticsCashTestCase</td>
-<td><div><pre>java.lang.ArithmeticException: Division undefined
-	at java.math.BigDecimal.divide(BigDecimal.java:1664)
-	at Admin.ModeComplexStatisticsCashTestCase.rechargeNumberAverage(ModeComplexStatisticsCashTestCase.java:238)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1367916786", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1367916786'><pre>java.lang.ArithmeticException: Division undefined
-	at java.math.BigDecimal.divide(BigDecimal.java:1664)
-	at Admin.ModeComplexStatisticsCashTestCase.rechargeNumberAverage(ModeComplexStatisticsCashTestCase.java:238)
+<td title='Admin.BusinessDetailCashTestCase.BusinessCommissionTotal()'><b>BusinessCommissionTotal</b><br>Test class: Admin.BusinessDetailCashTestCase</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at Admin.BusinessDetailCashTestCase.BusinessCommissionTotal(BusinessDetailCashTestCase.java:206)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1690307000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1690307000'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Admin.BusinessDetailCashTestCase.BusinessCommissionTotal(BusinessDetailCashTestCase.java:206)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,20 +113,61 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 </pre></div></td>
-<td>3</td>
-<td>Admin.ModeComplexStatisticsCashTestCase@50fd739d</td></tr>
+<td>9</td>
+<td>Admin.BusinessDetailCashTestCase@69de72ec</td></tr>
+<tr>
+<td title='Admin.BusinessDetailCashTestCase.BusinessPlayerTotal()'><b>BusinessPlayerTotal</b><br>Test class: Admin.BusinessDetailCashTestCase</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at Admin.BusinessDetailCashTestCase.BusinessPlayerTotal(BusinessDetailCashTestCase.java:66)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1783355876", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1783355876'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at Admin.BusinessDetailCashTestCase.BusinessPlayerTotal(BusinessDetailCashTestCase.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+</pre></div></td>
+<td>6</td>
+<td>Admin.BusinessDetailCashTestCase@69de72ec</td></tr>
 <tr>
 <td title='Admin.ModeComplexStatisticsCreditTestCase.serviceMoney()'><b>serviceMoney</b><br>Test class: Admin.ModeComplexStatisticsCreditTestCase</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/div[3]/span[2]&quot;}
   (Session info: chrome=73.0.3683.103)
   (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.01 seconds
+Command duration or timeout: 10.03 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
-System info: host: &apos;DESKTOP-NDF1E9V&apos;, ip: &apos;192.168.1.252&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+System info: host: &apos;DESKTOP-NDF1E9V&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60641}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir9692_12476}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: fe6453d337474846e9133a7fd4a5587c
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:45467}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir19236_10744}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 334babe5040e01d5576e9b6b374d0157
 *** Element info: {Using=xpath, value=//*[@id=&quot;root&quot;]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/div[3]/span[2]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
@@ -133,20 +176,20 @@ Session ID: fe6453d337474846e9133a7fd4a5587c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at SeleniumMethod.WebDriverUtil.findElementByXpath(WebDriverUtil.java:154)
-	at SeleniumMethod.WebDriverUtil.getTextByXpath(WebDriverUtil.java:411)
+	at SeleniumMethod.WebDriverUtil.findElementByXpath(WebDriverUtil.java:155)
+	at SeleniumMethod.WebDriverUtil.getTextByXpath(WebDriverUtil.java:412)
 	at Admin.ModeComplexStatisticsCreditTestCase.serviceMoney(ModeComplexStatisticsCreditTestCase.java:182)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2038809391", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2038809391'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/div[3]/span[2]&quot;}
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace695993105", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace695993105'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/div[3]/span[2]&quot;}
   (Session info: chrome=73.0.3683.103)
   (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.01 seconds
+Command duration or timeout: 10.03 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
-System info: host: &apos;DESKTOP-NDF1E9V&apos;, ip: &apos;192.168.1.252&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+System info: host: &apos;DESKTOP-NDF1E9V&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60641}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir9692_12476}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: fe6453d337474846e9133a7fd4a5587c
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:45467}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir19236_10744}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 334babe5040e01d5576e9b6b374d0157
 *** Element info: {Using=xpath, value=//*[@id=&quot;root&quot;]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/div[3]/span[2]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -159,8 +202,8 @@ Session ID: fe6453d337474846e9133a7fd4a5587c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at SeleniumMethod.WebDriverUtil.findElementByXpath(WebDriverUtil.java:154)
-	at SeleniumMethod.WebDriverUtil.getTextByXpath(WebDriverUtil.java:411)
+	at SeleniumMethod.WebDriverUtil.findElementByXpath(WebDriverUtil.java:155)
+	at SeleniumMethod.WebDriverUtil.getTextByXpath(WebDriverUtil.java:412)
 	at Admin.ModeComplexStatisticsCreditTestCase.serviceMoney(ModeComplexStatisticsCreditTestCase.java:182)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -191,18 +234,16 @@ Session ID: fe6453d337474846e9133a7fd4a5587c
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 </pre></div></td>
 <td>15</td>
-<td>Admin.ModeComplexStatisticsCreditTestCase@5e1d1524</td></tr>
+<td>Admin.ModeComplexStatisticsCreditTestCase@54496c2d</td></tr>
 <tr>
-<td title='Admin.AdminHomeTestCase.todayCommission()'><b>todayCommission</b><br>Test class: Admin.AdminHomeTestCase</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at Admin.AdminHomeTestCase.todayCommission(AdminHomeTestCase.java:259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace954988764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace954988764'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at Admin.AdminHomeTestCase.todayCommission(AdminHomeTestCase.java:259)
+<td title='Admin.BusinessDetailCashTestCase.taxTotal()'><b>taxTotal</b><br>Test class: Admin.BusinessDetailCashTestCase</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.math.BigDecimal.add(BigDecimal.java:1288)
+	at Admin.BusinessDetailCashTestCase.taxTotal(BusinessDetailCashTestCase.java:145)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2019147162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2019147162'><pre>java.lang.NullPointerException
+	at java.math.BigDecimal.add(BigDecimal.java:1288)
+	at Admin.BusinessDetailCashTestCase.taxTotal(BusinessDetailCashTestCase.java:145)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -231,19 +272,55 @@ Session ID: fe6453d337474846e9133a7fd4a5587c
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 </pre></div></td>
-<td>6</td>
-<td>Admin.AdminHomeTestCase@53fbb2b4</td></tr>
+<td>5</td>
+<td>Admin.BusinessDetailCashTestCase@69de72ec</td></tr>
 <tr>
-<td title='Admin.BusinessDetailCashTestCase.waitWithdrawCommission()'><b>waitWithdrawCommission</b><br>Test class: Admin.BusinessDetailCashTestCase</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at Admin.BusinessDetailCashTestCase.waitWithdrawCommission(BusinessDetailCashTestCase.java:234)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace220291510", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace220291510'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at Admin.BusinessDetailCashTestCase.waitWithdrawCommission(BusinessDetailCashTestCase.java:234)
+<td title='Admin.LowerCommissionSettlementRecord.waitWithdrawCommission()'><b>waitWithdrawCommission</b><br>Test class: Admin.LowerCommissionSettlementRecord</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[4]/div/div[2]/div[1]/div/form/div[3]/div/div/input&quot;}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
+System info: host: &apos;DESKTOP-NDF1E9V&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:45467}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir19236_10744}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 334babe5040e01d5576e9b6b374d0157
+*** Element info: {Using=xpath, value=/html/body/div[4]/div/div[2]/div[1]/div/form/div[3]/div/div/input}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at SeleniumMethod.WebDriverUtil.findElementByXpathAndClearSendkeys(WebDriverUtil.java:385)
+	at Admin.LowerCommissionSettlementRecord.waitWithdrawCommission(LowerCommissionSettlementRecord.java:78)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1357379723", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1357379723'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[4]/div/div[2]/div[1]/div/form/div[3]/div/div/input&quot;}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
+System info: host: &apos;DESKTOP-NDF1E9V&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:45467}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir19236_10744}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 334babe5040e01d5576e9b6b374d0157
+*** Element info: {Using=xpath, value=/html/body/div[4]/div/div[2]/div[1]/div/form/div[3]/div/div/input}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at SeleniumMethod.WebDriverUtil.findElementByXpathAndClearSendkeys(WebDriverUtil.java:385)
+	at Admin.LowerCommissionSettlementRecord.waitWithdrawCommission(LowerCommissionSettlementRecord.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -272,8 +349,8 @@ Session ID: fe6453d337474846e9133a7fd4a5587c
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 </pre></div></td>
-<td>11</td>
-<td>Admin.BusinessDetailCashTestCase@7434ee13</td></tr>
+<td>17</td>
+<td>Admin.LowerCommissionSettlementRecord@4e1a3d5a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -286,122 +363,122 @@ Session ID: fe6453d337474846e9133a7fd4a5587c
 <td title='Admin.ModeComplexStatisticsCreditTestCase.Bet()'><b>Bet</b><br>Test class: Admin.ModeComplexStatisticsCreditTestCase</td>
 <td></td>
 <td>5</td>
-<td>Admin.ModeComplexStatisticsCreditTestCase@5e1d1524</td></tr>
+<td>Admin.ModeComplexStatisticsCreditTestCase@54496c2d</td></tr>
 <tr>
-<td title='Admin.BusinessDetailCashTestCase.BusinessPlayerTotal()'><b>BusinessPlayerTotal</b><br>Test class: Admin.BusinessDetailCashTestCase</td>
+<td title='Admin.BusinessDetailCashTestCase.ImmediateLowerNumber()'><b>ImmediateLowerNumber</b><br>Test class: Admin.BusinessDetailCashTestCase</td>
 <td></td>
-<td>8</td>
-<td>Admin.BusinessDetailCashTestCase@7434ee13</td></tr>
-<tr>
-<td title='Admin.BusinessDetailCashTestCase.businessCommissionTotal()'><b>businessCommissionTotal</b><br>Test class: Admin.BusinessDetailCashTestCase</td>
-<td></td>
-<td>8</td>
-<td>Admin.BusinessDetailCashTestCase@7434ee13</td></tr>
-<tr>
-<td title='Admin.AdminHomeTestCase.businessMoneyTotal()'><b>businessMoneyTotal</b><br>Test class: Admin.AdminHomeTestCase</td>
-<td></td>
-<td>6</td>
-<td>Admin.AdminHomeTestCase@53fbb2b4</td></tr>
-<tr>
-<td title='Admin.BusinessDetailCashTestCase.businessTaxTotal()'><b>businessTaxTotal</b><br>Test class: Admin.BusinessDetailCashTestCase</td>
-<td></td>
-<td>9</td>
-<td>Admin.BusinessDetailCashTestCase@7434ee13</td></tr>
+<td>5</td>
+<td>Admin.BusinessDetailCashTestCase@69de72ec</td></tr>
 <tr>
 <td title='Admin.BusinessDetailCreditTestCase.creditAgentServiceAccountBalance()'><b>creditAgentServiceAccountBalance</b><br>Test class: Admin.BusinessDetailCreditTestCase</td>
 <td></td>
 <td>19</td>
-<td>Admin.BusinessDetailCreditTestCase@44a14de0</td></tr>
+<td>Admin.BusinessDetailCreditTestCase@21c99abf</td></tr>
 <tr>
 <td title='Admin.BusinessDetailCreditTestCase.creditAgentServiceHistoryTotal()'><b>creditAgentServiceHistoryTotal</b><br>Test class: Admin.BusinessDetailCreditTestCase</td>
 <td></td>
 <td>19</td>
-<td>Admin.BusinessDetailCreditTestCase@44a14de0</td></tr>
+<td>Admin.BusinessDetailCreditTestCase@21c99abf</td></tr>
 <tr>
 <td title='Admin.BusinessDetailCreditTestCase.creditBusinessServiceAccountBalance()'><b>creditBusinessServiceAccountBalance</b><br>Test class: Admin.BusinessDetailCreditTestCase</td>
 <td></td>
 <td>19</td>
-<td>Admin.BusinessDetailCreditTestCase@44a14de0</td></tr>
+<td>Admin.BusinessDetailCreditTestCase@21c99abf</td></tr>
 <tr>
 <td title='Admin.BusinessDetailCreditTestCase.creditBusinessServiceHistoryTotal()'><b>creditBusinessServiceHistoryTotal</b><br>Test class: Admin.BusinessDetailCreditTestCase</td>
 <td></td>
 <td>19</td>
-<td>Admin.BusinessDetailCreditTestCase@44a14de0</td></tr>
+<td>Admin.BusinessDetailCreditTestCase@21c99abf</td></tr>
 <tr>
 <td title='Admin.BusinessDetailCreditTestCase.creditExplorerAccountBalance()'><b>creditExplorerAccountBalance</b><br>Test class: Admin.BusinessDetailCreditTestCase</td>
 <td></td>
 <td>17</td>
-<td>Admin.BusinessDetailCreditTestCase@44a14de0</td></tr>
+<td>Admin.BusinessDetailCreditTestCase@21c99abf</td></tr>
 <tr>
 <td title='Admin.BusinessDetailCreditTestCase.creditExplorerServiceHistoryTotal()'><b>creditExplorerServiceHistoryTotal</b><br>Test class: Admin.BusinessDetailCreditTestCase</td>
 <td></td>
 <td>17</td>
-<td>Admin.BusinessDetailCreditTestCase@44a14de0</td></tr>
+<td>Admin.BusinessDetailCreditTestCase@21c99abf</td></tr>
 <tr>
 <td title='Admin.ModeComplexStatisticsCashTestCase.loginNumber()'><b>loginNumber</b><br>Test class: Admin.ModeComplexStatisticsCashTestCase</td>
 <td></td>
 <td>5</td>
-<td>Admin.ModeComplexStatisticsCashTestCase@50fd739d</td></tr>
+<td>Admin.ModeComplexStatisticsCashTestCase@6d6f6ca9</td></tr>
 <tr>
 <td title='Admin.ModeComplexStatisticsCreditTestCase.loginNumber()'><b>loginNumber</b><br>Test class: Admin.ModeComplexStatisticsCreditTestCase</td>
 <td></td>
 <td>5</td>
-<td>Admin.ModeComplexStatisticsCreditTestCase@5e1d1524</td></tr>
+<td>Admin.ModeComplexStatisticsCreditTestCase@54496c2d</td></tr>
+<tr>
+<td title='Admin.ModeComplexStatisticsCashTestCase.newRechargeMoney()'><b>newRechargeMoney</b><br>Test class: Admin.ModeComplexStatisticsCashTestCase</td>
+<td></td>
+<td>5</td>
+<td>Admin.ModeComplexStatisticsCashTestCase@6d6f6ca9</td></tr>
 <tr>
 <td title='Admin.AdminHomeTestCase.playerNumber()'><b>playerNumber</b><br>Test class: Admin.AdminHomeTestCase</td>
 <td></td>
 <td>6</td>
-<td>Admin.AdminHomeTestCase@53fbb2b4</td></tr>
+<td>Admin.AdminHomeTestCase@6f4adaab</td></tr>
+<tr>
+<td title='Admin.AdminHomeTestCase.playerNumberDetail()'><b>playerNumberDetail</b><br>Test class: Admin.AdminHomeTestCase</td>
+<td></td>
+<td>8</td>
+<td>Admin.AdminHomeTestCase@6f4adaab</td></tr>
 <tr>
 <td title='Admin.AdminHomeTestCase.rechargeMoneyToday()'><b>rechargeMoneyToday</b><br>Test class: Admin.AdminHomeTestCase</td>
 <td></td>
 <td>6</td>
-<td>Admin.AdminHomeTestCase@53fbb2b4</td></tr>
+<td>Admin.AdminHomeTestCase@6f4adaab</td></tr>
 <tr>
 <td title='Admin.ModeComplexStatisticsCashTestCase.rechargeNumberTotal()'><b>rechargeNumberTotal</b><br>Test class: Admin.ModeComplexStatisticsCashTestCase</td>
 <td></td>
 <td>6</td>
-<td>Admin.ModeComplexStatisticsCashTestCase@50fd739d</td></tr>
+<td>Admin.ModeComplexStatisticsCashTestCase@6d6f6ca9</td></tr>
 <tr>
 <td title='Admin.ModeComplexStatisticsCashTestCase.rechargeTotalToday()'><b>rechargeTotalToday</b><br>Test class: Admin.ModeComplexStatisticsCashTestCase</td>
 <td></td>
-<td>7</td>
-<td>Admin.ModeComplexStatisticsCashTestCase@50fd739d</td></tr>
+<td>6</td>
+<td>Admin.ModeComplexStatisticsCashTestCase@6d6f6ca9</td></tr>
 <tr>
 <td title='Admin.ModeComplexStatisticsCashTestCase.registeredNumber()'><b>registeredNumber</b><br>Test class: Admin.ModeComplexStatisticsCashTestCase</td>
 <td></td>
 <td>5</td>
-<td>Admin.ModeComplexStatisticsCashTestCase@50fd739d</td></tr>
+<td>Admin.ModeComplexStatisticsCashTestCase@6d6f6ca9</td></tr>
 <tr>
 <td title='Admin.ModeComplexStatisticsCreditTestCase.registeredNumber()'><b>registeredNumber</b><br>Test class: Admin.ModeComplexStatisticsCreditTestCase</td>
 <td></td>
 <td>5</td>
-<td>Admin.ModeComplexStatisticsCreditTestCase@5e1d1524</td></tr>
+<td>Admin.ModeComplexStatisticsCreditTestCase@54496c2d</td></tr>
 <tr>
 <td title='Admin.AdminHomeTestCase.serviceIncomeToday()'><b>serviceIncomeToday</b><br>Test class: Admin.AdminHomeTestCase</td>
 <td></td>
 <td>3</td>
-<td>Admin.AdminHomeTestCase@53fbb2b4</td></tr>
+<td>Admin.AdminHomeTestCase@6f4adaab</td></tr>
 <tr>
 <td title='Admin.AdminHomeTestCase.sinceBusinessOperationsTotalArrears()'><b>sinceBusinessOperationsTotalArrears</b><br>Test class: Admin.AdminHomeTestCase</td>
 <td></td>
 <td>6</td>
-<td>Admin.AdminHomeTestCase@53fbb2b4</td></tr>
+<td>Admin.AdminHomeTestCase@6f4adaab</td></tr>
 <tr>
 <td title='Admin.AdminHomeTestCase.systemWinOrLose()'><b>systemWinOrLose</b><br>Test class: Admin.AdminHomeTestCase</td>
 <td></td>
 <td>6</td>
-<td>Admin.AdminHomeTestCase@53fbb2b4</td></tr>
+<td>Admin.AdminHomeTestCase@6f4adaab</td></tr>
 <tr>
-<td title='Admin.AdminHomeTestCase.totalCommission()'><b>totalCommission</b><br>Test class: Admin.AdminHomeTestCase</td>
+<td title='Admin.AdminHomeTestCase.todayCommission()'><b>todayCommission</b><br>Test class: Admin.AdminHomeTestCase</td>
 <td></td>
 <td>6</td>
-<td>Admin.AdminHomeTestCase@53fbb2b4</td></tr>
+<td>Admin.AdminHomeTestCase@6f4adaab</td></tr>
+<tr>
+<td title='Admin.AdminHomeTestCase.waitRechargeCommission()'><b>waitRechargeCommission</b><br>Test class: Admin.AdminHomeTestCase</td>
+<td></td>
+<td>6</td>
+<td>Admin.AdminHomeTestCase@6f4adaab</td></tr>
 <tr>
 <td title='Admin.AdminHomeTestCase.withdrawMoneyToday()'><b>withdrawMoneyToday</b><br>Test class: Admin.AdminHomeTestCase</td>
 <td></td>
 <td>6</td>
-<td>Admin.AdminHomeTestCase@53fbb2b4</td></tr>
+<td>Admin.AdminHomeTestCase@6f4adaab</td></tr>
 </table><p>
 </body>
 </html>

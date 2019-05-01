@@ -12,6 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
+import com.gargoylesoftware.htmlunit.javascript.host.Window;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -905,7 +906,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                }
               //滚动到最右边
                public void scrollToRight(){
-                   ((JavascriptExecutor) driver).executeScript("window.scrollTo(10000,0);");
+                   ((JavascriptExecutor) driver).executeScript("window.scrollTo(10000,1024);");
                }
 
 
@@ -1309,9 +1310,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
             }
 
 
+
+
             /**   setScale(1,BigDecimal.ROUND_DOWN)直接删除多余的小数位，如2.35会变成2.3
              *   setScale(1,BigDecimal.ROUND_HALF_UP)四舍五入，2.35变成2.4
              *   BigDecimal b = new BigDecimal("123.456");
              *   b.scale(),返回的就是3.
+             *
+             *   Subtring  (0,3) 保留0-3：Sub
+             *
+             *
+             *
+             *
              * */
     }

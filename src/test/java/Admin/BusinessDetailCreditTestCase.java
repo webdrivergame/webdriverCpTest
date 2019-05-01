@@ -42,7 +42,7 @@ public class BusinessDetailCreditTestCase {
         String creditExplorerServiceHistoryTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div/div[2]/div/div[2]/div/div/form/div[4]/div/span";
         String lowerServiceStatistics = "//*[@id=\"rest_system_sub_agent_recharge_record_statistics\"]/li/span";
         String inputBusiness2 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input";
-        String creditExplorerServiceHistoryTotal1 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[4]/div";
+        String creditExplorerServiceHistoryTotal1 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[3]/div";
 
         //------------------------------------------验证信用商户历史服务费总计-------------------------------------------------------
 
@@ -90,13 +90,13 @@ public class BusinessDetailCreditTestCase {
                  ****/
 
         String serviceAccountBalance = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div/div[2]/div/div[2]/div/div/form/div[5]/div/span";
-        String settlementBalanceAfterToady = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[8]/div/div/span";
+        String settlementBalanceAfter = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[7]/div/div/span";
 
         //------------------------------------------------验证信用商户服务费账户余额--------------------------------------------------
 
         @Features("平台管理员")
         @Stories("信用代理详情")
-        @Title("验证信用商户运营数据-服务费账户余额与下级服务费统计-今日结算后余额是否一致")
+        @Title("验证信用商户运营数据-服务费账户余额与下级服务费统计-当前账户余额是否一致")
         @Test(priority = 15)
         public void creditExplorerAccountBalance() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText, "信用模式代理");
@@ -116,8 +116,8 @@ public class BusinessDetailCreditTestCase {
                 driverUtil.findElementByXpathAndClearSendkeys(inputBusiness2, "zongguan001");
                 driverUtil.findElementByXpathAndClick(Inquire);
                 Thread.sleep(3000);
-                String getSettlementBalanceAfterToady = driverUtil.getTextByXpath(settlementBalanceAfterToady);
-                System.out.println("下级服务费统计-今日结算后余额：" + getSettlementBalanceAfterToady);
+                String getSettlementBalanceAfterToady = driverUtil.getTextByXpath(settlementBalanceAfter);
+                System.out.println("下级服务费统计-当前账户余额：" + getSettlementBalanceAfterToady);
                 Assertion.setFlag(true);
                 Assertion.verifyEquals(getSettlementBalanceAfterToady, getServiceAccountBalance);
                 Assert.assertTrue(Assertion.currentFlag());
@@ -139,7 +139,7 @@ public class BusinessDetailCreditTestCase {
         String inputLowerBusiness = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input";
         String lowerServiceHistory = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div/div[2]/div/div[2]/div/div/form/div[4]/div/span/span";
         String clickLowerBusiness2 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/ul/div[2]/li/span";
-        String serviceTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[4]/div";
+        String serviceTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[3]/div";
         String clickLowerCreditBusiness2 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div/div[2]/div/div[4]/div[2]/table/tbody/tr/td[1]/div/a";
 
         //----------------------------------------------验证信用商务历史服务费总计-------------------------------------------------
@@ -192,14 +192,14 @@ public class BusinessDetailCreditTestCase {
          *****/
 
         String lowerBusinessServiceAccountBalance = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div/div[2]/div/div[2]/div/div/form/div[5]/div/span/span";
-        String settlementBalanceToday = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[8]/div/div/span";
+        String settlementBalanceToday = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[7]/div/div/span";
         String sendKeysLowerBusiness = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input";
 
         //--------------------------------------------------验证信用商务服务费账户余额-----------------------------------------------
 
         @Features("平台管理员")
         @Stories("信用代理详情")
-        @Title("验证信用商务运营数据-服务费账户余额与下级服务费统计-今日结算后余额是否一致")
+        @Title("验证信用商务运营数据-服务费账户余额与下级服务费统计-当前账户余额是否一致")
         @Test(priority = 17)
         public void creditBusinessServiceAccountBalance() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText, "信用模式代理");
@@ -224,7 +224,7 @@ public class BusinessDetailCreditTestCase {
                 driverUtil.findElementByXpathAndClick(Inquire);
                 Thread.sleep(2000);
                 String getSettlementBalanceToday = driverUtil.getTextByXpath(settlementBalanceToday);
-                System.out.println("商务今日结算后余额："+getSettlementBalanceToday);
+                System.out.println("商务当前账户余额："+getSettlementBalanceToday);
                 Assertion.setFlag(true);
                 Assertion.verifyEquals(getLowerBusinessServiceAccountBalance, getSettlementBalanceToday);
                 Assert.assertTrue(Assertion.currentFlag());
@@ -249,7 +249,7 @@ public class BusinessDetailCreditTestCase {
         String creditAgentServiceHistoryTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div/div[2]/div/div[2]/div/div/form/div[4]/div/span/span";
         String clickCreditAgent3 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/ul/div[3]/li/span";
         String sendKeysCreditAgent = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[3]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input";
-        String creditAgentServiceTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[3]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[5]/div";
+        String creditAgentServiceTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[3]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[3]/div";
 
         //--------------------------------------------------验证信用代理历史服务费总计-----------------------------------------------
 
@@ -300,13 +300,13 @@ public class BusinessDetailCreditTestCase {
          * ***/
 
         String creditAgentAccountBalance = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div/div/div[2]/div/div[2]/div/div/form/div[5]/div/span";
-        String creditAgentServiceBalance = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[3]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[9]/div/div/span";
+        String creditAgentServiceBalance = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[3]/div/div[2]/div[2]/div[3]/table/tbody/tr/td[7]/div/div/span";
 
         //--------------------------------------------------验证信用代理服务费账户余额-----------------------------------------------
 
         @Features("平台管理员")
         @Stories("信用代理详情")
-        @Title("验证信用代理运营数据-信用代理服务费账户余额与下级服务费的今日结算后余额是否一致")
+        @Title("验证信用代理运营数据-信用代理服务费账户余额与下级服务费的当前账户余额是否一致")
         @Test(priority = 19)
         public void creditAgentServiceAccountBalance() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText, "信用模式代理");
@@ -331,7 +331,7 @@ public class BusinessDetailCreditTestCase {
                 driverUtil.findElementByXpathAndClick(Inquire);
                 Thread.sleep(2000);
                 String getCreditAgentServiceBalance = driverUtil.getTextByXpath(creditAgentServiceBalance);
-                System.out.println("信用代理今日结算后余额："+getCreditAgentServiceBalance);
+                System.out.println("信用代理当前账户余额："+getCreditAgentServiceBalance);
                 Assertion.setFlag(true);
                 Assertion.verifyEquals(getCreditAgentAccountBalance, getCreditAgentServiceBalance);
                 Assert.assertTrue(Assertion.currentFlag());

@@ -7,9 +7,12 @@ C:\Users\jtc\IdeaProjects\game\src\test\java\Admin\BusinessDetailCashTestCase.ja
 C:\Users\jtc\IdeaProjects\game\src\test\java\CashAgent\ChangeRecordCreditTestCase.java
 C:\Users\jtc\IdeaProjects\game\src\test\java\CreditAgent\MyServiceAccountChangeTestCase.java
 C:\Users\jtc\IdeaProjects\game\src\test\java\SeleniumMethod\WebDriverUtil.java
+C:\Users\jtc\IdeaProjects\game\src\test\java\Admin\LowerCommissionSettlementRecord.java
 C:\Users\jtc\IdeaProjects\game\src\test\java\CreditBusiness\CreditBusinessHomeTestCase.java
 C:\Users\jtc\IdeaProjects\game\src\test\java\CreditExplorer\MyServiceAccountChangeTestCase.java
+C:\Users\jtc\IdeaProjects\game\src\test\java\Admin\LowerServiceSettlementRecord.java
 C:\Users\jtc\IdeaProjects\game\src\test\java\ListenerPackage\AssertionListener.java
+C:\Users\jtc\IdeaProjects\game\src\test\java\CreditExplorer\GeneralStatisticsTestCase.java
 C:\Users\jtc\IdeaProjects\game\src\test\java\UtilTest\StringToNumber.java
 C:\Users\jtc\IdeaProjects\game\src\test\java\Admin\BusinessDetailCreditTestCase.java
 C:\Users\jtc\IdeaProjects\game\src\test\java\CreditExplorer\CreditExplorerHomeTestCase.java
@@ -18,3 +21,4 @@ C:\Users\jtc\IdeaProjects\game\src\test\java\Admin\ModeComplexStatisticsCashTest
 C:\Users\jtc\IdeaProjects\game\src\test\java\CreditAgent\AgentHomeCreditTestCase.java
 C:\Users\jtc\IdeaProjects\game\src\test\java\Admin\AdminHomeTestCase.java
 C:\Users\jtc\IdeaProjects\game\src\test\java\ListenerPackage\Assertion.java
+C:\Users\jtc\IdeaProjects\game\src\test\java\CreditExplorer\CreditModelAgentTestCase.java

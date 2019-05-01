@@ -34,17 +34,17 @@ public class MyServiceAccountChangeTestCase {
          * ***/
 
         String myServiceAccountChangeMoney = "//*[@id=\"rest_system_agent_recharge_record\"]/li/span";
-        String changeWhy = "//*[@id=\"root\"]/section/section/main/div[2]/div/div[3]/div[2]/div[3]/table/tbody/tr[1]/td[2]/div";
-        String changeMoney = "//*[@id=\"root\"]/section/section/main/div[2]/div/div[3]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/div/span";
-        String changeMoneyBefore = "//*[@id=\"root\"]/section/section/main/div[2]/div/div[3]/div[2]/div[3]/table/tbody/tr[1]/td[4]/div";
-        String changeMoneyAfter = "//*[@id=\"root\"]/section/section/main/div[2]/div/div[3]/div[2]/div[3]/table/tbody/tr[1]/td[5]/div";
+        String changeWhy = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[2]/div";
+        String changeMoney = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[3]/div/div/span";
+        String changeMoneyBefore = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[4]/div";
+        String changeMoneyAfter = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[5]/div";
 
         //-----------------------------------------------验证变动后金额计算------------------------------------------------
 
         @Features("信用总管")
         @Stories("首页")
         @Title("验证变动金额是否等于变动前与变动后金额计算值")
-        @Test(priority = 6)
+        @Test(priority = 1)
         public void myServiceAccountChangeMoney() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"我的服务费账户变动");
                 driverUtil.findElementByXpathAndClick(myServiceAccountChangeMoney);
@@ -91,15 +91,15 @@ public class MyServiceAccountChangeTestCase {
          * @获取今日变动前金额
          * ***/
 
-        String changeMoneyAfterYesterday = "//*[@id=\"root\"]/section/section/main/div[2]/div/div[3]/div[2]/div[3]/table/tbody/tr[2]/td[5]/div";
-        String changeMoneyBeforeToday = "//*[@id=\"root\"]/section/section/main/div[2]/div/div[3]/div[2]/div[3]/table/tbody/tr[1]/td[4]/div";
+        String changeMoneyAfterYesterday = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[2]/td[5]/div";
+        String changeMoneyBeforeToday = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[4]/div";
 
         //-------------------------------------------验证昨日变动后金额=今日变动前金额-----------------------------------------
 
         @Features("信用总管")
         @Stories("我的服务费账户变动")
         @Title("验证昨日变动后金额是否等于今日变动前金额")
-        @Test(priority = 7)
+        @Test(priority = 2)
         public void changeMoney(){
                 String getChangeMoneyAfterYesterday = driverUtil.getTextByXpath(changeMoneyAfterYesterday);
                 String getChangeMoneyBeforeToday = driverUtil.getTextByXpath(changeMoneyBeforeToday);

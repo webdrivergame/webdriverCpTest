@@ -107,6 +107,7 @@ public class AgentHomeCashTestCase {
                 driverUtil.findElementByXpathAndClick(clickIncomeToday);
                 Thread.sleep(2000);
                 driverUtil.findElementByXpathAndClick(clickStartDate);
+                Thread.sleep(1000);
                 driverUtil.findElementByXpathAndClick(clickMonth);
                 Thread.sleep(2000);
                 String getMyCommissionIncomeMoths = driverUtil.getTextByXpath(myCommissionIncomeMoths);

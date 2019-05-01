@@ -25,7 +25,8 @@ public class BusinessDetailCashTestCase {
         String adminHome = "//*[@id=\"rest_admin_home\"]/li/span";
 
 
-         /***
+
+        /***
          *
          * 点击现金推广代理
          * 输入商户qaxjtg01
@@ -37,9 +38,7 @@ public class BusinessDetailCashTestCase {
          * ***/
 
         String clickCashAgent = "//*[@id=\"rest_system_agent_cash_list\"]/li/span";
-        String inputBusiness = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input";
-        String Inquire = "//*[@id=\"submit\"]/span";
-        String businessPlayerTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr/td[6]/div/a";
+        String businessPlayerTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[3]/td[6]/div/a";
         String PlayerAdminNumber = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[3]/span[1]";
 
         //---------------------------------------------验证商户详情推广玩家总数----------------------------------------------------
@@ -47,191 +46,167 @@ public class BusinessDetailCashTestCase {
         @Features("平台管理员")
         @Stories("现金商户详情")
         @Title("验证推广玩家总数")
-        @Test(priority = 10)
+        @Test(priority = 1)
         public void BusinessPlayerTotal() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金推广代理");
                 driverUtil.findElementByXpathAndClick(clickCashAgent);
                 Thread.sleep(2000);
-                driverUtil.findElementByXpathAndClearSendkeys(inputBusiness,"qaxjtg01");
-                driverUtil.findElementByXpathAndClick(Inquire);
-                Thread.sleep(2000);
                 String getBusinessPlayerTotal = driverUtil.getTextByXpath(businessPlayerTotal);
-                System.out.println("商户推广玩家总数："+getBusinessPlayerTotal);
+                BigDecimal a1 = StringToNumber.toBigDecimal(getBusinessPlayerTotal);
+                BigDecimal a2 = a1.add(new BigDecimal(5));
+                System.out.println("商户推广玩家总数(加上测试玩家)："+a2);
                 driverUtil.findElementByXpathAndClick(businessPlayerTotal);
                 Thread.sleep(4000);
                 String getPlayerAdminNumber = driverUtil.getTextByXpath(PlayerAdminNumber);
-                String a1 = getPlayerAdminNumber.substring(2,getPlayerAdminNumber.indexOf(" 条"));
-                System.out.println("玩家管理商户人数："+a1);
+                String b1 = getPlayerAdminNumber.substring(2,getPlayerAdminNumber.indexOf(" 条"));
+                BigDecimal b2 = StringToNumber.toBigDecimal(b1);
+                System.out.println("玩家管理商户人数："+b2);
                 Assertion.setFlag(true);
-                Assertion.verifyEquals(a1,getBusinessPlayerTotal);
+                Assertion.verifyEquals(a2,b2);
                 Assert.assertTrue(Assertion.currentFlag());
         }
 
          /***
          *
-         * @获取现金商户详情税收总计
-         * 点击下级经营明细
-         * 查询商户
-         * @获取下级经营明细现今商户税收总计
+         * @获取直属下级人数
+         * 点击下级详情
+         * @获取页面代理条数
          *
          * ***/
 
-        String businessTaxTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr/td[7]/div";
+        String ImmediateLowerNumber = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[3]/td[4]/div/span";
+        String clickLower = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[3]/td[13]/div/div/div/div/a[1]";
+        String agentNumberTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[3]/span[1]";
+
+        //----------------------------------------------验证直属下级人数-------------------------------------------------
+
+        @Features("平台管理员")
+        @Stories("现金商户详情")
+        @Title("验证直属下级人数")
+        @Test(priority = 2)
+        public void ImmediateLowerNumber() throws InterruptedException {
+                driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金推广代理");
+                driverUtil.findElementByXpathAndClick(clickCashAgent);
+                Thread.sleep(2000);
+                String getImmediateLowerNumber = driverUtil.getTextByXpath(ImmediateLowerNumber);
+                System.out.println("直属下级人数："+getImmediateLowerNumber);
+                driverUtil.findElementByXpathAndClick(clickLower);
+                Thread.sleep(3000);
+                String getAgentNumberTotal = driverUtil.getTextByXpath(agentNumberTotal);
+                String a1 = getAgentNumberTotal.substring(2,getAgentNumberTotal.indexOf(" 条"));
+                System.out.println("下级跳转后人数："+a1);
+                Assertion.setFlag(true);
+                Assertion.verifyEquals(getImmediateLowerNumber,a1);
+                Assert.assertTrue(Assertion.currentFlag());
+        }
+
+         /***
+         *
+         * @获取现金代理商户税收总计
+         * 下级经营明细
+         * @获取税收总计
+         * 现金模式游戏输赢统计
+         * @获取今日税收
+         * 判断现金代理商户税收总计+今日税收=下级经营明细税收总计
+         *
+         * ***/
+
+        String clickAdmin = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[2]/div/span[1]/span[1]/a";
+        String taxTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[3]/td[7]/div";
         String lowerRunDetails = "//*[@id=\"rest_cash_engage_detail_list\"]/li/span";
-        String inputLowerRunDetails = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input";
-        String inquire = "//*[@id=\"submit\"]/span";
-        String lowerRunDetailsTax= "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div/div[3]/table/tbody/tr/td[6]/div";
+        String taxTotal2 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div/div[3]/table/tbody/tr[3]/td[6]/div";
+        String cashModelGameLoseOrWin = "//*[@id=\"rest_cash_game_win_lose_list\"]/li/span";
+        String taxToday = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div/div/div[2]/div[2]/div[3]/table/tbody/tr[3]/td[8]/div";
 
-        //----------------------------------------------验证现金商户详情税收总计-----------------------------------------------
+        //----------------------------------------------验证现金代理商户税收总计--------------------------------------------
 
         @Features("平台管理员")
         @Stories("现金商户详情")
-        @Title("验证商户税收总计金额是否与下级经营明细该商户税收总计一致")
-        @Test(priority = 11)
-        public void businessTaxTotal() throws InterruptedException {
-                driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金推广代理");
-                driverUtil.findElementByXpathAndClick(clickCashAgent);
+        @Title("验证现金代理商户税收总计金额等于下级经营明细税收减去今日税收")
+        @Test(priority = 3)
+        public void taxTotal() throws InterruptedException {
+                driverUtil.findElementByXpathAndClick(clickAdmin);
                 Thread.sleep(2000);
-                driverUtil.findElementByXpathAndClearSendkeys(inputBusiness,"qaxjtg01");
-                driverUtil.findElementByXpathAndClick(Inquire);
-                Thread.sleep(2000);
-                String getBusinessTaxTotal = driverUtil.getTextByXpath(businessTaxTotal);
-                System.out.println("现今商户税收总计："+getBusinessTaxTotal);
+                String getTaxTotal = driverUtil.getTextByXpath(taxTotal);
+                System.out.println("现金商户税收总计:"+getTaxTotal);
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"下级经营明细");
                 driverUtil.findElementByXpathAndClick(lowerRunDetails);
                 Thread.sleep(2000);
-                driverUtil.findElementByXpathAndClearSendkeys(inputLowerRunDetails,"qaxjtg01");
-                driverUtil.findElementByXpathAndClick(inquire);
-                Thread.sleep(2000);
-                String getLowerRunDetailsTax = driverUtil.getTextByXpath(lowerRunDetailsTax);
-                System.out.println("下级经营明细商户税收总计："+getLowerRunDetailsTax);
+                String getTaxTotal2 = driverUtil.getTextByXpath(taxTotal2);
+                BigDecimal taxTotal2Result = StringToNumber.toBigDecimal(getTaxTotal2);
+                System.out.println("下级经营明细税收总计："+getTaxTotal2);
+                driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金模式游戏输赢统计");
+                driverUtil.findElementByXpathAndClick(cashModelGameLoseOrWin);
+                Thread.sleep(200);
+                String getTaxToday = driverUtil.getTextByXpath(taxToday);
+                System.out.println("现金游戏输赢今日税收："+getTaxToday);
+                BigDecimal a1 = StringToNumber.toBigDecimal(getTaxTotal);
+                BigDecimal b1 = StringToNumber.toBigDecimal(getTaxToday);
+                BigDecimal result = a1.add(b1);
                 Assertion.setFlag(true);
-                Assertion.verifyEquals(getBusinessTaxTotal,getLowerRunDetailsTax);
+                Assertion.verifyEquals(taxTotal2Result,result);
                 Assert.assertTrue(Assertion.currentFlag());
         }
 
          /***
          *
-         * @获取现今商户佣金总计
+         * @获取首页今日佣金
+         * @获取下级经营明细所有商户佣金总计
+         * @获取现金代理所有商户佣金总计
+         * 判断今日佣金+现金代理所有商户佣金=下级经营明细所有商户佣金总计
          *
-         * @获取下级经营明细商户佣金总计
-         *
-         * ***/
+         * **/
 
-         String businessCommissionTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr/td[9]/div/div/span";
-         String lowerCommissionTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div/div[3]/table/tbody/tr/td[7]/div";
+        String homeCommissionToday = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[8]/div/div";
+        String lowerCommissionBusiness2 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div/div[3]/table/tbody/tr[3]/td[7]/div";
+        String lowerCommissionBusiness3 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div/div[3]/table/tbody/tr[2]/td[7]/div";
+        String lowerCommissionBusiness4 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div/div[3]/table/tbody/tr[1]/td[7]/div";
+        String agentCommissionBusiness2 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[3]/td[9]/div/div/span";
+        String agentCommissionBusiness3 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[2]/td[9]/div/div/span";
+        String agentCommissionBusiness4 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[9]/div/div/span";
 
-        //--------------------------------------------验证现金商户详情佣金总计-----------------------------------------------
+        //-------------------------------------------验证现金代理所有商户佣金---------------------------------------------
 
         @Features("平台管理员")
         @Stories("现金商户详情")
-        @Title("验证现今商户佣金总计与下级经营明细佣金是否一致")
-        @Test(priority = 12)
-        public void businessCommissionTotal() throws InterruptedException {
-                driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金推广代理");
-                driverUtil.findElementByXpathAndClick(clickCashAgent);
+        @Title("验证现金代理商户佣金总计金额等于下级经营明细佣金减去今日佣金")
+        @Test(priority = 4)
+        public void BusinessCommissionTotal() throws InterruptedException {
+                driverUtil.findElementByXpathAndClearSendkeys(inputText,"首页");
+                driverUtil.findElementByXpathAndClick(adminHome);
                 Thread.sleep(2000);
-                driverUtil.findElementByXpathAndClearSendkeys(inputBusiness,"qaxjtg01");
-                driverUtil.findElementByXpathAndClick(Inquire);
-                Thread.sleep(2000);
-                String getBusinessCommissionTotal = driverUtil.getTextByXpath(businessCommissionTotal);
-                System.out.println("现金商户佣金总计："+getBusinessCommissionTotal);
+                String getHomeCommissionToday = driverUtil.getTextByXpath(homeCommissionToday);
+                BigDecimal homeCommissionTodayResult = StringToNumber.toBigDecimal(getHomeCommissionToday);
+                System.out.println("首页今日佣金："+getHomeCommissionToday);
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"下级经营明细");
                 driverUtil.findElementByXpathAndClick(lowerRunDetails);
-                Thread.sleep(2000);
-                driverUtil.findElementByXpathAndClearSendkeys(inputLowerRunDetails,"qaxjtg01");
-                driverUtil.findElementByXpathAndClick(inquire);
-                Thread.sleep(2000);
-                String getLowerCommissionTotal = driverUtil.getTextByXpath(lowerCommissionTotal);
-                System.out.println("现金商户下级经营明细佣金总计:"+getLowerCommissionTotal);
-                Assertion.setFlag(true);
-                Assertion.verifyEquals(getBusinessCommissionTotal,getLowerCommissionTotal);
-                Assert.assertTrue(Assertion.currentFlag());
-        }
-
-         /***
-         *
-         * 点击现金商户跳转详情
-         * 结算待结算佣金
-         * 输入100确认
-         * @获取现金商户详情待结算佣金
-         * 点击下级佣金结算记录
-         * 查询商户qaxjtg01
-         * 获取结算前金额1
-         * 获取结算前金额2
-         * 获取结算金额
-         * 获取累计提款金额1
-         * 获取累计提款金额2
-         * 登录商户qaxjtg01账号
-         * 点金我的佣金账户变动
-         * @获取变动后金额
-         *
-         * ***/
-
-        String clickCashBusiness = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[4]/div[2]/table/tbody/tr/td[1]/div/a/div/span";
-        String settlement = "//*[@id=\"root\"]/section/section/main/div[2]/div[4]/div/div/div[2]/div/div[2]/div/div/form/div[8]/div/button/span";
-        String settlementInput = "/html/body/div[4]/div/div[2]/div[1]/div/form/div[3]/div/div/input";
-        String settlementSure = "/html/body/div[4]/div/div[3]/button[2]/span";
-        String waitWithdrawCommission = "//*[@id=\"root\"]/section/section/main/div[2]/div[4]/div/div/div[2]/div/div[2]/div/div/form/div[8]/div/span";
-        //下级佣金结算记录-结算前金额
-        String lowerCommissionSettlementRecord = "//*[@id=\"rest_agent_withdraw_list\"]/li/span";
-        //String inputLowerCommissionSettlementRecord = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[1]/div/form/div[1]/div/div[1]/div[1]/div/div/input";
-        String settlementBeforeBalance1 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[5]/div";
-        String SettlementMoney = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[4]/div";
-        //下级佣金结算记录-累计提款金额
-        String WithdrawalMoney1 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[8]/div";
-        String WithdrawalMoney2 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[2]/td[8]/div";
-
-        //-------------------------------------------验证商户详情待结算佣金--下级佣金结算记录--------------------------------------------------
-
-        @Features("平台管理员")
-        @Stories("现金商户详情")
-        @Title("验证1下级佣金结算记录变动前后金额计算无误,2累计提款金额计算无误")
-        @Test(priority = 13)
-        public void waitWithdrawCommission() throws InterruptedException {
+                Thread.sleep(4000);
+                String getLowerCommissionBusiness2 = driverUtil.getTextByXpath(lowerCommissionBusiness2);
+                String getLowerCommissionBusiness3 = driverUtil.getTextByXpath(lowerCommissionBusiness3);
+                String getLowerCommissionBusiness4 = driverUtil.getTextByXpath(lowerCommissionBusiness4);
+                BigDecimal a2 = StringToNumber.toBigDecimal(getLowerCommissionBusiness2);
+                BigDecimal a3 = StringToNumber.toBigDecimal(getLowerCommissionBusiness3);
+                BigDecimal a4 = StringToNumber.toBigDecimal(getLowerCommissionBusiness4);
+                BigDecimal lowerCommissionResult = a2.add(a3).add(a4);
+                System.out.println("下级经营明细所有商户佣金总计："+lowerCommissionResult);
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"现金推广代理");
                 driverUtil.findElementByXpathAndClick(clickCashAgent);
                 Thread.sleep(2000);
-                driverUtil.findElementByXpathAndClearSendkeys(inputBusiness,"qaxjtg01");
-                driverUtil.findElementByXpathAndClick(Inquire);
-                Thread.sleep(2000);
-                driverUtil.findElementByXpathAndClick(clickCashBusiness);
-                Thread.sleep(2000);
-                driverUtil.findElementByXpathAndClick(settlement);
-                driverUtil.findElementByXpathAndClearSendkeys(settlementInput,"100");
-                driverUtil.findElementByXpathAndClick(settlementSure);
-                Thread.sleep(2000);
-                String getWaitWithdrawCommission = driverUtil.getTextByXpath(waitWithdrawCommission);
-                System.out.println("现金商户待提现佣金："+getWaitWithdrawCommission);
-                driverUtil.findElementByXpathAndClearSendkeys(inputText,"下级佣金结算记录");
-                driverUtil.findElementByXpathAndClick(lowerCommissionSettlementRecord);
-                Thread.sleep(2000);
-                //driverUtil.findElementByXpathAndClearSendkeys(inputLowerCommissionSettlementRecord,"qaxjtg01");
-                //driverUtil.findElementByXpathAndClick(inquire);
-                //Thread.sleep(2000);
-
-                //结算前金额2减去结算金额等于结算金额1
-                String getSettlementBeforeBalance1 = driverUtil.getTextByXpath(settlementBeforeBalance1);
-                String getSettlementMoney = driverUtil.getTextByXpath(SettlementMoney);
-                System.out.println("下级佣金结算记录变动前余额1："+getSettlementBeforeBalance1);
-                System.out.println("下级佣金结算记录结算金额："+getSettlementMoney);
-                BigDecimal a1 = StringToNumber.toBigDecimal(getSettlementBeforeBalance1);
-                BigDecimal a2 = StringToNumber.toBigDecimal(getWaitWithdrawCommission);
-                BigDecimal a3 = new BigDecimal(getSettlementMoney).abs();
-                BigDecimal result = a2.subtract(a3);
-
-                //累计提款金额2减去结算金额等于累计提款金额1
-                String getWithdrawalMoney1 = driverUtil.getTextByXpath(WithdrawalMoney1);
-                String getWithdrawalMoney2 = driverUtil.getTextByXpath(WithdrawalMoney2);
-                System.out.println("下级佣金结算记录累计提款金额1："+getWithdrawalMoney1);
-                System.out.println("下级佣金结算记录累计提款金额2："+getWithdrawalMoney2);
-                BigDecimal b1 = StringToNumber.toBigDecimal(getWithdrawalMoney1);
-                BigDecimal b2 = StringToNumber.toBigDecimal(getWithdrawalMoney2);
-                BigDecimal result2 = b2.add(a3);
+                String getAgentCommissionBusiness2 = driverUtil.getTextByXpath(agentCommissionBusiness2);
+                String getAgentCommissionBusiness3 = driverUtil.getTextByXpath(agentCommissionBusiness3);
+                String getAgentCommissionBusiness4 = driverUtil.getTextByXpath(agentCommissionBusiness4);
+                BigDecimal b2 = StringToNumber.toBigDecimal(getAgentCommissionBusiness2);
+                BigDecimal b3 = StringToNumber.toBigDecimal(getAgentCommissionBusiness3);
+                BigDecimal b4 = StringToNumber.toBigDecimal(getAgentCommissionBusiness4);
+                BigDecimal AgentCommissionResult = b2.add(b3).add(b4);
+                System.out.println("代理商户佣金总计："+AgentCommissionResult);
+                BigDecimal overResult = AgentCommissionResult.add(homeCommissionTodayResult);
                 Assertion.setFlag(true);
-                Assertion.verifyEquals(result,a1);
-                Assertion.verifyEquals(result2,b1);
+                Assertion.verifyEquals(overResult,lowerCommissionResult);
                 Assert.assertTrue(Assertion.currentFlag());
+
         }
+
+
 
 }

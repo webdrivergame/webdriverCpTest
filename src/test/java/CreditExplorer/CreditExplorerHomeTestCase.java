@@ -37,8 +37,8 @@ public class CreditExplorerHomeTestCase {
 
         String accountBalance = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div[1]/div/div/div/div[1]/div[2]/div[2]/span/span[2]";
         String clickAccountBalance = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div[1]/div/div/div/div[1]/div[2]/div[2]/span/span[3]";
-        String accountBalanceTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div/div[3]/div[1]/div/div[1]/div[1]/li/span[2]";
-        String changeAfterAccountBalance = "//*[@id=\"root\"]/section/section/main/div[2]/div/div[3]/div[2]/div[3]/table/tbody/tr[1]/td[5]/div";
+        String accountBalanceTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[1]/div[1]/li/span[2]";
+        String changeAfterAccountBalance = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[5]/div";
 
         //------------------------------------------------验证首页账户余额------------------------------------------------
 
@@ -61,69 +61,51 @@ public class CreditExplorerHomeTestCase {
         /***
          *
          * @获取首页今日服务费收入
-         * 下级服务费统计
-         * @获取我的服务费收入
-         *
+         * 进入我的服务费账户变动
+         * 点击服务费明细
+         * @获取今日服务费
          * ***/
 
-        String home = "//*[@id=\"rest_agent_tenant_home\"]/li/span";
+        String home = "//*[@id=\"rest_agent_zongdai_home\"]/li/span";
         String serviceIncomeToday = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div[2]/div/div/div/div[1]/div[2]/div[2]/span/span[2]";
-        String clickServiceIncomeToday = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div[2]/div/div/div/div[1]/div[2]/div[2]/span/span[3]";
-        String serviceToday = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div/div/div[2]/div[1]/div/div[1]/div[3]/span[2]";
+        String myServiceAccount = "//*[@id=\"rest_system_agent_recharge_record\"]/li/span";
+        String serviceDetail = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div[2]/div[3]/table/tbody/tr[1]/td[6]/div/div/div/div/a";
+        String clickDate = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div[1]/div/form/div[1]/div/div[1]/div[2]/div/div/input[1]";
+        String selectToday = "/html/body/div[4]/div[1]/div[1]/button[1]";
+        String serviceToday = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div[2]/div[2]/div/div[1]/ul/li[6]/span";
 
         //---------------------------------------------验证首页今日服务费收入-----------------------------------------------
 
-        @Features("信用总管")
+        @Features("信用商务")
         @Stories("首页")
-        @Title("验证服务费收入")
+        @Title("验证今日服务费收入")
         @Test(priority = 2)
         public void serviceIncomeToday() throws InterruptedException {
                 driverUtil.findElementByXpathAndClearSendkeys(inputText,"首页");
                 driverUtil.findElementByXpathAndClick(home);
                 Thread.sleep(3000);
                 String getServiceIncomeToday = driverUtil.getTextByXpath(serviceIncomeToday);
-                System.out.println("首页商户服务费收入："+getServiceIncomeToday);
-                driverUtil.findElementByXpathAndClick(clickServiceIncomeToday);
-                Thread.sleep(2000);
-                String getServiceToday = driverUtil.getTextByXpath(serviceToday);
-                System.out.println("今日服务费："+getServiceToday);
-                Assertion.setFlag(true);
-                Assertion.verifyEquals(getServiceIncomeToday,getServiceToday);
-                Assert.assertTrue(Assertion.currentFlag());
+                System.out.println("首页今日服务费收入："+getServiceIncomeToday);
+                if (! getServiceIncomeToday.equals("0.000")) {
+                        driverUtil.findElementByXpathAndClearSendkeys(inputText, "我的服务费账户变动");
+                        driverUtil.findElementByXpathAndClick(myServiceAccount);
+                        Thread.sleep(2000);
+                        driverUtil.findElementByXpathAndClick(serviceDetail);
+                        Thread.sleep(2000);
+                        driverUtil.findElementByXpathAndClick(clickDate);
+                        driverUtil.findElementByXpathAndClick(selectToday);
+                        String getServiceToday = driverUtil.getTextByXpath(serviceToday);
+                        System.out.println("总管今日服务费：" + getServiceToday);
+                        Assertion.setFlag(true);
+                        Assertion.verifyEquals(getServiceIncomeToday, getServiceToday);
+                        Assert.assertTrue(Assertion.currentFlag());
+                }else if(getServiceIncomeToday.equals("0.000")){
+                        System.out.println("总管今日服务费为0");
+                }
+
         }
 
-        /***
-         *
-         * @获取首页代理欠款总计
-         * 下级服务费结算记录
-         * @获取总欠款
-         *
-         * ***/
 
-        String agentArrearsTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div[3]/div/div/div/div[1]/div[2]/div[2]/span/span[2]";
-        String clickAgentArrearsTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div[3]/div/div/div/div[1]/div[2]/div[2]/span/span[3]";
-        String arrearsTotal = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[2]/div/div/div[2]/div[1]/div/div[1]/div/li/span[2]";
-
-        //-----------------------------------------------验证首页带路欠款总计---------------------------------------------
-
-        @Features("信用总管")
-        @Stories("首页")
-        @Title("验证商务欠款总计")
-        @Test(priority = 3)
-        public void agentArrearsTotal() throws InterruptedException {
-                driverUtil.findElementByXpathAndClearSendkeys(inputText,"首页");
-                driverUtil.findElementByXpathAndClick(home);
-                Thread.sleep(3000);
-                String getAgentArrearsTotal = driverUtil.getTextByXpath(agentArrearsTotal);
-                System.out.println("首页商务欠款总计："+getAgentArrearsTotal);
-                driverUtil.findElementByXpathAndClick(clickAgentArrearsTotal);
-                Thread.sleep(2000);
-                String getArrearsTotal = driverUtil.getTextByXpath(arrearsTotal);
-                System.out.println("总欠款："+getArrearsTotal);
-                Assertion.setFlag(true);
-                Assertion.verifyEquals(getAgentArrearsTotal,getArrearsTotal);
-                Assert.assertTrue(Assertion.currentFlag());
-        }
 
         /***
          *
@@ -157,43 +139,6 @@ public class CreditExplorerHomeTestCase {
                 Assert.assertTrue(Assertion.currentFlag());
         }
 
-        /***
-         *
-         * @获取首页玩家数量
-         * 点击跳转玩家账号管理
-         * @获取玩家人数
-         * ***/
-
-        String playerNumber = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div[5]/div/div/div/div[1]/div[2]/div[2]/span/span[1]";
-        String clickPlayerNumber = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div/div/div[5]/div/div/div/div[1]/div[2]/div[2]/span/span[3]";
-        String inquire = "//*[@id=\"submit\"]/span";
-        String playerNumber2 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[3]/span[1]";
-
-        //------------------------------------------------验证首页玩家人数----------------------------------------------
-
-        @Features("信用总管")
-        @Stories("首页")
-        @Title("验证玩家人数")
-        @Test(priority = 5)
-        public void playerNumber() throws InterruptedException {
-                driverUtil.findElementByXpathAndClearSendkeys(inputText,"首页");
-                driverUtil.findElementByXpathAndClick(home);
-                Thread.sleep(3000);
-                String getPlayerNumber = driverUtil.getTextByXpath(playerNumber);
-                String getPlayerNumber2 = getPlayerNumber.replaceAll(",", "");
-                System.out.println("首页玩家人数："+getPlayerNumber2);
-                driverUtil.findElementByXpathAndClick(clickPlayerNumber);
-                Thread.sleep(2000);
-                driverUtil.findElementByXpathAndClick(inquire);
-                Thread.sleep(3000);
-                String getPlayerNumber3 = driverUtil.getTextByXpath(playerNumber2);
-                String getPlayerNumber4 = getPlayerNumber3.substring(2,getPlayerNumber3.indexOf(" 条"));
-                System.out.println("玩家账号管理："+getPlayerNumber4);
-                Assertion.setFlag(true);
-                Assertion.verifyEquals(getPlayerNumber2,getPlayerNumber4);
-                Assert.assertTrue(Assertion.currentFlag());
-
-        }
 
 
 }

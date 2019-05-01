@@ -8,6 +8,7 @@
             <class name="Admin.BusinessDetailCreditTestCase"></class>
             <class name="Admin.ModeComplexStatisticsCashTestCase"></class>
             <class name="Admin.ModeComplexStatisticsCreditTestCase"></class>
+            <class name="Admin.LowerCommissionSettlementRecord"></class>
         </classes>
     </test>
     <test name="现金代理" >
@@ -38,6 +39,8 @@
     <test name="信用总管">
         <classes>
             <class name="CreditExplorer.CreditExplorerHomeTestCase"></class>
+            <class name="CreditExplorer.CreditModelAgentTestCase"></class>
+            <class name="CreditExplorer.GeneralStatisticsTestCase"></class>
             <class name="CreditExplorer.MyServiceAccountChangeTestCase"></class>
         </classes>
     </test>

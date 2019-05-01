@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1556610240713" stop="1556610281127" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>All Test Suite : 现金商户</name>
+    <title>All Test Suite : 现金商户</title>
+    <test-cases>
+        <test-case start="1556610250687" stop="1556610256924" status="passed">
+            <name>incomeToday</name>
+            <title>验证今日收入金额是否等于今日我的推广佣金账单+下级抽成金额</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="现金商户"/>
+                <label name="testClass" value="CashBusiness.BusinessHomeTestCase"/>
+                <label name="testMethod" value="incomeToday"/>
+                <label name="story" value="首页"/>
+                <label name="feature" value="现金商户"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="4756@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1556610256925" stop="1556610266331" status="passed">
+            <name>incomeTotalThirty</name>
+            <title>验证30日总收入金额与我的推广佣金30天金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="现金商户"/>
+                <label name="testClass" value="CashBusiness.BusinessHomeTestCase"/>
+                <label name="testMethod" value="incomeTotalThirty"/>
+                <label name="story" value="首页"/>
+                <label name="feature" value="现金商户"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="4756@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1556610266333" stop="1556610271630" status="passed">
+            <name>waitSettlementCommission</name>
+            <title>验证待结算佣金与我的佣金账户变动金额是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="现金商户"/>
+                <label name="testClass" value="CashBusiness.BusinessHomeTestCase"/>
+                <label name="testMethod" value="waitSettlementCommission"/>
+                <label name="story" value="首页"/>
+                <label name="feature" value="现金商户"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="4756@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1556610271632" stop="1556610279047" status="passed">
+            <name>lowerSpreadAgent</name>
+            <title>验证下级推广代理人数是否一致</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="All Test Suite"/>
+                <label name="testGroup" value="现金商户"/>
+                <label name="testClass" value="CashBusiness.BusinessHomeTestCase"/>
+                <label name="testMethod" value="lowerSpreadAgent"/>
+                <label name="story" value="首页"/>
+                <label name="feature" value="现金商户"/>
+                <label name="host" value="DESKTOP-NDF1E9V"/>
+                <label name="thread" value="4756@DESKTOP-NDF1E9V.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

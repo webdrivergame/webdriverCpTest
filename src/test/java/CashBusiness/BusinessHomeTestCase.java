@@ -76,7 +76,7 @@ public class BusinessHomeTestCase {
 
         String home = "//*[@id=\"rest_case_agent_tenant_home\"]/li/span";
         String incomeMonth = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div/div/div[1]/div/div/div/div[3]/div/span[2]";
-        String clickMoths = "/html/body/div[4]/div[1]/div[1]/button[5]";
+        String clickMoths = "/html/body/div[3]/div[1]/div[1]/button[5]";
         String getIncomeMyCommissionMoths = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div[1]/div/div[1]/div[2]/span[2]";
 
         @Features("现金商户")
@@ -140,40 +140,6 @@ public class BusinessHomeTestCase {
 
         }
 
-         /***
-         *
-         * @获取首页玩家数量
-         * 点击跳转玩家管理
-         * 查询
-         * @获取玩家页数
-         * ***/
-
-        String playerNumber = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div/div/div[3]/div/div/div/div[1]/div[2]/div[2]/span/span[1]";
-        String clickPlayerNumber = "//*[@id=\"root\"]/section/section/main/div[2]/div[1]/div[1]/div/div/div[3]/div/div/div/div[1]/div[2]/div[2]/span/span[3]";
-        String Inquire = "//*[@id=\"submit\"]/span";
-        String playerNumber2 = "//*[@id=\"root\"]/section/section/main/div[2]/div[2]/div[3]/span[1]";
-
-        @Features("现金商户")
-        @Stories("首页")
-        @Title("验证玩家数量总数是否一致")
-        @Test(priority = 4)
-        public void playerNumber() throws InterruptedException {
-                driverUtil.findElementByXpathAndClearSendkeys(inputText,"首页");
-                driverUtil.findElementByXpathAndClick(home);
-                Thread.sleep(3000);
-                String getPlayerNumber = driverUtil.getTextByXpath(playerNumber);
-                System.out.println("首页玩家数量："+getPlayerNumber);
-                driverUtil.findElementByXpathAndClick(clickPlayerNumber);
-                Thread.sleep(2000);
-                driverUtil.findElementByXpathAndClick(Inquire);
-                Thread.sleep(3000);
-                String getPlayerNumber2 = driverUtil.getTextByXpath(playerNumber2);
-                String b1 = getPlayerNumber2.substring(2,getPlayerNumber2.indexOf(" 条"));
-                Assertion.setFlag(true);
-                Assertion.verifyEquals(b1,getPlayerNumber);
-                Assert.assertTrue(Assertion.currentFlag());
-
-        }
 
          /***
          *

@@ -172,51 +172,5 @@ public class AgentHomeCreditTestCase {
                 Assert.assertTrue(Assertion.currentFlag());
         }
 
-         /***
-         *
-         * @获取首页今日服务费
-         * 我的服务费账单
-         * 获取日期对比系统日期
-         * @获取我的服务费
-         *
-         * ***/
-
-        String serviceToday = "//*[@id=\"root\"]/section/section/main/div[2]/div/div[2]/div[3]/div/div[2]/div[1]/div[1]/div[1]/div[4]/div/div/div[1]";
-        String myServiceBill = "//*[@id=\"rest_system_agent_clearing_record\"]/li/span";
-        String dateText = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div[2]/div/div[1]/ul/li[2]";
-        String service = "//*[@id=\"root\"]/section/section/main/div[2]/div[3]/div[2]/div/div[1]/ul/li[6]/span";
-
-        //-------------------------------------------验证首页我的服务费账单------------------------------------------
-
-        @Features("信用代理")
-        @Stories("首页")
-        @Title("验证我的服务费账单")
-        @Test(priority = 4)
-        public void serviceToday() throws InterruptedException {
-                driverUtil.findElementByXpathAndClearSendkeys(inputText,"首页");
-                driverUtil.findElementByXpathAndClick(home);
-                Thread.sleep(2000);
-                String getServiceToday = driverUtil.getTextByXpath(serviceToday);
-                String a1 = getServiceToday.substring(2);
-                System.out.println("首页今日服务费："+a1);
-                driverUtil.findElementByXpathAndClearSendkeys(inputText,"我的服务费账单");
-                driverUtil.findElementByXpathAndClick(myServiceBill);
-                Thread.sleep(2000);
-                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-                Date date = new Date();
-                String systemDate = dateFormat.format(date);
-                System.out.println("系统日期："+systemDate);
-                String getDate = driverUtil.getTextByXpath(dateText);
-                System.out.println("当前日期："+getDate);
-                if (systemDate.equals(getDate)){
-                        String getService = driverUtil.getTextByXpath(service);
-                        Assertion.setFlag(true);
-                        Assertion.verifyEquals(getServiceToday,getService);
-                        Assert.assertTrue(Assertion.currentFlag());
-                }else if (! systemDate.equals(getDate)){
-                        System.out.println("今日服务费为0");
-                }
-        }
-
 
 }
