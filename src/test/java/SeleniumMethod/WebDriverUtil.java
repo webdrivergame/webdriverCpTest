@@ -73,11 +73,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                 */
 
                public void adminLogin(String username,String password){
-                   WebElement user = driver.findElement(By.xpath("//*[@id=\"login_username\"]"));
+                   WebElement user = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/form/div[2]/div/div/input"));
                    user.clear();
                    user.click();
                    user.sendKeys(username);
-                   WebElement pass = driver.findElement(By.xpath("//*[@id=\"login_password\"]"));
+                   WebElement pass = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/form/div[3]/div/div/input"));
                    pass.clear();
                    pass.click();
                    pass.sendKeys(password);
@@ -88,7 +88,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
                //浏览器打开Url
 
                public void loginBefore(String Url){
-                   System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
+                   System.setProperty("webdriver.chrome.driver", "C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
                    // 去掉浏览器中的“--ignore-certificate-errors”
                    DesiredCapabilities capabilities = DesiredCapabilities.chrome();
                    capabilities.setCapability("chrome.switches",

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1569055600856" stop="1569055623980" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : webdriverCpTest</name>
+    <title>Default Suite : webdriverCpTest</title>
+    <test-cases>
+        <test-case start="1569055623634" stop="1569055623762" status="passed">
+            <name>Recharge</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="webdriverCpTest"/>
+                <label name="testClass" value="CPBet.RechargeWithdrawal"/>
+                <label name="testMethod" value="Recharge"/>
+                <label name="host" value="DESKTOP-APMUM9I"/>
+                <label name="thread" value="5128@DESKTOP-APMUM9I.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
