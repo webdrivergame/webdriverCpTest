@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Random;
 
 
 public class StringToNumber {
@@ -38,21 +39,8 @@ public class StringToNumber {
         }
 
 
-        // public static void main(String[] ars){
-        //BigDecimal b = moneyBigDecimal("¥150");
-        // Integer rowCount = 1;
-        //String stringValue = "1";
 
-//      Assert.assertEquals(rowCount,stringValue); //this fails
-
-        // Assert.assertEquals(rowCount,Integer.valueOf(stringValue)); //this passes
-        // System.out.println(stringValue);
-        // }
-
-
-        public static void main(String[] ars) {
-
-        }
+        //String转换int
         @Test
         public void number(){
                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
@@ -70,11 +58,15 @@ public class StringToNumber {
 
         }
 
+        //截取
         @Test
         public void subString(){
                 String a1 = "0.000/0";
                 String a2 = a1.substring(a1.indexOf("/")+1);
+                String a3 = a1.substring(0,3);
                 System.out.println(a2);
+                System.out.println(a3);
+
         }
         @Test
         public void  StringInt(){
@@ -86,7 +78,26 @@ public class StringToNumber {
         }
         //BigDecimal类型断言，都要转换为BigDecimal类型，而不是int或String
 
+        //随机数
+        @Test
+        public void test(){
+                int max=100;
+                int min=1;
+                Random random = new Random();
 
+                int s = random.nextInt(max)%(max-min+1) + min;
+                System.out.println(s);
+        }
+
+        //从0开始随机数，0-50
+        @Test
+        public void test2(){
+                Random random = new Random();
+                int s = random.nextInt(50) ;
+                System.out.println(s);
+        }
+
+         //尝试写会员管理的资金明细，判断暂无数据和有数据的的判断不同筛选类型
 
 
 }

@@ -1,39 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="8" total="69" passed="61">
+<testng-results skipped="0" failed="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="513034" started-at="2019-04-30T07:38:10Z" finished-at="2019-04-30T07:46:43Z">
+  <suite name="All Test Suite" duration-ms="26262" started-at="2019-09-30T03:10:32Z" finished-at="2019-09-30T03:10:58Z">
     <groups>
     </groups>
-    <test name="平台管理员" duration-ms="292779" started-at="2019-04-30T07:38:10Z" finished-at="2019-04-30T07:43:02Z">
-      <class name="Admin.BusinessDetailCreditTestCase">
-        <test-method status="PASS" signature="creditExplorerServiceHistoryTotal()[pri:14, instance:Admin.BusinessDetailCreditTestCase@21c99abf]" name="creditExplorerServiceHistoryTotal" duration-ms="17331" started-at="2019-04-30T14:39:47Z" finished-at="2019-04-30T14:40:04Z">
+    <test name="平台管理员" duration-ms="26262" started-at="2019-09-30T03:10:32Z" finished-at="2019-09-30T03:10:58Z">
+      <class name="Backstage.admin.UserManagement">
+        <test-method status="PASS" signature="loginBefore()[pri:0, instance:Backstage.admin.UserManagement@21c3c]" name="loginBefore" is-config="true" duration-ms="13409" started-at="2019-09-30T11:10:32Z" finished-at="2019-09-30T11:10:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creditExplorerServiceHistoryTotal -->
-        <test-method status="PASS" signature="creditExplorerAccountBalance()[pri:15, instance:Admin.BusinessDetailCreditTestCase@21c99abf]" name="creditExplorerAccountBalance" duration-ms="17080" started-at="2019-04-30T14:40:04Z" finished-at="2019-04-30T14:40:21Z">
+        </test-method> <!-- loginBefore -->
+        <test-method status="PASS" signature="loginTime()[pri:1, instance:Backstage.admin.UserManagement@21c3c]" name="loginTime" duration-ms="2985" started-at="2019-09-30T11:10:45Z" finished-at="2019-09-30T11:10:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creditExplorerAccountBalance -->
-        <test-method status="PASS" signature="creditBusinessServiceHistoryTotal()[pri:16, instance:Admin.BusinessDetailCreditTestCase@21c99abf]" name="creditBusinessServiceHistoryTotal" duration-ms="19368" started-at="2019-04-30T14:40:21Z" finished-at="2019-04-30T14:40:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- creditBusinessServiceHistoryTotal -->
-        <test-method status="PASS" signature="creditBusinessServiceAccountBalance()[pri:17, instance:Admin.BusinessDetailCreditTestCase@21c99abf]" name="creditBusinessServiceAccountBalance" duration-ms="19124" started-at="2019-04-30T14:40:41Z" finished-at="2019-04-30T14:41:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- creditBusinessServiceAccountBalance -->
-        <test-method status="PASS" signature="creditAgentServiceHistoryTotal()[pri:18, instance:Admin.BusinessDetailCreditTestCase@21c99abf]" name="creditAgentServiceHistoryTotal" duration-ms="19284" started-at="2019-04-30T14:41:00Z" finished-at="2019-04-30T14:41:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- creditAgentServiceHistoryTotal -->
-        <test-method status="PASS" signature="creditAgentServiceAccountBalance()[pri:19, instance:Admin.BusinessDetailCreditTestCase@21c99abf]" name="creditAgentServiceAccountBalance" duration-ms="19238" started-at="2019-04-30T14:41:19Z" finished-at="2019-04-30T14:41:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- creditAgentServiceAccountBalance -->
-      </class> <!-- Admin.BusinessDetailCreditTestCase -->
-      <class name="Admin.BusinessDetailCashTestCase">
-        <test-method status="FAIL" signature="BusinessPlayerTotal()[pri:1, instance:Admin.BusinessDetailCashTestCase@69de72ec]" name="BusinessPlayerTotal" duration-ms="6395" started-at="2019-04-30T14:39:20Z" finished-at="2019-04-30T14:39:27Z">
+        </test-method> <!-- loginTime -->
+        <test-method status="FAIL" signature="desc()[pri:2, instance:Backstage.admin.UserManagement@21c3c]" name="desc" duration-ms="2231" started-at="2019-09-30T11:10:48Z" finished-at="2019-09-30T11:10:51Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -44,7 +26,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at Admin.BusinessDetailCashTestCase.BusinessPlayerTotal(BusinessDetailCashTestCase.java:66)
+	at Backstage.admin.UserManagement.desc(UserManagement.java:111)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,124 +59,38 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BusinessPlayerTotal -->
-        <test-method status="PASS" signature="ImmediateLowerNumber()[pri:2, instance:Admin.BusinessDetailCashTestCase@69de72ec]" name="ImmediateLowerNumber" duration-ms="5703" started-at="2019-04-30T14:39:27Z" finished-at="2019-04-30T14:39:32Z">
+        </test-method> <!-- desc -->
+        <test-method status="PASS" signature="Asc()[pri:3, instance:Backstage.admin.UserManagement@21c3c]" name="Asc" duration-ms="174" started-at="2019-09-30T11:10:51Z" finished-at="2019-09-30T11:10:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ImmediateLowerNumber -->
-        <test-method status="FAIL" signature="taxTotal()[pri:3, instance:Admin.BusinessDetailCashTestCase@69de72ec]" name="taxTotal" duration-ms="5187" started-at="2019-04-30T14:39:32Z" finished-at="2019-04-30T14:39:38Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at java.math.BigDecimal.add(BigDecimal.java:1288)
-	at Admin.BusinessDetailCashTestCase.taxTotal(BusinessDetailCashTestCase.java:145)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- Asc -->
+        <test-method status="PASS" signature="addBalance()[pri:4, instance:Backstage.admin.UserManagement@21c3c]" name="addBalance" duration-ms="2867" started-at="2019-09-30T11:10:51Z" finished-at="2019-09-30T11:10:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- taxTotal -->
-        <test-method status="FAIL" signature="BusinessCommissionTotal()[pri:4, instance:Admin.BusinessDetailCashTestCase@69de72ec]" name="BusinessCommissionTotal" duration-ms="9368" started-at="2019-04-30T14:39:38Z" finished-at="2019-04-30T14:39:47Z">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- addBalance -->
+        <test-method status="FAIL" signature="subtractBalance()[pri:4, instance:Backstage.admin.UserManagement@21c3c]" name="subtractBalance" duration-ms="112" started-at="2019-09-30T11:10:54Z" finished-at="2019-09-30T11:10:54Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[unknown error: Element <span>...</span> is not clickable at point (533, 279). Other element would receive the click: <div class="el-dialog__wrapper dialog-fade-leave-active dialog-fade-leave-to" style="z-index: 2001;">...</div>
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 38 milliseconds
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-APMUM9I', ip: '172.18.52.126', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54614}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1532_27051}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1fb0977d5a2a62a62eee4e5485d4a297]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at Admin.BusinessDetailCashTestCase.BusinessCommissionTotal(BusinessDetailCashTestCase.java:206)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BusinessCommissionTotal -->
-      </class> <!-- Admin.BusinessDetailCashTestCase -->
-      <class name="Admin.LowerCommissionSettlementRecord">
-        <test-method status="FAIL" signature="waitWithdrawCommission()[pri:1, instance:Admin.LowerCommissionSettlementRecord@4e1a3d5a]" name="waitWithdrawCommission" duration-ms="17726" started-at="2019-04-30T14:42:42Z" finished-at="2019-04-30T14:43:00Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div[2]/div[1]/div/form/div[3]/div/div/input"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <span>...</span> is not clickable at point (533, 279). Other element would receive the click: <div class="el-dialog__wrapper dialog-fade-leave-active dialog-fade-leave-to" style="z-index: 2001;">...</div>
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 38 milliseconds
 Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'DESKTOP-APMUM9I', ip: '172.18.52.126', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:45467}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir19236_10744}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 334babe5040e01d5576e9b6b374d0157
-*** Element info: {Using=xpath, value=/html/body/div[4]/div/div[2]/div[1]/div/form/div[3]/div/div/input}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div[2]/div[1]/div/form/div[3]/div/div/input"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.02 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:45467}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir19236_10744}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 334babe5040e01d5576e9b6b374d0157
-*** Element info: {Using=xpath, value=/html/body/div[4]/div/div[2]/div[1]/div/form/div[3]/div/div/input}
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54614}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir1532_27051}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1fb0977d5a2a62a62eee4e5485d4a297
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -202,12 +98,10 @@ Session ID: 334babe5040e01d5576e9b6b374d0157
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at SeleniumMethod.WebDriverUtil.findElementByXpathAndClearSendkeys(WebDriverUtil.java:385)
-	at Admin.LowerCommissionSettlementRecord.waitWithdrawCommission(LowerCommissionSettlementRecord.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at SeleniumMethod.WebDriverUtil.findElementByXpathAndClick(WebDriverUtil.java:268)
+	at Backstage.admin.UserManagement.subtractBalance(UserManagement.java:186)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -237,582 +131,15 @@ Session ID: 334babe5040e01d5576e9b6b374d0157
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- waitWithdrawCommission -->
-      </class> <!-- Admin.LowerCommissionSettlementRecord -->
-      <class name="Admin.ModeComplexStatisticsCashTestCase">
-        <test-method status="PASS" signature="loginNumber()[pri:1, instance:Admin.ModeComplexStatisticsCashTestCase@6d6f6ca9]" name="loginNumber" duration-ms="5535" started-at="2019-04-30T14:41:38Z" finished-at="2019-04-30T14:41:44Z">
+        </test-method> <!-- subtractBalance -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Backstage.admin.UserManagement@21c3c]" name="afterTest" is-config="true" duration-ms="4325" started-at="2019-09-30T11:10:54Z" finished-at="2019-09-30T11:10:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginNumber -->
-        <test-method status="PASS" signature="registeredNumber()[pri:2, instance:Admin.ModeComplexStatisticsCashTestCase@6d6f6ca9]" name="registeredNumber" duration-ms="5917" started-at="2019-04-30T14:41:44Z" finished-at="2019-04-30T14:41:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registeredNumber -->
-        <test-method status="PASS" signature="rechargeTotalToday()[pri:3, instance:Admin.ModeComplexStatisticsCashTestCase@6d6f6ca9]" name="rechargeTotalToday" duration-ms="6958" started-at="2019-04-30T14:41:50Z" finished-at="2019-04-30T14:41:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- rechargeTotalToday -->
-        <test-method status="PASS" signature="rechargeNumberTotal()[pri:4, instance:Admin.ModeComplexStatisticsCashTestCase@6d6f6ca9]" name="rechargeNumberTotal" duration-ms="6970" started-at="2019-04-30T14:41:57Z" finished-at="2019-04-30T14:42:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- rechargeNumberTotal -->
-        <test-method status="PASS" signature="newRechargeMoney()[pri:6, instance:Admin.ModeComplexStatisticsCashTestCase@6d6f6ca9]" name="newRechargeMoney" duration-ms="5971" started-at="2019-04-30T14:42:04Z" finished-at="2019-04-30T14:42:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newRechargeMoney -->
-      </class> <!-- Admin.ModeComplexStatisticsCashTestCase -->
-      <class name="Admin.ModeComplexStatisticsCreditTestCase">
-        <test-method status="PASS" signature="registeredNumber()[pri:1, instance:Admin.ModeComplexStatisticsCreditTestCase@54496c2d]" name="registeredNumber" duration-ms="5576" started-at="2019-04-30T14:42:10Z" finished-at="2019-04-30T14:42:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registeredNumber -->
-        <test-method status="PASS" signature="loginNumber()[pri:2, instance:Admin.ModeComplexStatisticsCreditTestCase@54496c2d]" name="loginNumber" duration-ms="5706" started-at="2019-04-30T14:42:15Z" finished-at="2019-04-30T14:42:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginNumber -->
-        <test-method status="PASS" signature="Bet()[pri:3, instance:Admin.ModeComplexStatisticsCreditTestCase@54496c2d]" name="Bet" duration-ms="5580" started-at="2019-04-30T14:42:21Z" finished-at="2019-04-30T14:42:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Bet -->
-        <test-method status="FAIL" signature="serviceMoney()[pri:4, instance:Admin.ModeComplexStatisticsCreditTestCase@54496c2d]" name="serviceMoney" duration-ms="15818" started-at="2019-04-30T14:42:27Z" finished-at="2019-04-30T14:42:42Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/div[3]/span[2]"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:45467}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir19236_10744}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 334babe5040e01d5576e9b6b374d0157
-*** Element info: {Using=xpath, value=//*[@id="root"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/div[3]/span[2]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/div[3]/span[2]"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:45467}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir19236_10744}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 334babe5040e01d5576e9b6b374d0157
-*** Element info: {Using=xpath, value=//*[@id="root"]/section/section/main/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/div[3]/span[2]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at SeleniumMethod.WebDriverUtil.findElementByXpath(WebDriverUtil.java:155)
-	at SeleniumMethod.WebDriverUtil.getTextByXpath(WebDriverUtil.java:412)
-	at Admin.ModeComplexStatisticsCreditTestCase.serviceMoney(ModeComplexStatisticsCreditTestCase.java:182)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- serviceMoney -->
-        <test-method status="PASS" signature="close()[pri:0, instance:Admin.ModeComplexStatisticsCreditTestCase@54496c2d]" name="close" is-config="true" duration-ms="2310" started-at="2019-04-30T14:43:00Z" finished-at="2019-04-30T14:43:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- Admin.ModeComplexStatisticsCreditTestCase -->
-      <class name="Admin.AdminHomeTestCase">
-        <test-method status="PASS" signature="loginAdmin()[pri:0, instance:Admin.AdminHomeTestCase@6f4adaab]" name="loginAdmin" is-config="true" duration-ms="11084" started-at="2019-04-30T14:38:10Z" finished-at="2019-04-30T14:38:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAdmin -->
-        <test-method status="PASS" signature="serviceIncomeToday()[pri:1, instance:Admin.AdminHomeTestCase@6f4adaab]" name="serviceIncomeToday" duration-ms="3299" started-at="2019-04-30T14:38:21Z" finished-at="2019-04-30T14:38:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- serviceIncomeToday -->
-        <test-method status="PASS" signature="sinceBusinessOperationsTotalArrears()[pri:2, instance:Admin.AdminHomeTestCase@6f4adaab]" name="sinceBusinessOperationsTotalArrears" duration-ms="6841" started-at="2019-04-30T14:38:24Z" finished-at="2019-04-30T14:38:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sinceBusinessOperationsTotalArrears -->
-        <test-method status="PASS" signature="playerNumber()[pri:4, instance:Admin.AdminHomeTestCase@6f4adaab]" name="playerNumber" duration-ms="6673" started-at="2019-04-30T14:38:31Z" finished-at="2019-04-30T14:38:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- playerNumber -->
-        <test-method status="PASS" signature="systemWinOrLose()[pri:5, instance:Admin.AdminHomeTestCase@6f4adaab]" name="systemWinOrLose" duration-ms="6608" started-at="2019-04-30T14:38:38Z" finished-at="2019-04-30T14:38:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- systemWinOrLose -->
-        <test-method status="PASS" signature="todayCommission()[pri:6, instance:Admin.AdminHomeTestCase@6f4adaab]" name="todayCommission" duration-ms="6592" started-at="2019-04-30T14:38:44Z" finished-at="2019-04-30T14:38:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- todayCommission -->
-        <test-method status="PASS" signature="rechargeMoneyToday()[pri:8, instance:Admin.AdminHomeTestCase@6f4adaab]" name="rechargeMoneyToday" duration-ms="6753" started-at="2019-04-30T14:38:51Z" finished-at="2019-04-30T14:38:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- rechargeMoneyToday -->
-        <test-method status="PASS" signature="withdrawMoneyToday()[pri:9, instance:Admin.AdminHomeTestCase@6f4adaab]" name="withdrawMoneyToday" duration-ms="6835" started-at="2019-04-30T14:38:58Z" finished-at="2019-04-30T14:39:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- withdrawMoneyToday -->
-        <test-method status="PASS" signature="waitRechargeCommission()[pri:10, instance:Admin.AdminHomeTestCase@6f4adaab]" name="waitRechargeCommission" duration-ms="6686" started-at="2019-04-30T14:39:05Z" finished-at="2019-04-30T14:39:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- waitRechargeCommission -->
-        <test-method status="PASS" signature="playerNumberDetail()[pri:11, instance:Admin.AdminHomeTestCase@6f4adaab]" name="playerNumberDetail" duration-ms="8941" started-at="2019-04-30T14:39:11Z" finished-at="2019-04-30T14:39:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- playerNumberDetail -->
-      </class> <!-- Admin.AdminHomeTestCase -->
+        </test-method> <!-- afterTest -->
+      </class> <!-- Backstage.admin.UserManagement -->
     </test> <!-- 平台管理员 -->
-    <test name="现金代理" duration-ms="57541" started-at="2019-04-30T07:43:03Z" finished-at="2019-04-30T07:44:00Z">
-      <class name="CashAgent.AgentHomeCashTestCase">
-        <test-method status="PASS" signature="loginAdmin()[pri:0, instance:CashAgent.AgentHomeCashTestCase@49a06087]" name="loginAdmin" is-config="true" duration-ms="10265" started-at="2019-04-30T14:43:03Z" finished-at="2019-04-30T14:43:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAdmin -->
-        <test-method status="PASS" signature="incomeToday()[pri:1, instance:CashAgent.AgentHomeCashTestCase@49a06087]" name="incomeToday" duration-ms="2070" started-at="2019-04-30T14:43:13Z" finished-at="2019-04-30T14:43:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incomeToday -->
-        <test-method status="PASS" signature="incomeTotalMonth()[pri:2, instance:CashAgent.AgentHomeCashTestCase@49a06087]" name="incomeTotalMonth" duration-ms="8439" started-at="2019-04-30T14:43:15Z" finished-at="2019-04-30T14:43:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incomeTotalMonth -->
-        <test-method status="PASS" signature="waitSettlementCommission()[pri:3, instance:CashAgent.AgentHomeCashTestCase@49a06087]" name="waitSettlementCommission" duration-ms="5246" started-at="2019-04-30T14:43:23Z" finished-at="2019-04-30T14:43:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- waitSettlementCommission -->
-        <test-method status="PASS" signature="playerNumberTotal()[pri:4, instance:CashAgent.AgentHomeCashTestCase@49a06087]" name="playerNumberTotal" duration-ms="8363" started-at="2019-04-30T14:43:29Z" finished-at="2019-04-30T14:43:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- playerNumberTotal -->
-      </class> <!-- CashAgent.AgentHomeCashTestCase -->
-      <class name="CashAgent.PlayerAccountAdminTestCase">
-        <test-method status="PASS" signature="rechargeTotal()[pri:9, instance:CashAgent.PlayerAccountAdminTestCase@148b6f95]" name="rechargeTotal" duration-ms="7543" started-at="2019-04-30T14:43:46Z" finished-at="2019-04-30T14:43:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- rechargeTotal -->
-        <test-method status="PASS" signature="withdrawTotal()[pri:10, instance:CashAgent.PlayerAccountAdminTestCase@148b6f95]" name="withdrawTotal" duration-ms="2231" started-at="2019-04-30T14:43:54Z" finished-at="2019-04-30T14:43:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- withdrawTotal -->
-        <test-method status="PASS" signature="additionalUpPoints()[pri:11, instance:CashAgent.PlayerAccountAdminTestCase@148b6f95]" name="additionalUpPoints" duration-ms="2238" started-at="2019-04-30T14:43:56Z" finished-at="2019-04-30T14:43:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- additionalUpPoints -->
-        <test-method status="PASS" signature="close()[pri:0, instance:CashAgent.PlayerAccountAdminTestCase@148b6f95]" name="close" is-config="true" duration-ms="2070" started-at="2019-04-30T14:43:58Z" finished-at="2019-04-30T14:44:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- CashAgent.PlayerAccountAdminTestCase -->
-      <class name="CashAgent.ChangeRecordCreditTestCase">
-        <test-method status="PASS" signature="cashAgentCredit()[pri:5, instance:CashAgent.ChangeRecordCreditTestCase@2c15034f]" name="cashAgentCredit" duration-ms="2303" started-at="2019-04-30T14:43:37Z" finished-at="2019-04-30T14:43:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cashAgentCredit -->
-        <test-method status="PASS" signature="rechargeAgentAdminCredit()[pri:6, instance:CashAgent.ChangeRecordCreditTestCase@2c15034f]" name="rechargeAgentAdminCredit" duration-ms="2155" started-at="2019-04-30T14:43:39Z" finished-at="2019-04-30T14:43:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- rechargeAgentAdminCredit -->
-        <test-method status="PASS" signature="rechargeAgentCredit()[pri:7, instance:CashAgent.ChangeRecordCreditTestCase@2c15034f]" name="rechargeAgentCredit" duration-ms="2177" started-at="2019-04-30T14:43:41Z" finished-at="2019-04-30T14:43:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- rechargeAgentCredit -->
-      </class> <!-- CashAgent.ChangeRecordCreditTestCase -->
-      <class name="CashAgent.MyCommissionAccountChangeTestCase">
-        <test-method status="FAIL" signature="myCommissionAccountChange()[pri:8, instance:CashAgent.MyCommissionAccountChangeTestCase@43b4ec0c]" name="myCommissionAccountChange" duration-ms="2353" started-at="2019-04-30T14:43:44Z" finished-at="2019-04-30T14:43:46Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at CashAgent.MyCommissionAccountChangeTestCase.myCommissionAccountChange(MyCommissionAccountChangeTestCase.java:69)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- myCommissionAccountChange -->
-        <test-method status="PASS" signature="changeMoney()[pri:9, instance:CashAgent.MyCommissionAccountChangeTestCase@43b4ec0c]" name="changeMoney" duration-ms="37" started-at="2019-04-30T14:43:46Z" finished-at="2019-04-30T14:43:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changeMoney -->
-      </class> <!-- CashAgent.MyCommissionAccountChangeTestCase -->
-    </test> <!-- 现金代理 -->
-    <test name="现金商户" duration-ms="40396" started-at="2019-04-30T07:44:00Z" finished-at="2019-04-30T07:44:41Z">
-      <class name="CashBusiness.BusinessHomeTestCase">
-        <test-method status="PASS" signature="loginAdmin()[pri:0, instance:CashBusiness.BusinessHomeTestCase@65b73689]" name="loginAdmin" is-config="true" duration-ms="9973" started-at="2019-04-30T14:44:00Z" finished-at="2019-04-30T14:44:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAdmin -->
-        <test-method status="PASS" signature="incomeToday()[pri:1, instance:CashBusiness.BusinessHomeTestCase@65b73689]" name="incomeToday" duration-ms="6234" started-at="2019-04-30T14:44:10Z" finished-at="2019-04-30T14:44:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incomeToday -->
-        <test-method status="PASS" signature="incomeTotalThirty()[pri:2, instance:CashBusiness.BusinessHomeTestCase@65b73689]" name="incomeTotalThirty" duration-ms="9404" started-at="2019-04-30T14:44:16Z" finished-at="2019-04-30T14:44:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- incomeTotalThirty -->
-        <test-method status="PASS" signature="waitSettlementCommission()[pri:3, instance:CashBusiness.BusinessHomeTestCase@65b73689]" name="waitSettlementCommission" duration-ms="5295" started-at="2019-04-30T14:44:26Z" finished-at="2019-04-30T14:44:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- waitSettlementCommission -->
-        <test-method status="PASS" signature="lowerSpreadAgent()[pri:5, instance:CashBusiness.BusinessHomeTestCase@65b73689]" name="lowerSpreadAgent" duration-ms="7412" started-at="2019-04-30T14:44:31Z" finished-at="2019-04-30T14:44:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lowerSpreadAgent -->
-        <test-method status="PASS" signature="close()[pri:0, instance:CashBusiness.BusinessHomeTestCase@65b73689]" name="close" is-config="true" duration-ms="2061" started-at="2019-04-30T14:44:39Z" finished-at="2019-04-30T14:44:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- CashBusiness.BusinessHomeTestCase -->
-    </test> <!-- 现金商户 -->
-    <test name="信用代理" duration-ms="25545" started-at="2019-04-30T07:44:41Z" finished-at="2019-04-30T07:45:06Z">
-      <class name="CreditAgent.MyServiceAccountChangeTestCase">
-        <test-method status="PASS" signature="myServiceAccountChangeMoney()[pri:5, instance:CreditAgent.MyServiceAccountChangeTestCase@3b56947a]" name="myServiceAccountChangeMoney" duration-ms="2232" started-at="2019-04-30T14:45:02Z" finished-at="2019-04-30T14:45:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- myServiceAccountChangeMoney -->
-        <test-method status="PASS" signature="changeMoney()[pri:6, instance:CreditAgent.MyServiceAccountChangeTestCase@3b56947a]" name="changeMoney" duration-ms="39" started-at="2019-04-30T14:45:04Z" finished-at="2019-04-30T14:45:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changeMoney -->
-        <test-method status="PASS" signature="close()[pri:0, instance:CreditAgent.MyServiceAccountChangeTestCase@3b56947a]" name="close" is-config="true" duration-ms="2065" started-at="2019-04-30T14:45:04Z" finished-at="2019-04-30T14:45:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- CreditAgent.MyServiceAccountChangeTestCase -->
-      <class name="CreditAgent.AgentHomeCreditTestCase">
-        <test-method status="PASS" signature="login()[pri:0, instance:CreditAgent.AgentHomeCreditTestCase@61d011e]" name="login" is-config="true" duration-ms="10051" started-at="2019-04-30T14:44:41Z" finished-at="2019-04-30T14:44:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="addPlayerToday()[pri:1, instance:CreditAgent.AgentHomeCreditTestCase@61d011e]" name="addPlayerToday" duration-ms="2243" started-at="2019-04-30T14:44:51Z" finished-at="2019-04-30T14:44:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addPlayerToday -->
-        <test-method status="PASS" signature="activePlayerTodayHome()[pri:2, instance:CreditAgent.AgentHomeCreditTestCase@61d011e]" name="activePlayerTodayHome" duration-ms="4485" started-at="2019-04-30T14:44:53Z" finished-at="2019-04-30T14:44:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- activePlayerTodayHome -->
-        <test-method status="PASS" signature="systemLoseOrWinToday()[pri:3, instance:CreditAgent.AgentHomeCreditTestCase@61d011e]" name="systemLoseOrWinToday" duration-ms="4410" started-at="2019-04-30T14:44:57Z" finished-at="2019-04-30T14:45:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- systemLoseOrWinToday -->
-      </class> <!-- CreditAgent.AgentHomeCreditTestCase -->
-    </test> <!-- 信用代理 -->
-    <test name="信用商务" duration-ms="23054" started-at="2019-04-30T07:45:06Z" finished-at="2019-04-30T07:45:29Z">
-      <class name="CreditBusiness.CreditBusinessHomeTestCase">
-        <test-method status="PASS" signature="loginAdmin()[pri:0, instance:CreditBusiness.CreditBusinessHomeTestCase@5fe3b058]" name="loginAdmin" is-config="true" duration-ms="9977" started-at="2019-04-30T14:45:06Z" finished-at="2019-04-30T14:45:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAdmin -->
-        <test-method status="PASS" signature="accountBalance()[pri:1, instance:CreditBusiness.CreditBusinessHomeTestCase@5fe3b058]" name="accountBalance" duration-ms="2114" started-at="2019-04-30T14:45:16Z" finished-at="2019-04-30T14:45:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- accountBalance -->
-        <test-method status="PASS" signature="serviceIncomeToday()[pri:2, instance:CreditBusiness.CreditBusinessHomeTestCase@5fe3b058]" name="serviceIncomeToday" duration-ms="3189" started-at="2019-04-30T14:45:18Z" finished-at="2019-04-30T14:45:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- serviceIncomeToday -->
-        <test-method status="PASS" signature="agentNumber()[pri:4, instance:CreditBusiness.CreditBusinessHomeTestCase@5fe3b058]" name="agentNumber" duration-ms="5267" started-at="2019-04-30T14:45:21Z" finished-at="2019-04-30T14:45:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- agentNumber -->
-      </class> <!-- CreditBusiness.CreditBusinessHomeTestCase -->
-      <class name="CreditBusiness.MyServiceAccountChangeTestCase">
-        <test-method status="PASS" signature="myServiceAccountChangeMoney()[pri:6, instance:CreditBusiness.MyServiceAccountChangeTestCase@2a661215]" name="myServiceAccountChangeMoney" duration-ms="2392" started-at="2019-04-30T14:45:27Z" finished-at="2019-04-30T14:45:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- myServiceAccountChangeMoney -->
-        <test-method status="PASS" signature="changeMoney()[pri:7, instance:CreditBusiness.MyServiceAccountChangeTestCase@2a661215]" name="changeMoney" duration-ms="37" started-at="2019-04-30T14:45:29Z" finished-at="2019-04-30T14:45:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changeMoney -->
-        <test-method status="PASS" signature="close()[pri:0, instance:CreditBusiness.MyServiceAccountChangeTestCase@2a661215]" name="close" is-config="true" duration-ms="59" started-at="2019-04-30T14:45:29Z" finished-at="2019-04-30T14:45:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- CreditBusiness.MyServiceAccountChangeTestCase -->
-    </test> <!-- 信用商务 -->
-    <test name="信用总管" duration-ms="73401" started-at="2019-04-30T07:45:29Z" finished-at="2019-04-30T07:46:43Z">
-      <class name="CreditExplorer.CreditExplorerHomeTestCase">
-        <test-method status="PASS" signature="loginAdmin()[pri:0, instance:CreditExplorer.CreditExplorerHomeTestCase@3c8fe8ad]" name="loginAdmin" is-config="true" duration-ms="10008" started-at="2019-04-30T14:45:29Z" finished-at="2019-04-30T14:45:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAdmin -->
-        <test-method status="PASS" signature="accountBalance()[pri:1, instance:CreditExplorer.CreditExplorerHomeTestCase@3c8fe8ad]" name="accountBalance" duration-ms="2113" started-at="2019-04-30T14:45:39Z" finished-at="2019-04-30T14:45:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- accountBalance -->
-        <test-method status="FAIL" signature="serviceIncomeToday()[pri:2, instance:CreditExplorer.CreditExplorerHomeTestCase@3c8fe8ad]" name="serviceIncomeToday" duration-ms="10099" started-at="2019-04-30T14:45:41Z" finished-at="2019-04-30T14:45:52Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="rest_agent_zongdai_home"]/li/span"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:46174}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir19104_12048}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 89975785a2182cb4391882675afb3517
-*** Element info: {Using=xpath, value=//*[@id="rest_agent_zongdai_home"]/li/span}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="rest_agent_zongdai_home"]/li/span"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:46174}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir19104_12048}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 89975785a2182cb4391882675afb3517
-*** Element info: {Using=xpath, value=//*[@id="rest_agent_zongdai_home"]/li/span}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at SeleniumMethod.WebDriverUtil.findElementByXpathAndClick(WebDriverUtil.java:268)
-	at CreditExplorer.CreditExplorerHomeTestCase.serviceIncomeToday(CreditExplorerHomeTestCase.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- serviceIncomeToday -->
-        <test-method status="FAIL" signature="agentNumber()[pri:4, instance:CreditExplorer.CreditExplorerHomeTestCase@3c8fe8ad]" name="agentNumber" duration-ms="10104" started-at="2019-04-30T14:45:52Z" finished-at="2019-04-30T14:46:02Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="rest_agent_zongdai_home"]/li/span"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:46174}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir19104_12048}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 89975785a2182cb4391882675afb3517
-*** Element info: {Using=xpath, value=//*[@id="rest_agent_zongdai_home"]/li/span}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="rest_agent_zongdai_home"]/li/span"}
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-NDF1E9V', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:46174}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387), userDataDir=C:\Users\jtc\AppData\Local\Temp\scoped_dir19104_12048}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.103, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 89975785a2182cb4391882675afb3517
-*** Element info: {Using=xpath, value=//*[@id="rest_agent_zongdai_home"]/li/span}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at SeleniumMethod.WebDriverUtil.findElementByXpathAndClick(WebDriverUtil.java:268)
-	at CreditExplorer.CreditExplorerHomeTestCase.agentNumber(CreditExplorerHomeTestCase.java:129)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- agentNumber -->
-      </class> <!-- CreditExplorer.CreditExplorerHomeTestCase -->
-      <class name="CreditExplorer.CreditModelAgentTestCase">
-        <test-method status="PASS" signature="EnableOrDisable()[pri:1, instance:CreditExplorer.CreditModelAgentTestCase@43d6262c]" name="EnableOrDisable" duration-ms="4383" started-at="2019-04-30T14:46:02Z" finished-at="2019-04-30T14:46:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnableOrDisable -->
-        <test-method status="PASS" signature="serviceTotalDesc()[pri:3, instance:CreditExplorer.CreditModelAgentTestCase@43d6262c]" name="serviceTotalDesc" duration-ms="6440" started-at="2019-04-30T14:46:06Z" finished-at="2019-04-30T14:46:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- serviceTotalDesc -->
-        <test-method status="PASS" signature="serviceTotalAsc()[pri:4, instance:CreditExplorer.CreditModelAgentTestCase@43d6262c]" name="serviceTotalAsc" duration-ms="2199" started-at="2019-04-30T14:46:12Z" finished-at="2019-04-30T14:46:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- serviceTotalAsc -->
-        <test-method status="PASS" signature="accountBalanceDesc()[pri:5, instance:CreditExplorer.CreditModelAgentTestCase@43d6262c]" name="accountBalanceDesc" duration-ms="2223" started-at="2019-04-30T14:46:15Z" finished-at="2019-04-30T14:46:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- accountBalanceDesc -->
-        <test-method status="PASS" signature="setAccountBalanceAsc()[pri:6, instance:CreditExplorer.CreditModelAgentTestCase@43d6262c]" name="setAccountBalanceAsc" duration-ms="2188" started-at="2019-04-30T14:46:17Z" finished-at="2019-04-30T14:46:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setAccountBalanceAsc -->
-      </class> <!-- CreditExplorer.CreditModelAgentTestCase -->
-      <class name="CreditExplorer.MyServiceAccountChangeTestCase">
-        <test-method status="PASS" signature="myServiceAccountChangeMoney()[pri:1, instance:CreditExplorer.MyServiceAccountChangeTestCase@38cf4497]" name="myServiceAccountChangeMoney" duration-ms="2405" started-at="2019-04-30T14:46:38Z" finished-at="2019-04-30T14:46:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- myServiceAccountChangeMoney -->
-        <test-method status="PASS" signature="changeMoney()[pri:2, instance:CreditExplorer.MyServiceAccountChangeTestCase@38cf4497]" name="changeMoney" duration-ms="37" started-at="2019-04-30T14:46:40Z" finished-at="2019-04-30T14:46:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- changeMoney -->
-        <test-method status="PASS" signature="close()[pri:0, instance:CreditExplorer.MyServiceAccountChangeTestCase@38cf4497]" name="close" is-config="true" duration-ms="2309" started-at="2019-04-30T14:46:40Z" finished-at="2019-04-30T14:46:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- CreditExplorer.MyServiceAccountChangeTestCase -->
-      <class name="CreditExplorer.GeneralStatisticsTestCase">
-        <test-method status="PASS" signature="registeredNumber()[pri:1, instance:CreditExplorer.GeneralStatisticsTestCase@5e2975ca]" name="registeredNumber" duration-ms="4373" started-at="2019-04-30T14:46:19Z" finished-at="2019-04-30T14:46:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registeredNumber -->
-        <test-method status="PASS" signature="loginNumber()[pri:2, instance:CreditExplorer.GeneralStatisticsTestCase@5e2975ca]" name="loginNumber" duration-ms="4540" started-at="2019-04-30T14:46:23Z" finished-at="2019-04-30T14:46:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginNumber -->
-        <test-method status="PASS" signature="Bet()[pri:3, instance:CreditExplorer.GeneralStatisticsTestCase@5e2975ca]" name="Bet" duration-ms="4430" started-at="2019-04-30T14:46:28Z" finished-at="2019-04-30T14:46:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Bet -->
-        <test-method status="PASS" signature="serviceToday()[pri:4, instance:CreditExplorer.GeneralStatisticsTestCase@5e2975ca]" name="serviceToday" duration-ms="5488" started-at="2019-04-30T14:46:32Z" finished-at="2019-04-30T14:46:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- serviceToday -->
-      </class> <!-- CreditExplorer.GeneralStatisticsTestCase -->
-    </test> <!-- 信用总管 -->
   </suite> <!-- All Test Suite -->
 </testng-results>
