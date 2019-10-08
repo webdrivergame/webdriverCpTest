@@ -3,6 +3,7 @@ Backstage\admin\ReportManagement.class
 SeleniumMethod\WebDriverUtil.class
 Backstage\admin\UserManagement.class
 UtilTest\StringToNumber.class
+Backstage\admin\RegisterManagement.class
 CPBet\RechargeWithdrawal.class
 ListenerPackage\AssertionListener.class
 ListenerPackage\Assertion.class

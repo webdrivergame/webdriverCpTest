@@ -11,6 +11,20 @@
           <include name="subtractBalance"/>
         </methods>
       </class> <!-- Backstage.admin.UserManagement -->
+      <class name="Backstage.admin.FinanceManagement">
+        <methods>
+          <include name="rechargeOnline"/>
+          <include name="date"/>
+          <include name="rechargeMoney"/>
+          <include name="ReconciliationVip"/>
+          <include name="BalanceVipToday"/>
+        </methods>
+      </class> <!-- Backstage.admin.FinanceManagement -->
+      <class name="Backstage.admin.ReportManagement">
+        <methods>
+          <include name="rechargeMoneyTotal"/>
+        </methods>
+      </class> <!-- Backstage.admin.ReportManagement -->
     </classes>
   </test> <!-- 平台管理员(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

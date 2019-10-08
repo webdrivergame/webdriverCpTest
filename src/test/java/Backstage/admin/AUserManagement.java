@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class UserManagement {
+public class AUserManagement {
 
     WebDriverUtil driverUtil = new WebDriverUtil(null);
 
@@ -197,15 +197,5 @@ public class UserManagement {
 
 
 
-
-
-
-
-
-
-    @AfterTest
-    public void afterTest(){
-        driverUtil.loginAfter();
-    }
 
 }

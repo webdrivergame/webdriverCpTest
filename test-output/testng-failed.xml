@@ -3,7 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
   <test name="平台管理员(failed)">
     <classes>
-      <class name="Backstage.admin.UserManagement">
+      <class name="Backstage.admin.AUserManagement">
         <methods>
           <include name="loginBefore"/>
           <include name="desc"/>

@@ -149,63 +149,6 @@ public class FinanceManagement {
 
     }
 
-    /***
-     *
-     * 忽略--------------------------------------------------------------------
-     */
-
-
-    String selectInlineWay = "/html/body/div[5]/div[1]/div[1]/ul/li[4]/span";
-
-
-    @Features("后台管理")
-    @Stories("财务管理")
-    @Title("验证会员对账-线下充值金额数据是否有误")
-    @Test(priority = 5)
-    public void rechargeInline(){
-        driverUtil.findElementByXpathAndClick(reconciliationVip);
-        String getRechargeInline = driverUtil.getTextByXpath(rechargeInline);
-        driverUtil.findElementByXpathAndClick(rechargeRecord);
-        driverUtil.findElementByXpathAndClick(selectRechargeWay);
-        driverUtil.findElementByXpathAndClick(selectInlineWay);
-        driverUtil.findElementByXpathAndClick(inquire);
-        String getRechargeTotal = driverUtil.getTextByXpath(rechargeTotal);
-        System.out.println("会员对账的线上充值金额："+getRechargeInline);
-        System.out.println("充值记录的在线充值总计："+getRechargeTotal);
-        Assertion.setFlag(true);
-        Assertion.verifyEquals(getRechargeInline,getRechargeTotal);
-        Assert.assertTrue(Assertion.currentFlag());
-
-    }
-
-
-
-    /***
-     *
-     * 忽略--------------------------------------------------------------------
-     */
-
-
-    String reportManagement = "//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div/ul/div[4]/li/div/span";
-    String reportVip = "//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div/ul/div[4]/li/ul/div[3]/a/li/span";
-    String selectYesterday = "//*[@id=\"app\"]/div/div[2]/section/div/div[1]/form/div[6]/div/div/label[2]/span";
-    String inquireVipRecord = "//*[@id=\"app\"]/div/div[2]/section/div/div[1]/form/div[7]/div/button[1]/span";
-
-    @Features("后台管理")
-    @Stories("财务管理")
-    @Title("验证会员对账-实际输赢金额是否有误")
-    @Test(priority = 6)
-    public void loseOrWinActual() throws InterruptedException {
-        driverUtil.findElementByXpathAndClick(reconciliationVip);
-        String getLoseOrWinActual = driverUtil.getTextByXpath(loseOrWinActual);
-        driverUtil.findElementByXpathAndClick(reportManagement);
-        driverUtil.findElementByXpathAndClick(reportVip);
-        Thread.sleep(2000);
-        driverUtil.findElementByXpathAndClick(selectYesterday);
-        driverUtil.findElementByXpathAndClick(inquireVipRecord);
-
-
-    }
 
 
     String withdrawRecord = "//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div/ul/div[3]/li/ul/div[2]/a/li/span";
@@ -216,7 +159,7 @@ public class FinanceManagement {
     @Features("后台管理")
     @Stories("财务管理")
     @Title("验证会员对账-提款金额是否有误")
-    @Test(priority = 7)
+    @Test(priority = 5)
     public void rechargeMoney(){
         driverUtil.findElementByXpathAndClick(reconciliationVip);
         String getWithdraw = driverUtil.getTextByXpath(withdraw);

@@ -3,7 +3,9 @@
 <suite name="All Test Suite" >
     <test name="平台管理员" preserve-order="true" >
         <classes>
-          <class name="Backstage.admin.UserManagement"></class>
+            <class name="Backstage.admin.AUserManagement"></class>
+            <class name="Backstage.admin.FinanceManagement"></class>
+            <class name="Backstage.admin.ReportManagement"></class>
         </classes>
     </test>
 

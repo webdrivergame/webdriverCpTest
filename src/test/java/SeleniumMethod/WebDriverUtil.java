@@ -12,7 +12,6 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-import com.gargoylesoftware.htmlunit.javascript.host.Window;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -40,7 +39,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-    /**
+import javax.xml.soap.Text;
+
+/**
      *    基于selenium的二次封装
      */
            public class WebDriverUtil {
@@ -1277,7 +1278,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
             //获取警告弹窗文本信息
 
-        private String closeAlertAndGetItsText() {
+        public String closeAlertAndGetItsText() {
 
             try {
                 Alert alert = driver.switchTo().alert();
@@ -1311,8 +1312,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
-
-            /**   setScale(1,BigDecimal.ROUND_DOWN)直接删除多余的小数位，如2.35会变成2.3
+        /**   setScale(1,BigDecimal.ROUND_DOWN)直接删除多余的小数位，如2.35会变成2.3
              *   setScale(1,BigDecimal.ROUND_HALF_UP)四舍五入，2.35变成2.4
              *   BigDecimal b = new BigDecimal("123.456");
              *   b.scale(),返回的就是3.
