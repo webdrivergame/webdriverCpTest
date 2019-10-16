@@ -11,7 +11,6 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -50,7 +49,7 @@ import javax.xml.soap.Text;
 
                private static final Object BigDecimal = null;
                public static List<Error> errors = new ArrayList<Error>();
-               private static WebDriver driver = null;
+               public static WebDriver driver = null;
                private static Select select = null;
                private static Alert alert = null;
                private static WebElement element = null;
@@ -69,7 +68,7 @@ import javax.xml.soap.Text;
 
 
                /**
-                *    登录方法
+                *    后台登录方法
                 *    *        adminlogin
                 */
 
@@ -84,6 +83,22 @@ import javax.xml.soap.Text;
                    pass.sendKeys(password);
                }
 
+
+                /**
+                 *    玩家登录方法
+                 *    *        playerLogin
+                 */
+
+                public void playerLogin(String username,String password){
+                    WebElement user = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div/div[1]/div[2]/div[2]/div[1]/input[1]"));
+                    user.clear();
+                    user.click();
+                    user.sendKeys(username);
+                    WebElement pass = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/div/div[1]/div[2]/div[2]/div[1]/input[2]"));
+                    pass.clear();
+                    pass.click();
+                    pass.sendKeys(password);
+                }
 
 
                //浏览器打开Url
@@ -529,7 +544,7 @@ import javax.xml.soap.Text;
                      }
              }
 
-
+            //driverUtil.waitElementLocated(alert,"修改成功！");
             public void waitElementLocated(String xpath,String text){
 
                   WebDriverWait wait = new WebDriverWait(driver,10);
@@ -537,6 +552,24 @@ import javax.xml.soap.Text;
                 wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpath),text));
 
             }
+
+
+    //封装显示等待方法
+
+    public WebElement waitForElement(String xpath, int timeout ) {
+        WebElement element =null;
+        try {
+            //设置显示等待
+            WebDriverWait wait = new WebDriverWait(driver, timeout);
+            WebElement emailField=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.valueOf(xpath))));
+
+        } catch (Exception e) {
+            System.out.println("元素没有在页面出现");
+        }
+
+        return element;
+
+    }
 
 
             public void waitElementValue(String xpath,String text){
@@ -810,12 +843,12 @@ import javax.xml.soap.Text;
       /**
        *     切换到指定title的窗口
       */
-              public void switchToWindow(String windowTtitle) {
+              public void switchToWindow(String windowTitle) {
                  Set<String> windowHandles = driver.getWindowHandles();
                  for (String handler : windowHandles) {
                          driver.switchTo().window(handler);
                          String title = driver.getTitle();
-                         if (windowTtitle.equals(title)) {
+                         if (windowTitle.equals(title)) {
                                  break;
                              }
                      }
@@ -847,7 +880,7 @@ import javax.xml.soap.Text;
               public void switchToFrameByIndex(int index) {
                  driver.switchTo().frame(index);
              }
-              public void switchToframeByElement(By locator) {
+              public void switchToFrameByElement(By locator) {
                  driver.switchTo().frame(driver.findElement(locator));
              }
 
@@ -889,6 +922,8 @@ import javax.xml.soap.Text;
                  clickByJs(findElementByName(name));
              }
 
+             //打开切换新的窗口
+              public void openUrl(String openUrl){((JavascriptExecutor)driver).executeScript(openUrl);}
               // 滚动到窗口最上方
               public void scrollToTop() {
                  ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,0);");
@@ -1312,15 +1347,19 @@ import javax.xml.soap.Text;
 
 
 
-        /**   setScale(1,BigDecimal.ROUND_DOWN)直接删除多余的小数位，如2.35会变成2.3
+
+    /**   setScale(1,BigDecimal.ROUND_DOWN)直接删除多余的小数位，如2.35会变成2.3
              *   setScale(1,BigDecimal.ROUND_HALF_UP)四舍五入，2.35变成2.4
              *   BigDecimal b = new BigDecimal("123.456");
              *   b.scale(),返回的就是3.
              *
              *   Subtring  (0,3) 保留0-3：Sub
-             *
-             *
-             *
+         *
+         *
+             *  加法add
+             *  减法subtract
+             *  乘法multiply
+             *  除法divide
              *
              * */
     }

@@ -16,7 +16,90 @@ public class FinanceManagement {
 
     WebDriverUtil driverUtil = new WebDriverUtil(null);
 
+    /**
+     * ------------------------------------------------财务管理>充值记录>今日充值人数----------------------------------------
+     *
+     * */
+
     String financeManagement = "//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div/ul/div[3]/li/div/span";
+    String rechargeRecord = "//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div/ul/div[3]/li/ul/div[1]/a/li/span";
+    String clickStatus = "//*[@id=\"app\"]/div/div[2]/section/div/div[1]/form/div[3]/div/div/div/input";
+    String selectSuccess = "/html/body/div[8]/div[1]/div[1]/ul/li[3]/span";
+    String rechargeInquire = "//*[@id=\"app\"]/div/div[2]/section/div/div[1]/form/div[12]/div/button[1]/span";
+    String rechargeNumberToday = "//*[@id=\"app\"]/div/div[2]/section/div/div[1]/form/div[14]/div/span[2]/span[1]/text()";
+    String rechargeNumberTodayPage = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div[2]/div";
+
+
+    @Features("财务管理")
+    @Stories("充值记录")
+    @Title("验证今日充值人数")
+    @Test(priority = 1)
+    public void   rechargeNumber() throws InterruptedException {
+        driverUtil.findElementByXpathAndClick(financeManagement);
+        driverUtil.findElementByXpathAndClick(rechargeRecord);
+        Thread.sleep(1000);
+        driverUtil.findElementByXpathAndClick(clickStatus);
+        Thread.sleep(1000);
+        driverUtil.findElementByXpathAndClick(selectSuccess);
+        driverUtil.findElementByXpathAndClick(rechargeInquire);
+        Thread.sleep(1000);
+        String getRechargeNumberToday = driverUtil.getTextByXpath(rechargeNumberToday);
+        String getRechargeNumberTodayPage = driverUtil.getTextByXpath(rechargeNumberTodayPage);
+        String getRechargeNumberTodayPage1 = getRechargeNumberTodayPage.substring(1,getRechargeNumberTodayPage.indexOf("条"));
+        Assertion.setFlag(true);
+        Assertion.verifyEquals(getRechargeNumberToday,getRechargeNumberTodayPage1);
+        Assert.assertTrue(Assertion.currentFlag());
+
+    }
+
+    /**
+     * ------------------------------------------------财务管理>充值记录>会员余额---------------------------------------
+     *
+     * */
+
+    String vipAccount = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div[1]/div[3]/table/tbody/tr[1]/td[3]/div/div[1]";
+    String balance = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div[1]/div[3]/table/tbody/tr[1]/td[5]/div";
+    String rechargeMoney = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div[1]/div[3]/table/tbody/tr[1]/td[8]/div/span";
+    String UserManagement1 = "//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div/ul/div[2]/li/div/span";
+    String vipList = "//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div/ul/div[2]/li/ul/div[3]/a/li/span";
+    String inputAccount = "//*[@id=\"app\"]/div/div[2]/section/div/div/div[1]/form/div[10]/div/div/input";
+    String vipInquire = "//*[@id=\"app\"]/div/div[2]/section/div/div/div[1]/form/div[15]/div/button[1]/span";
+    String unableUseMoney = "//*[@id=\"app\"]/div/div[2]/section/div/div/div[2]/div[1]/div[3]/table/tbody/tr[1]/td[7]/div/span";
+
+    @Features("财务管理")
+    @Stories("充值记录")
+    @Title("验证会员充值余额字段")
+    @Test(priority = 2)
+    public void rechargeBalance() throws InterruptedException {
+        String getVipAccount = driverUtil.getTextByXpath(vipAccount);
+        BigDecimal getBalance = new BigDecimal(driverUtil.getTextByXpath(balance));
+        BigDecimal getRechargeMoney = new BigDecimal(driverUtil.getTextByXpath(rechargeMoney));
+        driverUtil.findElementByXpathAndClick(UserManagement1);
+        driverUtil.findElementByXpathAndClick(vipList);
+        Thread.sleep(1000);
+        driverUtil.findElementByXpathAndClearSendkeys(inputAccount,getVipAccount);
+        driverUtil.findElementByXpathAndClick(vipInquire);
+        Thread.sleep(1000);
+        BigDecimal getUnableUseMoney = new BigDecimal(driverUtil.getTextByXpath(unableUseMoney));
+        BigDecimal result = getBalance.add(getRechargeMoney);
+        Assertion.setFlag(true);
+        Assertion.verifyEquals(getUnableUseMoney,result);
+        Assert.assertTrue(Assertion.currentFlag());
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     String reconciliationVip = "//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div/ul/div[3]/li/ul/div[4]/a/li/span";
 
     String yesterdayBalanceVip = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div[1]/div[3]/table/tbody/tr[1]/td[2]/div";
@@ -120,7 +203,7 @@ public class FinanceManagement {
 
     }
 
-    String rechargeRecord = "//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div/ul/div[3]/li/ul/div[1]/a/li/span";
+
     String rechargeTotal = "//*[@id=\"app\"]/div/div[2]/section/div/div[1]/form/div[14]/div/span[2]/span[3]/text()";
     String selectRechargeWay = "//*[@id=\"app\"]/div/div[2]/section/div/div[1]/form/div[2]/div/div/div/input";
     String selectOnline = "/html/body/div[5]/div[1]/div[1]/ul/li[3]/span";

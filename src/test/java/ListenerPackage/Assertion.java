@@ -27,13 +27,72 @@ public class Assertion {
         }
     }
 
-    public static void verifyEquals(Object actual, Object expected, String message){
+
+
+
+    public static void verifyNotEquals(Object actual, Object expected){
         try{
-            Assert.assertEquals(actual, expected, message);
+            Assert.assertNotEquals(actual, expected);
         }catch(Error e){
-            errors.add(e);
-            flag = false;
+
+            e.printStackTrace(); //仅仅代表异常消息的输出
+            setFlag(false); //抛出异常时记录flag=false
+
         }
     }
+
+
+    public static void verifyNotNull(Object actual, Object expected){
+        try{
+            Assert.assertNotNull(actual, (String) expected);
+        }catch(Error e){
+
+            e.printStackTrace(); //仅仅代表异常消息的输出
+            setFlag(false); //抛出异常时记录flag=false
+
+        }
+    }
+
+
+
+    public static void verifyFalse(Object actual, Object expected){
+        try{
+            Assert.assertFalse((Boolean) actual, (String) expected);
+        }catch(Error e){
+
+            e.printStackTrace(); //仅仅代表异常消息的输出
+            setFlag(false); //抛出异常时记录flag=false
+
+        }
+    }
+
+
+    public static void verifySame(Object actual, Object expected){
+        try{
+            Assert.assertSame(actual, (String) expected);
+        }catch(Error e){
+
+            e.printStackTrace(); //仅仅代表异常消息的输出
+            setFlag(false); //抛出异常时记录flag=false
+
+        }
+    }
+
+
+    public static void verifyNotSame(Object actual, Object expected){
+        try{
+            Assert.assertNotSame(actual, (String) expected);
+
+        }catch(Error e){
+
+            e.printStackTrace(); //仅仅代表异常消息的输出
+            setFlag(false); //抛出异常时记录flag=false
+
+        }
+    }
+
+
+
+
 
 }

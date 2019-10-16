@@ -5,26 +5,22 @@
     <classes>
       <class name="Backstage.admin.UserManagement">
         <methods>
-          <include name="loginBefore"/>
           <include name="desc"/>
-          <include name="afterTest"/>
+          <include name="vipUsableMoney"/>
+          <include name="usableMoney"/>
+          <include name="vipNumber"/>
           <include name="subtractBalance"/>
+          <include name="addBalance"/>
+          <include name="Asc"/>
+          <include name="loginTime"/>
         </methods>
       </class> <!-- Backstage.admin.UserManagement -->
-      <class name="Backstage.admin.FinanceManagement">
+      <class name="Backstage.admin.panel">
         <methods>
-          <include name="rechargeOnline"/>
-          <include name="date"/>
-          <include name="rechargeMoney"/>
-          <include name="ReconciliationVip"/>
-          <include name="BalanceVipToday"/>
+          <include name="notesNumber"/>
+          <include name="loginBefore"/>
         </methods>
-      </class> <!-- Backstage.admin.FinanceManagement -->
-      <class name="Backstage.admin.ReportManagement">
-        <methods>
-          <include name="rechargeMoneyTotal"/>
-        </methods>
-      </class> <!-- Backstage.admin.ReportManagement -->
+      </class> <!-- Backstage.admin.panel -->
     </classes>
   </test> <!-- 平台管理员(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

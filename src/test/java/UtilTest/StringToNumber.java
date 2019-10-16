@@ -19,6 +19,7 @@ public class StringToNumber {
                 if (StringUtils.isNotEmpty(text)) {
                         String total = text.replaceAll(",", "");
                         String total2 = text.replaceAll(".", "");
+                        String total3 = text.replaceAll(":","");
                         return new BigDecimal(total);
                 }
                 return null;
@@ -38,6 +39,24 @@ public class StringToNumber {
                 return null;
         }
 
+
+        public static BigDecimal pointBigDecimal(String text) {
+                if (StringUtils.isNotEmpty(text)) {
+                        String total2 = text.replaceAll(".", "");
+                        return new BigDecimal(total2);
+                }
+                return null;
+        }
+
+
+
+        public static BigDecimal colonBigDecimal(String text) {
+                if (StringUtils.isNotEmpty(text)) {
+                        String total3 = text.replaceAll(":", "");
+                        return new BigDecimal(total3);
+                }
+                return null;
+        }
 
 
         //String转换int
