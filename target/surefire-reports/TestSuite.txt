@@ -1,80 +1,77 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 88.204 s <<< FAILURE! - in TestSuite
-notesNumber(Backstage.admin.panel)  Time elapsed: 4.684 s  <<< FAILURE!
+Tests run: 21, Failures: 14, Errors: 0, Skipped: 0, Time elapsed: 131.113 s <<< FAILURE! - in TestSuite
+notesNumber(Backstage.admin.panel)  Time elapsed: 4.795 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at Backstage.admin.panel.notesNumber(panel.java:81)
 
-vipNumber(Backstage.admin.UserManagement)  Time elapsed: 3.402 s  <<< FAILURE!
+vipNumber(Backstage.admin.UserManagement)  Time elapsed: 3.385 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
-	at Backstage.admin.UserManagement.vipNumber(UserManagement.java:83)
+	at Backstage.admin.UserManagement.vipNumber(UserManagement.java:85)
 
-usableMoney(Backstage.admin.UserManagement)  Time elapsed: 3.415 s  <<< FAILURE!
+desc(Backstage.admin.UserManagement)  Time elapsed: 2.225 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
-	at Backstage.admin.UserManagement.usableMoney(UserManagement.java:147)
+	at Backstage.admin.UserManagement.desc(UserManagement.java:239)
 
-loginTime(Backstage.admin.UserManagement)  Time elapsed: 0.017 s  <<< FAILURE!
+addBalance(Backstage.admin.UserManagement)  Time elapsed: 4.121 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at Backstage.admin.UserManagement.addBalance(UserManagement.java:286)
+
+subtractBalance(Backstage.admin.UserManagement)  Time elapsed: 4.842 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at Backstage.admin.UserManagement.subtractBalance(UserManagement.java:313)
+
+vipUsableMoney(Backstage.admin.UserManagement)  Time elapsed: 12.384 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/section/div/div/div[2]/div[1]/div[3]/table/tbody/tr/td[7]/div/span"}
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-APMUM9I', ip: '10.1.101.21', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57103}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir5784_5810}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 657b923aee9f9a8abf88e2e7758267b9
+*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/section/div/div/div[2]/div[1]/div[3]/table/tbody/tr/td[7]/div/span}
+	at Backstage.admin.UserManagement.vipUsableMoney(UserManagement.java:338)
+
+onlineBackstage(Backstage.admin.UserManagement)  Time elapsed: 0.047 s  <<< FAILURE!
 org.openqa.selenium.WebDriverException: 
-unknown error: Element <span>...</span> is not clickable at point (54, 288). Other element would receive the click: <div data-v-4a4d84bc="" class="el-dialog__wrapper tableDialog dialog-fade-leave-active dialog-fade-leave-to" style="z-index: 2001;">...</div>
+unknown error: Element <span>...</span> is not clickable at point (82, 388). Other element would receive the click: <div tabindex="-1" role="dialog" aria-modal="true" aria-label="提示" class="el-message-box__wrapper msgbox-fade-leave-active msgbox-fade-leave-to" style="z-index: 2007;">...</div>
   (Session info: chrome=72.0.3626.119)
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 39 milliseconds
+Command duration or timeout: 33 milliseconds
 Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
 System info: host: 'DESKTOP-APMUM9I', ip: '10.1.101.21', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64382}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir13804_7005}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 81a1e838e74be4ff717b819bbbdcfd26
-	at Backstage.admin.UserManagement.loginTime(UserManagement.java:166)
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57103}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir5784_5810}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 657b923aee9f9a8abf88e2e7758267b9
+	at Backstage.admin.UserManagement.onlineBackstage(UserManagement.java:393)
 
-desc(Backstage.admin.UserManagement)  Time elapsed: 10.067 s  <<< FAILURE!
+rechargeNumber(Backstage.admin.FinanceManagement)  Time elapsed: 11.254 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/section/div/div/div[2]/div[1]/div[2]/table/thead/tr/th[7]/div/span/i[2]"}
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/section/div/div[1]/form/div[3]/div/div/div/input"}
   (Session info: chrome=72.0.3626.119)
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.06 seconds
+Command duration or timeout: 10.07 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
 System info: host: 'DESKTOP-APMUM9I', ip: '10.1.101.21', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64382}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir13804_7005}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 81a1e838e74be4ff717b819bbbdcfd26
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/section/div/div/div[2]/div[1]/div[2]/table/thead/tr/th[7]/div/span/i[2]}
-	at Backstage.admin.UserManagement.desc(UserManagement.java:221)
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57103}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir5784_5810}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 657b923aee9f9a8abf88e2e7758267b9
+*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/section/div/div[1]/form/div[3]/div/div/div/input}
+	at Backstage.admin.FinanceManagement.rechargeNumber(FinanceManagement.java:44)
 
-Asc(Backstage.admin.UserManagement)  Time elapsed: 10.017 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/section/div/div/div[2]/div[1]/div[2]/table/thead/tr/th[7]/div/span/i[1]"}
-  (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.01 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-APMUM9I', ip: '10.1.101.21', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64382}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir13804_7005}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 81a1e838e74be4ff717b819bbbdcfd26
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/section/div/div/div[2]/div[1]/div[2]/table/thead/tr/th[7]/div/span/i[1]}
-	at Backstage.admin.UserManagement.Asc(UserManagement.java:263)
+rechargeBalance(Backstage.admin.FinanceManagement)  Time elapsed: 3.38 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at Backstage.admin.FinanceManagement.rechargeBalance(FinanceManagement.java:95)
 
-addBalance(Backstage.admin.UserManagement)  Time elapsed: 10.08 s  <<< FAILURE!
+balanceWithdraw(Backstage.admin.FinanceManagement)  Time elapsed: 13.186 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/section/div/div/div[1]/form/div[10]/div/div/input"}
-  (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.08 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
-System info: host: 'DESKTOP-APMUM9I', ip: '10.1.101.21', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64382}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir13804_7005}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 81a1e838e74be4ff717b819bbbdcfd26
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/section/div/div/div[1]/form/div[10]/div/div/input}
-	at Backstage.admin.UserManagement.addBalance(UserManagement.java:300)
-
-subtractBalance(Backstage.admin.UserManagement)  Time elapsed: 10.054 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/section/div/div/div[1]/form/div[16]/div/button[2]/span"}
+no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[7]/div[1]/div[1]/ul/li[3]/span"}
   (Session info: chrome=72.0.3626.119)
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 10.03 seconds
@@ -82,23 +79,54 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
 System info: host: 'DESKTOP-APMUM9I', ip: '10.1.101.21', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64382}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir13804_7005}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 81a1e838e74be4ff717b819bbbdcfd26
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/section/div/div/div[1]/form/div[16]/div/button[2]/span}
-	at Backstage.admin.UserManagement.subtractBalance(UserManagement.java:328)
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57103}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir5784_5810}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 657b923aee9f9a8abf88e2e7758267b9
+*** Element info: {Using=xpath, value=/html/body/div[7]/div[1]/div[1]/ul/li[3]/span}
+	at Backstage.admin.FinanceManagement.balanceWithdraw(FinanceManagement.java:126)
 
-vipUsableMoney(Backstage.admin.UserManagement)  Time elapsed: 13.339 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div/div[2]/section/div/div/div[2]/div[1]/div[3]/table/tbody/tr/td[7]/div/span"}
+balanceVip(Backstage.admin.FinanceManagement)  Time elapsed: 4.281 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at Backstage.admin.FinanceManagement.balanceVip(FinanceManagement.java:180)
+
+BalanceVipToday(Backstage.admin.FinanceManagement)  Time elapsed: 4.605 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at Backstage.admin.FinanceManagement.BalanceVipToday(FinanceManagement.java:280)
+
+rechargeMoney(Backstage.admin.FinanceManagement)  Time elapsed: 12.638 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Timed out after 10 seconds waiting for text ('通过') to be present in element found by By.xpath: /html/body/div[2]/div[1]/div[1]/ul/li[3]/span
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-APMUM9I', ip: '10.1.101.21', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57103}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir5784_5810}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 657b923aee9f9a8abf88e2e7758267b9
+	at Backstage.admin.FinanceManagement.rechargeMoney(FinanceManagement.java:401)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div[1]/div[1]/ul/li[3]/span"}
   (Session info: chrome=72.0.3626.119)
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.02 seconds
+Command duration or timeout: 10.06 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
 System info: host: 'DESKTOP-APMUM9I', ip: '10.1.101.21', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64382}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir13804_7005}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 81a1e838e74be4ff717b819bbbdcfd26
-*** Element info: {Using=xpath, value=//*[@id="app"]/div/div[2]/section/div/div/div[2]/div[1]/div[3]/table/tbody/tr/td[7]/div/span}
-	at Backstage.admin.UserManagement.vipUsableMoney(UserManagement.java:361)
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57103}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir5784_5810}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 657b923aee9f9a8abf88e2e7758267b9
+*** Element info: {Using=xpath, value=/html/body/div[2]/div[1]/div[1]/ul/li[3]/span}
+	at Backstage.admin.FinanceManagement.rechargeMoney(FinanceManagement.java:401)
+
+unLiquidatedMoney(Backstage.admin.FinanceManagement)  Time elapsed: 12.77 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div[1]/div[1]/ul/li[2]/span"}
+  (Session info: chrome=72.0.3626.119)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DESKTOP-APMUM9I', ip: '10.1.101.21', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57103}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir5784_5810}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 657b923aee9f9a8abf88e2e7758267b9
+*** Element info: {Using=xpath, value=/html/body/div[6]/div[1]/div[1]/ul/li[2]/span}
+	at Backstage.admin.FinanceManagement.unLiquidatedMoney(FinanceManagement.java:474)
 

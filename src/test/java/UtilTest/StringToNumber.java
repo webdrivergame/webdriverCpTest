@@ -118,5 +118,11 @@ public class StringToNumber {
 
          //尝试写会员管理的资金明细，判断暂无数据和有数据的的判断不同筛选类型
 
+        @Test
+        public void contains(){
+                String aa = "1234";
+                System.out.println(aa.contains("4"));//如果存在返回true，不存在返回false
+        }
+
 
 }

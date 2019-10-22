@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>平台管理员</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/23</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 25 19:15:31 SGT 2019</td>
+<td>Started on:</td><td>Mon Oct 21 10:12:09 SGT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19261 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2218 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,40 +68,39 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Backstage.admin.UserManagement.desc()'><b>desc</b><br>Test class: Backstage.admin.UserManagement</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;i class=&quot;sort-caret descending&quot;&gt;&lt;/i&gt; is not clickable at point (796, 372). Other element would receive the click: &lt;div class=&quot;el-loading-mask el-loading-fade-leave-active el-loading-fade-leave-to&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=72.0.3626.119)
+<td title='Backstage.admin.panel.loginBefore()'><b>loginBefore</b><br>Test class: Backstage.admin.panel</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 132 milliseconds
+Command duration or timeout: 7 milliseconds
 Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
-System info: host: &apos;DESKTOP-APMUM9I&apos;, ip: &apos;172.18.52.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+System info: host: &apos;DESKTOP-APMUM9I&apos;, ip: &apos;10.1.101.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60293}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir13064_23671}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: bdc03b46739e895b8befc39bd57b8c4b
+Capabilities [{message=session not created: Chrome version must be between 71 and 75
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64), platform=ANY}]
+Session ID: 3db538eff49d8a589f35d2080b9772d7
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at SeleniumMethod.WebDriverUtil.findElementByXpathAndClick(WebDriverUtil.java:268)
-	at Backstage.admin.UserManagement.desc(UserManagement.java:86)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17511104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace17511104'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;i class=&quot;sort-caret descending&quot;&gt;&lt;/i&gt; is not clickable at point (796, 372). Other element would receive the click: &lt;div class=&quot;el-loading-mask el-loading-fade-leave-active el-loading-fade-leave-to&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=72.0.3626.119)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+	at SeleniumMethod.WebDriverUtil.loginBefore(WebDriverUtil.java:120)
+	at Backstage.admin.panel.loginBefore(panel.java:21)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9878005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9878005'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
   (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 132 milliseconds
+Command duration or timeout: 7 milliseconds
 Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
-System info: host: &apos;DESKTOP-APMUM9I&apos;, ip: &apos;172.18.52.126&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+System info: host: &apos;DESKTOP-APMUM9I&apos;, ip: &apos;10.1.101.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60293}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir13064_23671}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=72.0.3626.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: bdc03b46739e895b8befc39bd57b8c4b
+Capabilities [{message=session not created: Chrome version must be between 71 and 75
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64), platform=ANY}]
+Session ID: 3db538eff49d8a589f35d2080b9772d7
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -109,22 +108,19 @@ Session ID: bdc03b46739e895b8befc39bd57b8c4b
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at SeleniumMethod.WebDriverUtil.findElementByXpathAndClick(WebDriverUtil.java:268)
-	at Backstage.admin.UserManagement.desc(UserManagement.java:86)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+	at SeleniumMethod.WebDriverUtil.loginBefore(WebDriverUtil.java:120)
+	at Backstage.admin.panel.loginBefore(panel.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
@@ -138,20 +134,130 @@ Session ID: bdc03b46739e895b8befc39bd57b8c4b
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
 </pre></div></td>
 <td>0</td>
-<td>Backstage.admin.UserManagement@f90752</td></tr>
+<td>null</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='Backstage.admin.FinanceManagement.BalanceVipToday()'><b>BalanceVipToday</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@1d3ca3c</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.ReconciliationVip()'><b>ReconciliationVip</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@1d3ca3c</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.addBalance()'><b>addBalance</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@1f71c05</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.agentNumber()'><b>agentNumber</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@1f71c05</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.agentVipNumber()'><b>agentVipNumber</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@1f71c05</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.balanceVip()'><b>balanceVip</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@1d3ca3c</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.balanceWithdraw()'><b>balanceWithdraw</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@1d3ca3c</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.desc()'><b>desc</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@1f71c05</td></tr>
+<tr>
 <td title='Backstage.admin.UserManagement.loginTime()'><b>loginTime</b><br>Test class: Backstage.admin.UserManagement</td>
 <td></td>
-<td>1</td>
-<td>Backstage.admin.UserManagement@f90752</td></tr>
+<td>0</td>
+<td>Backstage.admin.UserManagement@1f71c05</td></tr>
+<tr>
+<td title='Backstage.admin.panel.notesNumber()'><b>notesNumber</b><br>Test class: Backstage.admin.panel</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.panel@1cfe29c</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.onlineBackstage()'><b>onlineBackstage</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@1f71c05</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.onlinePlayer()'><b>onlinePlayer</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@1f71c05</td></tr>
+<tr>
+<td title='Backstage.admin.panel.playerNumber()'><b>playerNumber</b><br>Test class: Backstage.admin.panel</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.panel@1cfe29c</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.practiceLoseOrWin()'><b>practiceLoseOrWin</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@1d3ca3c</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.rechargeBalance()'><b>rechargeBalance</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@1d3ca3c</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.rechargeMoney()'><b>rechargeMoney</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@1d3ca3c</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.rechargeNumber()'><b>rechargeNumber</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@1d3ca3c</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.rechargeOnline()'><b>rechargeOnline</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@1d3ca3c</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.subtractBalance()'><b>subtractBalance</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@1f71c05</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.unLiquidatedMoney()'><b>unLiquidatedMoney</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@1d3ca3c</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.underLine()'><b>underLine</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@1d3ca3c</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.vipNumber()'><b>vipNumber</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@1f71c05</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.vipUsableMoney()'><b>vipUsableMoney</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@1f71c05</td></tr>
 </table><p>
 </body>
 </html>

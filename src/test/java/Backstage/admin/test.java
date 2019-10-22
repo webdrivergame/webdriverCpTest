@@ -32,7 +32,7 @@ public class test {
     public void loginBefore() throws InterruptedException {
         driverUtil.loginBefore(Url2);
         driverUtil.adminLogin("achao","123123");
-        driverUtil.findElementByXpathAndClick(login1);
+        driverUtil.xpathClick(login1);
         Thread.sleep(2000);
 
         driverUtil.openUrl(Url1);
@@ -40,14 +40,14 @@ public class test {
         driverUtil.playerLogin("achaohy1","achaohy1");
         String getCode = driverUtil.getTextByXpath(code);
         System.out.println(getCode);
-        driverUtil.findElementByXpathAndClearSendkeys(inputCode,getCode);
-        driverUtil.findElementByXpathAndClick(login2);
-        driverUtil.findElementByXpathAndClick(sure);
+        driverUtil.xpathClearSendKeys(inputCode,getCode);
+        driverUtil.xpathClick(login2);
+        driverUtil.xpathClick(sure);
         Thread.sleep(1000);
-        driverUtil.findElementByXpathAndClick(goGame);
-        driverUtil.findElementByXpathAndClick(clickAgree);
+        driverUtil.xpathClick(goGame);
+        driverUtil.xpathClick(clickAgree);
         Thread.sleep(3000);
-        driverUtil.findElementByXpathAndClick(clickCloseAnnouncement);
+        driverUtil.xpathClick(clickCloseAnnouncement);
         Thread.sleep(2000);
 
     }
@@ -61,11 +61,11 @@ public class test {
     @Test
     public void getTest() throws InterruptedException {
         driverUtil.switchToWindow("后台管理系统");
-        driverUtil.findElementByXpathAndClick(userAccount);
-        driverUtil.findElementByXpathAndClick(user);
+        driverUtil.xpathClick(userAccount);
+        driverUtil.xpathClick(user);
         Thread.sleep(2000);
-        driverUtil.findElementByXpathAndClick(click);
-        driverUtil.findElementByXpathAndClick(sure2);
+        driverUtil.xpathClick(click);
+        driverUtil.xpathClick(sure2);
         driverUtil.waitForElement(alert,3);
         String getAlert = driverUtil.getTextByXpath(alert);
         System.out.println("弹出信息："+getAlert);

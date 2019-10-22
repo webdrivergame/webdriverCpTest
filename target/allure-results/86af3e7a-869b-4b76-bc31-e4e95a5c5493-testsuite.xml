@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1571655895412" stop="1571655915313" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : webdriverCpTest</name>
+    <title>Default Suite : webdriverCpTest</title>
+    <test-cases>
+        <test-case start="1571655908215" stop="1571655915303" status="passed">
+            <name>underLine</name>
+            <title>验证线下充值金额</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="webdriverCpTest"/>
+                <label name="testClass" value="Backstage.admin.FinanceManagement"/>
+                <label name="testMethod" value="underLine"/>
+                <label name="story" value="会员对账"/>
+                <label name="feature" value="财务管理"/>
+                <label name="host" value="DESKTOP-APMUM9I"/>
+                <label name="thread" value="1648@DESKTOP-APMUM9I.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

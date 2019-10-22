@@ -280,12 +280,17 @@ import javax.xml.soap.Text;
               public void findElementByPartiaTextAndClick(String text) {
                  driver.findElement(By.partialLinkText(text)).click();
              }
-              public void findElementByXpathAndClick(String xpath) {
-                 driver.findElement(By.xpath(xpath)).click();
-             }
-              public void findElementByClassNameAndClick(String name) {
+
+            public void xpathClick(String xpath) {
+
+                driver.findElement(By.xpath(xpath)).click();
+            }
+
+
+    public void findElementByClassNameAndClick(String name) {
                  driver.findElement(By.className(name)).click();
              }
+
               public void findElementByLinktextAndClick(String text){
                   driver.findElement(By.linkText(text)).click();
               }
@@ -375,33 +380,16 @@ import javax.xml.soap.Text;
               /**
         *    定位元素并清空文本内容，输入相应的值
         */
-              public void findElementByIdAndClearSendkeys(String id, String text) {
-                 driver.findElement(By.id(id)).clear();
-                 driver.findElement(By.id(id)).sendKeys(text);
-             }
-              public void findElementByIdAndClearSendkeys(String id, int num) {
-                 driver.findElement(By.id(id)).clear();
-                 driver.findElement(By.id(id)).sendKeys(num + "");
-             }
-              public void findElementByNameAndClearSendkeys(String name, String text) {
-                 driver.findElement(By.name(name)).clear();
-                 driver.findElement(By.name(name)).sendKeys(text);
-             }
-              public void findElementByNameAndClearSendkeys(String name, int num) {
-                 driver.findElement(By.name(name)).clear();
-                 driver.findElement(By.name(name)).sendKeys(num + "");
-             }
-
 
               public void findElementByXpathAndClearSendkeys(String xpath, BigDecimal text) {
                  findElementByXpath(xpath).clear();
                  findElementByXpath(xpath).sendKeys((CharSequence) BigDecimal);
              }
-              public void findElementByXpathAndClearSendkeys(String xpath, String text) {
+              public void xpathClearSendKeys(String xpath, String text) {
                  driver.findElement(By.xpath(xpath)).clear();
                  driver.findElement(By.xpath(xpath)).sendKeys(text);
              }
-              public void findElementByClassnameAndClearSendkeys(String classname, int num) {
+              public void findElementByClassnameAndClearSendKeys(String classname, int num) {
                  driver.findElement(By.className(classname)).clear();
                  driver.findElement(By.className(classname)).sendKeys(num + "");
              }
@@ -741,9 +729,10 @@ import javax.xml.soap.Text;
                  select.selectByIndex(index);
              }
               //根据xpath获取下拉框，根据name选择选项
-               public void findSelectByXpathAndSelectByValue(String xpath,String value){
+               public void findSelectByXpathAndSelectByValue(String xpath,String text){
                   Select select = new Select(findElementByXpath(xpath));
-                  select.selectByValue(value);
+                  //select.selectByValue(value);
+                  select.selectByVisibleText(text);
                }
             //通过linkText查找元素
                 public void findElementByLinkText(String linkText){
@@ -1089,7 +1078,7 @@ import javax.xml.soap.Text;
              public Keyboard getKeyboard() {
                  return ((HasInputDevices) driver).getKeyboard();
              }
-     // 模拟crtrl+F5
+     // 模拟ctrl+F5
              public void refreshWithCtrlF5() {
                  getKeyboard().sendKeys(Keys.CONTROL, Keys.F5);
              }
@@ -1353,7 +1342,7 @@ import javax.xml.soap.Text;
              *   BigDecimal b = new BigDecimal("123.456");
              *   b.scale(),返回的就是3.
              *
-             *   Subtring  (0,3) 保留0-3：Sub
+             *   Substring  (0,3) 保留0-3：Sub
          *
          *
              *  加法add

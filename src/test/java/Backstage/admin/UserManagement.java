@@ -21,17 +21,6 @@ public class UserManagement {
    WebDriverUtil driverUtil = new WebDriverUtil(null);
 
 
-    String URL = "http://10.1.101.121:8703/?#/login?redirect=%2F";
-    String login = "//*[@id=\"app\"]/div/div/form/div[4]/div/div/button/span";
-
-    @BeforeTest
-    public void loginBefore() throws InterruptedException {
-        driverUtil.loginBefore(URL);
-        driverUtil.adminLogin("achao", "123123");
-        driverUtil.findElementByXpathAndClick(login);
-        Thread.sleep(2000);
-
-    }
 
         /**
          *    ----------------------------------------用户管理>总代理>代理数-----------------------------------------------------
@@ -50,22 +39,22 @@ public class UserManagement {
     @Stories("总代理列表")
     @Title("验证代理数数量")
     @Test(priority = 1)
-    public void agentNumber() throws InterruptedException {
-        driverUtil.findElementByXpathAndClick(UserManagement);
-        driverUtil.findElementByXpathAndClick(agentTotal);
-        Thread.sleep(1000);
-        String getAgentNumber = driverUtil.getTextByXpath(agentNumber);
-        System.out.println("总代理列表代理数："+getAgentNumber);
-        driverUtil.findElementByXpathAndClick(clickAgentNumber);
-        Thread.sleep(2000);
-        String getAgentNumberPage = driverUtil.getTextByXpath(agentNumberPage);
-        String getAgentNumberPage1 = getAgentNumberPage.substring(1,getAgentNumberPage.indexOf("条"));
-        System.out.println("跳转页面代理数："+getAgentNumberPage1);
-        Assertion.setFlag(true);
-        Assertion.verifyEquals(getAgentNumber, getAgentNumberPage1);
-        Assert.assertTrue(Assertion.currentFlag());
+        public void agentNumber() throws InterruptedException {
+            driverUtil.xpathClick(UserManagement);
+            driverUtil.xpathClick(agentTotal);
+            Thread.sleep(1000);
+            String getAgentNumber = driverUtil.getTextByXpath(agentNumber);
+            System.out.println("总代理列表代理数："+getAgentNumber);
+            driverUtil.xpathClick(clickAgentNumber);
+            Thread.sleep(2000);
+            String getAgentNumberPage = driverUtil.getTextByXpath(agentNumberPage);
+            String getAgentNumberPage1 = getAgentNumberPage.substring(1,getAgentNumberPage.indexOf("条"));
+            System.out.println("跳转页面代理数："+getAgentNumberPage1);
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(getAgentNumber, getAgentNumberPage1);
+            Assert.assertTrue(Assertion.currentFlag());
 
-    }
+        }
 
 
 
@@ -81,21 +70,21 @@ public class UserManagement {
     @Stories("总代理列表")
     @Title("验证会员数数量")
     @Test(priority = 2)
-    public void vipNumber() throws InterruptedException {
-        driverUtil.findElementByXpathAndClick(agentTotal);
-        Thread.sleep(1000);
-        String getVipNumber = driverUtil.getTextByXpath(vipNumber);
-        System.out.println("总代理列表会员数："+getVipNumber);
-        driverUtil.findElementByXpathAndClick(vipNumber);
-        Thread.sleep(2000);
-        String getVipNumberPage = driverUtil.getTextByXpath(vipNumberPage);
-        String getVipNumberPage1 = getVipNumberPage.substring(1,getVipNumberPage.indexOf("条"));
-        System.out.println("跳转页面会员数量："+getVipNumberPage1);
-        Assertion.setFlag(true);
-        Assertion.verifyEquals(getVipNumber, getVipNumberPage1);
-        Assert.assertTrue(Assertion.currentFlag());
+        public void vipNumber() throws InterruptedException {
+            driverUtil.xpathClick(agentTotal);
+            Thread.sleep(1000);
+            String getVipNumber = driverUtil.getTextByXpath(vipNumber);
+            System.out.println("总代理列表会员数："+getVipNumber);
+            driverUtil.xpathClick(vipNumber);
+            Thread.sleep(2000);
+            String getVipNumberPage = driverUtil.getTextByXpath(vipNumberPage);
+            String getVipNumberPage1 = getVipNumberPage.substring(1,getVipNumberPage.indexOf("条"));
+            System.out.println("跳转页面会员数量："+getVipNumberPage1);
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(getVipNumber, getVipNumberPage1);
+            Assert.assertTrue(Assertion.currentFlag());
 
-    }
+        }
 
 
 
@@ -112,21 +101,21 @@ public class UserManagement {
     @Stories("代理列表")
     @Title("验证会员数数量")
     @Test(priority = 3)
-    public void agentVipNumber() throws InterruptedException {
-        driverUtil.findElementByXpathAndClick(agentList);
-        Thread.sleep(1000);
-        String getAgentListVipNumber = driverUtil.getTextByXpath(agentListVipNumber);
-        System.out.println("代理列表会员数："+getAgentListVipNumber);
-        driverUtil.findElementByXpathAndClick(agentListVipNumber);
-        Thread.sleep(2000);
-        String getAgentListVipNumberPage = driverUtil.getTextByXpath(agentListVipNumberPage);
-        String agentListVipNumberPage1 = getAgentListVipNumberPage.substring(1,getAgentListVipNumberPage.indexOf("条"));
-        System.out.println("点击跳转代理列表会员数："+agentListVipNumberPage1);
-        Assertion.setFlag(true);
-        Assertion.verifyEquals(getAgentListVipNumber, agentListVipNumberPage1);
-        Assert.assertTrue(Assertion.currentFlag());
+        public void agentVipNumber() throws InterruptedException {
+            driverUtil.xpathClick(agentList);
+            Thread.sleep(1000);
+            String getAgentListVipNumber = driverUtil.getTextByXpath(agentListVipNumber);
+            System.out.println("代理列表会员数："+getAgentListVipNumber);
+            driverUtil.xpathClick(agentListVipNumber);
+            Thread.sleep(2000);
+            String getAgentListVipNumberPage = driverUtil.getTextByXpath(agentListVipNumberPage);
+            String agentListVipNumberPage1 = getAgentListVipNumberPage.substring(1,getAgentListVipNumberPage.indexOf("条"));
+            System.out.println("点击跳转代理列表会员数："+agentListVipNumberPage1);
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(getAgentListVipNumber, agentListVipNumberPage1);
+            Assert.assertTrue(Assertion.currentFlag());
 
-    }
+        }
 
 
 
@@ -145,20 +134,20 @@ public class UserManagement {
     @Stories("代理列表")
     @Title("验证代理可用额度数据")
     @Test(enabled = false)
-    public void usableMoney() throws InterruptedException {
-        driverUtil.findElementByXpathAndClick(agentList);
-        Thread.sleep(1000);
-        String getUsableMoney = driverUtil.getTextByXpath(usableMoney);
-        System.out.println("代理列表代理可用额度："+getUsableMoney);
-        driverUtil.findElementByXpathAndClick(minuteMoney);
-        Thread.sleep(2000);
-        String getBalance = driverUtil.getTextByXpath(balance);
-        System.out.println("资金明细最后余额："+getBalance);
-        driverUtil.findElementByXpathAndClick(close);
-        Assertion.setFlag(true);
-        Assertion.verifyEquals(getUsableMoney, getBalance);
-        Assert.assertTrue(Assertion.currentFlag());
-        driverUtil.switchToCurrentPage();
+        public void usableMoney() throws InterruptedException {
+            driverUtil.xpathClick(agentList);
+            Thread.sleep(1000);
+            String getUsableMoney = driverUtil.getTextByXpath(usableMoney);
+            System.out.println("代理列表代理可用额度："+getUsableMoney);
+            driverUtil.xpathClick(minuteMoney);
+            Thread.sleep(2000);
+            String getBalance = driverUtil.getTextByXpath(balance);
+            System.out.println("资金明细最后余额："+getBalance);
+            driverUtil.xpathClick(close);
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(getUsableMoney, getBalance);
+            Assert.assertTrue(Assertion.currentFlag());
+            driverUtil.switchToCurrentPage();
     }
 
         /**
@@ -175,43 +164,43 @@ public class UserManagement {
     @Stories("会员列表")
     @Title("验证会员未登录时间")
     @Test(priority = 5)
-    public void loginTime() throws InterruptedException {
-        driverUtil.findElementByXpathAndClick(clickVip);
-        Thread.sleep(2000);
-        String getTimeText = driverUtil.getTextByXpath(timeText);
-        String getLoginTime = driverUtil.getTextByXpath(loginTime);//获取未登录时间文本
-        String timeTruncated = getTimeText.substring(0, 10);
-        BigDecimal timeNull = StringToNumber.DateBigDecimal(timeTruncated);//去掉日期格式的-符号
-        System.out.println("获取页面时间：" + timeNull);
-        SimpleDateFormat df = new SimpleDateFormat("yyyyMMdd");//设置日期格式
-        Date date = new Date();//Date转换String
-        String systemDate = df.format(date);// 获取当前系统时间
-        BigDecimal systemDate2 = new BigDecimal(systemDate);
-        System.out.println("系统时间：" + systemDate2);
-        BigDecimal result = systemDate2.subtract(timeNull);//系统时间减去文本时间
-        BigDecimal loginDay = new BigDecimal(getLoginTime);//未登录时间文本转换格式
-        int result2 = result.intValue();
-        int loginDay2 = loginDay.intValue();
-        System.out.println("未登录天数：" + loginDay);
-        System.out.println("未登录时间与最后登录时间差数：" + result);
-        if (result2==0) {
-            System.out.println("执行1");
-            Assertion.setFlag(true);
-            Assertion.verifyEquals(loginDay2, 0);
-            Assert.assertTrue(Assertion.currentFlag());
-        } else if (result2==1){
-            System.out.println("执行2");
-            Assertion.setFlag(true);
-            Assertion.verifyEquals(loginDay2, 0);
-            Assert.assertTrue(Assertion.currentFlag());
-        }else {
-            System.out.println("执行3");
-            Assertion.setFlag(true);
-            Assertion.verifyEquals(result, loginDay);
-            Assert.assertTrue(Assertion.currentFlag());
+        public void loginTime() throws InterruptedException {
+            driverUtil.xpathClick(clickVip);
+            Thread.sleep(2000);
+            String getTimeText = driverUtil.getTextByXpath(timeText);
+            String getLoginTime = driverUtil.getTextByXpath(loginTime);//获取未登录时间文本
+            String timeTruncated = getTimeText.substring(0, 10);
+            BigDecimal timeNull = StringToNumber.DateBigDecimal(timeTruncated);//去掉日期格式的-符号
+            System.out.println("获取页面时间：" + timeNull);
+            SimpleDateFormat df = new SimpleDateFormat("yyyyMMdd");//设置日期格式
+            Date date = new Date();//Date转换String
+            String systemDate = df.format(date);// 获取当前系统时间
+            BigDecimal systemDate2 = new BigDecimal(systemDate);
+            System.out.println("系统时间：" + systemDate2);
+            BigDecimal result = systemDate2.subtract(timeNull);//系统时间减去文本时间
+            BigDecimal loginDay = new BigDecimal(getLoginTime);//未登录时间文本转换格式
+            int result2 = result.intValue();
+            int loginDay2 = loginDay.intValue();
+            System.out.println("未登录天数：" + loginDay);
+            System.out.println("未登录时间与最后登录时间差数：" + result);
+            if (result2==0) {
+                System.out.println("执行1");
+                Assertion.setFlag(true);
+                Assertion.verifyEquals(loginDay2, 0);
+                Assert.assertTrue(Assertion.currentFlag());
+            } else if (result2==1){
+                System.out.println("执行2");
+                Assertion.setFlag(true);
+                Assertion.verifyEquals(loginDay2, 0);
+                Assert.assertTrue(Assertion.currentFlag());
+            }else {
+                System.out.println("执行3");
+                Assertion.setFlag(true);
+                Assertion.verifyEquals(result, loginDay);
+                Assert.assertTrue(Assertion.currentFlag());
+            }
+            Thread.sleep(2000);
         }
-        Thread.sleep(2000);
-    }
 
 
 
@@ -230,67 +219,38 @@ public class UserManagement {
     @Stories("会员列表")
     @Title("验证会员可用额度降序排列")
     @Test(priority = 6)
-    public void desc() throws InterruptedException {
-        driverUtil.findElementByXpathAndClick(BalanceDesc);
-        Thread.sleep(2000);
-        String getFirst = driverUtil.getTextByXpath(first);
-        String getSecond = driverUtil.getTextByXpath(second);
-        String getThird = driverUtil.getTextByXpath(third);
-        BigDecimal toFirst = new BigDecimal(getFirst);
-        BigDecimal toSecond = new BigDecimal(getSecond);
-        BigDecimal toThird = new BigDecimal(getThird);
-        System.out.println("第一个值："+getFirst);
-        System.out.println("第二个值："+getSecond);
-        System.out.println("第三个值："+getThird);
-        if (getFirst.equals(getSecond)) {
-            System.out.println("执行1");
-            int compareResult2 = toSecond.compareTo(toThird);
-            Assertion.setFlag(true);
-            Assertion.verifyEquals(compareResult2, 1);
-            Assert.assertTrue(Assertion.currentFlag());
-        } else {
-            int a1 = toFirst.compareTo(toSecond);
-            System.out.println("执行2");
-            Assertion.setFlag(true);
-            Assertion.verifyEquals(a1, 1);
-            Assert.assertTrue(Assertion.currentFlag());
-        }
+        public void desc() throws InterruptedException {
+            driverUtil.xpathClick(BalanceDesc);
+            Thread.sleep(2000);
+            String getFirst = driverUtil.getTextByXpath(first);
+            String getSecond = driverUtil.getTextByXpath(second);
+            String getThird = driverUtil.getTextByXpath(third);
+            BigDecimal toFirst = new BigDecimal(getFirst);
+            BigDecimal toSecond = new BigDecimal(getSecond);
+            BigDecimal toThird = new BigDecimal(getThird);
+            System.out.println("第一个值："+getFirst);
+            System.out.println("第二个值："+getSecond);
+            System.out.println("第三个值："+getThird);
+            if (getFirst.equals(getSecond)) {
+                System.out.println("执行1");
+                int compareResult2 = toSecond.compareTo(toThird);
+                Assertion.setFlag(true);
+                Assertion.verifyEquals(compareResult2, 1);
+                Assert.assertTrue(Assertion.currentFlag());
+            } else {
+                int a1 = toFirst.compareTo(toSecond);
+                System.out.println("执行2");
+                Assertion.setFlag(true);
+                Assertion.verifyEquals(a1, 1);
+                Assert.assertTrue(Assertion.currentFlag());
+            }
     }
 
 
 
-        /**
-         *
-         * --------------------------------------------------用户管理>会员>可用额度升序----------------------------------------------
-         *
-         * */
 
 
-    String BalanceAsc = "//*[@id=\"app\"]/div/div[2]/section/div/div/div[2]/div[1]/div[2]/table/thead/tr/th[7]/div/span/i[1]";
 
-    @Features("用户管理")
-    @Stories("会员列表")
-    @Title("验证会员可用额度升序排列")
-    @Test(priority = 7)
-    public void Asc() throws InterruptedException {
-        driverUtil.findElementByXpathAndClick(BalanceAsc);
-        String getFirst2 = driverUtil.getTextByXpath(first);
-        String getSecond2 = driverUtil.getTextByXpath(second);
-        BigDecimal toFirst2 = new BigDecimal(getFirst2);
-        BigDecimal toSecond = new BigDecimal(getSecond2);
-        System.out.println("第一个值：" + toFirst2);
-        System.out.println("第二个值：" + toSecond);
-        int compareResult2 = toFirst2.compareTo(toSecond);
-        if (!getFirst2.equals(getSecond2)) {
-            Assertion.setFlag(true);
-            Assertion.verifyEquals(compareResult2, -1);
-            Assert.assertTrue(Assertion.currentFlag());
-        } else {
-            System.out.println("两值相等");
-        }
-
-
-}
         /**
          *
          * --------------------------------------------------用户管理>会员>批量添加会员余额----------------------------------------------
@@ -308,15 +268,15 @@ public class UserManagement {
     @Features("用户管理")
     @Stories("会员列表")
     @Title("验证批量添加会员余额，增加数据是否正常")
-    @Test(priority = 8)
+    @Test(priority = 7)
     public void addBalance() throws InterruptedException {
-        driverUtil.findElementByXpathAndClearSendkeys(inputUser,"achaohy22222");
-        driverUtil.findElementByXpathAndClick(inquire);
+        driverUtil.xpathClearSendKeys(inputUser,"achaohy22222");
+        driverUtil.xpathClick(inquire);
         Thread.sleep(2000);
         String getBalanceUse = driverUtil.getTextByXpath(balanceUse);
-        driverUtil.findElementByXpathAndClick(addBalance);
-        driverUtil.findElementByXpathAndClearSendkeys(inputUserAddBalance,"achaohy22222=100");
-        driverUtil.findElementByXpathAndClick(clickSure);
+        driverUtil.xpathClick(addBalance);
+        driverUtil.xpathClearSendKeys(inputUserAddBalance,"achaohy22222=100");
+        driverUtil.xpathClick(clickSure);
         Thread.sleep(1000);
         String getBalanceUse2 = driverUtil.getTextByXpath(balanceUse);
         System.out.println("可用余额："+getBalanceUse);
@@ -335,24 +295,24 @@ public class UserManagement {
     @Features("用户管理")
     @Stories("会员列表")
     @Title("验证批量扣减会员余额，扣减数据是否正常")
-    @Test(priority = 9)
-    public void subtractBalance() throws InterruptedException {
-        driverUtil.findElementByXpathAndClearSendkeys(inputUser,"achaohy22222");
-        driverUtil.findElementByXpathAndClick(inquire);
-        Thread.sleep(2000);
-        String getBalanceUse = driverUtil.getTextByXpath(balanceUse);
-        driverUtil.findElementByXpathAndClick(addBalance);
-        driverUtil.findElementByXpathAndClearSendkeys(inputUserAddBalance,"achaohy22222=-100");
-        driverUtil.findElementByXpathAndClick(clickSure);
-        Thread.sleep(2000);
-        String getBalanceUse2 = driverUtil.getTextByXpath(balanceUse);
-        System.out.println("可用余额："+getBalanceUse);
-        System.out.println("减少100后余额："+getBalanceUse2);
-        Assertion.setFlag(true);
-        Assertion.verifyEquals(getBalanceUse,getBalanceUse2);
-        Assert.assertTrue(Assertion.currentFlag());
+    @Test(priority = 8)
+        public void subtractBalance() throws InterruptedException {
+            driverUtil.xpathClearSendKeys(inputUser,"achaohy22222");
+            driverUtil.xpathClick(inquire);
+            Thread.sleep(2000);
+            String getBalanceUse = driverUtil.getTextByXpath(balanceUse);
+            driverUtil.xpathClick(addBalance);
+            driverUtil.xpathClearSendKeys(inputUserAddBalance,"achaohy22222=-100");
+            driverUtil.xpathClick(clickSure);
+            Thread.sleep(2000);
+            String getBalanceUse2 = driverUtil.getTextByXpath(balanceUse);
+            System.out.println("可用余额："+getBalanceUse);
+            System.out.println("减少100后余额："+getBalanceUse2);
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(getBalanceUse,getBalanceUse2);
+            Assert.assertTrue(Assertion.currentFlag());
 
-    }
+        }
 
 
         /**
@@ -370,21 +330,21 @@ public class UserManagement {
     @Features("用户管理")
     @Stories("会员列表")
     @Title("验证会员可用额度数据是否有误")
-    @Test(priority = 10)
-    public void vipUsableMoney() throws InterruptedException {
-        driverUtil.findElementByXpathAndClearSendkeys(inputUser,"achaohy101");
-        driverUtil.findElementByXpathAndClick(inquire);
-        Thread.sleep(2000);
-        String getVipUsableMoney = driverUtil.getTextByXpath(vipUsableMoney);
-        System.out.println("会员列表某会员可用额度："+getVipUsableMoney);
-        driverUtil.findElementByXpathAndClick(vipMinuteMoney);
-        String getVipBalance = driverUtil.getTextByXpath(vipBalance);
-        System.out.println("会员资金明细余额："+getVipBalance);
-        driverUtil.findElementByXpathAndClick(closeVip);
-        Assertion.setFlag(true);
-        Assertion.verifyEquals(getVipUsableMoney,getVipBalance);
-        Assert.assertTrue(Assertion.currentFlag());
-    }
+    @Test(priority = 9)
+        public void vipUsableMoney() throws InterruptedException {
+            driverUtil.xpathClearSendKeys(inputUser,"achaodl1hy1");
+            driverUtil.xpathClick(inquire);
+            Thread.sleep(2000);
+            String getVipUsableMoney = driverUtil.getTextByXpath(vipUsableMoney);
+            System.out.println("会员列表某会员可用额度："+getVipUsableMoney);
+            driverUtil.xpathClick(vipMinuteMoney);
+            String getVipBalance = driverUtil.getTextByXpath(vipBalance);
+            System.out.println("会员资金明细余额："+getVipBalance);
+            driverUtil.xpathClick(closeVip);
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(getVipUsableMoney,getVipBalance);
+            Assert.assertTrue(Assertion.currentFlag());
+        }
 
 
         /**
@@ -400,19 +360,19 @@ public class UserManagement {
     @Features("用户管理")
     @Stories("在线玩家")
     @Title("验证踢出功能")
-    @Test(priority = 11)
-    public void onlinePlayer() throws InterruptedException {
-        driverUtil.switchToParentFrame();
-        driverUtil.findElementByXpathAndClick(clickOnlinePlayer);
-        Thread.sleep(2000);
-        driverUtil.findElementByXpathAndClick(shot);
-        driverUtil.findElementByXpathAndClick(sure);
-        String getSuccess = driverUtil.getTextByXpath(success);
-        System.out.println(getSuccess);
-        Assertion.setFlag(true);
-        Assertion.verifyEquals(getSuccess,"踢出成功!");
-        Assert.assertTrue(Assertion.currentFlag());
-    }
+    @Test(priority = 10)
+        public void onlinePlayer() throws InterruptedException {
+            driverUtil.switchToParentFrame();
+            driverUtil.xpathClick(clickOnlinePlayer);
+            Thread.sleep(2000);
+            driverUtil.xpathClick(shot);
+            driverUtil.xpathClick(sure);
+            String getSuccess = driverUtil.getTextByXpath(success);
+            System.out.println(getSuccess);
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(getSuccess,"踢出成功!");
+            Assert.assertTrue(Assertion.currentFlag());
+        }
 
 
     /**
@@ -428,18 +388,18 @@ public class UserManagement {
     @Features("用户管理")
     @Stories("在线后台用户")
     @Title("验证踢出功能")
-    @Test(priority = 12)
-    public void onlineBackstage() throws InterruptedException {
-        driverUtil.findElementByXpathAndClick(clickOnlineBackstage);
-        Thread.sleep(1000);
-        driverUtil.findElementByXpathAndClick(agentShot);
-        driverUtil.findElementByXpathAndClick(agentSure);
-        String getAgentSuccess = driverUtil.getTextByXpath(agentSuccess);
-        Assertion.setFlag(true);
-        Assertion.verifyEquals(getAgentSuccess,"踢出成功!");
-        Assert.assertTrue(Assertion.currentFlag());
+    @Test(priority = 11)
+        public void onlineBackstage() throws InterruptedException {
+            driverUtil.xpathClick(clickOnlineBackstage);
+            Thread.sleep(1000);
+            driverUtil.xpathClick(agentShot);
+            driverUtil.xpathClick(agentSure);
+            String getAgentSuccess = driverUtil.getTextByXpath(agentSuccess);
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(getAgentSuccess,"踢出成功!");
+            Assert.assertTrue(Assertion.currentFlag());
 
-    }
+        }
 
 
 

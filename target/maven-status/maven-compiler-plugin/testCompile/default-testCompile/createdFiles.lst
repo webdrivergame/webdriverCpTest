@@ -6,6 +6,5 @@ UtilTest\StringToNumber.class
 CPBet\cycleRacingCar.class
 Backstage\admin\test.class
 Backstage\admin\panel.class
-Backstage\admin\RegisterManagement.class
 ListenerPackage\AssertionListener.class
 ListenerPackage\Assertion.class

@@ -32,14 +32,14 @@ public class cycleRacingCar {
         driverUtil.playerLogin("achaohy1","achaohy1");
         String getCode = driverUtil.getTextByXpath(code);
         System.out.println(getCode);
-        driverUtil.findElementByXpathAndClearSendkeys(inputCode,getCode);
-        driverUtil.findElementByXpathAndClick(login);
-        driverUtil.findElementByXpathAndClick(sure);
+        driverUtil.xpathClearSendKeys(inputCode,getCode);
+        driverUtil.xpathClick(login);
+        driverUtil.xpathClick(sure);
         Thread.sleep(1000);
-        driverUtil.findElementByXpathAndClick(goGame);
-        driverUtil.findElementByXpathAndClick(clickAgree);
+        driverUtil.xpathClick(goGame);
+        driverUtil.xpathClick(clickAgree);
         Thread.sleep(3000);
-        driverUtil.findElementByXpathAndClick(clickCloseAnnouncement);
+        driverUtil.xpathClick(clickCloseAnnouncement);
         Thread.sleep(2000);
     }
 
@@ -53,8 +53,8 @@ public class cycleRacingCar {
     @Title("验证开奖期数是否跳期")
     @Test(priority = 1)
     public void issue(){
-        driverUtil.findElementByXpathAndClick(car);
-        driverUtil.findElementByXpathAndClick(beijingCar);
+        driverUtil.xpathClick(car);
+        driverUtil.xpathClick(beijingCar);
         String getBeijingCarIssue1 = driverUtil.getTextByXpath(beijingCarIssue1);
         String getBeijingCarIssue2 = driverUtil.getTextByXpath(beijingCarIssue2);
         if (getBeijingCarIssue2.equals("已封盘")){
@@ -124,7 +124,7 @@ public class cycleRacingCar {
     @Title("验证开奖结果期数是否少数据")
     @Test(priority = 3)
     public void lotteryResult() throws InterruptedException {
-        driverUtil.findElementByXpathAndClick(lotteryResult);
+        driverUtil.xpathClick(lotteryResult);
         Thread.sleep(2000);
 
 

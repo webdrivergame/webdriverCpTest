@@ -17,11 +17,11 @@ public class panel {
     String login = "//*[@id=\"app\"]/div/div/form/div[4]/div/div/button/span";
 
     @BeforeTest
-    public void loginBefore() throws InterruptedException {
-        driverUtil.loginBefore(URL);
-        driverUtil.adminLogin("achao", "123123");
-        driverUtil.findElementByXpathAndClick(login);
-        Thread.sleep(2000);
+        public void loginBefore() throws InterruptedException {
+            driverUtil.loginBefore(URL);
+            driverUtil.adminLogin("achao", "123123");
+            driverUtil.xpathClick(login);
+            Thread.sleep(2000);
 
     }
 
@@ -35,21 +35,21 @@ public class panel {
     @Stories("会员数量")
     @Title("验证平台总会员数是否有误")
     @Test(priority = 1)
-    public void playerNumber() throws InterruptedException {
-        driverUtil.findElementByXpathAndClick(panel);
-        String getPlayerNumber = driverUtil.getTextByXpath(playerNumber);
-        driverUtil.findElementByXpathAndClick(userManagement);
-        driverUtil.findElementByXpathAndClick(vip);
-        Thread.sleep(2000);
-        String getPlayerNumberPage = driverUtil.getTextByXpath(playerNumberPage);
-        String a1 = getPlayerNumberPage.substring(1,getPlayerNumberPage.indexOf("条"));
-        System.out.println("仪表盘会员数："+getPlayerNumber);
-        System.out.println("会员列表会员数："+getPlayerNumberPage);
-        Assertion.setFlag(true);
-        Assertion.verifyEquals(getPlayerNumber,a1);
-        Assert.assertTrue(Assertion.currentFlag());
+        public void playerNumber() throws InterruptedException {
+            driverUtil.xpathClick(panel);
+            String getPlayerNumber = driverUtil.getTextByXpath(playerNumber);
+            driverUtil.xpathClick(userManagement);
+            driverUtil.xpathClick(vip);
+            Thread.sleep(2000);
+            String getPlayerNumberPage = driverUtil.getTextByXpath(playerNumberPage);
+            String a1 = getPlayerNumberPage.substring(1,getPlayerNumberPage.indexOf("条"));
+            System.out.println("仪表盘会员数："+getPlayerNumber);
+            System.out.println("会员列表会员数："+getPlayerNumberPage);
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(getPlayerNumber,a1);
+            Assert.assertTrue(Assertion.currentFlag());
 
-    }
+        }
 
     String clickNotesNumber = "//*[@id=\"tab-2\"]";
     String totalNotes = "//*[@id=\"app\"]/div/div[2]/section/div/div/div/div[1]/div/div/div[2]/div[2]/span[2]";
@@ -64,22 +64,22 @@ public class panel {
     @Stories("平台总注单量")
     @Title("验证平台总注单量是否有误")
     @Test(priority = 2)
-    public void notesNumber() throws InterruptedException {
-        driverUtil.findElementByXpathAndClick(panel);
-        driverUtil.findElementByXpathAndClick(clickNotesNumber);
-        String getTotalNotes = driverUtil.getTextByXpath(totalNotes);
-        driverUtil.findElementByXpathAndClick(betRecord);
-        driverUtil.findElementByXpathAndClick(historyBet);
-        Thread.sleep(1000);
-        driverUtil.findElementByXpathAndClick(clickTime);
-        driverUtil.findElementByXpathAndClick(inquire);
-        Thread.sleep(2000);
-        String getNotesPage = driverUtil.getTextByXpath(notesPage);
-        String getNotesPage1 = getNotesPage.substring(1,getNotesPage.indexOf("条"));
-        Assertion.setFlag(true);
-        Assertion.verifyEquals(getTotalNotes,getNotesPage1);
-        Assert.assertTrue(Assertion.currentFlag());
+        public void notesNumber() throws InterruptedException {
+            driverUtil.xpathClick(panel);
+            driverUtil.xpathClick(clickNotesNumber);
+            String getTotalNotes = driverUtil.getTextByXpath(totalNotes);
+            driverUtil.xpathClick(betRecord);
+            driverUtil.xpathClick(historyBet);
+            Thread.sleep(1000);
+            driverUtil.xpathClick(clickTime);
+            driverUtil.xpathClick(inquire);
+            Thread.sleep(2000);
+            String getNotesPage = driverUtil.getTextByXpath(notesPage);
+            String getNotesPage1 = getNotesPage.substring(1,getNotesPage.indexOf("条"));
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(getTotalNotes,getNotesPage1);
+            Assert.assertTrue(Assertion.currentFlag());
 
-    }
+        }
 
 }

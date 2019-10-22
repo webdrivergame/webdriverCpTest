@@ -7,12 +7,10 @@
         <methods>
           <include name="desc"/>
           <include name="vipUsableMoney"/>
-          <include name="usableMoney"/>
           <include name="vipNumber"/>
           <include name="subtractBalance"/>
+          <include name="onlineBackstage"/>
           <include name="addBalance"/>
-          <include name="Asc"/>
-          <include name="loginTime"/>
         </methods>
       </class> <!-- Backstage.admin.UserManagement -->
       <class name="Backstage.admin.panel">
@@ -21,6 +19,17 @@
           <include name="loginBefore"/>
         </methods>
       </class> <!-- Backstage.admin.panel -->
+      <class name="Backstage.admin.FinanceManagement">
+        <methods>
+          <include name="rechargeNumber"/>
+          <include name="balanceVip"/>
+          <include name="rechargeMoney"/>
+          <include name="balanceWithdraw"/>
+          <include name="BalanceVipToday"/>
+          <include name="rechargeBalance"/>
+          <include name="unLiquidatedMoney"/>
+        </methods>
+      </class> <!-- Backstage.admin.FinanceManagement -->
     </classes>
   </test> <!-- 平台管理员(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

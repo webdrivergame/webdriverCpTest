@@ -1,0 +1,341 @@
+<html>
+<head>
+<title>TestNG:  webdriverCpTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>webdriverCpTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/34</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 21 10:12:54 SGT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2271 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CPBet.cycleRacingCar.login()'><b>login</b><br>Test class: CPBet.cycleRacingCar</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
+System info: host: &apos;DESKTOP-APMUM9I&apos;, ip: &apos;10.1.101.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{message=session not created: Chrome version must be between 71 and 75
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64), platform=ANY}]
+Session ID: 8da109b52a6b4363a6c548233e42a46c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+	at SeleniumMethod.WebDriverUtil.loginBefore(WebDriverUtil.java:120)
+	at CPBet.cycleRacingCar.login(cycleRacingCar.java:31)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15185805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15185805'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
+System info: host: &apos;DESKTOP-APMUM9I&apos;, ip: &apos;10.1.101.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{message=session not created: Chrome version must be between 71 and 75
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.18362 x86_64), platform=ANY}]
+Session ID: 8da109b52a6b4363a6c548233e42a46c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:322)
+	at SeleniumMethod.WebDriverUtil.loginBefore(WebDriverUtil.java:120)
+	at CPBet.cycleRacingCar.login(cycleRacingCar.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CPBet.cycleRacingCar.loginBefore()'><b>loginBefore</b><br>Test class: CPBet.cycleRacingCar</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='CPBet.cycleRacingCar.loginBefore()'><b>loginBefore</b><br>Test class: CPBet.cycleRacingCar</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='CPBet.cycleRacingCar.close()'><b>close</b><br>Test class: CPBet.cycleRacingCar</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.BalanceVipToday()'><b>BalanceVipToday</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@ead673</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.ReconciliationVip()'><b>ReconciliationVip</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@ead673</td></tr>
+<tr>
+<td title='UtilTest.StringToNumber.StringInt()'><b>StringInt</b><br>Test class: UtilTest.StringToNumber</td>
+<td></td>
+<td>0</td>
+<td>UtilTest.StringToNumber@10a0a1e</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.addBalance()'><b>addBalance</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@176ef56</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.agentNumber()'><b>agentNumber</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@176ef56</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.agentVipNumber()'><b>agentVipNumber</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@176ef56</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.balanceVip()'><b>balanceVip</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@ead673</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.balanceWithdraw()'><b>balanceWithdraw</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@ead673</td></tr>
+<tr>
+<td title='UtilTest.StringToNumber.contains()'><b>contains</b><br>Test class: UtilTest.StringToNumber</td>
+<td></td>
+<td>0</td>
+<td>UtilTest.StringToNumber@10a0a1e</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.desc()'><b>desc</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@176ef56</td></tr>
+<tr>
+<td title='Backstage.admin.test.getTest()'><b>getTest</b><br>Test class: Backstage.admin.test</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.test@1de6148</td></tr>
+<tr>
+<td title='CPBet.cycleRacingCar.issue()'><b>issue</b><br>Test class: CPBet.cycleRacingCar</td>
+<td></td>
+<td>0</td>
+<td>CPBet.cycleRacingCar@1e11bda</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.loginTime()'><b>loginTime</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@176ef56</td></tr>
+<tr>
+<td title='CPBet.cycleRacingCar.lotteryResult()'><b>lotteryResult</b><br>Test class: CPBet.cycleRacingCar</td>
+<td></td>
+<td>0</td>
+<td>CPBet.cycleRacingCar@1e11bda</td></tr>
+<tr>
+<td title='Backstage.admin.panel.notesNumber()'><b>notesNumber</b><br>Test class: Backstage.admin.panel</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.panel@1ccfd1</td></tr>
+<tr>
+<td title='UtilTest.StringToNumber.number()'><b>number</b><br>Test class: UtilTest.StringToNumber</td>
+<td></td>
+<td>0</td>
+<td>UtilTest.StringToNumber@10a0a1e</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.onlineBackstage()'><b>onlineBackstage</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@176ef56</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.onlinePlayer()'><b>onlinePlayer</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@176ef56</td></tr>
+<tr>
+<td title='CPBet.cycleRacingCar.openLotteryTime()'><b>openLotteryTime</b><br>Test class: CPBet.cycleRacingCar</td>
+<td></td>
+<td>0</td>
+<td>CPBet.cycleRacingCar@1e11bda</td></tr>
+<tr>
+<td title='Backstage.admin.panel.playerNumber()'><b>playerNumber</b><br>Test class: Backstage.admin.panel</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.panel@1ccfd1</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.practiceLoseOrWin()'><b>practiceLoseOrWin</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@ead673</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.rechargeBalance()'><b>rechargeBalance</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@ead673</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.rechargeMoney()'><b>rechargeMoney</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@ead673</td></tr>
+<tr>
+<td title='Backstage.admin.ReportManagement.rechargeMoneyTotal()'><b>rechargeMoneyTotal</b><br>Test class: Backstage.admin.ReportManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.ReportManagement@1ba25ff</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.rechargeNumber()'><b>rechargeNumber</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@ead673</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.rechargeOnline()'><b>rechargeOnline</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@ead673</td></tr>
+<tr>
+<td title='UtilTest.StringToNumber.subString()'><b>subString</b><br>Test class: UtilTest.StringToNumber</td>
+<td></td>
+<td>0</td>
+<td>UtilTest.StringToNumber@10a0a1e</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.subtractBalance()'><b>subtractBalance</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@176ef56</td></tr>
+<tr>
+<td title='UtilTest.StringToNumber.test()'><b>test</b><br>Test class: UtilTest.StringToNumber</td>
+<td></td>
+<td>0</td>
+<td>UtilTest.StringToNumber@10a0a1e</td></tr>
+<tr>
+<td title='UtilTest.StringToNumber.test2()'><b>test2</b><br>Test class: UtilTest.StringToNumber</td>
+<td></td>
+<td>0</td>
+<td>UtilTest.StringToNumber@10a0a1e</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.unLiquidatedMoney()'><b>unLiquidatedMoney</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@ead673</td></tr>
+<tr>
+<td title='Backstage.admin.FinanceManagement.underLine()'><b>underLine</b><br>Test class: Backstage.admin.FinanceManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.FinanceManagement@ead673</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.vipNumber()'><b>vipNumber</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@176ef56</td></tr>
+<tr>
+<td title='Backstage.admin.UserManagement.vipUsableMoney()'><b>vipUsableMoney</b><br>Test class: Backstage.admin.UserManagement</td>
+<td></td>
+<td>0</td>
+<td>Backstage.admin.UserManagement@176ef56</td></tr>
+</table><p>
+</body>
+</html>
