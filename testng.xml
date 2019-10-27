@@ -6,6 +6,7 @@
             <class name="Backstage.admin.panel"></class>
             <class name="Backstage.admin.UserManagement"></class>
             <class name="Backstage.admin.FinanceManagement"></class>
+            <class name="Backstage.admin.ReportManagement"></class>
 
         </classes>
     </test>

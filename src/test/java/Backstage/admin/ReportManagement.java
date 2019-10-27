@@ -12,17 +12,7 @@ import ru.yandex.qatools.allure.annotations.Title;
 public class ReportManagement {
 
     WebDriverUtil driverUtil = new WebDriverUtil(null);
-    String URL = "http://10.1.101.121:8703/?#/login?redirect=%2F";
-    String login = "//*[@id=\"app\"]/div/div/form/div[4]/div/div/button/span";
 
-    @BeforeTest
-        public void loginBefore() throws InterruptedException {
-            driverUtil.loginBefore(URL);
-            driverUtil.adminLogin("achao", "123123");
-            driverUtil.xpathClick(login);
-            Thread.sleep(2000);
-
-    }
 
     /**
      * -------------------------------------------报表管理-总代理报表-会员数-----------------------------------------
@@ -396,33 +386,114 @@ public class ReportManagement {
     }
 
 
+
     /**
-     * -------------------------------------------报表管理-代理报表-取款金额-----------------------------------------
+     * -------------------------------------------报表管理-代理报表-笔数-----------------------------------------
      *
      * */
 
-    String withdrawMoneyAgent = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div/div[3]/table/tbody/tr/td[4]/div";
-    String withdrawMoneyVip = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div[1]/div[4]/table/tbody/tr/td[5]/div";
+    String countAgent = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div/div[3]/table/tbody/tr/td[5]/div";
+    String countVip = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div[1]/div[4]/table/tbody/tr/td[6]/div";
 
     @Features("报表管理")
     @Stories("代理报表")
-    @Title("验证代理报表取款金额")
+    @Title("验证代理报表充值笔数")
     @Test(priority = 13)
-        public void withdrawMoneyAgent() throws InterruptedException {
+        public void countAgent() throws InterruptedException {
             driverUtil.xpathClick(reportAgent);
             driverUtil.xpathClearSendKeys(accountAgent,"dl");
             driverUtil.xpathClick(yesterdayAgent);
             driverUtil.xpathClick(inquireAgent);
             Thread.sleep(2000);
-            String getWithdrawMoneyAgent = driverUtil.getTextByXpath(withdrawMoneyAgent);
-            System.out.println("代理报表充值金额："+getWithdrawMoneyAgent);
+            String getCountAgent = driverUtil.getTextByXpath(countAgent);
+            System.out.println("代理报表充值笔数："+getCountAgent);
             driverUtil.xpathClick(clickAgent);
             Thread.sleep(1000);
-            String getWithdrawMoneyVip = driverUtil.getTextByXpath(withdrawMoneyVip);
-            System.out.println("会员报表充值金额："+getWithdrawMoneyVip);
+            String getCountVip = driverUtil.getTextByXpath(countVip);
+            System.out.println("会员报表充值笔数总计："+getCountVip);
             Assertion.setFlag(true);
-            Assertion.verifyEquals(getWithdrawMoneyAgent,getWithdrawMoneyVip);
+            Assertion.verifyEquals(getCountAgent,getCountVip);
             Assert.assertTrue(Assertion.currentFlag());
     }
+
+
+
+    /**
+     * -------------------------------------------报表管理-代理报表-投注金额-----------------------------------------
+     *
+     * */
+
+    String betMoneyAgentReport = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div/div[3]/table/tbody/tr/td[6]/div";
+    String betMoneyVip = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div[1]/div[4]/table/tbody/tr/td[7]/div";
+
+    @Features("报表管理")
+    @Stories("代理报表")
+    @Title("验证代理报表投注金额")
+    @Test(priority = 13)
+        public void betMoneyAgentReport() throws InterruptedException {
+            driverUtil.xpathClick(reportAgent);
+            driverUtil.xpathClearSendKeys(accountAgent,"dl");
+            driverUtil.xpathClick(yesterdayAgent);
+            driverUtil.xpathClick(inquireAgent);
+            Thread.sleep(2000);
+            String getBetMoneyAgentReport = driverUtil.getTextByXpath(betMoneyAgentReport);
+            System.out.println("代理报表充值笔数："+getBetMoneyAgentReport);
+            driverUtil.xpathClick(clickAgent);
+            Thread.sleep(1000);
+            String getBetMoneyVip = driverUtil.getTextByXpath(betMoneyVip);
+            System.out.println("会员报表充值笔数总计："+getBetMoneyVip);
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(getBetMoneyAgentReport,getBetMoneyVip);
+            Assert.assertTrue(Assertion.currentFlag());
+    }
+
+
+
+    /**
+     * -------------------------------------------报表管理-代理报表-赢利投注金额-----------------------------------------
+     *
+     * */
+
+    String winBetMoneyAgentReport = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div/div[3]/table/tbody/tr/td[7]/div/span";
+    String winBetMoneyVip = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div[1]/div[4]/table/tbody/tr/td[8]/div";
+
+    @Features("报表管理")
+    @Stories("代理报表")
+    @Title("验证代理报表赢利投注金额")
+    @Test(priority = 13)
+        public void winBetMoneyAgentReport() throws InterruptedException {
+            driverUtil.xpathClick(reportAgent);
+            driverUtil.xpathClearSendKeys(accountAgent,"dl");
+            driverUtil.xpathClick(yesterdayAgent);
+            driverUtil.xpathClick(inquireAgent);
+            Thread.sleep(2000);
+            String getWinBetMoneyAgentReport = driverUtil.getTextByXpath(winBetMoneyAgentReport);
+            System.out.println("代理报表赢利投注金额："+getWinBetMoneyAgentReport);
+            driverUtil.xpathClick(clickAgent);
+            Thread.sleep(1000);
+            String getWinBetMoneyVip = driverUtil.getTextByXpath(winBetMoneyVip);
+            System.out.println("会员报表赢利投注金额总计："+getWinBetMoneyVip);
+            Assertion.setFlag(true);
+            Assertion.verifyEquals(getWinBetMoneyAgentReport,getWinBetMoneyVip);
+            Assert.assertTrue(Assertion.currentFlag());
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

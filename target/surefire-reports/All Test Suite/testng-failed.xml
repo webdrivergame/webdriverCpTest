@@ -3,6 +3,36 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
   <test name="平台管理员(failed)">
     <classes>
+      <class name="Backstage.admin.FinanceManagement">
+        <methods>
+          <include name="rechargeNumber"/>
+          <include name="rechargeOnline"/>
+          <include name="underLine"/>
+          <include name="rechargeMoney"/>
+          <include name="ReconciliationVip"/>
+          <include name="balanceWithdraw"/>
+          <include name="BalanceVipToday"/>
+          <include name="rechargeBalance"/>
+          <include name="unLiquidatedMoney"/>
+        </methods>
+      </class> <!-- Backstage.admin.FinanceManagement -->
+      <class name="Backstage.admin.panel">
+        <methods>
+          <include name="playerNumber"/>
+          <include name="notesNumber"/>
+          <include name="loginBefore"/>
+        </methods>
+      </class> <!-- Backstage.admin.panel -->
+      <class name="Backstage.admin.ReportManagement">
+        <methods>
+          <include name="loseWinAndWaterAgentTotal"/>
+          <include name="rechargeMoneyAgent"/>
+          <include name="betMoneyAgentTotal"/>
+          <include name="loseWinAgentTotal"/>
+          <include name="serviceChargeAgentTotal"/>
+          <include name="withdrawMoneyAgent"/>
+        </methods>
+      </class> <!-- Backstage.admin.ReportManagement -->
       <class name="Backstage.admin.UserManagement">
         <methods>
           <include name="desc"/>
@@ -13,23 +43,6 @@
           <include name="addBalance"/>
         </methods>
       </class> <!-- Backstage.admin.UserManagement -->
-      <class name="Backstage.admin.panel">
-        <methods>
-          <include name="notesNumber"/>
-          <include name="loginBefore"/>
-        </methods>
-      </class> <!-- Backstage.admin.panel -->
-      <class name="Backstage.admin.FinanceManagement">
-        <methods>
-          <include name="rechargeNumber"/>
-          <include name="balanceVip"/>
-          <include name="rechargeMoney"/>
-          <include name="balanceWithdraw"/>
-          <include name="BalanceVipToday"/>
-          <include name="rechargeBalance"/>
-          <include name="unLiquidatedMoney"/>
-        </methods>
-      </class> <!-- Backstage.admin.FinanceManagement -->
     </classes>
   </test> <!-- 平台管理员(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
