@@ -16,21 +16,10 @@ public class FinanceManagement {
 
     WebDriverUtil driverUtil = new WebDriverUtil(null);
 
-    String URL = "http://10.1.101.121:8703/?#/login?redirect=%2F";
-    String login = "//*[@id=\"app\"]/div/div/form/div[4]/div/div/button/span";
 
-    @BeforeTest
-    public void loginBefore() throws InterruptedException {
-        driverUtil.loginBefore(URL);
-        driverUtil.adminLogin("achao", "123123");
-        driverUtil.xpathClick(login);
-        Thread.sleep(2000);
-
-    }
 
     /**
      * ------------------------------------------------财务管理>充值记录>今日充值人数----------------------------------------
-     * -------------------------------------------------财务管理>充值记录>今日充值人数Page------------------------------------
      */
 
     String financeManagement = "//*[@id=\"app\"]/div/div[1]/div[2]/div[1]/div/ul/div[3]/li/div/span";
@@ -57,7 +46,7 @@ public class FinanceManagement {
             Thread.sleep(1000);
             String getRechargeNumberToday = driverUtil.getTextByXpath(rechargeNumberToday);
             String getRechargeNumberTodayPage = driverUtil.getTextByXpath(rechargeNumberTodayPage);
-            String getRechargeNumberToday1 = getRechargeNumberToday.substring(7);//截取数据：今日充值人数：X
+            String getRechargeNumberToday1 = getRechargeNumberToday.substring(6);//截取数据：今日充值人数：X
             String getRechargeNumberTodayPage1 = getRechargeNumberTodayPage.substring(1, getRechargeNumberTodayPage.indexOf("条"));//共8条记录 第1 / 1页
             System.out.println("今日充值人数总计：" + getRechargeNumberToday1);
             System.out.println("今日充值人数页数量：" + getRechargeNumberTodayPage1);
@@ -69,7 +58,6 @@ public class FinanceManagement {
 
     /**
      * ------------------------------------------------财务管理>充值记录>会员余额---------------------------------------
-     * -------------------------------------------------用户管里>会员列表-会员余额---------------------------------------
      */
 
     String vipAccount = "//*[@id=\"app\"]/div/div[2]/section/div/div[2]/div[1]/div[3]/table/tbody/tr[1]/td[3]/div/div[1]";
@@ -223,7 +211,7 @@ public class FinanceManagement {
             System.out.println("会员对账实际输赢金额：" + getPracticeMoney);
             System.out.println("会员报表今日实际输赢金额：" + getVipReportMoney);
             Assertion.setFlag(true);
-            Assertion.verifyEquals(getVipReportMoney, getVipReportMoney);
+            Assertion.verifyEquals(getPracticeMoney, getVipReportMoney);
             Assert.assertTrue(Assertion.currentFlag());
 
     }

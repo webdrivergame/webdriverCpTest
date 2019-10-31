@@ -333,7 +333,7 @@ public class UserManagement {
     @Test(priority = 9)
         public void vipUsableMoney() throws InterruptedException {
             driverUtil.xpathClearSendKeys(inputUser,"achaodl1hy1");
-            driverUtil.xpathClick(inquire);
+            driverUtil.xpathClick(vipInquire);
             Thread.sleep(2000);
             String getVipUsableMoney = driverUtil.getTextByXpath(vipUsableMoney);
             System.out.println("会员列表某会员可用额度："+getVipUsableMoney);

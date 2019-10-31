@@ -291,7 +291,7 @@ import javax.xml.soap.Text;
                  driver.findElement(By.className(name)).click();
              }
 
-              public void findElementByLinktextAndClick(String text){
+              public void findElementByLinkTextAndClick(String text){
                   driver.findElement(By.linkText(text)).click();
               }
              /**
@@ -316,7 +316,7 @@ import javax.xml.soap.Text;
                      } else if ("link".equals(by)) {
                          driver.findElement(By.linkText(byValue)).clear();
                          return true;
-                     } else if ("partiallinktext".equals(by)) {
+                     } else if ("partialLinkText".equals(by)) {
                          driver.findElement(By.partialLinkText(byValue)).clear();
                          return true;
                      } else if ("css".equals(by)) {
@@ -338,7 +338,7 @@ import javax.xml.soap.Text;
         *     查找元素并输入值
         * @param by      传入一个类型        例如：name
         * @param byValue 传入一个类型值       例如：username
-        * @param key     填写要输入的值        例如：zhangsan
+        * @param key     填写要输入的值        例如：kitty
         */
               public boolean findElementSendKeys(String by, String byValue, String key) {
                  try {
@@ -357,7 +357,7 @@ import javax.xml.soap.Text;
                      } else if ("link".equals(by)) {
                          driver.findElement(By.linkText(byValue)).sendKeys(key);
                          return true;
-                     } else if ("partiallinktext".equals(by)) {
+                     } else if ("partialLinkText".equals(by)) {
                          driver.findElement(By.partialLinkText(byValue)).sendKeys(key);
 
                          driver.findElement(By.cssSelector(byValue)).sendKeys(key);
@@ -381,7 +381,7 @@ import javax.xml.soap.Text;
         *    定位元素并清空文本内容，输入相应的值
         */
 
-              public void findElementByXpathAndClearSendkeys(String xpath, BigDecimal text) {
+              public void findElementByXpathAndClearSendKeys(String xpath, BigDecimal text) {
                  findElementByXpath(xpath).clear();
                  findElementByXpath(xpath).sendKeys((CharSequence) BigDecimal);
              }
@@ -402,7 +402,7 @@ import javax.xml.soap.Text;
                }
               //定位元素点击并输入
 
-              public void findElementByXpathAndClickSendkeys(String xpath,String text){
+              public void findElementByXpathAndClickSendKeys(String xpath,String text){
                   driver.findElement(By.xpath(xpath)).click();
                   driver.findElement(By.xpath(xpath)).sendKeys(text);
               }
@@ -791,7 +791,7 @@ import javax.xml.soap.Text;
                   }
              }
       // 取消弹出框
-              public void dimissAlert() {
+              public void dismissAlert() {
                 if (this.isAlertPresent()) {
                          alert.dismiss();
                     }
@@ -1049,7 +1049,7 @@ import javax.xml.soap.Text;
                  if (!(new File(dir_name).isDirectory())) {
                          new File(dir_name).mkdir();
                      }
-                 SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHmmss");
+                 SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHMMss");
                  String time = sdf.format(new Date());
                  try {
                          File source_file = (((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE));// 执行截屏
@@ -1061,7 +1061,7 @@ import javax.xml.soap.Text;
      // 截图命名为当前时间保存桌面
              public void takeScreenshotByNow() throws IOException {
                  File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-                 SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHmmss");
+                 SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd-HHMMss");
                  String time = sdf.format(new Date());
                  String file = "C:\\Users\\jtc\\Desktop\\picture\\" + time + ".png";
                  FileUtils.copyFile(srcFile, new File(file));

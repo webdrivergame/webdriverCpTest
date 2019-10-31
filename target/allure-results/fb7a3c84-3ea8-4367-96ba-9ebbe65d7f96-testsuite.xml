@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1572173143076" stop="1572173164837" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : webdriverCpTest</name>
+    <title>Default Suite : webdriverCpTest</title>
+    <test-cases>
+        <test-case start="1572173143094" stop="1572173143101" status="pending">
+            <name>usableMoney</name>
+            <title>验证代理可用额度数据</title>
+            <failure>
+                <message>Test not implemented yet</message>
+                <stack-trace>There are no stack trace</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="story" value="代理列表"/>
+                <label name="feature" value="用户管理"/>
+                <label name="host" value="DESKTOP-APMUM9I"/>
+                <label name="thread" value="4296@DESKTOP-APMUM9I.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1572173156026" stop="1572173164826" status="passed">
+            <name>vipUsableMoney</name>
+            <title>验证会员可用额度数据是否有误</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="webdriverCpTest"/>
+                <label name="testClass" value="Backstage.admin.UserManagement"/>
+                <label name="testMethod" value="vipUsableMoney"/>
+                <label name="story" value="会员列表"/>
+                <label name="feature" value="用户管理"/>
+                <label name="host" value="DESKTOP-APMUM9I"/>
+                <label name="thread" value="4296@DESKTOP-APMUM9I.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
