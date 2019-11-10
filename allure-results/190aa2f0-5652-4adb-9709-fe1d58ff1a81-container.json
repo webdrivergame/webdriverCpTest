@@ -1,1 +1,0 @@
-{"uuid":"190aa2f0-5652-4adb-9709-fe1d58ff1a81","name":"webdriverCpTest","start":1571565563854,"stop":1571565584906,"children":["030d85c4-1fa4-4501-9eee-d2165fd7df43"],"befores":[{"name":"loginBefore","status":"passed","stage":"finished","description":"","start":1571565563887,"stop":1571565581665}]}

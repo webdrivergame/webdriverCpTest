@@ -1,1 +1,0 @@
-{"uuid":"8db47ee8-b7bf-4674-a4c8-3fb602877294","name":"webdriverCpTest","start":1568959173997,"stop":1568959192119,"children":["bfea8722-a97a-4910-9b35-44640fbe8bf2"],"befores":[{"name":"baiduLogin","status":"passed","stage":"finished","description":"","start":1568959174042,"stop":1568959191952}]}

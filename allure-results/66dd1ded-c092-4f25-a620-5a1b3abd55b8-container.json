@@ -1,1 +1,0 @@
-{"uuid":"66dd1ded-c092-4f25-a620-5a1b3abd55b8","name":"game","start":1555597582412,"stop":1555597598469,"children":["7e17d859-ba0d-4c81-a746-7c729202a0c6"],"befores":[{"name":"loginAdmin","status":"passed","stage":"finished","description":"","start":1555597582446,"stop":1555597593864}]}
