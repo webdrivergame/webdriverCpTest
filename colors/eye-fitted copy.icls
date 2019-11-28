@@ -1,8 +1,11 @@
-<scheme name="eye-fitted" version="142" parent_scheme="Default">
+<scheme name="eye-fitted copy" version="142" parent_scheme="Default">
   <option name="FONT_SCALE" value="1.0" />
-  <option name="LINE_SPACING" value="1.3" />
-  <option name="EDITOR_FONT_SIZE" value="15" />
+  <option name="LINE_SPACING" value="1.0" />
+  <option name="EDITOR_FONT_SIZE" value="12" />
   <option name="EDITOR_FONT_NAME" value="Consolas" />
+  <option name="CONSOLE_FONT_NAME" value="Consolas" />
+  <option name="CONSOLE_FONT_SIZE" value="15" />
+  <option name="CONSOLE_LINE_SPACING" value="1.3" />
   <colors>
     <option name="CONSOLE_BACKGROUND_KEY" value="c7edcc" />
   </colors>
@@ -28,7 +31,6 @@
     </option>
     <option name="TEXT">
       <value>
-        <option name="FOREGROUND" value="0" />
         <option name="BACKGROUND" value="c7edcc" />
       </value>
     </option>
