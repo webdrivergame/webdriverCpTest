@@ -24,7 +24,7 @@
     <option name="FILESTATUS_changelistConflict" value="d5756c" />
     <option name="FILESTATUS_modifiedOutside" value="6897bb" />
     <option name="GUTTER_BACKGROUND" value="404040" />
-    <option name="INDENT_GUIDE" value="898941" />
+    <option name="INDENT_GUIDE" value="504e4e" />
     <option name="LINE_NUMBERS_COLOR" value="5c514d" />
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="3c3f41" />
     <option name="METHOD_SEPARATORS_COLOR" value="505050" />
@@ -33,7 +33,7 @@
     <option name="RIGHT_MARGIN_COLOR" value="323232" />
     <option name="SELECTED_INDENT_GUIDE" value="0" />
     <option name="SELECTED_TEARLINE_COLOR" value="898941" />
-    <option name="SELECTION_BACKGROUND" value="898941" />
+    <option name="SELECTION_BACKGROUND" value="535254" />
     <option name="SELECTION_FOREGROUND" value="0" />
     <option name="TEARLINE_COLOR" value="505050" />
     <option name="WHITESPACES" value="505050" />
@@ -41,7 +41,7 @@
   <attributes>
     <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="cae682" />
+        <option name="FOREGROUND" value="8ea25c" />
       </value>
     </option>
     <option name="ANNOTATION_NAME_ATTRIBUTES">
@@ -385,6 +385,11 @@
         <option name="BACKGROUND" value="5e5339" />
       </value>
     </option>
+    <option name="ECMAL4.CLASS">
+      <value>
+        <option name="FOREGROUND" value="b1dfb0" />
+      </value>
+    </option>
     <option name="ENUM_NAME_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="cae682" />
@@ -461,6 +466,11 @@
     <option name="INTERFACE_NAME_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="cae682" />
+      </value>
+    </option>
+    <option name="JAVA_DOC_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="74857d" />
       </value>
     </option>
     <option name="JAVA_KEYWORD">
