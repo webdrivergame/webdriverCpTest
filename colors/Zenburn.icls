@@ -1,6 +1,6 @@
 <scheme name="Zenburn" version="142" parent_scheme="Default">
   <option name="FONT_SCALE" value="1.0" />
-  <option name="LINE_SPACING" value="1.3" />
+  <option name="LINE_SPACING" value="1.2" />
   <option name="EDITOR_FONT_SIZE" value="15" />
   <option name="EDITOR_FONT_NAME" value="Consolas" />
   <colors>
@@ -115,6 +115,11 @@
       <value>
         <option name="FOREGROUND" value="7f9f7f" />
         <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="CONSTRUCTOR_DECLARATION_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="b29777" />
       </value>
     </option>
     <option name="CUSTOM_INVALID_STRING_ESCAPE_ATTRIBUTES">
@@ -459,13 +464,18 @@
     </option>
     <option name="INSTANCE_FIELD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="b3b784" />
-        <option name="FONT_TYPE" value="1" />
+        <option name="FOREGROUND" value="64a489" />
       </value>
     </option>
     <option name="INTERFACE_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="cae682" />
+        <option name="FOREGROUND" value="aebd75" />
+      </value>
+    </option>
+    <option name="JAVA_BLOCK_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="909186" />
+        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="JAVA_DOC_COMMENT">
@@ -476,6 +486,16 @@
     <option name="JAVA_KEYWORD">
       <value>
         <option name="FOREGROUND" value="86b0ca" />
+      </value>
+    </option>
+    <option name="JAVA_LINE_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="709f56" />
+      </value>
+    </option>
+    <option name="JAVA_PARENTH">
+      <value>
+        <option name="FOREGROUND" value="e0a983" />
       </value>
     </option>
     <option name="JAVA_STRING">
@@ -503,9 +523,14 @@
         <option name="FOREGROUND" value="ff8647" />
       </value>
     </option>
+    <option name="METHOD_CALL_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="bf8281" />
+      </value>
+    </option>
     <option name="METHOD_DECLARATION_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="dfbe95" />
+        <option name="FOREGROUND" value="bb9f7d" />
       </value>
     </option>
     <option name="NOT_USED_ELEMENT_ATTRIBUTES">
@@ -524,7 +549,6 @@
     <option name="STATIC_FIELD_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="93a2cc" />
-        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="STATIC_FINAL_FIELD_ATTRIBUTES">
