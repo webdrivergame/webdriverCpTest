@@ -27,10 +27,23 @@
   </colors>
   <attributes>
     <option name="ABSTRACT_CLASS_NAME_ATTRIBUTES">
-      <value />
+      <value>
+        <option name="FOREGROUND" value="b9b69e" />
+      </value>
     </option>
     <option name="ABSTRACT_METHOD_ATTRIBUTES">
       <value />
+    </option>
+    <option name="ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="625495" />
+      </value>
+    </option>
+    <option name="ANNOTATION_NAME_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="efeb75" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
     </option>
     <option name="ANONYMOUS_CLASS_NAME_ATTRIBUTES">
       <value />
@@ -54,10 +67,14 @@
       </value>
     </option>
     <option name="CONSTRUCTOR_CALL_ATTRIBUTES">
-      <value />
+      <value>
+        <option name="FOREGROUND" value="80608a" />
+      </value>
     </option>
     <option name="CONSTRUCTOR_DECLARATION_ATTRIBUTES">
-      <value />
+      <value>
+        <option name="FOREGROUND" value="7bc0aa" />
+      </value>
     </option>
     <option name="CTRL_CLICKABLE">
       <value>
@@ -339,7 +356,12 @@
     </option>
     <option name="INSTANCE_FIELD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="4aa3ff" />
+        <option name="FOREGROUND" value="de91ff" />
+      </value>
+    </option>
+    <option name="INSTANCE_FINAL_FIELD_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="a6d9aa" />
       </value>
     </option>
     <option name="INTERFACE_NAME_ATTRIBUTES">
@@ -356,9 +378,14 @@
         <option name="FOREGROUND" value="ff0000" />
       </value>
     </option>
+    <option name="JAVA_KEYWORD">
+      <value>
+        <option name="FOREGROUND" value="71d4f3" />
+      </value>
+    </option>
     <option name="JAVA_STRING">
       <value>
-        <option name="FOREGROUND" value="a78f64" />
+        <option name="FOREGROUND" value="c37082" />
       </value>
     </option>
     <option name="LINE_FULL_COVERAGE">
@@ -435,7 +462,9 @@
       </value>
     </option>
     <option name="REASSIGNED_LOCAL_VARIABLE_ATTRIBUTES">
-      <value />
+      <value>
+        <option name="FOREGROUND" value="846c8e" />
+      </value>
     </option>
     <option name="REASSIGNED_PARAMETER_ATTRIBUTES">
       <value />
